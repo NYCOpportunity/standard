@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+/** Elements */
+@forward '@nycopportunity/pattern-typography/src/scss/imports'; // This module includes @font-face and needs to be imported before all other declarations.
+@forward '@nycopportunity/pattern-elements/src/scss/imports';
+/** Elements - end */
+
+/** Components */
+/** Components - end */
+
+/** Utilities */
+// @forward 'utilities/tailwindcss/tailwindcss'; // Uncomment this to use Tailwindcss
+/** Utilities - end */
+
+/**
+ * Base elements that need to be included after other patterns to take effect
+ */
+
+// @forward 'elements/base/base-first-last';

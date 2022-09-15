@@ -1,0 +1,21 @@
+{
+  "name": "@nycopportunity/standard",
+  "version": "0.0.0-1",
+  "description": "This project was scaffolded using the NYCO Patterns CLI",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\"",
+    "build": "cross-env NODE_ENV=development pttrn",
+    "version": "npm run default && git add .",
+    "prepublishOnly": "git push && git push --tags",
+    "publish": "cross-env NODE_ENV=production pttrn publish",
+    "default": "cross-env NODE_ENV=production pttrn"
+  },
+  "devDependencies": {
+    "@nycopportunity/pttrn": "latest",
+    "@nycopportunity/pttrn-plugin-properties": "^1.1.1"
+  },
+  "dependencies": {
+    "@nycopportunity/pattern-elements": "file:../pattern-elements",
+    "@nycopportunity/pattern-typography": "file:../pattern-typography"
+  }
+}

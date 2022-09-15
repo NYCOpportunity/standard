@@ -1,0 +1,15 @@
+= extend('/slm/layouts/default')
+
+- title = 'Welcome to the @pttrn framework!'
+
+= content('main')
+  section class='bc-white p-4'
+    h2 Now you can make your own!
+
+    p Run the CLI to create a new component.
+
+    div class='code-block'
+      pre
+        | $ npx pttrn make component ...
+
+= content('scripts')

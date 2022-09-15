@@ -1,0 +1,556 @@
+$tokens:(
+  output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/cityofnewyork/my-file-patterns/src/config/_tokens.scss",
+  stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
+  version: 0.0.0-1,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-1/dist/",
+  googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  language: (default, ar, es, kr, ur, tc),
+  languageRtl: (ar, ur),
+  fontFace-system: "ui-sans-serif, system-ui, sans-serif",
+  fontFace-nyc: "'Helvetica Neue Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+  fontFace-primary: "'Public Sans', sans-serif",
+  fontFace-secondary: "'Public Sans', sans-serif",
+  fontFace-code: "monospace",
+  fontFamily: (
+    body: var(--nyco-fontFace-secondary),
+    h1: var(--nyco-fontFace-primary),
+    h2: var(--nyco-fontFace-primary),
+    h3: var(--nyco-fontFace-primary),
+    blockquote: var(--nyco-fontFace-primary),
+    h4: var(--nyco-fontFace-secondary),
+    h5: var(--nyco-fontFace-secondary),
+    h6: var(--nyco-fontFace-secondary),
+    p: var(--nyco-fontFace-secondary),
+    button: var(--nyco-fontFace-secondary),
+    tables: var(--nyco-fontFace-secondary),
+    option: var(--nyco-fontFace-secondary),
+    question: var(--nyco-fontFace-secondary),
+    code: var(--nyco-fontFace-code),
+    primary: var(--nyco-fontFace-primary),
+    secondary: var(--nyco-fontFace-secondary),
+    inherit: inherit
+  ),
+  fontWeight: (
+    body: normal,
+    h1: bold,
+    h2: bold,
+    h3: bold,
+    blockquote: normal,
+    h4: bold,
+    h5: bold,
+    h6: normal,
+    p: normal,
+    link: bold,
+    small: normal,
+    button: bold,
+    tables: normal,
+    normal: normal,
+    bold: 800,
+    option: bold,
+    question: normal,
+    code: normal
+  ),
+  fontStyle: (
+    body: normal,
+    h1: normal,
+    h2: normal,
+    h3: normal,
+    blockquote: normal,
+    h4: normal,
+    h5: normal,
+    h6: italic,
+    p: normal,
+    link: normal,
+    small: normal,
+    button: normal,
+    tables: normal,
+    question: normal,
+    normal: normal,
+    italic: italic
+  ),
+  fontSize: (
+    body: 1rem,
+    h1: 3rem,
+    h2: 2.5rem,
+    h3: 2rem,
+    blockquote: 2rem,
+    h4: 1.5rem,
+    h5: 1rem,
+    h6: 1rem,
+    p: 0.9rem,
+    small: 0.72rem,
+    button: 1rem,
+    tables: 0.8rem,
+    option: inherit,
+    question: inherit,
+    code: 0.72rem
+  ),
+  lineHeight: (
+    normal: normal,
+    body: normal,
+    h1: 1.2,
+    h2: 1.3,
+    h3: 1.3,
+    blockquote: 1.3,
+    h4: 1.1,
+    h5: normal,
+    h6: normal,
+    p: 1.6,
+    small: normal,
+    button: normal,
+    tables: normal,
+    option: normal,
+    question: normal,
+    code: 1.9
+  ),
+  typography: (
+    small: 16px,
+    mobile: 18px,
+    tablet: 20px,
+    desktop: 22px,
+    margin-bottom: 1rem,
+    list-indent: 1.5rem
+  ),
+  scale: (
+    default: (0, 1, 2, 3, 4),
+    light: (0, 1, 2, 3, 4)
+  ),
+  color: (
+    default-0: #03142C,
+    default-1: #031837,
+    default-2: #071F42,
+    default-3: #0C264D,
+    default-4: #122F5A,
+    light-0: #FFFFFF,
+    light-1: #FAFDFF,
+    light-2: #F0F6FA,
+    light-3: #E3F1FD,
+    light-4: #C9E7FC,
+    light-5: #B8E0FC,
+    blue-d-1: #00369F,
+    blue: #004CBE,
+    blue-l-1: #217CEB,
+    blue-l-2: #53B3FC,
+    blue-l-3: #C9EEFE,
+    green-d-1: #007539,
+    green: #006333,
+    green-l-1: #008E46,
+    green-l-2: #4BAC4C,
+    green-l-3: #A8DD7C,
+    green-l-4: #DFEED2,
+    yellow-d-4: #5C3D00,
+    yellow-d-3: #8F5F00,
+    yellow-d-2: #AD7200,
+    yellow-d-1: #D99000,
+    yellow: #FFBE17,
+    yellow-l-1: #FFD466,
+    yellow-l-2: #FFDF8D,
+    yellow-l-3: #FFF0C7,
+    red: #CF2A46,
+    red-l-1: #F1647C,
+    red-l-2: #FC9CAC,
+    purple: #4439BE,
+    purple-l-1: #7C72ED,
+    purple-l-2: #A9ACFC,
+    black: #000000,
+    white: #FFFFFF,
+    transparent: rgba(255, 255, 255, 0),
+    inherit: inherit,
+    text: var(--nyco-text),
+    brand: var(--nyco-brand),
+    alt: var(--nyco-alt),
+    em: var(--nyco-em),
+    primary: var(--nyco-primary),
+    secondary: var(--nyco-secondary),
+    tertiary: var(--nyco-tertiary),
+    scale-0: var(--nyco-scale-0),
+    scale-1: var(--nyco-scale-1),
+    scale-2: var(--nyco-scale-2),
+    scale-3: var(--nyco-scale-3),
+    scale-4: var(--nyco-scale-4)
+  ),
+  colorMode: (
+    dark: (
+      text: var(--nyco-color-white),
+      brand: var(--nyco-color-blue-l-2),
+      alt: var(--nyco-color-blue-l-3),
+      em: var(--nyco-color-yellow-l-2),
+      error: var(--nyco-color-yellow-l-2),
+      primary: var(--nyco-color-blue-l-1),
+      secondary: var(--nyco-color-green-l-3),
+      tertiary: var(--nyco-color-yellow-l-2),
+      link: var(--nyco-color-blue-l-2),
+      link-hover: var(--nyco-color-blue-l-3),
+      link-visited: var(--nyco-color-blue-l-3),
+      focus: var(--nyco-color-blue-l-2),
+      focus-background: var(--nyco-background),
+      background: var(--nyco-scale-1),
+      webkit-font-smoothing: antialiased,
+      moz-osx-font-smoothing: grayscale,
+      scale: (
+        0: var(--nyco-color-default-0),
+        1: var(--nyco-color-default-1),
+        2: var(--nyco-color-default-2),
+        3: var(--nyco-color-default-3),
+        4: var(--nyco-color-default-4)
+      ),
+      input: (
+        text: var(--nyco-scale-1),
+        background: var(--nyco-color-white),
+        border: var(--nyco-color-transparent)
+      ),
+      option: (
+        text: var(--nyco-color-blue-l-2),
+        background: var(--nyco-scale-2),
+        border: var(--nyco-color-transparent),
+        text-hover : var(--nyco-color-blue-l-3),
+        border-hover: var(--nyco-color-transparent),
+        background-hover: var(--nyco-scale-0),
+        text-checked: var(--nyco-color-blue-l-3),
+        background-checked: var(--nyco-scale-0),
+        graphic-checkbox: var(--nyco-color-transparent),
+        graphic-checkbox-checked: var(--nyco-scale-0)
+      ),
+      statuses: (
+        primary: (
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-blue-l-2)
+        ),
+        secondary: (
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-green-l-3)
+        ),
+        tertiary: (
+          text: var(--nyco-scale-2),
+          background: var(--nyco-color-yellow-l-1)
+        ),
+        alt: (
+          text: var(--nyco-scale-1),
+          background: var(--nyco-color-blue-l-3)
+        )
+      ),
+      button: (
+        primary: (
+          text: var(--nyco-color-blue-l-2),
+          text-hover: var(--nyco-color-blue-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
+        ),
+        secondary: (
+          text: var(--nyco-color-green-l-3),
+          text-hover: var(--nyco-color-green-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
+        ),
+        tertiary: (
+          text: var(--nyco-color-yellow-l-2),
+          text-hover: var(--nyco-color-yellow-l-3),
+          background: var(--nyco-scale-2),
+          background-hover: var(--nyco-scale-0)
+        ),
+        disabled: (
+          text: var(--nyco-color-light-0),
+          background: var(--nyco-scale-2)
+        )
+      ),
+      badge: (
+        color: var(--nyco-color-yellow-d-4),
+        background: var(--nyco-color-yellow-l-3)
+      ),
+      table: (
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2)
+      ),
+      descriptionList: (
+        term: var(--nyco-alt),
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2),
+        border: var(--nyco-scale-2)
+      ),
+      code: (
+        text: var(--nyco-color-blue-l-3),
+        text-base: var(--nyco-color-blue-l-3),
+        text-keyword: var(--nyco-color-blue-l-1),
+        text-javascript: var(--nyco-color-blue-l-3),
+        text-css: var(--nyco-color-blue-l-3),
+        text-comment: var(--nyco-color-purple-l-1),
+        text-string: var(--nyco-color-yellow-l-1),
+        text-symbol: var(--nyco-color-yellow-l-1),
+        text-code: var(--nyco-color-yellow-l-1),
+        link: var(--nyco-color-blue-l-3),
+        background: var(--nyco-color-default-2),
+        border: var(--nyco-color-transparent),
+        webkit-font-smoothing: antialiased,
+        moz-osx-font-smoothing: grayscale
+      ),
+      shadow: (
+        up: 0 3px 12px 2px rgba(0, 0, 0, 0.15)
+      )
+    ),
+    default: (
+      text: var(--nyco-color-default-3),
+      brand: var(--nyco-color-blue),
+      alt: var(--nyco-text),
+      em: var(--nyco-color-yellow-d-4),
+      error: var(--nyco-color-red),
+      primary: var(--nyco-color-blue),
+      secondary: var(--nyco-color-green),
+      tertiary: var(--nyco-color-yellow-d-1),
+      link: var(--nyco-color-blue),
+      link-hover: var(--nyco-text),
+      link-visited: var(--nyco-text),
+      focus: var(--nyco-color-blue),
+      focus-background: var(--nyco-background),
+      background: var(--nyco-scale-1),
+      webkit-font-smoothing: auto,
+      moz-osx-font-smoothing: auto,
+      scale: (
+        0: var(--nyco-color-light-0),
+        1: var(--nyco-color-light-1),
+        2: var(--nyco-color-light-2),
+        3: var(--nyco-color-light-3),
+        4: var(--nyco-color-light-4)
+      ),
+      input: (
+        text: var(--nyco-color-default-1),
+        background: var(--nyco-color-white),
+        border: var(--nyco-color-default-1)
+      ),
+      option: (
+        text: var(--nyco-text),
+        background: var(--nyco-scale-2),
+        border: var(--nyco-color-transparent),
+        text-hover : var(--nyco-link),
+        border-hover: var(--nyco-link),
+        background-hover: var(--nyco-scale-0),
+        text-checked: var(--nyco-color-blue),
+        background-checked: var(--nyco-scale-0),
+        graphic-checkbox: var(--nyco-color-transparent),
+        graphic-checkbox-checked: var(--nyco-scale-0)
+      ),
+      statuses: (
+        primary: (
+          text: var(--nyco-text),
+          background: var(--nyco-color-blue-l-3)
+        ),
+        secondary: (
+          text: var(--nyco-text),
+          background: var(--nyco-color-green-l-4)
+        ),
+        tertiary: (
+          text: var(--nyco-text),
+          background: var(--nyco-color-yellow-l-2)
+        ),
+        alt: (
+          text: var(--nyco-text),
+          background: var(--nyco-color-blue-l-3)
+        )
+      ),
+      button: (
+        primary: (
+          text: var(--nyco-scale-0),
+          text-hover: var(--nyco-scale-0),
+          background: var(--nyco-color-blue),
+          background-hover: var(--nyco-color-blue-d-1)
+        ),
+        secondary: (
+          text: var(--nyco-scale-0),
+          text-hover: var(--nyco-scale-0),
+          background: var(--nyco-color-default-2),
+          background-hover: var(--nyco-color-default-4)
+        ),
+        tertiary: (
+          text: var(--nyco-text),
+          text-hover: var(--nyco-text),
+          background: var(--nyco-color-yellow-l-1),
+          background-hover: var(--nyco-color-yellow-l-2)
+        ),
+        disabled: (
+          text: var(--nyco-color-default-4),
+          background: var(--nyco-scale-3)
+        )
+      ),
+      badge: (
+        color: var(--nyco-color-yellow-d-4),
+        background: var(--nyco-color-yellow-l-3)
+      ),
+      table: (
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2)
+      ),
+      descriptionList: (
+        term: var(--nyco-alt),
+        odd: var(--nyco-scale-3),
+        even: var(--nyco-scale-2),
+        border: var(--nyco-scale-2)
+      ),
+      code: (
+        text: var(--nyco-color-blue-l-3),
+        text-base: var(--nyco-color-blue-l-3),
+        text-keyword: var(--nyco-color-blue-l-1),
+        text-javascript: var(--nyco-color-blue-l-3),
+        text-css: var(--nyco-color-blue-l-3),
+        text-comment: var(--nyco-color-purple-l-1),
+        text-string: var(--nyco-color-yellow-l-1),
+        text-symbol: var(--nyco-color-yellow-l-1),
+        text-code: var(--nyco-color-yellow-l-1),
+        link: var(--nyco-color-blue-l-3),
+        background: var(--nyco-color-default-2),
+        border: var(--nyco-color-transparent),
+        webkit-font-smoothing: antialiased,
+        moz-osx-font-smoothing: grayscale
+      ),
+      shadow: (
+        up: 0 3px 12px 2px rgba(21, 60, 96, 0.13)
+      )
+    )
+  ),
+  screen: (
+    desktop: 1112px,
+    tablet: 768px,
+    mobile: 480px,
+    small: 400px,
+    max-width-offset: 0.02px
+  ),
+  grid: 8px,
+  dimension: (
+    auto: auto,
+    full: 100%,
+    half: 50%,
+    90vh: 90vh,
+    100vh: 100vh,
+    content-width: calc(var(--nyco-grid) * 112),
+    site-max-width: calc(var(--nyco-grid) * 180),
+    site-min-width: calc(var(--nyco-grid) * 40)
+  ),
+  z: (
+    0: 0,
+    10: 10,
+    20: 20,
+    30: 30,
+    40: 40,
+    50: 50,
+    footer: 0,
+    search: 1000,
+    navigation: 1010,
+    mobile-menu: 1020,
+    auto: auto
+  ),
+  animate: (
+    ease-in: cubic-bezier(0.755, 0.05, 0.855, 0.06),
+    ease-out: cubic-bezier(0.23, 1, 0.32, 1),
+    duration: 0.25s,
+    timing-function: cubic-bezier(0.23, 1, 0.32, 1)
+  ),
+  borderWidth: (
+    0: 0,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px,
+    6: 6px,
+    7: 7px,
+    8: 8px,
+    DEFAULT: 1px
+  ),
+  spacing: (
+    0: 0,
+    1: calc(var(--nyco-grid) * 1),
+    2: calc(var(--nyco-grid) * 2),
+    3: calc(var(--nyco-grid) * 3),
+    4: calc(var(--nyco-grid) * 4),
+    5: calc(var(--nyco-grid) * 5),
+    6: calc(var(--nyco-grid) * 6),
+    7: calc(var(--nyco-grid) * 7),
+    8: calc(var(--nyco-grid) * 8),
+    DEFAULT: calc(var(--nyco-grid) * 3)
+  ),
+  margin: (
+    0: 0,
+    1: calc(var(--nyco-grid) * 1),
+    2: calc(var(--nyco-grid) * 2),
+    3: calc(var(--nyco-grid) * 3),
+    4: calc(var(--nyco-grid) * 4),
+    5: calc(var(--nyco-grid) * 5),
+    6: calc(var(--nyco-grid) * 6),
+    7: calc(var(--nyco-grid) * 7),
+    8: calc(var(--nyco-grid) * 8),
+    DEFAULT: calc(var(--nyco-grid) * 3),
+    auto: auto
+  ),
+  iconSize: (
+    1: (calc(var(--nyco-grid) * 1), calc(var(--nyco-grid) * 1)),
+    2: (calc(var(--nyco-grid) * 2), calc(var(--nyco-grid) * 2)),
+    3: (calc(var(--nyco-grid) * 3), calc(var(--nyco-grid) * 3)),
+    4: (calc(var(--nyco-grid) * 4), calc(var(--nyco-grid) * 4)),
+    5: (calc(var(--nyco-grid) * 5), calc(var(--nyco-grid) * 5)),
+    6: (calc(var(--nyco-grid) * 6), calc(var(--nyco-grid) * 6)),
+    7: (calc(var(--nyco-grid) * 7), calc(var(--nyco-grid) * 7)),
+    8: (calc(var(--nyco-grid) * 8), calc(var(--nyco-grid) * 8)),
+    default: (1rem, 1rem),
+    logo-google-translate: (175px, 16px),
+    logo-standard-menu-item: (130px, 18px),
+    logo-homepage: (186px, 18px),
+    logo-stacked-menu-item: (100px, 32px),
+    logo-nyco-menu-item: (150px, 17px),
+    logo-partnership-footer: (206px, 80px),
+    logo-nyc-copyright: (41px, 15px)
+  ),
+  focus: (
+    gap: 4px,
+    width: 4px
+  ),
+  button: (
+    inner-size: 1rem,
+    radius: 5px,
+    radius-tag: 50px,
+    border-style: solid,
+    border-width: 2px,
+    variants: (primary, secondary, tertiary)
+  ),
+  input: (
+    inner-size: 1rem,
+    radius: 0px,
+    border-style: solid,
+    border-width: 2px,
+    error-border-width: 4px,
+    icon-padding: 30px,
+    currency-font-size: 22px,
+    search-icon: (calc(var(--nyco-grid) * 3), calc(var(--nyco-grid) * 3))
+  ),
+  select: (
+    inner-size: 1rem,
+    radius: 5px,
+    border-style: solid,
+    border-width: 2px,
+    stroke-width: 2px,
+    stroke-line: round
+  ),
+  option: (
+    inner-size: 1rem,
+    radius: 5px,
+    border-style: solid,
+    border-width: 2px,
+    stroke-width: 2px,
+    stroke-line: round
+  ),
+  badge: (
+    font-size: 90%,
+    font-weight: bold,
+    line-height: inherit,
+    text-transform: normal,
+    padding: 0 var(--nyco-grid),
+    radius: 10px,
+    small-line-height: 1.3,
+    small-padding: 0 calc(var(--nyco-grid) * 0.5)
+  ),
+  shadow: (
+    up-dark: 0 3px 12px 2px rgba(0, 0, 0, 0.15),
+    up-light: 0 3px 12px 2px rgba(21, 60, 96, 0.13),
+    up: var(--nyco-shadow-up),
+    none: none
+  ),
+  cell: (
+    padding: 0.8rem 1rem
+  )
+);
