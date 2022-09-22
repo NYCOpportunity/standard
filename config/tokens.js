@@ -11,9 +11,10 @@ const light = {
   },
 
   'material': {
-    'shadow-up': '0 3px 12px 2px rgba(21, 60, 96, 0.13)',
+    // 'shadow-up': '0 3px 12px 2px rgba(21, 60, 96, 0.13)',
+    'shadow-up': 'none',
     'border': '4px solid var(--nyco-scale-2)',
-    'border-radius': '4px'
+    'border-radius': '0px'
   }
 
   /**
@@ -46,9 +47,10 @@ const dark = {
   },
 
   'material': {
-    'shadow-up': '0 3px 12px 2px rgba(0, 0, 0, 0.15)',
+    // 'shadow-up': '0 3px 12px 2px rgba(0, 0, 0, 0.15)',
+    'shadow-up': 'none',
     'border': '4px solid var(--nyco-scale-3)',
-    'border-radius': '4px'
+    'border-radius': '0px'
   }
 
   /**
