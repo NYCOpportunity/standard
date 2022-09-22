@@ -33,9 +33,9 @@
     "tailwindcss-logical": "^3.0.0"
   },
   "dependencies": {
-    "@nycopportunity/pattern-elements": "^0.0.0-2",
-    "@nycopportunity/pattern-typography": "^0.0.0-1",
-    "@nycopportunity/pttrn-scripts": "^1.0.14",
+    "@nycopportunity/pattern-elements": "file:../pattern-elements",
+    "@nycopportunity/pattern-typography": "file:../pattern-typography",
+    "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",
     "feather-icons": "^4.29.0",
     "for-cerial": "^1.1.0"
   }
