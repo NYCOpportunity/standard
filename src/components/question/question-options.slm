@@ -1,0 +1,36 @@
+/ Question
+
+/ Defaults
+- this.question = {}
+- this.question.id = this.createId()
+- this.question.label = 'Which of the following options applies best to you?'
+- this.question.description = 'Feel free to choose as many as you like.'
+- this.question.options = [{label: 'Option 1', type: 'checkbox'}, {label: 'Option 2', type: 'checkbox'}, {label: 'Option 3', type: 'checkbox'}, {label: 'Option 4', type: 'checkbox'}]
+- this.question.tabindex = false
+- this.question.required = 'true'
+- this.question.ariaHidden = false
+- this.question.optionColumns = true
+
+/ Inherit overrides
+- if (typeof question !== 'undefined')
+  - this.question = Object.assign(this.question, question);
+  - this.question.id = (question.id) ? question.id : this.question.id
+
+/! { @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }
+fieldset id='${this.question.id}' class='c-question' aria-hidden=this.question.ariaHidden
+  /! { @legend  Checkboxes and radio input groups should be labeled by legend tags }
+  legend class='c-question__label' tabindex=this.question.tabindex
+    = this.question.label
+
+  - if (this.question.description)
+    p = this.question.description
+
+  div class='c-question__container ${this.question.optionColumns ? 'c-question__container-cols' : ''}'
+    - input = this.question;
+    - input.class = false;
+    - input.ariaHidden = false;
+
+    = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-options.slm');
+
+/ - if (typeof question !== 'undefined')
+  / - delete question

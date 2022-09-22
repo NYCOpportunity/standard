@@ -1,0 +1,79 @@
+- this.nav = {class: {}}
+- this.nav.id = this.createId()
+- this.nav.class.main = 'tablet:flex-1 mb-1 px-1 tablet:px-2'
+- this.nav.class.heading = 'h3 text-small p-1 block'
+- this.nav.class.item = 'block p-1 no-underline align-middle'
+- this.nav.class.divider = 'border-b border-scale-3 mb-1 mt-1'
+- this.nav.tabindex = (typeof tabindex === 'undefined') ? false : tabindex;
+
+nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${this.nav.class.main}'
+  span id='navigation-main-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Main
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='index' Home
+
+  / span class='${this.nav.class.heading} ${this.nav.class.divider}' Guides
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='about' About
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='installation' Installation
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='developer-tools' Developer Tools
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item} ${this.nav.class.divider}' xhref='prototyping' Prototyping
+
+  span class='${this.nav.class.heading} ${this.nav.class.divider}' Links
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='${this.package.cdn.npm}' NPM Package
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='${this.package.cdn.source}' GitHub Repository
+
+nav role='navigation' aria-labelledby='aria-lb-elements-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
+  span id='aria-lb-elements-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Elements
+
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='badge' Badge
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='badge' Breadcrumbs
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='buttons' Buttons
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='code' Code
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='divider' Divider
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='forms' Forms
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='icons' Icons
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='inputs' Inputs
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='labels' Labels
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='layouts' Layouts
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='links' Links
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='nav' Nav
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='options' Options
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='selects' Selects
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tables' Tables
+
+nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
+  span id='aria-lb-components-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Components
+
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='accordion' Accordion
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='active-navigation' Active Navigation
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='alert' Alert
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='card' Card
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='dropdown' Dropdown
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='question' Question
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='utility' Utility
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='web-share' Web Share
+
+nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
+  span id='aria-lb-objects-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Objects
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='banner' Banner
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='feedback' Feedback
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='footer' Footer
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='header' Header
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='menu' Menu
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='text-controller' Text Controller
+
+nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
+  span id='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Utilities
+
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='animate' Animate
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='cell' Cell
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='clearfix' Clearfix
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='color' Color
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='fonts' Fonts
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='print' Print
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='scroll' Scroll
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='status' Status
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='toggle' Toggle
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='typography' Typography

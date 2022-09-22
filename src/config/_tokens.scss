@@ -1,16 +1,16 @@
 $tokens:(
-  output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/cityofnewyork/my-file-patterns/src/config/_tokens.scss",
+  output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
   version: 0.0.0-1,
   cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-1/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
+  fontFace-code: "monospace",
   fontFace-system: "ui-sans-serif, system-ui, sans-serif",
   fontFace-nyc: "'Helvetica Neue Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif",
   fontFace-primary: "'Public Sans', sans-serif",
   fontFace-secondary: "'Public Sans', sans-serif",
-  fontFace-code: "monospace",
   fontFamily: (
     body: var(--nyco-fontFace-secondary),
     h1: var(--nyco-fontFace-primary),
@@ -26,6 +26,8 @@ $tokens:(
     option: var(--nyco-fontFace-secondary),
     question: var(--nyco-fontFace-secondary),
     code: var(--nyco-fontFace-code),
+    system: var(--nyco-fontFace-system),
+    nyc: var(--nyco-fontFace-nyc),
     primary: var(--nyco-fontFace-primary),
     secondary: var(--nyco-fontFace-secondary),
     inherit: inherit
@@ -98,7 +100,7 @@ $tokens:(
     p: 1.6,
     small: normal,
     button: normal,
-    tables: normal,
+    tables: 1.6,
     option: normal,
     question: normal,
     code: 1.9
@@ -285,6 +287,15 @@ $tokens:(
       ),
       shadow: (
         up: 0 3px 12px 2px rgba(0, 0, 0, 0.15)
+      ),
+      card: (
+        header: var(--nyco-scale-3),
+        body: var(--nyco-scale-4)
+      ),
+      material: (
+        shadow-up: 0 3px 12px 2px rgba(0, 0, 0, 0.15),
+        border: 4px solid var(--nyco-scale-3),
+        border-radius: 4px
       )
     ),
     default: (
@@ -402,6 +413,15 @@ $tokens:(
       ),
       shadow: (
         up: 0 3px 12px 2px rgba(21, 60, 96, 0.13)
+      ),
+      card: (
+        header: var(--nyco-scale-2),
+        body: var(--nyco-scale-0)
+      ),
+      material: (
+        shadow-up: 0 3px 12px 2px rgba(21, 60, 96, 0.13),
+        border: 4px solid var(--nyco-scale-2),
+        border-radius: 4px
       )
     )
   ),
@@ -409,9 +429,9 @@ $tokens:(
     desktop: 1112px,
     tablet: 768px,
     mobile: 480px,
-    small: 400px,
-    max-width-offset: 0.02px
+    small: 400px
   ),
+  screen-max-width-offset: 0.02px,
   grid: 8px,
   dimension: (
     auto: auto,
@@ -421,7 +441,11 @@ $tokens:(
     100vh: 100vh,
     content-width: calc(var(--nyco-grid) * 112),
     site-max-width: calc(var(--nyco-grid) * 180),
-    site-min-width: calc(var(--nyco-grid) * 40)
+    site-min-width: calc(var(--nyco-grid) * 40),
+    navigation-logo: calc(var(--nyco-grid) * 16),
+    feedback-height: calc(var(--nyco-grid) * 12.5),
+    navigation-height: calc(var(--nyco-grid) * 10),
+    webshare-fallback: calc(var(--nyco-grid) * 54)
   ),
   z: (
     0: 0,
@@ -490,10 +514,8 @@ $tokens:(
     default: (1rem, 1rem),
     logo-google-translate: (175px, 16px),
     logo-standard-menu-item: (130px, 18px),
-    logo-homepage: (186px, 18px),
     logo-stacked-menu-item: (100px, 32px),
     logo-nyco-menu-item: (150px, 17px),
-    logo-partnership-footer: (206px, 80px),
     logo-nyc-copyright: (41px, 15px)
   ),
   focus: (

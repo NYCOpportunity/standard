@@ -1,0 +1,85 @@
+/**
+ * Web-share
+ */
+
+// Dependencies
+@use 'config/grid' as *;
+@use 'config/dimensions';
+@use 'config/direction';
+@use 'config/layouts';
+@use 'config/typography';
+@use 'config/media';
+
+// Declarations
+.c-web-share {
+  position: relative;
+  text-align: start;
+  pointer-events: auto;
+}
+
+.c-web-share__fallback {
+  @include typography.set('small');
+
+  background-color: var(--nyco-card-body);
+  box-shadow: var(--nyco-shadow-up);
+
+  position: absolute;
+  margin-top: var(--nyco-grid);
+  margin-bottom: var(--nyco-grid);
+
+  width: var(--nyco-dimension-webshare-fallback);
+  max-width: calc(100vw - var(--nyco-spacing-6));
+
+  @include media.screen-and-min-width('tablet') {
+    margin-top: calc(var(--nyco-grid) * 2);
+    margin-bottom: calc(var(--nyco-grid) * 2);
+  }
+}
+
+.c-web-share__fallback-body {
+  padding: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    padding: calc(var(--nyco-grid) * 3);
+  }
+
+  > *:last-child {
+    margin-inline-end: 0;
+  }
+}
+
+.c-web-share__label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: var(--nyco-grid);
+}
+
+.c-web-share__input {
+  width: 100%;
+  margin-bottom: calc(var(--nyco-grid) * 2);
+
+  input {
+    padding: var(--nyco-grid);
+  }
+}
+
+.c-web-share__items a,
+.c-web-share__items button {
+  // margin-bottom: var(--nyco-grid);
+  white-space: nowrap;
+}
+
+.c-web-share__items {
+  @include layouts.rows();
+
+  gap: var(--nyco-grid);
+
+  @include media.screen-and-min-width('mobile') {
+    @include layouts.three-columns();
+  }
+}
+
+.c-web-share__icon {
+  width: calc(var(--nyco-grid) * 2);
+  height: calc(var(--nyco-grid) * 2);
+}

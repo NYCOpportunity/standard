@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+  <link href="css/tokens.css" rel="stylesheet" />
+  <link href="css/tokens-default.css" rel="stylesheet" />
+  <link href="css/tokens-dark.css" rel="stylesheet" />
+  <link href="css/default.css" rel="stylesheet" />
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        // pre.setAttribute('tabindex', '0');
+        if (!pre.hasAttribute('tabindex')) {
+          pre.setAttribute('tabindex', '0');
+        }
+        hljs.highlightBlock(pre);
+      });
+    });
+
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="/">
+          <h1 class="text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <h2 class="h5 m-0">Patterns</h2>
+        <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
+          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-1" rel="noopener nofollow" target="_blank">0.0.0-1</a>
+          <button class="flex items-center" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="flex items-center" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#feather-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="tablet:flex">
+        <nav aria-labelledby="navigation-main-cc6b7b6b412a6" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-cc6b7b6b412a6">Main</span>
+          <a class="block p-1 no-underline align-middle" href="index" tabindex="-1">Home</a>
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
+          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-cc6b7b6b412a6" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-cc6b7b6b412a6">Elements</span>
+          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Badge</a>
+          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Breadcrumbs</a>
+          <a class="block p-1 no-underline align-middle" href="buttons" tabindex="-1">Buttons</a>
+          <a class="block p-1 no-underline align-middle" href="code" tabindex="-1">Code</a>
+          <a class="block p-1 no-underline align-middle" href="divider" tabindex="-1">Divider</a>
+          <a class="block p-1 no-underline align-middle" href="forms" tabindex="-1">Forms</a>
+          <a class="block p-1 no-underline align-middle" href="icons" tabindex="-1">Icons</a>
+          <a class="block p-1 no-underline align-middle" href="inputs" tabindex="-1">Inputs</a>
+          <a class="block p-1 no-underline align-middle" href="labels" tabindex="-1">Labels</a>
+          <a class="block p-1 no-underline align-middle" href="layouts" tabindex="-1">Layouts</a>
+          <a class="block p-1 no-underline align-middle" href="links" tabindex="-1">Links</a>
+          <a class="block p-1 no-underline align-middle" href="nav" tabindex="-1">Nav</a>
+          <a class="block p-1 no-underline align-middle" href="options" tabindex="-1">Options</a>
+          <a class="block p-1 no-underline align-middle" href="selects" tabindex="-1">Selects</a>
+          <a class="block p-1 no-underline align-middle" href="tables" tabindex="-1">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-cc6b7b6b412a6" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-cc6b7b6b412a6">Components</span>
+          <a class="block p-1 no-underline align-middle" href="accordion" tabindex="-1">Accordion</a>
+          <a class="block p-1 no-underline align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="block p-1 no-underline align-middle" href="alert" tabindex="-1">Alert</a>
+          <a class="block p-1 no-underline align-middle" href="card" tabindex="-1">Card</a>
+          <a class="block p-1 no-underline align-middle" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="block p-1 no-underline align-middle" href="question" tabindex="-1">Question</a>
+          <a class="block p-1 no-underline align-middle" href="utility" tabindex="-1">Utility</a>
+          <a class="block p-1 no-underline align-middle" href="web-share" tabindex="-1">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-cc6b7b6b412a6" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-cc6b7b6b412a6">Objects</span>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-cc6b7b6b412a6" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-cc6b7b6b412a6">Utilities</span>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3>Menu</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="menu">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#feather-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/objects/menu" target="_blank">src/objects/menu/menu</a>
+            </p>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap"></div>
+        </div>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="menu-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-6 wrap"></div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-4">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="menu-markup">Code</h5>
+            <button aria-controls="menu-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#feather-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="menu-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity">GitHub</a>
+              <a href="https://twitter.com/nycopportunity">Twitter</a>
+              <a href="https://www.facebook.com/nycopportunity">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="tablet:flex">
+        <nav aria-labelledby="navigation-main-60c1e2fb727ae" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-60c1e2fb727ae">Main</span>
+          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-60c1e2fb727ae" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-60c1e2fb727ae">Elements</span>
+          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
+          <a class="block p-1 no-underline align-middle" href="badge">Breadcrumbs</a>
+          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 no-underline align-middle" href="code">Code</a>
+          <a class="block p-1 no-underline align-middle" href="divider">Divider</a>
+          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
+          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
+          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
+          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 no-underline align-middle" href="links">Links</a>
+          <a class="block p-1 no-underline align-middle" href="nav">Nav</a>
+          <a class="block p-1 no-underline align-middle" href="options">Options</a>
+          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
+          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-60c1e2fb727ae" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-60c1e2fb727ae">Components</span>
+          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
+          <a class="block p-1 no-underline align-middle" href="card">Card</a>
+          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 no-underline align-middle" href="question">Question</a>
+          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
+          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-60c1e2fb727ae" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-60c1e2fb727ae">Objects</span>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-60c1e2fb727ae" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-60c1e2fb727ae">Utilities</span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons();
+    Standard.icons('svg/pattern-elements.svg');
+    Standard.icons('svg/feather.svg');
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    // Standard.menu();
+    Standard.newsletter();
+    // Standard.search();
+    Standard.setObjectHeights();
+    Standard.themes();
+    Standard.toggle();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

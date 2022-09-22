@@ -1,0 +1,5 @@
+nav class='nav-inline'
+  a href='${this.links.nycopportunity.social.github}' GitHub
+  a href='${this.links.nycopportunity.social.twitter}' Twitter
+  a href='${this.links.nycopportunity.social.facebook}' Facebook
+  a href='${this.links.nycopportunity.social.instagram}' Instagram

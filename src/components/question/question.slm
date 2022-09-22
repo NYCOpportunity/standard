@@ -1,0 +1,50 @@
+/ Question
+
+/ Defaults
+- this.question = {}
+- this.question.id = this.createId()
+- this.question.type = 'text'
+- this.question.label = 'Will you please fill out this required question?'
+- this.question.description = 'Please answer to the best of your ability.'
+- this.question.for = `question-${this.question.id}`
+- this.question.name = `question['${this.question.id}']`
+- this.question.required = false
+- this.question.pattern = false
+- this.question.tabindex = false
+- this.question.ariaHidden = false
+- this.question.submit = false
+
+/ Inherit overrides
+- if (typeof question !== 'undefined')
+  - this.question = Object.assign(this.question, question);
+  - this.question.value = (question.value) ? question.value : this.createSlug(this.question.label)
+
+div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
+  /! { @for  Should match the id of the input }
+  label class='c-question__label' for='${this.question.for}'
+    = this.question.label
+
+  - if (this.question.description)
+    p = this.question.description
+
+  div class='c-question__container'
+    - input = this.question
+    / - input.name = this.question.name
+    - input.id = this.question.for
+    - delete input.class
+    - delete input.ariaHidden
+    - type = (['text', 'email'].includes(this.question.type)) ? '' : `-${this.question.type}`;
+
+    - if this.question.button
+      div class='c-question__input'
+        = partial(`/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs${type}.slm`);
+
+        - if this.question.button
+          div class='c-question__button'
+            button class='btn btn-primary btn-small' type='submit' = this.question.button
+
+    - else
+      = partial(`/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs${type}.slm`);
+
+/ - if (typeof question !== 'undefined')
+  / - delete question

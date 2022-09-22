@@ -1,0 +1,33 @@
+- this.title = 'Card'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  - card = this.programs[0]
+  = mixin('section', '/components/card/card')
+  = mixin('section', '/components/card/card-program', {title: 'Program Card', markup: false, demo: false})
+
+  - card = this.programs[1]
+  = mixin('section', '/components/card/card-icon', {title: 'Program Card with Icon', text: true, markup: true, demo: true})
+
+  - card = this.announcements[0]
+  - card.class = 'c-card-transparent'
+  = mixin('section', '/components/card/card-transparent', {title: 'Transparent Cards'})
+  = mixin('section', '/components/card/card-announcement', {title: 'Announcement Card', markup: false, demo: false})
+
+  / = mixin('section', '/components/card/card-figma', {title: 'Figma', markup: false, demo: false})

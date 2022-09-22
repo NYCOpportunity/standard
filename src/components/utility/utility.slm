@@ -1,0 +1,29 @@
+/ Utility
+
+div class='c-utility'
+  a href='${this.baseUrl}/demos/programs/index' class='link-icon mie-auto'
+    svg class='icon-ui rtl:flip' aria-hidden='true'
+      use href='#feather-chevron-left'
+
+    span Programs
+
+  a href='#next-steps' class='text-inherit mis-3'
+    | Next steps
+
+  / a class='btn btn-small btn-primary'
+  /   svg class='icon-ui' aria-hidden='true'
+  /     use href='#feather-bookmark'
+
+  /   span Save
+  - webShare = {}
+  - webShare.fallbackClass = 'right-0 z-30'
+
+  = partial('/components/web-share/web-share.slm')
+
+  - webShare = {} // reset
+
+  / a href='#' class='btn btn-small btn-primary' data-js='web-share' data-web-share='{"title":"${this.title}","text":"${this.description}","url":"${this.url}"}'
+  /   svg class='icon-ui' aria-hidden='true'
+  /     use href='#feather-share-2'
+
+  /   span Share

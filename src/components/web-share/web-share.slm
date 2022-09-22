@@ -1,0 +1,38 @@
+/ Web Share
+
+/ Defaults
+- this.webShare = {}
+- this.webShare.id = this.createId()
+- this.webShare.data = {title: 'Web Share', text: 'What users should say about this.', url: `${this.baseUrl}/web-share`}
+- this.webShare.fallbackClass = 'hidden z-30'
+- this.webShare.tabindex = '-1'
+
+/ Inherit overrides
+- if (typeof webShare !== 'undefined')
+  - this.webShare = Object.assign(this.webShare, webShare);
+
+/ /! { @aria-label  Identifies the Web Share Navigation as a unique landmark }
+/ nav class='c-web-share' aria-label='Web Share'
+div class='c-web-share ${this.webShare.class}'
+  /! { @data-js         "web-share" initalizes the Web Share Component. Falls back to using the Toggle Utility to display the sharing menu }
+  /! { @data-web-share  Data attribute for holding data sent to the navigator.share() method. Note, in the Markup quotes are escaped as "&quot;" however, they must be regular quotes; "". Inspect the source of the Demostration to see the real example }
+  /! { @aria-controls   Targets the Web Share fallback }
+  /! { @aria-expanded   Indicates if the Web Share fallback is open or not }
+  button data-js='web-share' data-web-share='${JSON.stringify(this.webShare.data)}' aria-controls='aria-c-web-share-fallback-${this.webShare.id}' aria-expanded='false' class='btn btn-small btn-primary m-0'
+    svg class='c-web-share__icon icon-ui'
+      use href='#feather-share-2'
+
+    span Share
+
+  - webShareFallback = this.webShare
+  = partial('/components/web-share/web-share-fallback.slm');
+
+/! { Desktop Viewport Copy-to-clipboard Button }
+/! { @data-js       Initializes the copy-to-clipboard utility }
+/! { @data-copy     Identifies the target of the content to copy }
+/! { @aria-pressed  Will signify a pressed state to screen readers }
+button tabindex='-1' data-js='copy' data-copy='web-share-url' aria-pressed='false' class='btn btn-small btn-primary mis-2 hidden tablet:inline-flex'
+  svg class='icon icon-ui'
+    use data-js-copy='icon' href='#feather-copy'
+
+  span Copy URL

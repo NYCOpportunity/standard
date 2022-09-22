@@ -1,0 +1,25 @@
+- this.title = 'Options'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  - option = {label: 'Checkbox Option'}
+  = mixin('section', '/elements/options/options', {title: 'Checkbox Option', text: false})
+
+  - option = {type: 'radio', label: 'Radio Option'}
+  = mixin('section', '/elements/options/options', {title: 'Radio Option', text: false})

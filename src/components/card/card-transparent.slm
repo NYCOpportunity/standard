@@ -1,0 +1,12 @@
+/ Card
+
+/ Defaults
+- this.card = {}
+- this.card.id = this.createId()
+- this.card.class = 'c-card-transparent'
+
+/ Inherit overrides
+- if (typeof card !== 'undefined')
+  - this.card = Object.assign(this.card, card);
+
+= partial('card.slm');

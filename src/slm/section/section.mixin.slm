@@ -1,0 +1,97 @@
+- this.navigation = (this.navigation) ? this.navigation : [];
+
+= mixin('section', 'path', 'config = {title: false, text: true, markup: true, demo: true, src: true}');
+  - this.config = (!this.config || typeof this.config === 'string') ? {} : this.config
+
+  - this.config.title = (this.config.hasOwnProperty('title')) ? this.config.title : false
+  - this.config.text = (this.config.hasOwnProperty('text')) ? this.config.text : true       // default
+  - this.config.markup = (this.config.hasOwnProperty('markup')) ? this.config.markup : true // default
+  - this.config.demo = (this.config.hasOwnProperty('demo')) ? this.config.demo : true       // default
+  - this.config.src = (this.config.hasOwnProperty('src')) ? this.config.src : true          // default
+
+  - id = (this.config.title) ? this.config.title : this.title;
+  - id = id.toLowerCase().replace(/[^0-9a-zA-Z\s]/g, '').split(' ').join('-')
+  - grid = (this.config.grid)
+
+  - if (this.config.title)
+    - let navitem = {'title': this.config.title, 'id': id}
+    - this.navigation.push(navitem)
+
+  - let source = this.path.split('/')
+  - source.splice(source.length - 1, 1)
+  - source = `${this.package.cdn.source}/tree/v${this.tokens.version}/src` + source.join('/')
+
+  section id=id class='pb-4 mb-4'
+    / Render the Section header
+    header class='page-max layout-content py-4'
+      div class='wrap'
+        - if this.config.title
+          h4 class='flex items-center'
+            a href='#${id}' class='mie-1 flex items-center'
+              svg class='icon-ui' role='img'
+                title ${this.config.title} Anchor Link
+                use href='#feather-anchor'
+
+            = this.config.title;
+
+        - if this.config.src
+          p class='flex items-center'
+            svg class='icon-ui mie-1' role='img'
+              title GitHub Source Link
+              use href='#feather-github'
+
+            / code
+            a href='${source}' target='_blank'
+              = 'src' + this.path
+
+    / Render the component text specs on the page
+    - if this.config.text
+      /! Section Text
+      div class='page-max layout-content pb-6'
+        div class='wrap'
+          == this.include(this.path + '.md');
+
+    / Render the component on the page
+    - if this.config.markup
+      div class='page-max layout-content pb-4'
+        h5 id='${id}-example' class='wrap flex items-center'
+          | Demonstration
+
+    / Render the markup live demonstration
+    - if this.config.demo
+      div class='bg-scale-0 border-t border-b border-scale-4 py-6 mb-6'
+        div class='page-max flex justify-center py-6 wrap'
+          == this.include(this.path + '.slm');
+
+    / Render the componet markup in the code block
+    - if this.config.markup
+      /! Section Markup
+      div class='page-max layout-content pb-4'
+        div class='wrap flex items-center'
+          h5 id='${id}-markup' class='sr-only'
+            | Code
+
+          button class='btn-primary btn-toggle w-full' aria-controls='${id}-markup-block' aria-expanded='false' data-js='toggle' type='button'
+            span Inspect code
+
+            svg class='icon-ui' aria-hidden='true'
+              use href='#feather-chevron-down'
+
+      div class='page-max layout-content'
+        div class='wrap hidden hidden:overflow animated' aria-hidden='true' id='${id}-markup-block'
+          div class='py-1'
+            div class='code-block'
+              pre tabindex='-1' data-toggle-tabindex='0'
+                = this.include(this.path);
+
+          / h5 Imports
+
+          / div class='code-block mb-1'
+          /   pre
+          /     div = '/* Sass */'
+          /     div = `@forward 'src${this.path}.scss'`
+
+          / div class='code-block mb-1'
+          /   pre
+          /     div = '// JavaScript'
+          /     div = `import {} from 'src${this.path}`

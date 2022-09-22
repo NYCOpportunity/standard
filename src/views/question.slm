@@ -1,0 +1,57 @@
+- this.title = 'Question'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  form id='question-demo'
+    - question = {type: 'email', label: 'What is your email?', description: 'We can send you a link to this page to help you get back to it when you’re ready.'}
+    = mixin('section', '/components/question/question')
+
+    = mixin('section', '/components/question/question-options-radio', {title: 'Option Question, Radio'})
+
+    = mixin('section', '/components/question/question-options-checkbox', {title: 'Option Question, Checkbox'})
+
+    = mixin('section', '/components/question/question-toggle', {title: 'Toggle Question'})
+
+    - question = {label: 'What type of income have you had most recently?', description: 'Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.'}
+    - question.options = [{value: '', selected: true, label: 'Click to add an income type'}, {value: 'Wages', label: 'wages, salaries, tips'}, {value: 'SelfEmployment', label: 'self-employment income'}, {value: 'Unemployment', label: 'unemployment benefits'}, {value: 'CashAssistance', label: 'Cash Assistance grant'}, {value: 'ChildSupport', label: 'child support (received)'}, {value: 'DisabilityMedicaid', label: 'disability-related Medicaid'}, {value: 'SSI', label: 'Supplemental Security Income (SSI)'}, {value: 'SSDependent', label: 'Social Security Dependent Benefits'}, {value: 'SSDisability', label: 'Social Security Disability Benefits'}, {value: 'SSSurvivor', label: 'Social Security Survivor’s Benefits'}, {value: 'SSRetirement', label: 'Social Security Retirement Benefits'}, {value: 'NYSDisability', label: 'New York State Disability Benefits'}, {value: 'Veteran', label: 'Veteran’s Pension or Benefits'}, {value: 'Pension', label: 'Government or Private Pension'}, {value: 'DeferredComp', label: 'Withdrawals from Deferred Compensation (IRA, Keogh, etc.)'}, {value: 'WorkersComp', label: 'Worker’s Compensation'}, {value: 'Alimony', label: 'alimony (received)'}, {value: 'Boarder', label: 'boarder or lodger'}, {value: 'Gifts', label: 'gifts/contributions (received)'}, {value: 'Rental', label: 'rental income'}, {value: 'Investment', label: 'investment income (interest, dividends, and profit from selling stocks)'}]
+    = mixin('section', '/components/question/question-select', {title: 'Select Question'})
+
+    / Prefixed Question
+
+    / Monetary Question
+
+    / Date Question
+
+    / Memorable Date Question
+
+    / Search Question
+
+    - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', placeholder: 'Enter your email', type: 'email', name: 'EMAIL', required: 'true', class: 'c-question-single', button: 'Submit'}
+    = mixin('section', '/components/question/question', {title: 'Single Field Question', text: false})
+
+  = mixin('section', '/components/question/readme', {title: 'Validation', markup: false, demo: false})
+
+= content('script');
+  javascript:
+    patterns.validate('#question-demo', function(event) {
+      event.preventDefault();
+
+      return false;
+    });
+

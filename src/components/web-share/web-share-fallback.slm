@@ -1,0 +1,62 @@
+/! { Web Share Fallback }
+/! { @id     Toggle target of the web share button. Must match the "aria-controls" attribute of the toggling button }
+/! { @role   Indicates an area of significance }
+/! { @class  Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }
+div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hidden='true' class='c-web-share__fallback ${webShareFallback.fallbackClass}'
+  div class='c-web-share__fallback-body'
+    div class='flex mb-2 items-center flex-row-reverse'
+      /! { @data-js        data-js="web-share" designates this element as a toggling element for the dropdown }
+      /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+      /! { @aria-expanded  Indicates if the dropdown is open or not }
+      /! { @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }
+      /! { @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      button class='link-icon m-0' data-js='web-share' aria-controls='aria-c-web-share-fallback-${webShareFallback.id}' aria-expanded='false' tabindex=(webShareFallback.tabindex ? '-1' : false)
+        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        svg class='icon-ui' aria-hidden='true' tabindex=(webShareFallback.tabindex ? '-1' : false)
+          use href='#feather-x'
+
+        span Close
+
+      /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      label tabindex=(webShareFallback.tabindex ? '-1' : false) for='web-share-url' class='c-web-share__label flex-1'
+        | Share this URL
+
+    div class='c-web-share__input input'
+      /! { Copy-to-clipboard Content }
+      /! { @data-copy-target  Identifies the input as the target of the copy button }
+      /! { @tabindex          Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      input tabindex=(webShareFallback.tabindex ? '-1' : false) id='web-share-url' name='web-share-url' data-copy-target='web-share-url' type='text' value='${webShareFallback.data.url}'
+
+    div class='c-web-share__items'
+      /! { Copy-to-clipboard Button }
+      /! { @data-js       Initializes the copy-to-clipboard utility }
+      /! { @data-copy     Identifies the target of the content to copy }
+      /! { @aria-pressed  Will signify a pressed state to screen readers }
+      /! { @tabindex      Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      button tabindex=(webShareFallback.tabindex ? '-1' : false) data-js='copy' data-copy='web-share-url' aria-pressed='false' class='c-web-share__item c-web-share__copy btn btn-small btn-primary mx-0'
+        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        svg class='icon icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
+          use href='#feather-copy'
+
+        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        svg class='icon-pressed icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
+          use href='#feather-check'
+
+        span Copy URL
+
+      /! { Facebook Sharer }
+      /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      a tabindex=(webShareFallback.tabindex ? '-1' : false) href='https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(webShareFallback.data.url)}' target='_blank' class='c-web-share__item btn btn-small btn-primary mx-0'
+        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
+          use href='#feather-facebook'
+
+        span Facebook
+
+      /! { Twitter Tweet }
+      /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      a tabindex=(webShareFallback.tabindex ? '-1' : false) href='https://twitter.com/intent/tweet?text=${encodeURIComponent(webShareFallback.data.text + ' ' + webShareFallback.data.url)}' target='_blank' class='c-web-share__item btn btn-small btn-primary mx-0'
+        svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
+          use href='#feather-twitter'
+
+        span Twitter

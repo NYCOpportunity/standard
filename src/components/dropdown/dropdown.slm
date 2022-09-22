@@ -1,0 +1,34 @@
+/ Dropdown
+
+/ Defaults
+- this.dropdown = {}
+- this.dropdown.id = this.createId()
+
+/ Inherit overrides
+- if (typeof dropdown !== 'undefined')
+  - this.dropdown = Object.assign(this.dropdown, dropdown);
+
+div class='c-dropdown bg-scale-1'
+  div class='text-center p-3'
+    /! { @data-js        data-js="dialog" designates this element as a toggling element for the dropdown }
+    /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+    /! { @aria-expanded  Indicates if the dropdown is open or not }
+    /! { @data-dialog  data-dialog="open" designates this element as the primary opening toggle for the dropdown. It will be focused on when the dropdown is closed. Only one open toggle associated with this aria-controls value can exist on the page }
+    button class='btn btn-primary w-full active' data-js='dialog' aria-controls='aria-c-dropdown' aria-expanded='true' data-dialog='open'
+      span class='mie-1' Dropdown
+
+  /! { @id           Identifies this element as the target of the dropdown toggle }
+  /! { @class        The "active" class will be toggled on the dropdown when it is open }
+  /! { @aria-hidden  Indicates this area is hidden from screen readers }
+  div id='aria-c-dropdown' class='active' aria-hidden='false'
+    div class='text-end px-3'
+      /! { @data-js        data-js="dialog" designates this element as a toggling element for the dropdown }
+      /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+      /! { @aria-expanded  Indicates if the dropdown is open or not }
+      /! { @data-dialog  data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }
+      /! { @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      button class='btn btn-primary btn-small' data-js='dialog' aria-controls='aria-c-dropdown' aria-expanded='true' data-dialog='close'
+        span Close
+
+    div class='p-3'
+      p Dropdown Content

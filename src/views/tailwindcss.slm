@@ -1,0 +1,26 @@
+- this.title = 'Tailwindcss'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/partial.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-about', {markup: false, demo: false});
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {markup: false, demo: false});
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-logical', {markup: false, demo: false});
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-installation', {markup: false, demo: false});
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {markup: false, demo: false});

@@ -1,0 +1,55 @@
+- this.title = 'Buttons'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  - button = {class: '', label: 'Default Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Default Button'})
+
+  - button = {class: 'btn', label: 'Styled Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Styled Button', text: false})
+
+  - button = {class: 'btn-primary', label: 'Primary Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Primary Button', text: false})
+
+  - button = {class: 'btn-secondary', label: 'Secondary Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Secondary Button', text: false})
+
+  - button = {class: 'btn-tertiary', label: 'Tertiary Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Tertiary Button', text: false})
+
+  - button = {class: 'btn-secondary btn-next', label: 'Next Button', type: 'next-previous'}
+  = mixin('section', '/elements/buttons/buttons', {title: button.label, text: false});
+
+  - button = {class: 'btn-secondary btn-previous', label: 'Previous Button', type: 'next-previous'}
+  = mixin('section', '/elements/buttons/buttons', {title: button.label, text: false});
+
+  - button = {class: 'btn-small', label: 'Small Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: button.label, text: false});
+
+  - button = {class: 'btn-small desktop:btn', label: 'Responsive Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: button.label, text: false});
+
+  - button = {class: 'btn-tag', label: 'Tag Button'}
+  = mixin('section', '/elements/buttons/buttons', {title: button.label, text: false});
+
+  - button = {type: 'disabled'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Disabled Buttons', text: false})
+
+  - button = {type: 'toggle'}
+  = mixin('section', '/elements/buttons/buttons', {title: 'Toggle Button', text: false});

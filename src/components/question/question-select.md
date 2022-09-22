@@ -1,0 +1,3 @@
+The Select Question collects a single input from a long, predefined list of options. The [Checkbox Option Question](#option-question-checkbox) or [Radio Option Question](#option-question-radio) is preferred for short lists of options. For binary options (yes or no, true or false) use the [Toggle Question](#toggle-question).
+
+Further guidance can be found on the <a href="https://designsystem.digital.gov/components/select/" target="_blank" rel="noopener nofollow">USWDS site</a>.

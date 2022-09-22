@@ -1,0 +1,24 @@
+/ Alert
+
+- this.alert = {}
+- this.alert.id = this.createId()
+- this.alert.icon = 'info'
+- this.alert.type = 'info'
+- this.alert.message = '<p data-js-alert=\'text\'>An alert message.</p>';
+- this.alert.ariaHidden = false
+
+/ Inherit overrides
+- if (typeof alert !== 'undefined')
+  - this.alert = Object.assign(this.alert, alert);
+  - this.alert.type = (this.alert.type) ? `-${this.alert.type}` : '';
+
+/! { @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }
+article class='c-alert ${this.alert.class}' data-js='alert${this.alert.type}' aria-hidden=this.alert.ariaHidden
+  div class='c-alert__graphic'
+    svg class='icon-ui' aria-hidden='true'
+      use href='#feather-${this.alert.icon}'
+
+  /! { @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }
+  div class='c-alert__body'
+    /! { @data-js-alert  This selector is recommended for JavaScript enhanced alerts but not necessary }
+    == this.alert.body

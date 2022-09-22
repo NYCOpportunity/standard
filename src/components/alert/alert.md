@@ -1,0 +1,1 @@
+Alert Components contain contextually relevant messages for the user. The primary uses for alerts on the site are to indicate a successful or unsuccessful interaction and provide time-sensitive information about content within a view.

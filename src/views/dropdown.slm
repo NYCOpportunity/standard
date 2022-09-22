@@ -1,0 +1,25 @@
+- this.title = 'Dropdown'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+  = mixin('section', '/components/dropdown/dropdown')
+  = mixin('section', '/components/dropdown/readme', {title: 'Usage', markup: false, demo: false})
+
+= content('script')
+  javascript:
+    patterns.dialog();

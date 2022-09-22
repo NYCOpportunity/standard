@@ -1,0 +1,102 @@
+/ Card
+
+/ Defaults
+- this.card = {}
+- this.card.id = this.createId()
+
+/ Inherit overrides
+- if (typeof card !== 'undefined')
+  - this.card = Object.assign(this.card, card);
+
+article class='c-card ${this.card.class}'
+  header class='c-card__header'
+    - if this.card.icon
+      svg class='c-card__icon text-primary fill-scale-4' role='img'
+        title == this.card.icon.title
+        use href='#${card.icon.icon}'
+
+    span
+      - if this.card.title
+        a class='c-card__header-link' href='${this.baseUrl}${this.card.url}'
+          h3 class='c-card__title'
+            - if this.card.badge
+              mark class='badge'
+                == this.card.badge
+
+            span class='c-card__underline' == this.card.title
+
+            - if !this.card.cta && this.card.external
+              svg aria-hidden='true' class='icon-ui rtl:flip'
+                use href='#feather-external-link'
+
+      - if this.card.subtitle
+        h4 class='c-card__subtitle text-alt'
+          == this.card.subtitle
+
+  div class='c-card__body'
+    - if this.card.status
+      p class='c-card__status flex items-center'
+        - for (let i in this.card.status)
+          - status = this.card.status[i]
+
+          - if status.type === 'text'
+            small
+              b = status.label
+
+          - if status.type === 'badge'
+            mark class='badge' = status.label
+
+          - if status.type === 'icon'
+            span
+              svg class='icon${(status.icon.includes('accessible') ? '': '-ui')} text-em' role='img'
+                title = status.label
+
+                use href="#${status.icon}"
+
+    - if this.card.summary
+      div class='c-card__summary'
+        == this.card.summary
+
+    - if this.card.features
+      ul class='c-card__features'
+        - for (let i in this.card.features)
+          - feature = this.card.features[i]
+
+          li
+            svg class='icon-ui c-card__feature-icon' role='img'
+              title = feature.title
+
+              use href='#${feature.icon}'
+
+            == feature.label
+
+    - if this.card.webShare
+      - webShare = {}
+      - webShare.data = {title: this.card.title, text: this.card.summary, url: `${this.baseUrl}${this.card.url}`};
+      - webShare.class = ''
+      - webShare.fallbackClass = 'hidden z-30'
+
+      div class='c-card__web-share'
+        = partial('/components/web-share/web-share.slm')
+
+      - webShare = {} // reset
+
+    - if this.card.cta
+      a href='${this.baseUrl}${this.card.url}' class='c-card__cta'
+        svg class='icon-ui rtl:flip' aria-hidden='true'
+          use href='#feather-arrow-left'
+
+        span
+          | ${this.card.cta}&nbsp;
+          span class='sr-only'
+            | about&nbsp;
+            == this.card.title
+
+        svg class='icon-ui rtl:flip' aria-hidden='true'
+          use href='#feather-arrow-right'
+    - else
+      /! { @span  This empty span tag currently assists the stylesheed in removing margin on the last visible element in the card. }
+      span
+
+/ - if (typeof card !== 'undefined')
+  / - delete card

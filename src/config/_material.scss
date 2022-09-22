@@ -1,0 +1,24 @@
+//
+// Variables, Functions, and Mixins
+//
+
+// Dependencies
+
+// Declarations
+@mixin border {
+  border: var(--nyco-material-border)
+}
+
+@mixin border-radius {
+  border-radius: var(--nyco-material-border-radius)
+}
+
+@mixin shadow {
+  box-shadow: var(--nyco-material-shadow-up)
+}
+
+@mixin styles {
+  @include shadow;
+  @include border;
+  @include border-radius;
+}

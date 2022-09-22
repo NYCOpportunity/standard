@@ -1,0 +1,53 @@
+/ Accordion
+
+/ Defaults
+- this.accordion = {}
+- this.accordion.id = this.createId()
+- this.accordion.active = true
+
+/ Inherit overrides
+- if (typeof accordion !== 'undefined')
+  - this.accordion = Object.assign(this.accordion, accordion);
+
+div class='c-accordion'
+  - for (let i in this.accordion.groups)
+    - let group = this.accordion.groups[i]
+    - group.id = this.createId()
+    - group.active = (i == 0) ? true : false
+
+    article class='c-accordion__group'
+      h5 class='c-accordion__header'
+        /! { @data-js         "accordion" initalizes component instance }
+        /! { @aria-controls   Targets the expandable region }
+        /! { @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }
+        /! { print:hidden     This CSS utility hides the button when the page is printed }
+        button class='c-accordion__toggle print:hidden ${group.active ? 'active' : ''}' data-js='accordion' aria-controls='aria-c-${group.id}' aria-expanded='${group.active.toString()}'
+          /! { @id  Identifies this content as the region label }
+          span class='c-accordion__heading' id='aria-lb-${group.id}'
+            = group.title
+
+          svg class='icon-ui' aria-hidden='true'
+            use href='#feather-chevron-down'
+
+          / span class='c-accordion__toggle-active'
+          /   svg class='icon-ui' aria-hidden='true'
+          /     use href='#feather-chevron-down'
+
+          /   /! { Optional screen reader only label }
+          /   span class='sr-only' Collapse
+
+          / span class='c-accordion__toggle-inactive'
+          /   svg class='icon-ui' aria-hidden='true'
+          /     use href='#feather-chevron-up'
+
+          /   /! { Optional screen reader only label }
+          /   span class='sr-only' Expand
+
+      /! { @id               Toggle target of the accordion button. Must match the "aria-controls" attribute of the toggling button }
+      /! { @role             Optional. "region" is used to identify the area as significant }
+      /! { @aria-labelledby  This is used along with the `role` attribute to label the content of the region }
+      /! { @aria-hidden      hides the content of the toggle element when collapsed }
+      /! { print:hidden      This CSS utility expands the region when the page is printed }
+      div id='aria-c-${group.id}' class='c-accordion__body print:active hidden:overflow animated ${group.active ? 'active' : 'hidden'}' aria-labelledby='aria-lb-${group.id}' aria-hidden='${group.active ? 'false' : 'true'}'
+        div class='c-accordion__padding'
+          == group.body

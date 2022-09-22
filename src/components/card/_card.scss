@@ -1,0 +1,232 @@
+/**
+ * Card
+ */
+
+// Dependencies
+@use 'config/buttons';
+@use 'config/media';
+@use 'config/typography';
+@use 'config/screen-readers';
+@use 'config/material';
+
+// Declarations
+.c-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--nyco-card-body);
+
+  @include material.styles;
+}
+
+.c-card__header,
+.c-card__body {
+  padding: calc(var(--nyco-grid) * 3);
+
+  @include media.screen-and-min-width('tablet') {
+    padding: calc(var(--nyco-grid) * 4);
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    padding: calc(var(--nyco-grid) * 5);
+  }
+}
+
+.c-card__header {
+  background-color: var(--nyco-card-header);
+  padding-bottom: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('mobile') {
+    display: flex;
+  }
+
+  @include media.screen-and-min-width('tablet') {
+    padding-bottom: calc(var(--nyco-grid) * 3);
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    padding-bottom: calc(var(--nyco-grid) * 4);
+  }
+}
+
+.c-card__icon {
+  display: block;
+  margin-bottom: calc(var(--nyco-grid) * 1);
+  margin-inline-end: calc(var(--nyco-grid) * 2);
+  flex: none;
+
+  width: calc(var(--nyco-grid) * 6) !important;
+  height: calc(var(--nyco-grid) * 6) !important;
+
+  @include media.screen-and-min-width('mobile') {
+    margin-bottom: 0;
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    width: calc(var(--nyco-grid) * 8) !important;
+    height: calc(var(--nyco-grid) * 8) !important;
+  }
+}
+
+.c-card__body {
+  padding-top: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    padding-top: calc(var(--nyco-grid) * 3);
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    padding-top: calc(var(--nyco-grid) * 4);
+  }
+}
+
+.c-card__status {
+  display: flex;
+  align-items: center;
+
+  > * {
+    display: inline-flex;
+    margin-inline-end: calc(var(--nyco-grid) * 2);
+  }
+
+  > *:last-child {
+    margin-inline-end: 0;
+  }
+}
+
+.c-card__header-link {
+  display: inline-block;
+  margin-bottom: var(--nyco-grid);
+  text-decoration: none
+}
+
+.c-card__title {
+  @include typography.set('h4');
+
+  margin-top: 0;
+  margin-bottom: var(--nyco-grid)
+}
+
+.c-card__underline {
+  text-decoration: underline
+}
+
+.c-card__subtitle {
+  @include typography.set('h5');
+
+  font-weight: normal;
+  margin-top: 0
+}
+
+.c-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  > *:nth-last-child(2) {
+    margin-bottom: 0;
+
+    @include media.screen-and-min-width('desktop') {
+      margin-bottom: var(--nyco-typography-margin-bottom);
+    }
+  }
+}
+
+.c-card__summary {
+  margin-bottom: var(--nyco-typography-margin-bottom)
+}
+
+.c-card__features {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: var(--nyco-typography-margin-bottom);
+
+  @include typography.selector-body-elements() {
+    @include media.screen-and-min-width('mobile') {
+      @include typography.set('small')
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--nyco-grid);
+  }
+}
+
+.c-card__feature-icon {
+  margin-inline-end: var(--nyco-grid);
+}
+
+.c-card__web-share {
+  display: flex;
+
+  @include media.screen-and-min-width('desktop') {
+    margin-bottom: var(--nyco-typography-margin-bottom)
+  }
+}
+
+.c-card__cta {
+  margin-top: auto;
+}
+
+.c-card__cta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  // hide element visually but retain focus state
+  background-color: transparent;
+
+  > * {
+    @include screen-readers.only
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    @include buttons.base;
+    @include buttons.color('secondary');
+    @include buttons.next;
+
+    margin-top: auto;
+
+    // Resets for invisible state
+    position: static;
+    width: auto;
+    height: auto;
+
+    > * {
+      @include screen-readers.only-unset
+    }
+  }
+}
+
+.c-card-transparent {
+  background-color: transparent !important;
+  box-shadow: none;
+  border: none;
+  border-radius: 0px;
+
+  .c-card__title {
+    @include typography.font-family('h6');
+  }
+
+  .c-card__header {
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--nyco-scale-4);
+
+    padding-top: 0
+  }
+
+  .c-card__body {
+    padding-bottom: 0
+  }
+
+  .c-card__header,
+  .c-card__body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

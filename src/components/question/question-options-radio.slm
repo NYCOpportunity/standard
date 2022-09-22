@@ -1,0 +1,7 @@
+/ Question Radio Options
+
+- question = {label: 'Which of the following options applies best to you?', description: 'Please choose one of the options below.'}
+- question.id = this.createId()
+- question.options = [{label: 'Option 1', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 2', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 3', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 4', type: 'radio', name: `option['${question.id}']`}]
+
+= partial('question-options.slm');

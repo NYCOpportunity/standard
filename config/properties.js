@@ -2,6 +2,7 @@ const resolve = require(`${process.env.PWD}/node_modules/@nycopportunity/pttrn/b
 let tokens = resolve('config/tokens', true, false); // The resolve utility prevents the tokens file from being cached
 
 let light = tokens.colorMode.default;
+let dark = tokens.colorMode.dark;
 
 delete tokens.version;
 delete tokens.output;
@@ -27,6 +28,15 @@ module.exports = [
     'properties': {
       'nyco': {
         ...light
+      }
+    }
+  },
+  {
+    'dist': 'dist/css/tokens-dark.css',
+    'ruleset': '.dark',
+    'properties': {
+      'nyco': {
+        ...dark
       }
     }
   }

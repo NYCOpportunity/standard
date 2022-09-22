@@ -1,0 +1,32 @@
+- this.title = 'Web Share'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+  = mixin('section', '/components/web-share/web-share')
+
+  - webShareFallback = {}
+  - webShareFallback.id = this.createId()
+  - webShareFallback.data = {title: 'Web Share Fallback', text: 'What users should say about this.', url: `${this.baseUrl}/web-share#web-share-fallback`}
+  - webShareFallback.fallbackClass = 'static'
+  = mixin('section', '/components/web-share/web-share-fallback', {title: 'Web Share Fallback'})
+
+  = mixin('section', '/components/web-share/readme', {title: 'Usage', markup: false, demo: false})
+
+= content('script')
+  / javascript:
+  /   patterns.webShare();

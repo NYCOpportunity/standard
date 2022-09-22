@@ -1,75 +1,36 @@
 doctype html
-html lang='en'
-  head
-    meta charset='utf-8'
-    meta http-equiv='X-UA-Compatible' content='IE=edge'
-    meta name='viewport' content='width=device-width, initial-scale=1'
+html lang='en' dir='ltr'
+  = content('head');
 
-    link rel='icon' type='image/svg+xml' href='svg/pttrn-a-perfect-heart-red.svg'
+  body class='bg' onload='load()' style='visibility: hidden;'
+    a class='sr-only' href='#main-content' Skip to main content
 
-    title = this.package.name
+    = partial('/slm/partials/header.slm');
 
-    link rel='preconnect' href='https://cdn.jsdelivr.net'
-    link rel='preconnect' href='https://fonts.googleapis.com'
-    link rel='preconnect' href='https://fonts.gstatic.com' crossorigin=true
+    aside#main-menu aria-labelledby='main-menu-control' aria-hidden='true' class='bg-scale-2 text-small hidden hidden:overflowFadeInUp animated'
+      div class='page-max py-4 animated'
+        div class='tablet:flex'
+          - tabindex = true;
 
-    link rel='stylesheet' href='css/tokens.css'
-    link rel='stylesheet' href='css/tokens-default.css'
-    link rel='stylesheet' href='css/default.css'
+          = partial('/slm/partials/nav.slm');
 
-    link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css'
-    script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js'
+        div class='text-center'
+          button class='btn btn-small' tabindex='-1' aria-controls='main-menu' aria-expanded='false' data-js='toggle' data-pa11y='disable'
+            / pa11y has trouble calculating the color contrast of this element so it is disabled
+            | Close Menu
 
-    javascript:
-      document.addEventListener('DOMContentLoaded', function(event) {
-        hljs.configure({
-          languages: ['html', 'javascript', 'css', 'sass']
-        });
+    main#main-content role='main' class='py-4'
+      article class='py-4 clearfix'
+        = content('content');
 
-        document.querySelectorAll('pre').forEach(function(pre) {
-          pre.setAttribute('tabindex', '0');
-
-          hljs.highlightBlock(pre);
-        });
-      });
-
-      function load() {
-        document.body.style.visibility = 'visible'
-      };
-
-  body class='bg' onload="load()" style="visibility: hidden;"
-    header class=''
-      h1
-        = 'Welcome to'
-        br
-        = `${this.package.name} v${this.package.version}`
-
-      p = `${this.package.description}.`
-
-      br
-
-    main
-      = content('main')
-
-    footer class=''
-      - let date = new Date();
-      - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
-      p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
-
-      a href='https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg'
-        svg class='c-red' width='80' height='80'
-          title id='svg-a-perfect-heart' A perfect SVG heart
-          use xlink:href='#pttrn-a-perfect-heart'
+    - tabindex = false;
+    = partial('/slm/partials/footer.slm');
 
     script src='js/default.js'
-    script src='https://cdn.jsdelivr.net/gh/CityOfNewYork/nyco-patterns-framework@v1.0.0-15/dist/utilities/icons/icons.iffe.js'
 
-    javascript:
-      var MyPatterns = new Default();
+    = partial('/slm/partials/scripts.slm');
 
-      new Icons('svg/svgs.svg');
-
-    = content('scripts')
+    = content('script');
 
     / The reload script. This should not be compile during production builds
     / @source https://www.npmjs.com/package/reload

@@ -1,0 +1,143 @@
+/**
+ * Question
+ */
+
+// Dependencies
+@use 'config/grid' as *;
+@use 'config/labels';
+@use 'config/question';
+@use 'config/typography';
+@use 'config/media';
+
+// Declarations
+.c-question {
+  @include question.base;
+}
+
+.c-question__container {
+  margin-top: var(--nyco-grid);
+
+  &.error {
+    @include question.error;
+  }
+
+  .error-message {
+    @include question.error-message;
+  }
+
+  > * {
+    margin-bottom: 0;
+  }
+}
+
+.c-question__container-cols {
+  display: grid;
+  gap: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.c-question__label {
+  @include labels.base;
+}
+
+.c-question__info {
+  @include typography.set('small');
+
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.c-question-single {
+  .c-question__input {
+    color: var(--nyco-input-text);
+    background: var(--nyco-input-background);
+    border-color: var(--nyco-input-border);
+
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    padding-inline-end: var(--nyco-grid);
+
+    border: var(--nyco-input-border-width) var(--nyco-input-border-style);
+
+    // .error & {
+    //   border-color: $color-red
+    // }
+
+    // .success & {
+    //   border-color: $color-green-mid
+    // }
+
+    .input {
+      flex-grow: 1;
+      width: 100%;
+      min-width: 0px;
+
+      input {
+        width: 100%;
+        text-overflow: ellipsis;
+        padding-inline-end: 0;
+        min-width: 0;
+        border: none;
+      }
+    }
+  }
+}
+
+.c-question__button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+
+  [class*='btn-'] {
+    width: 100%;
+    height: 74%;
+  }
+
+  .processing & {
+    button {
+      opacity: 0;
+      pointer-events: none
+    }
+  }
+
+  .success & {
+    button {
+      display: none
+    }
+
+    &::after {
+      display: none
+    }
+  }
+}
+
+.c-question__success {
+  @include typography.set('small');
+
+  font-weight: bold;
+  display: none;
+
+  .success & {
+    display: block;
+    padding: calc(var(--nyco-spacing-DEFAULT) * 0.75);
+  }
+}
+
+.c-question__spinner {
+  width: 1rem;
+  height: 1rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+
+  .processing & {
+    display: flex
+  }
+}

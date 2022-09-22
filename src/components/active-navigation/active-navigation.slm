@@ -1,0 +1,11 @@
+/ Jump-nav
+
+/ Defaults
+- this['active-navigation'] = {}
+- this['active-navigation'].id = this.createId()
+
+/ Inherit overrides
+- if (typeof activeNavigation !== 'undefined')
+  - this['active-navigation'] = Object.assign(this['active-navigation'], activeNavigation);
+
+div class='c-active-navigation'

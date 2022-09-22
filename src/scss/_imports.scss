@@ -6,10 +6,19 @@
 /** Elements - end */
 
 /** Components */
+@forward 'components/accordion/accordion';
+// @forward 'components/active-navigation/active-navigation';
+@forward 'components/alert/alert';
+@forward 'components/card/card';
+@forward 'components/dropdown/dropdown';
+@forward 'components/question/question';
+@forward 'components/utility/utility';
+@forward 'components/web-share/web-share';
 /** Components - end */
 
 /** Utilities */
-// @forward 'utilities/tailwindcss/tailwindcss'; // Uncomment this to use Tailwindcss
+@forward 'utilities/tailwindcss/tailwindcss';
+@forward '@nycopportunity/pattern-elements/src/utilities/first-last/first-last';
 /** Utilities - end */
 
 /**

@@ -1,0 +1,35 @@
+/ Select Question
+
+/ Defaults
+- this.question = {}
+- this.question.id = this.createId()
+- this.question.label = 'Will you please select an option from the list below?'
+- this.question.for = `question-${this.question.id}`
+- this.question.name = `question['${this.question.id}']`
+- this.question.options = [{label: 'Option 1'}, {label: 'Option 2'}, {label: 'Option 3'}, {label: 'Option 4'}]
+- this.question.tabindex = false
+- this.question.required = false
+- this.question.ariaHidden = false
+
+/ Inherit overrides
+- if (typeof question !== 'undefined')
+  - this.question = Object.assign(this.question, question);
+
+div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
+  label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
+    = this.question.label
+
+  - if (this.question.description)
+    p = this.question.description
+
+  div class='c-question__container'
+    - select = this.question;
+    - select.name = this.question.name
+    - select.id = this.question.for
+    - delete select.class;
+    - delete select.ariaHidden;
+
+    = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects.slm');
+
+/ - if (typeof question !== 'undefined')
+  / - delete question

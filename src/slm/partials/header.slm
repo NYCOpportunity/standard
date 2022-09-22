@@ -1,0 +1,27 @@
+header role='banner' class='bg-scale-2'
+  div class='flex items-center justify-between py-2 wrap'
+    div
+      a href='${this.baseUrl}/' class='text-brand no-underline'
+        h1 class='text-body'
+          = this.package.nice
+
+    div class='flex items-center'
+      h2 class='h5 m-0'
+        | Patterns
+
+      nav role='navigation' aria-label='navigation-menu' class='nav-inline flex items-center mis-2'
+        a href='${this.package.cdn.source}/releases/tag/v${this.package.version}' target='_blank' rel='noopener nofollow' class='badge no-underline'
+          = this.package.version;
+
+        button class='flex items-center' data-js="themes"
+          svg class='icon-ui' aria-hidden='true'
+            use data-js-themes='icon' href='#feather-moon'
+
+          span class='sr-only' Toggle&nbsp;
+          span data-js-themes='label' Theme
+
+        button#main-menu-control class='flex items-center' aria-controls='main-menu' aria-expanded='false' data-js='toggle'
+          svg class='icon-ui' aria-hidden='true'
+            use href='#feather-menu'
+
+          span Menu

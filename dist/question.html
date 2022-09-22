@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+  <link href="css/tokens.css" rel="stylesheet" />
+  <link href="css/tokens-default.css" rel="stylesheet" />
+  <link href="css/tokens-dark.css" rel="stylesheet" />
+  <link href="css/default.css" rel="stylesheet" />
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+      hljs.configure({
+        languages: ['html', 'javascript', 'css', 'sass']
+      });
+      document.querySelectorAll('pre').forEach(function(pre) {
+        // pre.setAttribute('tabindex', '0');
+        if (!pre.hasAttribute('tabindex')) {
+          pre.setAttribute('tabindex', '0');
+        }
+        hljs.highlightBlock(pre);
+      });
+    });
+
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="/">
+          <h1 class="text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <h2 class="h5 m-0">Patterns</h2>
+        <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
+          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-1" rel="noopener nofollow" target="_blank">0.0.0-1</a>
+          <button class="flex items-center" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="flex items-center" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#feather-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="tablet:flex">
+        <nav aria-labelledby="navigation-main-9d18bc3d73043" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-9d18bc3d73043">Main</span>
+          <a class="block p-1 no-underline align-middle" href="index" tabindex="-1">Home</a>
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
+          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-9d18bc3d73043" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-9d18bc3d73043">Elements</span>
+          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Badge</a>
+          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Breadcrumbs</a>
+          <a class="block p-1 no-underline align-middle" href="buttons" tabindex="-1">Buttons</a>
+          <a class="block p-1 no-underline align-middle" href="code" tabindex="-1">Code</a>
+          <a class="block p-1 no-underline align-middle" href="divider" tabindex="-1">Divider</a>
+          <a class="block p-1 no-underline align-middle" href="forms" tabindex="-1">Forms</a>
+          <a class="block p-1 no-underline align-middle" href="icons" tabindex="-1">Icons</a>
+          <a class="block p-1 no-underline align-middle" href="inputs" tabindex="-1">Inputs</a>
+          <a class="block p-1 no-underline align-middle" href="labels" tabindex="-1">Labels</a>
+          <a class="block p-1 no-underline align-middle" href="layouts" tabindex="-1">Layouts</a>
+          <a class="block p-1 no-underline align-middle" href="links" tabindex="-1">Links</a>
+          <a class="block p-1 no-underline align-middle" href="nav" tabindex="-1">Nav</a>
+          <a class="block p-1 no-underline align-middle" href="options" tabindex="-1">Options</a>
+          <a class="block p-1 no-underline align-middle" href="selects" tabindex="-1">Selects</a>
+          <a class="block p-1 no-underline align-middle" href="tables" tabindex="-1">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-9d18bc3d73043" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-9d18bc3d73043">Components</span>
+          <a class="block p-1 no-underline align-middle" href="accordion" tabindex="-1">Accordion</a>
+          <a class="block p-1 no-underline align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="block p-1 no-underline align-middle" href="alert" tabindex="-1">Alert</a>
+          <a class="block p-1 no-underline align-middle" href="card" tabindex="-1">Card</a>
+          <a class="block p-1 no-underline align-middle" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="block p-1 no-underline align-middle" href="question" tabindex="-1">Question</a>
+          <a class="block p-1 no-underline align-middle" href="utility" tabindex="-1">Utility</a>
+          <a class="block p-1 no-underline align-middle" href="web-share" tabindex="-1">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-9d18bc3d73043" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-9d18bc3d73043">Objects</span>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-9d18bc3d73043" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-9d18bc3d73043">Utilities</span>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3>Question</h3>
+        </div>
+      </header>
+      <form id="question-demo">
+        <section class="pb-4 mb-4" id="question">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question</a>
+              </p>
+            </div>
+          </header>
+          <!--Section Text-->
+          <div class="page-max layout-content pb-6">
+            <div class="wrap">
+              <p>Questions request information from a user to guide them into completing a form. This pattern follows the usage guidelines of the <a href="https://designsystem.digital.gov/components/form-controls/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) Form Component</a>. Forms use different types of questions to gather specific pieces of information. These usually correlate with native form element input types such as text or radio buttons. However, differing native form elements may be used or combined to collect specific types of information.</p>
+              <p>Below are common Opportunity Standard Questions, interpreting or extending the guidance from their counterparts in the USWDS. Guidance to inform additional scenarios can be found on the USWDS site.</p>
+              <h4 id="validation-and-accessibility">Validation and Accessibility</h4>
+              <p>Proper markup and aria labeling are required for elements within the question component. While they may appear similar stylistically, there is a difference in the markup between questions with one or multiple inputs. Proper <code>id</code>, <code>name</code>, and <code>aria</code> attributes are also required for labels, option inputs, SVG icons, and validation messages.</p>
+              <hr>
+              <p>Questions use validation from the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/forms" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library. This script will display visual feedback regarding missing or invalid answers and toggle appropriate <code>aria</code> attributes for announcing feedback to screen readers. The <code>aria-live=&quot;polite&quot;</code> attribute on the message declares error messages that are not visible in the default state. Additionally, the <code>aria-invalid=&quot;true&quot;</code> attribute illustrates to screen readers that the input is not valid, and the <code>aria-describedby</code> attribute indicates the input’s error description.</p>
+              <hr>
+              <p>Validation occurs on the <strong>blur event</strong> or when the user shifts focus away from the input.</p>
+              <hr>
+              <p>The Form Utility uses the Constraint Validation API to assess validity based on the input attributes <code>required</code> and <code>pattern</code>. If any validity constraints are not met, then the localized <code>validationMessage</code> is displayed. Examples include “This field is required” or “Please provide a valid …”</p>
+              <h4 id="general-question">General Question</h4>
+              <p>The General Question collects text-based information such as numbers, emails, phone numbers, or long-form content. The appropriate input <code>type</code> and <code>validation</code> pattern attributes should be set based on the requested information type.</p>
+              <hr>
+              <p>The <code>label</code> element should be used for the question and tied to the input using its <code>id</code> attribute. Further guidance can be found on the <a href="https://designsystem.digital.gov/components/text-input/" target="_blank" rel="noopener nofollow">USWDS site</a>.</p>
+            </div>
+          </div>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="question-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <div class="c-question " id="d3dc65ff94a22">
+                <!--{ @for  Should match the id of the input }-->
+                <label class="c-question__label" for="question-d3dc65ff94a22">What is your email?</label>
+                <p>We can send you a link to this page to help you get back to it when you’re ready.</p>
+                <div class="c-question__container">
+                  <div class="input">
+                    <!--{ @required  required="true" specifies wether the input is required by a form }-->
+                    <!--{ @pattern   pattern="{{ my regular expression }}" a regular expression the input's value must match in order to validate }-->
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="question-d3dc65ff94a22" name="question['d3dc65ff94a22']" type="email" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="question-markup">Code</h5>
+              <button aria-controls="question-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="question-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;af2add0937f35&quot;&gt;
+  &lt;!--{ @for  Should match the id of the input }--&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-af2add0937f35&quot;&gt;What is your email?&lt;/label&gt;
+  &lt;p&gt;We can send you a link to this page to help you get back to it when you’re ready.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container&quot;&gt;
+    &lt;div class=&quot;input&quot;&gt;
+      &lt;!--{ @required  required=&quot;true&quot; specifies wether the input is required by a form }--&gt;
+      &lt;!--{ @pattern   pattern=&quot;{{ my regular expression }}&quot; a regular expression the input's value must match in order to validate }--&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;question-af2add0937f35&quot; name=&quot;question['af2add0937f35']&quot; type=&quot;email&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 mb-4" id="option-question-radio">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <h4 class="flex items-center">
+                <a class="mie-1 flex items-center" href="#option-question-radio">
+                  <svg class="icon-ui" role="img">
+                    <title>Option Question, Radio Anchor Link</title>
+                    <use href="#feather-anchor"></use>
+                  </svg>
+                </a>Option Question, Radio
+              </h4>
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question-options-radio</a>
+              </p>
+            </div>
+          </header>
+          <!--Section Text-->
+          <div class="page-max layout-content pb-6">
+            <div class="wrap">
+              <p>The Radio Question collects a single input from a short, predefined list of options. Options can be displayed in a single or double column, depending on the length of the option label. Use the <code>c-question__container-cols</code> class on the <code>c-question__container</code> element to display a two-column layout for desktop browsers.</p>
+              <hr>
+              <p>If the list of options is long and can’t be truncated visually, the <a href="#select-question">Select Question</a> should be used instead.</p>
+              <hr>
+              <p>Option Questions use the <code>fieldset</code> and <code>legend</code> element combination to group the available options; the question is wrapped in a <code>fieldset</code> element, while the question label uses the <code>legend</code> element.</p>
+              <p>Further guidance can be found on the <a href="https://designsystem.digital.gov/components/radio-buttons/" target="_blank" rel="noopener nofollow">USWDS site</a>.</p>
+            </div>
+          </div>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="option-question-radio-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
+              <fieldset class="c-question" id="d07bd245c924">
+                <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
+                <legend class="c-question__label">Which of the following options applies best to you?</legend>
+                <p>Please choose one of the options below.</p>
+                <div class="c-question__container c-question__container-cols">
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="9a8c65a8545d7">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="9a8c65a8545d7" name="option['d07bd245c924']" type="radio" value="option-1" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 1</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="944bd52034194">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="944bd52034194" name="option['d07bd245c924']" type="radio" value="option-2" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 2</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="612a9cdfda562">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="612a9cdfda562" name="option['d07bd245c924']" type="radio" value="option-3" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 3</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="ac17d2b2edc3c">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="ac17d2b2edc3c" name="option['d07bd245c924']" type="radio" value="option-4" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 4</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="option-question-radio-markup">Code</h5>
+              <button aria-controls="option-question-radio-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="option-question-radio-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;e4d0ae53db0d1&quot;&gt;
+  &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
+  &lt;legend class=&quot;c-question__label&quot;&gt;Which of the following options applies best to you?&lt;/legend&gt;
+  &lt;p&gt;Please choose one of the options below.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container c-question__container-cols&quot;&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;8d1db6b6c26e4&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;8d1db6b6c26e4&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 1&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;8e8d9e627867b&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;8e8d9e627867b&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 2&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;e7e3d1c8e7f1e&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;e7e3d1c8e7f1e&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 3&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;fa988327edf&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;fa988327edf&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 4&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 mb-4" id="option-question-checkbox">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <h4 class="flex items-center">
+                <a class="mie-1 flex items-center" href="#option-question-checkbox">
+                  <svg class="icon-ui" role="img">
+                    <title>Option Question, Checkbox Anchor Link</title>
+                    <use href="#feather-anchor"></use>
+                  </svg>
+                </a>Option Question, Checkbox
+              </h4>
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question-options-checkbox</a>
+              </p>
+            </div>
+          </header>
+          <!--Section Text-->
+          <div class="page-max layout-content pb-6">
+            <div class="wrap">
+              <p>The Checkbox Question collects multiple inputs from a predefined list of options. Options can be displayed in a single or double column, depending on the length of the option label. Use the <code>c-question__container-cols</code> class on the <code>c-question__container</code> element to display a two-column layout for desktop browsers.</p>
+              <hr>
+              <p>Option Questions use the <code>fieldset</code> and <code>legend</code> element combination to group the available options.</p>
+              <hr>
+              <p>Further guidance can be found on the <a href="https://designsystem.digital.gov/components/checkbox/" target="_blank" rel="noopener nofollow">USWDS site</a>.</p>
+            </div>
+          </div>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="option-question-checkbox-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
+              <fieldset class="c-question" id="e4d0ae53db0d1">
+                <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
+                <legend class="c-question__label">Which of the following options applies best to you?</legend>
+                <p>Please choose one of the options below.</p>
+                <div class="c-question__container c-question__container-cols">
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="c5feb7b81ddf4">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="c5feb7b81ddf4" name="option['e4d0ae53db0d1']" type="radio" value="option-1" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 1</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="14348e6545fab">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="14348e6545fab" name="option['e4d0ae53db0d1']" type="radio" value="option-2" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 2</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="7a9fdd56ab18d">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="7a9fdd56ab18d" name="option['e4d0ae53db0d1']" type="radio" value="option-3" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 3</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="00aeb0dc0ba94">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="00aeb0dc0ba94" name="option['e4d0ae53db0d1']" type="radio" value="option-4" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Option 4</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="option-question-checkbox-markup">Code</h5>
+              <button aria-controls="option-question-checkbox-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="option-question-checkbox-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;e4d0ae53db0d1&quot;&gt;
+  &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
+  &lt;legend class=&quot;c-question__label&quot;&gt;Which of the following options applies best to you?&lt;/legend&gt;
+  &lt;p&gt;Please choose one of the options below.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container c-question__container-cols&quot;&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;7d90f6c04f641&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;7d90f6c04f641&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 1&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;b3baefa667a7e&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;b3baefa667a7e&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 2&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;1a2355a81257e&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;1a2355a81257e&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 3&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;12614d77f1476&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;12614d77f1476&quot; name=&quot;option['e4d0ae53db0d1']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Option 4&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 mb-4" id="toggle-question">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <h4 class="flex items-center">
+                <a class="mie-1 flex items-center" href="#toggle-question">
+                  <svg class="icon-ui" role="img">
+                    <title>Toggle Question Anchor Link</title>
+                    <use href="#feather-anchor"></use>
+                  </svg>
+                </a>Toggle Question
+              </h4>
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question-toggle</a>
+              </p>
+            </div>
+          </header>
+          <!--Section Text-->
+          <div class="page-max layout-content pb-6">
+            <div class="wrap">
+              <p>The Toggle Question collects input such as yes or no, true or false, or another binary set of options.</p>
+              <hr>
+              <p>Toggle Questions use the <code>fieldset</code> and <code>legend</code> element combination to group the available options.</p>
+            </div>
+          </div>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="toggle-question-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
+              <fieldset class="c-question" id="cea8438dd4bee">
+                <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
+                <legend class="c-question__label">Do you have an income?</legend>
+                <p>This includes money from jobs, alimony, investments, or gifts.</p>
+                <div class="c-question__container ">
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="678541bcf843">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="678541bcf843" name="option['cea8438dd4bee']" type="radio" value="yes" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">Yes</span>
+                    </span>
+                  </label>
+                  <!--{ @for       Should match the id of the input }-->
+                  <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                  <label class="option " for="7ff506de42608">
+                    <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                    <input id="7ff506de42608" name="option['cea8438dd4bee']" type="radio" value="no" />
+                    <span class="option__base">
+                      <svg aria-hidden="true" class="option__graphic">
+                        <use href="#option-nyco-radio"></use>
+                      </svg>
+                      <span class="option__label">No</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="toggle-question-markup">Code</h5>
+              <button aria-controls="toggle-question-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="toggle-question-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;9bf96b0712408&quot;&gt;
+  &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
+  &lt;legend class=&quot;c-question__label&quot;&gt;Do you have an income?&lt;/legend&gt;
+  &lt;p&gt;This includes money from jobs, alimony, investments, or gifts.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container &quot;&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;2f2d245492226&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;2f2d245492226&quot; name=&quot;option['9bf96b0712408']&quot; type=&quot;radio&quot; value=&quot;yes&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;Yes&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;!--{ @for       Should match the id of the input }--&gt;
+    &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+    &lt;label class=&quot;option &quot; for=&quot;9f784a5d90d45&quot;&gt;
+      &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+      &lt;input id=&quot;9f784a5d90d45&quot; name=&quot;option['9bf96b0712408']&quot; type=&quot;radio&quot; value=&quot;no&quot; /&gt;
+      &lt;span class=&quot;option__base&quot;&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
+          &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;option__label&quot;&gt;No&lt;/span&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 mb-4" id="select-question">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <h4 class="flex items-center">
+                <a class="mie-1 flex items-center" href="#select-question">
+                  <svg class="icon-ui" role="img">
+                    <title>Select Question Anchor Link</title>
+                    <use href="#feather-anchor"></use>
+                  </svg>
+                </a>Select Question
+              </h4>
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question-select</a>
+              </p>
+            </div>
+          </header>
+          <!--Section Text-->
+          <div class="page-max layout-content pb-6">
+            <div class="wrap">
+              <p>The Select Question collects a single input from a long, predefined list of options. The <a href="#option-question-checkbox">Checkbox Option Question</a> or <a href="#option-question-radio">Radio Option Question</a> is preferred for short lists of options. For binary options (yes or no, true or false) use the <a href="#toggle-question">Toggle Question</a>.</p>
+              <p>Further guidance can be found on the <a href="https://designsystem.digital.gov/components/select/" target="_blank" rel="noopener nofollow">USWDS site</a>.</p>
+            </div>
+          </div>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="select-question-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <div class="c-question " id="11210542e8668">
+                <label class="c-question__label" for="question-11210542e8668">What type of income have you had most recently?</label>
+                <p>Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.</p>
+                <div class="c-question__container">
+                  <div class="select ">
+                    <select id="question-11210542e8668" name="question['11210542e8668']">
+                      <option selected="true" value="">Select an option</option>
+                      <option value="click-to-add-an-income-type">Click to add an income type</option>
+                      <option value="Wages">wages, salaries, tips</option>
+                      <option value="SelfEmployment">self-employment income</option>
+                      <option value="Unemployment">unemployment benefits</option>
+                      <option value="CashAssistance">Cash Assistance grant</option>
+                      <option value="ChildSupport">child support (received)</option>
+                      <option value="DisabilityMedicaid">disability-related Medicaid</option>
+                      <option value="SSI">Supplemental Security Income (SSI)</option>
+                      <option value="SSDependent">Social Security Dependent Benefits</option>
+                      <option value="SSDisability">Social Security Disability Benefits</option>
+                      <option value="SSSurvivor">Social Security Survivor’s Benefits</option>
+                      <option value="SSRetirement">Social Security Retirement Benefits</option>
+                      <option value="NYSDisability">New York State Disability Benefits</option>
+                      <option value="Veteran">Veteran’s Pension or Benefits</option>
+                      <option value="Pension">Government or Private Pension</option>
+                      <option value="DeferredComp">Withdrawals from Deferred Compensation (IRA, Keogh, etc.)</option>
+                      <option value="WorkersComp">Worker’s Compensation</option>
+                      <option value="Alimony">alimony (received)</option>
+                      <option value="Boarder">boarder or lodger</option>
+                      <option value="Gifts">gifts/contributions (received)</option>
+                      <option value="Rental">rental income</option>
+                      <option value="Investment">investment income (interest, dividends, and profit from selling stocks)</option>
+                    </select>
+                    <svg aria-hidden="true" class="select__graphic">
+                      <use href="#select-nyco-chevrons"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="select-question-markup">Code</h5>
+              <button aria-controls="select-question-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="select-question-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;7a4329d1f1b3e&quot;&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-7a4329d1f1b3e&quot;&gt;What type of income have you had most recently?&lt;/label&gt;
+  &lt;p&gt;Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container&quot;&gt;
+    &lt;div class=&quot;select &quot;&gt;
+      &lt;select id=&quot;question-7a4329d1f1b3e&quot; name=&quot;question['7a4329d1f1b3e']&quot;&gt;
+        &lt;option selected=&quot;true&quot; value=&quot;&quot;&gt;Select an option&lt;/option&gt;
+        &lt;option value=&quot;click-to-add-an-income-type&quot;&gt;Click to add an income type&lt;/option&gt;
+        &lt;option value=&quot;Wages&quot;&gt;wages, salaries, tips&lt;/option&gt;
+        &lt;option value=&quot;SelfEmployment&quot;&gt;self-employment income&lt;/option&gt;
+        &lt;option value=&quot;Unemployment&quot;&gt;unemployment benefits&lt;/option&gt;
+        &lt;option value=&quot;CashAssistance&quot;&gt;Cash Assistance grant&lt;/option&gt;
+        &lt;option value=&quot;ChildSupport&quot;&gt;child support (received)&lt;/option&gt;
+        &lt;option value=&quot;DisabilityMedicaid&quot;&gt;disability-related Medicaid&lt;/option&gt;
+        &lt;option value=&quot;SSI&quot;&gt;Supplemental Security Income (SSI)&lt;/option&gt;
+        &lt;option value=&quot;SSDependent&quot;&gt;Social Security Dependent Benefits&lt;/option&gt;
+        &lt;option value=&quot;SSDisability&quot;&gt;Social Security Disability Benefits&lt;/option&gt;
+        &lt;option value=&quot;SSSurvivor&quot;&gt;Social Security Survivor’s Benefits&lt;/option&gt;
+        &lt;option value=&quot;SSRetirement&quot;&gt;Social Security Retirement Benefits&lt;/option&gt;
+        &lt;option value=&quot;NYSDisability&quot;&gt;New York State Disability Benefits&lt;/option&gt;
+        &lt;option value=&quot;Veteran&quot;&gt;Veteran’s Pension or Benefits&lt;/option&gt;
+        &lt;option value=&quot;Pension&quot;&gt;Government or Private Pension&lt;/option&gt;
+        &lt;option value=&quot;DeferredComp&quot;&gt;Withdrawals from Deferred Compensation (IRA, Keogh, etc.)&lt;/option&gt;
+        &lt;option value=&quot;WorkersComp&quot;&gt;Worker’s Compensation&lt;/option&gt;
+        &lt;option value=&quot;Alimony&quot;&gt;alimony (received)&lt;/option&gt;
+        &lt;option value=&quot;Boarder&quot;&gt;boarder or lodger&lt;/option&gt;
+        &lt;option value=&quot;Gifts&quot;&gt;gifts/contributions (received)&lt;/option&gt;
+        &lt;option value=&quot;Rental&quot;&gt;rental income&lt;/option&gt;
+        &lt;option value=&quot;Investment&quot;&gt;investment income (interest, dividends, and profit from selling stocks)&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;svg aria-hidden=&quot;true&quot; class=&quot;select__graphic&quot;&gt;
+        &lt;use href=&quot;#select-nyco-chevrons&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-4 mb-4" id="single-field-question">
+          <header class="page-max layout-content py-4">
+            <div class="wrap">
+              <h4 class="flex items-center">
+                <a class="mie-1 flex items-center" href="#single-field-question">
+                  <svg class="icon-ui" role="img">
+                    <title>Single Field Question Anchor Link</title>
+                    <use href="#feather-anchor"></use>
+                  </svg>
+                </a>Single Field Question
+              </h4>
+              <p class="flex items-center">
+                <svg class="icon-ui mie-1" role="img">
+                  <title>GitHub Source Link</title>
+                  <use href="#feather-github"></use>
+                </svg>
+                <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/question</a>
+              </p>
+            </div>
+          </header>
+          <div class="page-max layout-content pb-4">
+            <h5 class="wrap flex items-center" id="single-field-question-example">Demonstration</h5>
+          </div>
+          <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+            <div class="page-max flex justify-center py-6 wrap">
+              <div class="c-question c-question-single" id="38ba50a97d414">
+                <!--{ @for  Should match the id of the input }-->
+                <label class="c-question__label" for="question-38ba50a97d414">Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.</label>
+                <p>Please answer to the best of your ability.</p>
+                <div class="c-question__container">
+                  <div class="c-question__input">
+                    <div class="input">
+                      <!--{ @required  required="true" specifies wether the input is required by a form }-->
+                      <!--{ @pattern   pattern="{{ my regular expression }}" a regular expression the input's value must match in order to validate }-->
+                      <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                      <input id="question-38ba50a97d414" name="EMAIL" placeholder="Enter your email" required="true" type="email" />
+                    </div>
+                    <div class="c-question__button">
+                      <button class="btn btn-primary btn-small" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Section Markup-->
+          <div class="page-max layout-content pb-4">
+            <div class="wrap flex items-center">
+              <h5 class="sr-only" id="single-field-question-markup">Code</h5>
+              <button aria-controls="single-field-question-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+                <span>Inspect code</span>
+                <svg aria-hidden="true" class="icon-ui">
+                  <use href="#feather-chevron-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-max layout-content">
+            <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="single-field-question-markup-block">
+              <div class="py-1">
+                <div class="code-block">
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question c-question-single&quot; id=&quot;5aa23d63de3b4&quot;&gt;
+  &lt;!--{ @for  Should match the id of the input }--&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-5aa23d63de3b4&quot;&gt;Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.&lt;/label&gt;
+  &lt;p&gt;Please answer to the best of your ability.&lt;/p&gt;
+  &lt;div class=&quot;c-question__container&quot;&gt;
+    &lt;div class=&quot;c-question__input&quot;&gt;
+      &lt;div class=&quot;input&quot;&gt;
+        &lt;!--{ @required  required=&quot;true&quot; specifies wether the input is required by a form }--&gt;
+        &lt;!--{ @pattern   pattern=&quot;{{ my regular expression }}&quot; a regular expression the input's value must match in order to validate }--&gt;
+        &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+        &lt;input id=&quot;question-5aa23d63de3b4&quot; name=&quot;EMAIL&quot; placeholder=&quot;Enter your email&quot; required=&quot;true&quot; type=&quot;email&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;c-question__button&quot;&gt;
+        &lt;button class=&quot;btn btn-primary btn-small&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+      <section class="pb-4 mb-4" id="validation">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#validation">
+                <svg class="icon-ui" role="img">
+                  <title>Validation Anchor Link</title>
+                  <use href="#feather-anchor"></use>
+                </svg>
+              </a>Validation
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#feather-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1/src/components/question" target="_blank">src/components/question/readme</a>
+            </p>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <h5 id="global-script">Global Script</h5>
+            <p>The Question Component requires JavaScript for native form validation. To use the validation through the global script use the following code. A optional selector targeting the form may be supplied as the first argument to the <code>.validate()</code> method. The second optional argument is a function which handles the form data after it passes validation.</p>
+            <pre><code class="language-html">&lt;script src=&quot;js/default.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var Standard = new Default();
+
+  Standard.validate();
+
+  // or
+
+  // Accepts a @selector and @function for submission handling
+  Standard.validate(&#39;#a-custom-form&#39;, function(event) {
+    event.preventDefault();
+
+    // Add your own custom submission handler
+  });
+&lt;/script&gt;
+</code></pre>
+            <h6 id="markup">Markup</h6>
+            <pre><code class="language-html">&lt;form data-js=&quot;validate&quot; action=&quot;/my/action/&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;email&quot;&gt;Please enter your email.&lt;/label&gt;
+
+  &lt;input type=&quot;email&quot; id=&quot;email&quot; required=&quot;true&quot;&gt;
+
+  &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+            <p>Validation messages will appear when the user leaves a <strong>required</strong> question blank (<code>required=&quot;true&quot;</code> must be set on the <code>&lt;input&gt;</code> tag), enters an answer that does not match a specified <strong>pattern</strong> (<code>pattern=&quot;{{ my regular expression }}&quot;</code> must be set on the <code>&lt;input&gt;</code> tag), or tries to submit the form without filling out any required fields.</p>
+            <h5 id="module-import">Module Import</h5>
+            <p>The form validation source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library. Install the <code>@nycopportunity/pttrn-scripts</code> module to import the module. This method allows the specification of watching for input errors on blur, setting the error container’s selector, and other customizations. Refer to the the source for details.</p>
+            <pre><code class="language-javascript">import Forms from &#39;@nycopportunity/patterns-scripts/src/forms/forms&#39;;
+
+this.form = new Forms(document.querySelector(&#39;#question-demo&#39;));
+
+this.form.submit = (event) =&gt; {
+  event.preventDefault();
+  // Submission handler
+};
+
+this.form.selectors.ERROR_MESSAGE_PARENT = &#39;.c-question__container&#39;;
+
+this.form.watch();
+</code></pre>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity">GitHub</a>
+              <a href="https://twitter.com/nycopportunity">Twitter</a>
+              <a href="https://www.facebook.com/nycopportunity">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="tablet:flex">
+        <nav aria-labelledby="navigation-main-7c415a70b50d8" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-7c415a70b50d8">Main</span>
+          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-7c415a70b50d8" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-7c415a70b50d8">Elements</span>
+          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
+          <a class="block p-1 no-underline align-middle" href="badge">Breadcrumbs</a>
+          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 no-underline align-middle" href="code">Code</a>
+          <a class="block p-1 no-underline align-middle" href="divider">Divider</a>
+          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
+          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
+          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
+          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 no-underline align-middle" href="links">Links</a>
+          <a class="block p-1 no-underline align-middle" href="nav">Nav</a>
+          <a class="block p-1 no-underline align-middle" href="options">Options</a>
+          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
+          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-7c415a70b50d8" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-7c415a70b50d8">Components</span>
+          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
+          <a class="block p-1 no-underline align-middle" href="card">Card</a>
+          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 no-underline align-middle" href="question">Question</a>
+          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
+          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-7c415a70b50d8" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-7c415a70b50d8">Objects</span>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-7c415a70b50d8" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="h3 text-small p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-7c415a70b50d8">Utilities</span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons();
+    Standard.icons('svg/pattern-elements.svg');
+    Standard.icons('svg/feather.svg');
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    // Standard.menu();
+    Standard.newsletter();
+    // Standard.search();
+    Standard.setObjectHeights();
+    Standard.themes();
+    Standard.toggle();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+  <script type="text/javascript">
+    patterns.validate('#question-demo', function(event) {
+      event.preventDefault();
+      return false;
+    });
+  </script>
+  <script src="/reload/reload.js"></script>
+</body>
+
+</html>

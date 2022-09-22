@@ -1,0 +1,27 @@
+- this.title = 'Newsletter'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+  = mixin('section', '/objects/newsletter/newsletter')
+  = mixin('section', '/objects/newsletter/newsletter-form', {title: 'Full Form'})
+  = mixin('section', '/objects/newsletter/readme', {title: 'Usage', markup: false, demo: false})
+
+= content('script')
+  javascript:
+    patterns.newsletter();
+    patterns.newsletterForm();

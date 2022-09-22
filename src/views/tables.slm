@@ -1,0 +1,23 @@
+- this.title = 'Tables'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+  = mixin('section', '/elements/tables/tables')
+  = mixin('section', '/elements/tables/tables-numeric', {title: 'Numeric Table'})
+  = mixin('section', '/elements/tables/tables-headers-first-column', {title: 'First Column Headers'})
+  = mixin('section', '/elements/tables/tables-headers-sticky', {title: 'Sticky Headers'})
