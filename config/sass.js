@@ -1,4 +1,11 @@
 /**
+ * Dependencies
+ */
+
+const resolve = require(`${process.env.PWD}/node_modules/@nycopportunity/pttrn/bin/util/resolve`);
+const global = resolve('config/global');
+
+/**
  * Config
  *
  * @type {Object}
@@ -26,5 +33,25 @@ module.exports = [
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
     devModule: true // This needs to be set if we want the module to be compiled during development
+  },
+
+  /**
+   * Tailwindcss
+   *
+   * These must match the configuration in config/global.js
+   */
+  {
+    file: `${process.env.PWD}/src/utilities/tailwindcss/_tailwindcss.scss`,
+    outDir: `${process.env.PWD}/dist/css/`,
+    outFile: 'tailwindcss.css',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    // devModule: true
+  },
+  {
+    file: `${process.env.PWD}/src/utilities/tailwindcss/_tailwindcss.scss`,
+    outDir: `${process.env.PWD}/src/utilities/tailwindcss/`,
+    outFile: '_tailwindsass.scss',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    // devModule: true
   }
 ];

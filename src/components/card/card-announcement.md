@@ -1,3 +1,5 @@
+<!-- Headers start with h5 ##### -->
+
 Cards containing time-sensitive and non-standard information in the Opportunity Standard are called **"announcement cards"** (they may also be referred to as "touts"). They may contain one or more of the following types of information in this order; badge, title, summary, timestamp, and web share component.
 
 ---

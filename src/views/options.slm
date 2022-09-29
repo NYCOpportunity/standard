@@ -19,7 +19,7 @@
   = mixin('content-header')
 
   - option = {label: 'Checkbox Option'}
-  = mixin('section', '/elements/options/options', {title: 'Checkbox Option', text: false})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/options/options', {title: 'Checkbox Option', text: false, pkg: '@nycopportunity/pattern-elements'})
 
   - option = {type: 'radio', label: 'Radio Option'}
-  = mixin('section', '/elements/options/options', {title: 'Radio Option', text: false})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/options/options', {title: 'Radio Option', text: false, pkg: '@nycopportunity/pattern-elements'})

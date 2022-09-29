@@ -2,11 +2,11 @@
   "name": "@nycopportunity/standard",
   "nice": "Opportunity Standard",
   "version": "0.0.0-1",
-  "description": "This project was scaffolded using the NYCO Patterns CLI",
+  "description": "The Opportunity Standard is the design system for NYC Opportunity's digital products.",
   "homepage": "https://github.com/nycopportunity/standard",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nycopportunity/standard.git"
+    "url": "https://github.com/nycopportunity/standard"
   },
   "bugs": {
     "url": "https://github.com/nycopportunity/standard/issues"
@@ -30,12 +30,14 @@
   "devDependencies": {
     "@nycopportunity/pttrn": "latest",
     "@nycopportunity/pttrn-plugin-properties": "^1.1.1",
+    "tailwindcss": "^3.1.8",
     "tailwindcss-logical": "^3.0.0"
   },
   "dependencies": {
-    "@nycopportunity/pattern-elements": "^0.0.0-2",
-    "@nycopportunity/pattern-typography": "^0.0.0-1",
-    "@nycopportunity/pttrn-scripts": "^1.0.14",
+    "@nycopportunity/pattern-elements": "file:../pattern-elements",
+    "@nycopportunity/pattern-typography": "file:../pattern-typography",
+    "@nycopportunity/pttrn-docs": "file:../../cityofnewyork/patterns-docs",
+    "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",
     "feather-icons": "^4.29.0",
     "for-cerial": "^1.1.0"
   }

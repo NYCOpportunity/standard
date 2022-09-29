@@ -17,7 +17,11 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/elements/tables/tables')
-  = mixin('section', '/elements/tables/tables-numeric', {title: 'Numeric Table'})
-  = mixin('section', '/elements/tables/tables-headers-first-column', {title: 'First Column Headers'})
-  = mixin('section', '/elements/tables/tables-headers-sticky', {title: 'Sticky Headers'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/tables/tables', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/tables/tables-numeric', {title: 'Numeric Table', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/tables/tables-headers-first-column', {title: 'First Column Headers', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/tables/tables-headers-sticky', {title: 'Sticky Headers', pkg: '@nycopportunity/pattern-elements'})

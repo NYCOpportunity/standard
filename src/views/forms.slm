@@ -17,4 +17,4 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/elements/forms/forms')
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/forms', {title: false, pkg: '@nycopportunity/pattern-elements'})

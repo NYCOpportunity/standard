@@ -19,8 +19,12 @@
 = content('content')
   = mixin('content-header')
 
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-about', {markup: false, demo: false});
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {markup: false, demo: false});
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-logical', {markup: false, demo: false});
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-installation', {markup: false, demo: false});
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {markup: false, demo: false});
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-about', {title: 'About CSS Utilities', markup: false, demo: false, src: false});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {title: 'Tailwindcss', markup: false, demo: false, src: false});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-logical', {title: 'Tailwindcss Logical Plugin',markup: false, demo: false, src: false});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-installation', {title: 'Installing Tailwindcss', markup: false, demo: false, src: false});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {title: 'Tailwind UI', markup: false, demo: false, src: false});

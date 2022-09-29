@@ -1,3 +1,3 @@
+<!-- Headers start with h5 ##### -->
+
 The Accordion is a group of expandable and collapsable header and content regions intended to consolidate the amount of space content will occupy on a page. Further guidance on Accordions can be found on the <a href="https://designsystem.digital.gov/components/accordion/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>. Within the Opportunity Standard, when implementing multiple region groups stacked on one another, the first region should be open when the user lands on the page. Additionally, more than one region may be open at the same time.
-
-

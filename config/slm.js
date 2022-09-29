@@ -20,6 +20,13 @@ module.exports = {
   src: 'src',
   views: 'views',
   dist: 'dist',
+  globs: [
+    `${process.env.PWD}/config/slm.js`,
+    `${process.env.PWD}/src/**/*.slm`,
+    `${process.env.PWD}/src/**/*.md`,
+    `${process.env.PWD}/node_modules/@nycopportunity/**/*.slm`,
+    `${process.env.PWD}/node_modules/@nycopportunity/**/*.md`
+  ],
   marked: {
     gfm: true,
     headerIds: true,

@@ -5,7 +5,7 @@
 The Web Share requires JavaScript for calling the `navigator.share()` API in supported browsers and showing/hiding the fallback for unsupported browsers. It also uses the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/copy" target="_blank" rel="noopener nofollow">Copy Utility</a> for the copy-to-clipboard button and the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle" target="_blank" rel="noopener nofollow">Toggle Utility</a> to show and hide the fallback component. To use the Web Share through the global script use the following code:
 
 ```html
-<script src="{{ this.global.entry.scripts }}"></script>
+<script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
 
 <script>
   var Standard = new {{ this.global.entry.name }}();

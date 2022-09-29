@@ -1,9 +1,11 @@
+<!-- Headers start with h5 ##### -->
+
 ##### Global Script
 
 The Question Component requires JavaScript for native form validation. To use the validation through the global script use the following code. A optional selector targeting the form may be supplied as the first argument to the `.validate()` method. The second optional argument is a function which handles the form data after it passes validation.
 
 ```html
-<script src="{{ this.global.entry.scripts }}"></script>
+<script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
 
 <script>
   var Standard = new {{ this.global.entry.name }}();

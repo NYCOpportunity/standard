@@ -1,3 +1,5 @@
+<!-- Headers start with h5 ##### -->
+
 The Web Share is a small button that invokes the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API" target="_blank" rel="noopener nofollow">Web Share API</a> a browser utility that allows users to copy the URL to their clipboard or share on the social network platform of their choice. For browsers that do not support the Web Share API (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API#browser_compatibility" target="_blank" rel="noopener nofollow">refer to the Browser compatibility table</a>), a [fallback element](#web-share-fallback) is displayed to allow users to copy the link, share on Facebook, or share on Twitter.
 
 Because some desktop browsers do not support copying to the clipboard in the Web Share dialog, the **copy-to-clipboard** button is shown next to the share button in desktop viewports.

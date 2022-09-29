@@ -16,7 +16,7 @@ div class='c-utility'
 
   /   span Save
   - webShare = {}
-  - webShare.fallbackClass = 'right-0 z-30'
+  - webShare.fallbackClass = 'hidden right-0 z-30'
 
   = partial('/components/web-share/web-share.slm')
 

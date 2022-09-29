@@ -1,0 +1,27 @@
+- this.title = 'Links'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/links/links', {pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/links/links-icon', {title: 'Links with Icons', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/links/links-external', {title: 'External Links', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/links/links-anchor', {title: 'Anchor Links', pkg: '@nycopportunity/pattern-elements'})

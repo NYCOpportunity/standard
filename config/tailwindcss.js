@@ -11,8 +11,8 @@ const logical = require('tailwindcss-logical');
 
 module.exports = {
   purge: false,
-  important: true,
   darkMode: false,
+  important: true,
   theme: {
     colors: tokens.color,
     borderColor: global.Object.assign({default: ''}, tokens.color),
@@ -49,6 +49,6 @@ module.exports = {
     zIndex: tokens.z
   },
   plugins: [
-     logical
+    logical
   ]
 };

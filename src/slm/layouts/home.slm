@@ -5,17 +5,8 @@ html lang='en'
   body class='bg' onload="load()" style="visibility: hidden;"
     = content('content')
 
-    footer class=''
-      - let date = new Date();
-      - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
-
-      p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
-
-      a href='https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg'
-        svg class='c-red' width='80' height='80'
-          title id='svg-a-perfect-heart' A perfect SVG heart
-
-          use xlink:href='#pttrn-a-perfect-heart'
+    - tabindex = false;
+    = partial('/slm/partials/footer.slm');
 
     script src='js/default.js'
 

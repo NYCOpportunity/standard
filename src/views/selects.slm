@@ -19,4 +19,4 @@
   = mixin('content-header')
 
   - select = {tabindex: false}
-  = mixin('section', '/elements/selects/selects')
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects', {title: false, pkg: '@nycopportunity/pattern-elements'})

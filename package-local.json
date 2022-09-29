@@ -30,11 +30,13 @@
   "devDependencies": {
     "@nycopportunity/pttrn": "latest",
     "@nycopportunity/pttrn-plugin-properties": "^1.1.1",
+    "tailwindcss": "^3.1.8",
     "tailwindcss-logical": "^3.0.0"
   },
   "dependencies": {
     "@nycopportunity/pattern-elements": "file:../pattern-elements",
     "@nycopportunity/pattern-typography": "file:../pattern-typography",
+    "@nycopportunity/pttrn-docs": "file:../../cityofnewyork/patterns-docs",
     "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",
     "feather-icons": "^4.29.0",
     "for-cerial": "^1.1.0"

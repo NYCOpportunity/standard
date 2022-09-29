@@ -1,7 +1,7 @@
 - this.nav = {class: {}}
 - this.nav.id = this.createId()
 - this.nav.class.main = 'tablet:flex-1 mb-1 px-1 tablet:px-2'
-- this.nav.class.heading = 'h3 text-small p-1 block'
+- this.nav.class.heading = 'p-1 block'
 - this.nav.class.item = 'block p-1 no-underline align-middle'
 - this.nav.class.divider = 'border-b border-scale-3 mb-1 mt-1'
 - this.nav.tabindex = (typeof tabindex === 'undefined') ? false : tabindex;
@@ -24,17 +24,18 @@ nav role='navigation' aria-labelledby='aria-lb-elements-${this.nav.id}' class='$
   span id='aria-lb-elements-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Elements
 
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='badge' Badge
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='badge' Breadcrumbs
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='breadcrumbs' Breadcrumbs
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='buttons' Buttons
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='description-lists' Description Lists
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='code' Code
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='divider' Divider
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='dividers' Dividers
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='forms' Forms
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='icons' Icons
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='inputs' Inputs
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='labels' Labels
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='layouts' Layouts
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='links' Links
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='nav' Nav
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navs' Navs
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='options' Options
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='selects' Selects
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tables' Tables
@@ -74,6 +75,6 @@ nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='print' Print
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='scroll' Scroll
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='status' Status
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='toggle' Toggle
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='typography' Typography

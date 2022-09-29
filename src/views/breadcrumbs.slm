@@ -17,4 +17,5 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/breadcrumbs/breadcrumbs', {title: false})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/breadcrumbs/breadcrumbs', {title: false, pkg: '@nycopportunity/pattern-elements'})

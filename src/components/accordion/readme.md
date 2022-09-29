@@ -5,7 +5,7 @@
 The Accordion requires JavaScript for functionality and screen reader accessibility. To initialize the Accordion instance from the global script use the following code:
 
 ```html
-<script src="{{ this.global.entry.scripts }}"></script>
+<script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
 
 <script>
   var Standard = new {{ this.global.entry.name }}();
@@ -21,7 +21,7 @@ This function will attach the accordion toggling event to the body of the docume
 For module imports, import the Accordion module from the source.
 
 ```javascript
-import Accordion from 'src/components/accordion/accordion';
+import Accordion from '{{ this.package.name }}/{{ this.global.src }}/components/accordion/accordion';
 
 new Accordion();
 ```

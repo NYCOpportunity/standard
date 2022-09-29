@@ -8,7 +8,8 @@ During the development phase of this library, the following dependencies need to
 
 * [Pattern Elements](https://github.com/nycopportunity/pattern-elements)
 * [Pattern Typography](https://github.com/nycopportunity/pattern-typography)
-* [Pattern Scripts](https://github.com/cityofnewyork/pattern-scripts)
+* [Patterns Docs](https://github.com/cityofnewyork/patterns-scripts)
+* [Patterns Scripts](https://github.com/cityofnewyork/patterns-scripts)
 
 The directory structure would look like the following.
 
@@ -26,6 +27,7 @@ After cloning this repo, run `npm install` (it may be necessary to install the d
 ```json
     "@nycopportunity/pattern-elements": "^0.0.0-2",
     "@nycopportunity/pattern-typography": "^0.0.0-1",
+    "@nycopportunity/pttrn-docs": "^1.0.7"
     "@nycopportunity/pttrn-scripts": "^1.0.14",
 ```
 
@@ -34,7 +36,12 @@ After cloning this repo, run `npm install` (it may be necessary to install the d
 ```json
     "@nycopportunity/pattern-elements": "file:../pattern-elements",
     "@nycopportunity/pattern-typography": "file:../pattern-typography",
+    "@nycopportunity/pttrn-docs": "file:../../cityofnewyork/patterns-docs",
     "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",
 ```
 
 ... then reinstall.
+
+## CLI
+
+Once the dependencies are installed the [Patterns CLI binary](https://github.com/CityOfNewYork/patterns-cli#cli) is available to start development. Run [`npm start`](https://github.com/CityOfNewYork/patterns-cli#start-command) to start the development server.

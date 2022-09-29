@@ -1,0 +1,35 @@
+- this.title = 'Layouts'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts', {demo: false, markup: false, pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-utilities', {title: 'Layout Utilities', demo: false, markup: false, pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-content', {title: 'Content Layout', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-sidebar', {title: 'Sidebar Layout', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-sidebar-small', {title: 'Small Sidebar Layout', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-topbar', {title: 'Topbar Layout', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-map', {title: 'Map', pkg: '@nycopportunity/pattern-elements'});
+
+  / = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-figma', {title: 'Figma Layouts, Columns, and Spacing', pkg: '@nycopportunity/pattern-elements'});

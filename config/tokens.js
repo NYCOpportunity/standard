@@ -104,6 +104,12 @@ tokens.dimension = {
 };
 
 /**
+ * Fonts
+ */
+
+tokens['fontFace-code'] = '"JetBrains Mono", monospace';
+
+/**
  * Export Modules
  */
 

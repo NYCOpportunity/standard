@@ -7,7 +7,7 @@ The Dropdown Component uses JavaScript for toggling and accessibility.
 ###### Global Script
 
 ```html
-<script src="{{ this.global.entry.scripts }}"></script>
+<script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
 
 <script>
   var Standard = new {{ this.global.entry.name }}();
@@ -21,7 +21,7 @@ The Dropdown Component uses JavaScript for toggling and accessibility.
 For module imports, import the Dropdown module from the source.
 
 ```javascript
-import Dropdown from 'src/components/dropdown/dropdown';
+import Dropdown from '{{ this.package.name }}/{{ this.global.src }}/components/dropdown/dropdown';
 
 new Dropdown();
 ```

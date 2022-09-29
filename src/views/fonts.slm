@@ -17,5 +17,8 @@
 
 = content('content')
   = mixin('content-header')
+
   = mixin('section', '/utilities/fonts/fonts')
+
   = mixin('section', '/utilities/fonts/readme', {title: 'Usage', markup: false, demo: false})
+

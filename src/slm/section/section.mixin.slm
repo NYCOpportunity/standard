@@ -1,13 +1,14 @@
 - this.navigation = (this.navigation) ? this.navigation : [];
 
-= mixin('section', 'path', 'config = {title: false, text: true, markup: true, demo: true, src: true}');
+= mixin('section', 'path', 'config = {title: false, text: true, markup: true, demo: true, src: true, pkg: ""}');
   - this.config = (!this.config || typeof this.config === 'string') ? {} : this.config
 
   - this.config.title = (this.config.hasOwnProperty('title')) ? this.config.title : false
-  - this.config.text = (this.config.hasOwnProperty('text')) ? this.config.text : true       // default
-  - this.config.markup = (this.config.hasOwnProperty('markup')) ? this.config.markup : true // default
-  - this.config.demo = (this.config.hasOwnProperty('demo')) ? this.config.demo : true       // default
-  - this.config.src = (this.config.hasOwnProperty('src')) ? this.config.src : true          // default
+  - this.config.text = (this.config.hasOwnProperty('text')) ? this.config.text : true
+  - this.config.markup = (this.config.hasOwnProperty('markup')) ? this.config.markup : true
+  - this.config.demo = (this.config.hasOwnProperty('demo')) ? this.config.demo : true
+  - this.config.src = (this.config.hasOwnProperty('src')) ? this.config.src : true
+  - this.config.pkg = (this.config.hasOwnProperty('pkg')) ? this.config.pkg : this.package.name
 
   - id = (this.config.title) ? this.config.title : this.title;
   - id = id.toLowerCase().replace(/[^0-9a-zA-Z\s]/g, '').split(' ').join('-')
@@ -18,8 +19,16 @@
     - this.navigation.push(navitem)
 
   - let source = this.path.split('/')
-  - source.splice(source.length - 1, 1)
-  - source = `${this.package.cdn.source}/tree/v${this.tokens.version}/src` + source.join('/')
+  - source = source.filter(dir => dir != '' && dir != 'node_modules' && dir != '..')
+  - source.splice(source.length - 1, 1) // remove the last item (type) in the path
+  - source = source.join('/');
+
+  - if !source.includes(this.config.pkg)
+      - source = `${this.config.pkg}/src/${source}`
+
+  - source = `https://github.com/${source.replace(this.config.pkg, `${this.config.pkg}/tree/main`)}`.replace('@', '')
+
+  - let label = source.replace('https://github.com/', '@').replace('/tree/main', '')
 
   section id=id class='pb-4 mb-4'
     / Render the Section header
@@ -40,9 +49,11 @@
               title GitHub Source Link
               use href='#feather-github'
 
+            / span Source:&nbsp;
+
             / code
             a href='${source}' target='_blank'
-              = 'src' + this.path
+              = label
 
     / Render the component text specs on the page
     - if this.config.text
@@ -60,7 +71,7 @@
     / Render the markup live demonstration
     - if this.config.demo
       div class='bg-scale-0 border-t border-b border-scale-4 py-6 mb-6'
-        div class='page-max flex justify-center py-6 wrap'
+        div class='page-max flex justify-center py-8 wrap'
           == this.include(this.path + '.slm');
 
     / Render the componet markup in the code block

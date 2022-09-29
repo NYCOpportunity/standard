@@ -9,40 +9,94 @@
   = mixin('head')
 
 = content('content')
-  header class='p-6'
-    div class='layout-wrap layout-content mx-auto py-6'
+  / header class='p-6'
+  /   div class='layout-wrap layout-content mx-auto py-6'
+  /     div class='mx-auto py-6'
+  /       div class='flex justify-center items-center mb-6'
+  /         h1
+  /           = 'Welcome to the'
+  /           br
+  /           = `${this.package.nice}`
+
+  /       p = `${this.package.description}.`
+
+  /       p class='text-center py-2'
+  /         a class='btn btn-large btn-primary inline-block' href='#browse-the-patterns' Browse the Patterns
+
+  /       p class='text-center' = `v${this.package.version}`
+
+  header class='py-8'
+    div class='layout-wrap layout-content mx-auto py-8'
       div class='mx-auto py-6'
         div class='flex justify-center items-center mb-6'
-          h1
-            = 'Welcome to the'
-            br
-            = `${this.package.nice}`
+          svg style='width: 327px; height: 111px;' role='img'
+            title New York City
+            use href='#logo-nyc'
 
-        p = `${this.package.description}.`
+          h1 class='jumbo m-0 pis-2 mis-3 font-nyc' style='font-weight: 600; line-height: 1em; border-left: 4px solid;'
+            div Opportunity
+            div class='text-brand' Standard
+
+        p
+          | <b>${this.package.description}</b> It is ideally suited for building catalogs of City services and online applications, providing simple and flexible CSS and JavaScript-based components and utilities for building user interfaces quickly and easily.
 
         p class='text-center py-2'
           a class='btn btn-large btn-primary inline-block' href='#browse-the-patterns' Browse the Patterns
 
-        p class='text-center' = `v${this.package.version}`
+        p class='text-center'
+          a href='${this.package.repository.url}/tree/v${this.package.version}' target='_blank' = 'v' + this.package.version;
 
-  main
-    div class='layout-wrap layout-content mx-auto py-6'
-      div class='mx-auto py-6'
-        section class='bc-white p-4'
-          h2 Installation
+  main#main-content role='main'
+    section#browse-the-patterns class='page-max p-6 tablet:grid grid-cols-5'
+      / div class='page-max pt-2'
+        / div class='tablet:flex'
 
-          div class='code-block'
-            pre
-              | $ npm install @nycopportunity/standard
+      - tabindex = false;
+      = partial('/slm/partials/nav.slm');
 
-        section class='c-card m-auto mb-4'
-          header class='c-card__header'
-            h2 class='c-card__title'
-              / svg class='icon-ui icon-3 mie-1' aria-hidden='true'
-              /   use href='#feather-figma'
-              | Figma
+    section class='p-6'
+      div class='layout-wrap layout-content mx-auto py-6'
+        div class='mx-auto'
+          h2 class='text-center mt-0' Installation
 
-          div class='c-card__body'
-            / iframe class='border-0 block w-full mb-4' allowfullscreen='true' height='450' src='https://www.figma.com/embed?embed_host=nyco-wnyc-patterns&url=https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Patterns'
+          p
+            | Installing via <a href="https://www.npmjs.com/">NPM</a> will store ${this.package.nice} source and distribution files in your project's <b>node_modules</b> directory under <b>${this.package.name}</b>.
+
+          div class='tablet:grid tablet:grid-cols-3 gap-1 mb-2'
+            div class='code-block col-span-2 m-0 mb-1'
+              input value='npm install ${this.package.name}' class='font-code text-code p-3 bg-transparent border-none w-full' data-copy-target='installation'
+
+            button class='btn btn-large px-0 w-full mb-1' data-js='copy' data-copy='installation'
+              svg class='icon-ui-copy icon-3 mie-1' aria-hidden='true'
+                use href='#feather-copy'
+
+              span Copy
+
+          p Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprits will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.
+
+          p class='text-center'
+            a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide
+
+          p class='text-center'
+            | Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.
+
+    / div class='layout-wrap layout-content mx-auto py-6'
+    /   div class='mx-auto py-6'
+    /     section class='bc-white p-4'
+    /       h2 Installation
+
+    /       div class='code-block'
+    /         pre
+    /           | $ npm install @nycopportunity/standard
+
+    /     section class='c-card m-auto mb-4'
+    /       header class='c-card__header'
+    /         h2 class='c-card__title'
+    /           / svg class='icon-ui icon-3 mie-1' aria-hidden='true'
+    /           /   use href='#feather-figma'
+    /           | Figma
+
+    /       div class='c-card__body'
+    /         / iframe class='border-0 block w-full mb-4' allowfullscreen='true' height='450' src='https://www.figma.com/embed?embed_host=nyco-wnyc-patterns&url=https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Patterns'
 
 = content('scripts')

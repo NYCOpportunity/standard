@@ -5,11 +5,12 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://github.com/nycopportunity/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <link href="/svg/favicon.svg" rel="icon" type="image/x-icon" />
   <title>Opportunity Standard</title>
   <link href="https://cdn.jsdelivr.net" rel="preconnect" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="css/tokens.css" rel="stylesheet" />
@@ -37,48 +38,169 @@
 </head>
 
 <body class="bg" onload="load()" style="visibility: hidden;">
-  <header class="p-6">
-    <div class="layout-wrap layout-content mx-auto py-6">
+  <header class="py-8">
+    <div class="layout-wrap layout-content mx-auto py-8">
       <div class="mx-auto py-6">
         <div class="flex justify-center items-center mb-6">
-          <h1>Welcome to the
-            <br />Opportunity Standard
+          <svg role="img" style="width: 327px; height: 111px;">
+            <title>New York City</title>
+            <use href="#logo-nyc"></use>
+          </svg>
+          <h1 class="jumbo m-0 pis-2 mis-3 font-nyc" style="font-weight: 600; line-height: 1em; border-left: 4px solid;">
+            <div>Opportunity</div>
+            <div class="text-brand">Standard</div>
           </h1>
         </div>
-        <p>This project was scaffolded using the NYCO Patterns CLI.</p>
+        <p>
+          <b>The Opportunity Standard is the design system for NYC Opportunity's digital products.</b> It is ideally suited for building catalogs of City services and online applications, providing simple and flexible CSS and JavaScript-based components and utilities for building user interfaces quickly and easily.
+        </p>
         <p class="text-center py-2">
           <a class="btn btn-large btn-primary inline-block" href="#browse-the-patterns">Browse the Patterns</a>
         </p>
-        <p class="text-center">v0.0.0-1</p>
+        <p class="text-center">
+          <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1" target="_blank">v0.0.0-1</a>
+        </p>
       </div>
     </div>
   </header>
-  <main>
-    <div class="layout-wrap layout-content mx-auto py-6">
-      <div class="mx-auto py-6">
-        <section class="bc-white p-4">
-          <h2>Installation</h2>
-          <div class="code-block">
-            <pre>$ npm install @nycopportunity/standard</pre>
+  <main id="main-content" role="main">
+    <section class="page-max p-6 tablet:grid grid-cols-5" id="browse-the-patterns">
+      <nav aria-labelledby="navigation-main-dae88bc65a07b" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-dae88bc65a07b">Main</span>
+        <a class="block p-1 no-underline align-middle" href="index">Home</a>
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+        <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+        <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+      </nav>
+      <nav aria-labelledby="aria-lb-elements-dae88bc65a07b" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-dae88bc65a07b">Elements</span>
+        <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
+        <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
+        <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
+        <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
+        <a class="block p-1 no-underline align-middle" href="code">Code</a>
+        <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
+        <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
+        <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
+        <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
+        <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
+        <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
+        <a class="block p-1 no-underline align-middle" href="links">Links</a>
+        <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
+        <a class="block p-1 no-underline align-middle" href="options">Options</a>
+        <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
+        <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+      </nav>
+      <nav aria-labelledby="aria-lb-components-dae88bc65a07b" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-dae88bc65a07b">Components</span>
+        <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
+        <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
+        <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
+        <a class="block p-1 no-underline align-middle" href="card">Card</a>
+        <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
+        <a class="block p-1 no-underline align-middle" href="question">Question</a>
+        <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
+        <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+      </nav>
+      <nav aria-labelledby="aria-lb-objects-dae88bc65a07b" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-dae88bc65a07b">Objects</span>
+      </nav>
+      <nav aria-labelledby="aria-lb-utilities-dae88bc65a07b" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-dae88bc65a07b">Utilities</span>
+        <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+      </nav>
+    </section>
+    <section class="p-6">
+      <div class="layout-wrap layout-content mx-auto py-6">
+        <div class="mx-auto">
+          <h2 class="text-center mt-0">Installation</h2>
+          <p>Installing via <a href="https://www.npmjs.com/">NPM</a> will store Opportunity Standard source and distribution files in your project's <b>node_modules</b> directory under <b>@nycopportunity/standard</b>.</p>
+          <div class="tablet:grid tablet:grid-cols-3 gap-1 mb-2">
+            <div class="code-block col-span-2 m-0 mb-1">
+              <input class="font-code text-code p-3 bg-transparent border-none w-full" data-copy-target="installation" value="npm install @nycopportunity/standard" />
+            </div>
+            <button class="btn btn-large px-0 w-full mb-1" data-copy="installation" data-js="copy">
+              <svg aria-hidden="true" class="icon-ui-copy icon-3 mie-1">
+                <use href="#feather-copy"></use>
+              </svg>
+              <span>Copy</span>
+            </button>
           </div>
-        </section>
-        <section class="c-card m-auto mb-4">
-          <header class="c-card__header">
-            <h2 class="c-card__title">Figma</h2>
-          </header>
-          <div class="c-card__body"></div>
-        </section>
+          <p>Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprits will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.</p>
+          <p class="text-center">
+            <a class="btn btn-large btn-primary inline-block" href="installation">Read the installation guide</a>
+          </p>
+          <p class="text-center">Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity">GitHub</a>
+              <a href="https://twitter.com/nycopportunity">Twitter</a>
+              <a href="https://www.facebook.com/nycopportunity">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
       </div>
     </div>
-  </main>
-  <footer>
-    <p>Last updated September 22, 2022</p>
-    <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
-      <svg class="c-red" height="80" width="80">
-        <title id="svg-a-perfect-heart">A perfect SVG heart</title>
-        <use xlink:href="#pttrn-a-perfect-heart"></use>
-      </svg>
-    </a>
+    <div class="page-max pt-2">
+      <div class="tablet:flex">
+        <nav aria-labelledby="navigation-main-f0401d95e487f" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-f0401d95e487f">Main</span>
+          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-f0401d95e487f" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-f0401d95e487f">Elements</span>
+          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
+          <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
+          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
+          <a class="block p-1 no-underline align-middle" href="code">Code</a>
+          <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
+          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
+          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
+          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
+          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 no-underline align-middle" href="links">Links</a>
+          <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
+          <a class="block p-1 no-underline align-middle" href="options">Options</a>
+          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
+          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-f0401d95e487f" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-f0401d95e487f">Components</span>
+          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
+          <a class="block p-1 no-underline align-middle" href="card">Card</a>
+          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 no-underline align-middle" href="question">Question</a>
+          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
+          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-f0401d95e487f" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-f0401d95e487f">Objects</span>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-f0401d95e487f" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-f0401d95e487f">Utilities</span>
+          <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+    </div>
   </footer>
   <script src="js/default.js"></script>
   <script type="text/javascript">
@@ -100,6 +222,7 @@
     Standard.webShare();
     Standard.validate();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

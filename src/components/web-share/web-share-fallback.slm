@@ -36,11 +36,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
       button tabindex=(webShareFallback.tabindex ? '-1' : false) data-js='copy' data-copy='web-share-url' aria-pressed='false' class='c-web-share__item c-web-share__copy btn btn-small btn-primary mx-0'
         /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
         svg class='icon icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use href='#feather-copy'
-
-        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
-        svg class='icon-pressed icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use href='#feather-check'
+          use data-js-copy='icon' href='#feather-copy'
 
         span Copy URL
 

@@ -17,5 +17,7 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/elements/description-lists/description-lists', {title: false})
-  = mixin('section', '/elements/description-lists/description-lists-bordered', {title: false})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/description-lists/description-lists', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/description-lists/description-lists-bordered', {title: 'Bordered Lists', pkg: '@nycopportunity/pattern-elements'})

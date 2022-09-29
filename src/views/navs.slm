@@ -1,0 +1,23 @@
+- this.title = 'Navs'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/navs/navs-inline', {title: 'Inline Nav', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/navs/navs-block', {title: 'Block Nav', pkg: '@nycopportunity/pattern-elements'})

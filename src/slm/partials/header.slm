@@ -2,7 +2,7 @@ header role='banner' class='bg-scale-2'
   div class='flex items-center justify-between py-2 wrap'
     div
       a href='${this.baseUrl}/' class='text-brand no-underline'
-        h1 class='text-body'
+        h1 class='font-nyc text-body'
           = this.package.nice
 
     div class='flex items-center'
