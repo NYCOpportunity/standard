@@ -24,7 +24,8 @@
     "build": "cross-env NODE_ENV=development pttrn",
     "version": "npm run default && git add .",
     "prepublishOnly": "git push && git push --tags",
-    "publish": "cross-env NODE_ENV=production pttrn publish",
+    "publish": "npm run ghpages",
+    "ghpages": "cross-env NODE_ENV=production pttrn publish",
     "default": "cross-env NODE_ENV=production pttrn -np"
   },
   "devDependencies": {
