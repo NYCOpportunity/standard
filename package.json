@@ -22,7 +22,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development concurrently \"pttrn -w -np\" \"pttrn serve -w\" -p \"none\"",
     "build": "cross-env NODE_ENV=development pttrn",
-    "version": "npm run default && git add .",
     "prepublishOnly": "git push && git push --tags",
     "publish": "npm run ghpages",
     "ghpages": "cross-env NODE_ENV=production pttrn publish",
