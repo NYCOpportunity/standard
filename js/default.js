@@ -761,7 +761,7 @@ var Default = (function () {
    *
    * @var {Function}
    */
-   Copy.copied = () => {};
+  Copy.copied = () => {};
 
   /**
    * After hook. Triggers after the click event.
@@ -1387,6 +1387,29 @@ var Default = (function () {
     HIDDEN: 'hidden'
   };
 
+  class SetHeightProperties {
+    constructor (s) {
+      this.elements = (s.elements) ? s.elements : SetHeightProperties.elements;
+
+      for (let i = 0; i < this.elements.length; i++) {
+        if (document.querySelector(this.elements[i]['selector'])) {
+          window.addEventListener('load', () => this.setProperty(this.elements[i]));
+          window.addEventListener('resize', () => this.setProperty(this.elements[i]));
+        } else {
+          document.documentElement.style.setProperty(this.elements[i]['property'], '0px');
+        }
+      }
+    }
+
+    setProperty(e) {
+      let element = document.querySelector(e['selector']);
+
+      document.documentElement.style.setProperty(e['property'], `${element.clientHeight}px`);
+    }
+  }
+
+  SetHeightProperties.elements = [];
+
   /**
    * Cycles through a predefined object of theme classnames and toggles them on
    * the document element based on a click event. Uses local storage to save and
@@ -2008,10 +2031,78 @@ var Default = (function () {
   /** @type  String  Main DOM selector */
   ActiveNavigation.selector = '[data-js*=\"active-navigation\"]';
 
-  // import ... from '../components/...';
+  /**
+   * The Attribution module
+   *
+   * @class
+   */
+  class Attribution {
+    /**
+     * @constructor
+     *
+     * @return  {object}  The class
+     */
+    constructor() {
+      this.selector = Attribution.selector;
 
-  // Objects
-  // import Menu from '@nycopportunity/pattern-menu/src/menu';
+      this.toggle = new Toggle({
+        selector: this.selector
+      });
+
+      return this;
+    }
+  }
+
+  /** @type  {String}  The dom selector for the module */
+  Attribution.selector = '[data-js*="attribution"]';
+
+  /**
+   * The Mobile Nav module
+   *
+   * @class
+   */
+  class Menu {
+    /**
+     * @constructor
+     *
+     * @return  {object}  The class
+     */
+    constructor() {
+      this.selector = Menu.selector;
+
+      this.selectors = Menu.selectors;
+
+      this.toggle = new Toggle({
+        selector: this.selector,
+        after: toggle => {
+          // Shift focus from the open to the close button in the Mobile Menu when toggled
+          if (toggle.target.classList.contains(Toggle.activeClass)) {
+            toggle.target.querySelector(this.selectors.CLOSE).focus();
+
+            // When the last focusable item in the list looses focus loop to the first
+            toggle.focusable.item(toggle.focusable.length - 1)
+              .addEventListener('blur', () => {
+                toggle.focusable.item(0).focus();
+              });
+          } else {
+            document.querySelector(this.selectors.OPEN).focus();
+          }
+        }
+      });
+
+      return this;
+    }
+  }
+
+  /** @type  {String}  The dom selector for the module */
+  Menu.selector = '[data-js*="menu"]';
+
+  /** @type  {Object}  Additional selectors used by the script */
+  Menu.selectors = {
+    CLOSE: '[data-js-menu*="close"]',
+    OPEN: '[data-js-menu*="open"]'
+  };
+
   // import Search from '../objects/search/search';
   // import ... from '../objects/...';
 
@@ -2020,7 +2111,7 @@ var Default = (function () {
   /**
    * @class  Main pattern module
    */
-  class main {
+  class Main {
     /**
      * @constructor  Modules to be executed on main pattern instantiation here
      */
@@ -2044,6 +2135,15 @@ var Default = (function () {
      */
     activeNavigation() {
       return new ActiveNavigation();
+    }
+
+    /**
+     * An API for the Attribution object
+     *
+     * @return  {Object}  Instance of Attribution
+     */
+    attribution() {
+      return new Attribution();
     }
 
     /**
@@ -2125,6 +2225,22 @@ var Default = (function () {
     }
 
     /**
+     * An API for setting height properties for various elements.
+     *
+     * @return  {Object}  Instance of SetHeightProperties
+     */
+    setHeightProperties() {
+      return new SetHeightProperties({
+        'elements': [
+          {
+            'selector': '[data-js="navigation"]',
+            'property': '--o-navigation-height'
+          }
+        ]
+      });
+    }
+
+    /**
      * An API for the Newsletter Object
      *
      * @return  {Object}  Instance of Newsletter
@@ -2164,38 +2280,6 @@ var Default = (function () {
      */
     search() {
       return new Search();
-    }
-
-    /**
-     * Set CSS properties of various element heights for calculating the true
-     * window bottom value in CSS.
-     */
-    setObjectHeights() {
-      const elements = [
-        {
-          'selector': '[data-js="navigation"]',
-          'property': '--wnyc-dimensions-navigation-height'
-        },
-        {
-          'selector': '[data-js="feedback"]',
-          'property': '--wnyc-dimensions-feedback-height'
-        }
-      ];
-
-      let setObjectHeights = (e) => {
-        let element = document.querySelector(e['selector']);
-
-        document.documentElement.style.setProperty(e['property'], `${element.clientHeight}px`);
-      };
-
-      for (let i = 0; i < elements.length; i++) {
-        if (document.querySelector(elements[i]['selector'])) {
-          window.addEventListener('load', () => setObjectHeights(elements[i]));
-          window.addEventListener('resize', () => setObjectHeights(elements[i]));
-        } else {
-          document.documentElement.style.setProperty(elements[i]['property'], '0px');
-        }
-      }
     }
 
     /**
@@ -2305,6 +2389,6 @@ var Default = (function () {
     }
   }
 
-  return main;
+  return Main;
 
 })();
