@@ -1,0 +1,13 @@
+/**
+ * Menu
+ */
+
+@forward '@nycopportunity/pattern-menu/src/menu';
+
+:root {
+  --o-menu-grid-base: var(--nyco-grid);
+  --o-menu-background-color: var(--nyco-scale-1);
+  --o-menu-material-border: var(--nyco-material-border);
+  --o-menu-material-border-radius: var(--nyco-material-border-radius);
+  --o-menu-material-shadow-up: var(--nyco-material-shadow-up);
+}

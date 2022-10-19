@@ -25,3 +25,7 @@ header role='banner' class='bg-scale-2'
             use href='#feather-menu'
 
           span Menu
+
+  div class='pb-3 px-3'
+    - alert = {class: 'c-alert-status-primary', body: `<p>The ${this.package.nice} is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>`}
+    == this.include('/components/alert/alert');

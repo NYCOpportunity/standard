@@ -1,0 +1,12 @@
+/**
+ * Footer
+ */
+
+@forward '@nycopportunity/pattern-attribution/src/attribution.css';
+
+:root {
+  --o-attribution-grid-base: var(--nyco-grid);
+  --o-attribution-background-color: var(--nyco-scale-2);
+  --o-attribution-section-borders-color: var(--nyco-scale-4);
+  --o-attribution-learn-more-columns-width: calc(var(--nyco-grid) * 62);
+}

@@ -5,7 +5,7 @@
 The Accordion requires JavaScript for functionality and screen reader accessibility. To initialize the Accordion instance from the global script use the following code:
 
 ```html
-<script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
+<script src="{{ this.package.cdn.url }}@v{{ this.package.version }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
 
 <script>
   var Standard = new {{ this.global.entry.name }}();

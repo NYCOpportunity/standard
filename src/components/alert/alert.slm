@@ -4,7 +4,7 @@
 - this.alert.id = this.createId()
 - this.alert.icon = 'info'
 - this.alert.type = 'info'
-- this.alert.message = '<p data-js-alert=\'text\'>An alert message.</p>';
+- this.alert.body = '<p data-js-alert=\'text\'>An alert message.</p>';
 - this.alert.ariaHidden = false
 
 / Inherit overrides

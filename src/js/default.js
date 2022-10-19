@@ -7,6 +7,7 @@ import Copy from '@nycopportunity/pttrn-scripts/src/copy/copy';
 import Forms from '@nycopportunity/pttrn-scripts/src/forms/forms';
 import Icons from '@nycopportunity/pttrn-scripts/src/icons/icons';
 import Newsletter from '@nycopportunity/pttrn-scripts/src/newsletter/newsletter';
+import SetHeightProperties from '@nycopportunity/pttrn-scripts/src/set-height-properties/set-height-properties';
 import Themes from '@nycopportunity/pttrn-scripts/src/themes/themes';
 import Toggle from '@nycopportunity/pttrn-scripts/src/toggle/toggle';
 import Track from '@nycopportunity/pttrn-scripts/src/track/track';
@@ -21,7 +22,8 @@ import ActiveNavigation from '../components/active-navigation/active-navigation'
 // import ... from '../components/...';
 
 // Objects
-// import Menu from '@nycopportunity/pattern-menu/src/menu';
+import Attribution from '@nycopportunity/pattern-attribution/src/attribution';
+import Menu from '@nycopportunity/pattern-menu/src/menu';
 // import Search from '../objects/search/search';
 // import ... from '../objects/...';
 
@@ -30,7 +32,7 @@ import ActiveNavigation from '../components/active-navigation/active-navigation'
 /**
  * @class  Main pattern module
  */
-class main {
+class Main {
   /**
    * @constructor  Modules to be executed on main pattern instantiation here
    */
@@ -54,6 +56,15 @@ class main {
    */
   activeNavigation() {
     return new ActiveNavigation();
+  }
+
+  /**
+   * An API for the Attribution object
+   *
+   * @return  {Object}  Instance of Attribution
+   */
+  attribution() {
+    return new Attribution();
   }
 
   /**
@@ -135,6 +146,22 @@ class main {
   }
 
   /**
+   * An API for setting height properties for various elements.
+   *
+   * @return  {Object}  Instance of SetHeightProperties
+   */
+  setHeightProperties() {
+    return new SetHeightProperties({
+      'elements': [
+        {
+          'selector': '[data-js="navigation"]',
+          'property': '--o-navigation-height'
+        }
+      ]
+    });
+  }
+
+  /**
    * An API for the Newsletter Object
    *
    * @return  {Object}  Instance of Newsletter
@@ -174,38 +201,6 @@ class main {
    */
   search() {
     return new Search();
-  }
-
-  /**
-   * Set CSS properties of various element heights for calculating the true
-   * window bottom value in CSS.
-   */
-  setObjectHeights() {
-    const elements = [
-      {
-        'selector': '[data-js="navigation"]',
-        'property': '--wnyc-dimensions-navigation-height'
-      },
-      {
-        'selector': '[data-js="feedback"]',
-        'property': '--wnyc-dimensions-feedback-height'
-      }
-    ];
-
-    let setObjectHeights = (e) => {
-      let element = document.querySelector(e['selector']);
-
-      document.documentElement.style.setProperty(e['property'], `${element.clientHeight}px`);
-    };
-
-    for (let i = 0; i < elements.length; i++) {
-      if (document.querySelector(elements[i]['selector'])) {
-        window.addEventListener('load', () => setObjectHeights(elements[i]));
-        window.addEventListener('resize', () => setObjectHeights(elements[i]));
-      } else {
-        document.documentElement.style.setProperty(elements[i]['property'], '0px');
-      }
-    }
   }
 
   /**
@@ -315,4 +310,4 @@ class main {
   }
 }
 
-export default main;
+export default Main;

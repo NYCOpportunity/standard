@@ -13,10 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-  <link href="css/tokens.css" rel="stylesheet" />
-  <link href="css/tokens-default.css" rel="stylesheet" />
-  <link href="css/tokens-dark.css" rel="stylesheet" />
-  <link href="css/default.css" rel="stylesheet" />
+  <link href="/css/tokens.css" rel="stylesheet" />
+  <link href="/css/tokens-default.css" rel="stylesheet" />
+  <link href="/css/tokens-dark.css" rel="stylesheet" />
+  <link href="/css/default.css" rel="stylesheet" />
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
       hljs.configure({
@@ -38,9 +38,24 @@
 </head>
 
 <body class="bg" onload="load()" style="visibility: hidden;">
+  <div class="py-3 wrap">
+    <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+    <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <div class="c-alert__graphic">
+        <svg aria-hidden="true" class="icon-ui">
+          <use href="#feather-info"></use>
+        </svg>
+      </div>
+      <!--{ @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }-->
+      <div class="c-alert__body">
+        <!--{ @data-js-alert  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+        <p>The Opportunity Standard is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>
+      </div>
+    </article>
+  </div>
   <header class="py-8">
-    <div class="layout-wrap layout-content mx-auto py-8">
-      <div class="mx-auto py-6">
+    <div class="layout-content mx-auto py-8">
+      <div class="wrap py-6">
         <div class="flex justify-center items-center mb-6">
           <svg role="img" style="width: 327px; height: 111px;">
             <title>New York City</title>
@@ -58,61 +73,65 @@
           <a class="btn btn-large btn-primary inline-block" href="#browse-the-patterns">Browse the Patterns</a>
         </p>
         <p class="text-center">
-          <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-1" target="_blank">v0.0.0-1</a>
+          <a href="https://github.com/nycopportunity/standard/tree/v0.0.0-2" target="_blank">v0.0.0-2</a>
         </p>
       </div>
     </div>
   </header>
   <main id="main-content" role="main">
-    <section class="page-max p-6 tablet:grid grid-cols-5" id="browse-the-patterns">
-      <nav aria-labelledby="navigation-main-155720cd03a1c" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-155720cd03a1c">Main</span>
-        <a class="block p-1 no-underline align-middle" href="index">Home</a>
+    <section class="page-max wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2" id="browse-the-patterns">
+      <nav aria-labelledby="navigation-main-5f2f8db5ad16" class="tablet:flex-1 mb-1" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-5f2f8db5ad16">Main</span>
+        <a class="block p-1 align-middle" href="index">Home</a>
         <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-        <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-        <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+        <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+        <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
       </nav>
-      <nav aria-labelledby="aria-lb-elements-155720cd03a1c" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-155720cd03a1c">Elements</span>
-        <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
-        <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
-        <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
-        <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
-        <a class="block p-1 no-underline align-middle" href="code">Code</a>
-        <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
-        <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
-        <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
-        <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
-        <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
-        <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
-        <a class="block p-1 no-underline align-middle" href="links">Links</a>
-        <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
-        <a class="block p-1 no-underline align-middle" href="options">Options</a>
-        <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
-        <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+      <nav aria-labelledby="aria-lb-elements-5f2f8db5ad16" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-5f2f8db5ad16">Elements</span>
+        <a class="block p-1 align-middle" href="badge">Badge</a>
+        <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
+        <a class="block p-1 align-middle" href="buttons">Buttons</a>
+        <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
+        <a class="block p-1 align-middle" href="code">Code</a>
+        <a class="block p-1 align-middle" href="dividers">Dividers</a>
+        <a class="block p-1 align-middle" href="forms">Forms</a>
+        <a class="block p-1 align-middle" href="icons">Icons</a>
+        <a class="block p-1 align-middle" href="inputs">Inputs</a>
+        <a class="block p-1 align-middle" href="labels">Labels</a>
+        <a class="block p-1 align-middle" href="layouts">Layouts</a>
+        <a class="block p-1 align-middle" href="links">Links</a>
+        <a class="block p-1 align-middle" href="navs">Navs</a>
+        <a class="block p-1 align-middle" href="options">Options</a>
+        <a class="block p-1 align-middle" href="selects">Selects</a>
+        <a class="block p-1 align-middle" href="tables">Tables</a>
       </nav>
-      <nav aria-labelledby="aria-lb-components-155720cd03a1c" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-155720cd03a1c">Components</span>
-        <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
-        <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
-        <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
-        <a class="block p-1 no-underline align-middle" href="card">Card</a>
-        <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
-        <a class="block p-1 no-underline align-middle" href="question">Question</a>
-        <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
-        <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+      <nav aria-labelledby="aria-lb-components-5f2f8db5ad16" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-5f2f8db5ad16">Components</span>
+        <a class="block p-1 align-middle" href="accordion">Accordion</a>
+        <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
+        <a class="block p-1 align-middle" href="alert">Alert</a>
+        <a class="block p-1 align-middle" href="card">Card</a>
+        <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
+        <a class="block p-1 align-middle" href="question">Question</a>
+        <a class="block p-1 align-middle" href="utility">Utility</a>
+        <a class="block p-1 align-middle" href="web-share">Web Share</a>
       </nav>
-      <nav aria-labelledby="aria-lb-objects-155720cd03a1c" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-155720cd03a1c">Objects</span>
+      <nav aria-labelledby="aria-lb-objects-5f2f8db5ad16" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-5f2f8db5ad16">Objects</span>
+        <a class="block p-1 align-middle" href="application-header">Application Header</a>
+        <a class="block p-1 align-middle" href="attribution">Attribution</a>
+        <a class="block p-1 align-middle" href="menu">Menu</a>
+        <a class="block p-1 align-middle" href="navigation">Navigation</a>
       </nav>
-      <nav aria-labelledby="aria-lb-utilities-155720cd03a1c" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-155720cd03a1c">Utilities</span>
-        <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+      <nav aria-labelledby="aria-lb-utilities-5f2f8db5ad16" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-5f2f8db5ad16">Utilities</span>
+        <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
       </nav>
     </section>
-    <section class="p-6">
-      <div class="layout-wrap layout-content mx-auto py-6">
-        <div class="mx-auto">
+    <section class="py-6">
+      <div class="layout-content mx-auto py-6">
+        <div class="wrap">
           <h2 class="text-center mt-0">Installation</h2>
           <p>Installing via <a href="https://www.npmjs.com/">NPM</a> will store Opportunity Standard source and distribution files in your project's <b>node_modules</b> directory under <b>@nycopportunity/standard</b>.</p>
           <div class="tablet:grid tablet:grid-cols-3 gap-1 mb-2">
@@ -126,11 +145,20 @@
               <span>Copy</span>
             </button>
           </div>
-          <p>Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprits will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.</p>
+          <p>Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprites will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.</p>
           <p class="text-center">
             <a class="btn btn-large btn-primary inline-block" href="installation">Read the installation guide</a>
           </p>
           <p class="text-center">Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.</p>
+        </div>
+      </div>
+    </section>
+    <section class="py-6">
+      <div class="layout-content mx-auto py-6">
+        <div class="wrap">
+          <h2 class="text-center mt-0">Figma</h2>
+          <p>The <a href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard?node-id=8674%3A35878" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.</p>
+          <iframe allowfullscreen="true" class="aspect-video border-4 border-scale-3 block w-full" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCH7ZOCW55SgsDnsTj3UrTi%2FOpportunity-Standard%3Fnode-id%3D8674%253A35878"></iframe>
         </div>
       </div>
     </section>
@@ -154,50 +182,54 @@
       </div>
     </div>
     <div class="page-max pt-2">
-      <div class="tablet:flex">
-        <nav aria-labelledby="navigation-main-41e0df2f461b4" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-41e0df2f461b4">Main</span>
-          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-9882f57e324ef" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-9882f57e324ef">Main</span>
+          <a class="block p-1 align-middle" href="index">Home</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-41e0df2f461b4" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-41e0df2f461b4">Elements</span>
-          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
-          <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 no-underline align-middle" href="code">Code</a>
-          <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
-          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
-          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
-          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 no-underline align-middle" href="links">Links</a>
-          <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
-          <a class="block p-1 no-underline align-middle" href="options">Options</a>
-          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
-          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-9882f57e324ef" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-9882f57e324ef">Elements</span>
+          <a class="block p-1 align-middle" href="badge">Badge</a>
+          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
+          <a class="block p-1 align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
+          <a class="block p-1 align-middle" href="code">Code</a>
+          <a class="block p-1 align-middle" href="dividers">Dividers</a>
+          <a class="block p-1 align-middle" href="forms">Forms</a>
+          <a class="block p-1 align-middle" href="icons">Icons</a>
+          <a class="block p-1 align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 align-middle" href="labels">Labels</a>
+          <a class="block p-1 align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 align-middle" href="links">Links</a>
+          <a class="block p-1 align-middle" href="navs">Navs</a>
+          <a class="block p-1 align-middle" href="options">Options</a>
+          <a class="block p-1 align-middle" href="selects">Selects</a>
+          <a class="block p-1 align-middle" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-41e0df2f461b4" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-41e0df2f461b4">Components</span>
-          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
-          <a class="block p-1 no-underline align-middle" href="card">Card</a>
-          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 no-underline align-middle" href="question">Question</a>
-          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
-          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-9882f57e324ef" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-9882f57e324ef">Components</span>
+          <a class="block p-1 align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 align-middle" href="alert">Alert</a>
+          <a class="block p-1 align-middle" href="card">Card</a>
+          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 align-middle" href="question">Question</a>
+          <a class="block p-1 align-middle" href="utility">Utility</a>
+          <a class="block p-1 align-middle" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-41e0df2f461b4" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-41e0df2f461b4">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-9882f57e324ef" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-9882f57e324ef">Objects</span>
+          <a class="block p-1 align-middle" href="application-header">Application Header</a>
+          <a class="block p-1 align-middle" href="attribution">Attribution</a>
+          <a class="block p-1 align-middle" href="menu">Menu</a>
+          <a class="block p-1 align-middle" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-41e0df2f461b4" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-41e0df2f461b4">Utilities</span>
-          <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-9882f57e324ef" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-9882f57e324ef">Utilities</span>
+          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>
@@ -205,18 +237,19 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var Standard = new Default();
-    Standard.icons();
-    Standard.icons('svg/pattern-elements.svg');
-    Standard.icons('svg/feather.svg');
+    Standard.icons('/svg/svgs.svg');
+    Standard.icons('/svg/pattern-elements.svg');
+    Standard.icons('/svg/feather.svg');
     Standard.accordion();
     Standard.activeNavigation();
+    Standard.attribution();
     Standard.copy();
     Standard.dialog();
     Standard.direction();
-    // Standard.menu();
+    Standard.menu();
     Standard.newsletter();
+    Standard.setHeightProperties();
     // Standard.search();
-    Standard.setObjectHeights();
     Standard.themes();
     Standard.toggle();
     Standard.webShare();

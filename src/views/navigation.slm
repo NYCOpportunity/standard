@@ -17,4 +17,10 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/objects/navigation/navigation')
+
+  - navigation = {class: ''}
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-navigation/src/navigation', {title: false, pkg: '@nycopportunity/pattern-navigation'});
+
+  = mixin('section', '/objects/global/global', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
+
+  = mixin('section', '/objects/navigation/readme', {title: 'Usage', src: false, markup: false, demo: false});

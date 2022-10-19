@@ -1,4 +1,4 @@
-- this.title = 'Footer'
+- this.title = 'Installation'
 
 / Layout
 = extend('/slm/layouts/default')
@@ -6,6 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/partial.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -17,4 +18,5 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/objects/footer/footer')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/installation', {markup: false, demo: false, src: false});

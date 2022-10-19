@@ -1,0 +1,19 @@
+/**
+ * Navigation
+ */
+
+@forward '@nycopportunity/pattern-navigation/src/navigation';
+@forward '@nycopportunity/pattern-navigation/src/utilities.css';
+
+:root {
+  --o-navigation-grid-base: var(--nyco-grid);
+  --o-navigation-background-color: var(--nyco-scale-2);
+  --o-navigation-material-border: var(--nyco-material-border);
+  --o-navigation-material-border-radius: var(--nyco-material-border-radius);
+  --o-navigation-material-shadow-up: var(--nyco-material-shadow-up);
+
+  --o-navigation-item-color: var(--nyco-link);
+  --o-navigation-item-font-weight: var(--nyco-fontWeight-link);
+  --o-navigation-item-text-decoration: var(--nyco-textDecoration-link);
+  --o-navigation-logo-min-width: auto;
+}

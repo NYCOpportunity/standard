@@ -19,7 +19,7 @@ This will instantiate the Web Share and fallback element.
 
 ##### Module Import
 
-The Web Share source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library. Install the `@nycopportunity/pttrn-scripts` module to import the module from the source. This method allows the specification of a callback method for a successful share and the fallback method. The `Toggle` and `Copy` modules are optional but required for the fallback in the demo.
+The Web Share source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library, which is a dependency of this library. This method allows the specification of a callback method for a successful share and the fallback method. The `Toggle` and `Copy` modules are optional but required for the fallback in the demo.
 
 ```javascript
 import WebShare from '@nycopportunity/pttrn-scripts/src/web-share/web-share';

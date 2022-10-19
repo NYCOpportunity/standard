@@ -10,8 +10,26 @@ const logical = require('tailwindcss-logical');
  */
 
 module.exports = {
-  purge: false,
-  darkMode: false,
+  content: [
+    'dist/**/**.html'
+  ],
+
+  /**
+   * All classes are only generated for non-development
+   */
+  safelist: (process.env.NODE_ENV === 'development') ? [] : [{
+    pattern: /./,
+    variants: Object.keys(tokens.screen)
+  }],
+
+  // /**
+  //  * All classes are generated
+  //  */
+  // safelist: [{
+  //   pattern: /./,
+  //   variants: Object.keys(tokens.screen)
+  // }],
+
   important: true,
   theme: {
     colors: tokens.color,

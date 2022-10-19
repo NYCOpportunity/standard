@@ -13,10 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-  <link href="css/tokens.css" rel="stylesheet" />
-  <link href="css/tokens-default.css" rel="stylesheet" />
-  <link href="css/tokens-dark.css" rel="stylesheet" />
-  <link href="css/default.css" rel="stylesheet" />
+  <link href="/css/tokens.css" rel="stylesheet" />
+  <link href="/css/tokens-default.css" rel="stylesheet" />
+  <link href="/css/tokens-dark.css" rel="stylesheet" />
+  <link href="/css/default.css" rel="stylesheet" />
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
       hljs.configure({
@@ -49,7 +49,7 @@
       <div class="flex items-center">
         <h2 class="h5 m-0">Patterns</h2>
         <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
-          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-1" rel="noopener nofollow" target="_blank">0.0.0-1</a>
+          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-2" rel="noopener nofollow" target="_blank">0.0.0-2</a>
           <button class="flex items-center" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#feather-moon"></use>
@@ -66,53 +66,72 @@
         </nav>
       </div>
     </div>
+    <div class="pb-3 px-3">
+      <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+        <div class="c-alert__graphic">
+          <svg aria-hidden="true" class="icon-ui">
+            <use href="#feather-info"></use>
+          </svg>
+        </div>
+        <!--{ @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }-->
+        <div class="c-alert__body">
+          <!--{ @data-js-alert  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+          <p>The Opportunity Standard is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>
+        </div>
+      </article>
+    </div>
   </header>
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
-      <div class="tablet:flex">
-        <nav aria-labelledby="navigation-main-c7ddab6d5b147" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-c7ddab6d5b147">Main</span>
-          <a class="block p-1 no-underline align-middle" href="index" tabindex="-1">Home</a>
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-28f30a3a59013" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-28f30a3a59013">Main</span>
+          <a class="block p-1 align-middle" href="index" tabindex="-1">Home</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
-          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
+          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-c7ddab6d5b147" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-c7ddab6d5b147">Elements</span>
-          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Badge</a>
-          <a class="block p-1 no-underline align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
-          <a class="block p-1 no-underline align-middle" href="buttons" tabindex="-1">Buttons</a>
-          <a class="block p-1 no-underline align-middle" href="description-lists" tabindex="-1">Description Lists</a>
-          <a class="block p-1 no-underline align-middle" href="code" tabindex="-1">Code</a>
-          <a class="block p-1 no-underline align-middle" href="dividers" tabindex="-1">Dividers</a>
-          <a class="block p-1 no-underline align-middle" href="forms" tabindex="-1">Forms</a>
-          <a class="block p-1 no-underline align-middle" href="icons" tabindex="-1">Icons</a>
-          <a class="block p-1 no-underline align-middle" href="inputs" tabindex="-1">Inputs</a>
-          <a class="block p-1 no-underline align-middle" href="labels" tabindex="-1">Labels</a>
-          <a class="block p-1 no-underline align-middle" href="layouts" tabindex="-1">Layouts</a>
-          <a class="block p-1 no-underline align-middle" href="links" tabindex="-1">Links</a>
-          <a class="block p-1 no-underline align-middle" href="navs" tabindex="-1">Navs</a>
-          <a class="block p-1 no-underline align-middle" href="options" tabindex="-1">Options</a>
-          <a class="block p-1 no-underline align-middle" href="selects" tabindex="-1">Selects</a>
-          <a class="block p-1 no-underline align-middle" href="tables" tabindex="-1">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-28f30a3a59013" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-28f30a3a59013">Elements</span>
+          <a class="block p-1 align-middle" href="badge" tabindex="-1">Badge</a>
+          <a class="block p-1 align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
+          <a class="block p-1 align-middle" href="buttons" tabindex="-1">Buttons</a>
+          <a class="block p-1 align-middle" href="description-lists" tabindex="-1">Description Lists</a>
+          <a class="block p-1 align-middle" href="code" tabindex="-1">Code</a>
+          <a class="block p-1 align-middle" href="dividers" tabindex="-1">Dividers</a>
+          <a class="block p-1 align-middle" href="forms" tabindex="-1">Forms</a>
+          <a class="block p-1 align-middle" href="icons" tabindex="-1">Icons</a>
+          <a class="block p-1 align-middle" href="inputs" tabindex="-1">Inputs</a>
+          <a class="block p-1 align-middle" href="labels" tabindex="-1">Labels</a>
+          <a class="block p-1 align-middle" href="layouts" tabindex="-1">Layouts</a>
+          <a class="block p-1 align-middle" href="links" tabindex="-1">Links</a>
+          <a class="block p-1 align-middle" href="navs" tabindex="-1">Navs</a>
+          <a class="block p-1 align-middle" href="options" tabindex="-1">Options</a>
+          <a class="block p-1 align-middle" href="selects" tabindex="-1">Selects</a>
+          <a class="block p-1 align-middle" href="tables" tabindex="-1">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-c7ddab6d5b147" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-c7ddab6d5b147">Components</span>
-          <a class="block p-1 no-underline align-middle" href="accordion" tabindex="-1">Accordion</a>
-          <a class="block p-1 no-underline align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
-          <a class="block p-1 no-underline align-middle" href="alert" tabindex="-1">Alert</a>
-          <a class="block p-1 no-underline align-middle" href="card" tabindex="-1">Card</a>
-          <a class="block p-1 no-underline align-middle" href="dropdown" tabindex="-1">Dropdown</a>
-          <a class="block p-1 no-underline align-middle" href="question" tabindex="-1">Question</a>
-          <a class="block p-1 no-underline align-middle" href="utility" tabindex="-1">Utility</a>
-          <a class="block p-1 no-underline align-middle" href="web-share" tabindex="-1">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-28f30a3a59013" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-28f30a3a59013">Components</span>
+          <a class="block p-1 align-middle" href="accordion" tabindex="-1">Accordion</a>
+          <a class="block p-1 align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="block p-1 align-middle" href="alert" tabindex="-1">Alert</a>
+          <a class="block p-1 align-middle" href="card" tabindex="-1">Card</a>
+          <a class="block p-1 align-middle" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="block p-1 align-middle" href="question" tabindex="-1">Question</a>
+          <a class="block p-1 align-middle" href="utility" tabindex="-1">Utility</a>
+          <a class="block p-1 align-middle" href="web-share" tabindex="-1">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-c7ddab6d5b147" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-c7ddab6d5b147">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-28f30a3a59013" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-28f30a3a59013">Objects</span>
+          <a class="block p-1 align-middle" href="application-header" tabindex="-1">Application Header</a>
+          <a class="block p-1 align-middle" href="attribution" tabindex="-1">Attribution</a>
+          <a class="block p-1 align-middle" href="menu" tabindex="-1">Menu</a>
+          <a class="block p-1 align-middle" href="navigation" tabindex="-1">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-c7ddab6d5b147" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-c7ddab6d5b147">Utilities</span>
-          <a class="block p-1 no-underline align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-28f30a3a59013" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-28f30a3a59013">Utilities</span>
+          <a class="block p-1 align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
         </nav>
       </div>
       <div class="text-center">
@@ -139,13 +158,6 @@
             </p>
           </div>
         </header>
-        <!--Section Text-->
-        <div class="page-max layout-content pb-6">
-          <div class="wrap">
-            <!-- Headers start with h5 ##### -->
-            <p>The Accordion is a group of expandable and collapsable header and content regions intended to consolidate the amount of space content will occupy on a page. Further guidance on Accordions can be found on the <a href="https://designsystem.digital.gov/components/accordion/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>. Within the Opportunity Standard, when implementing multiple region groups stacked on one another, the first region should be open when the user lands on the page. Additionally, more than one region may be open at the same time.</p>
-          </div>
-        </div>
         <div class="page-max layout-content pb-4">
           <h5 class="wrap flex items-center" id="accordion-example">Demonstration</h5>
         </div>
@@ -154,13 +166,13 @@
             <div class="c-accordion">
               <article class="c-accordion__group">
                 <h5 class="c-accordion__header">
-                  <!--{ @data-js         "accordion" initalizes component instance }-->
+                  <!--{ @data-js         The value "accordion" is the selector matching value for the click event }-->
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-0e32c1505b799" aria-expanded="true" class="c-accordion__toggle print:hidden active" data-js="accordion">
+                  <button aria-controls="aria-c-fe376a04ed561" aria-expanded="true" class="c-accordion__toggle print:hidden active" data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-0e32c1505b799">Apply online</span>
+                    <span class="c-accordion__heading" id="aria-lb-fe376a04ed561">Apply online</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#feather-chevron-down"></use>
                     </svg>
@@ -171,7 +183,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="false" aria-labelledby="aria-lb-0e32c1505b799" class="c-accordion__body print:active hidden:overflow animated active" id="aria-c-0e32c1505b799">
+                <div aria-hidden="false" aria-labelledby="aria-lb-fe376a04ed561" class="c-accordion__body print:active hidden:overflow animated active" id="aria-c-fe376a04ed561">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Apply online using <a href="https://a069-access.nyc.gov/ACCESSNYC/application.do" target="_blank" rel="noopener noreferrer" tabindex="-1">ACCESS HRA</a>. You can apply for Cash Assistance, SNAP, and Medicaid Renewal <strong>all</strong> at the same time.</li>
@@ -193,13 +205,13 @@
               </article>
               <article class="c-accordion__group">
                 <h5 class="c-accordion__header">
-                  <!--{ @data-js         "accordion" initalizes component instance }-->
+                  <!--{ @data-js         The value "accordion" is the selector matching value for the click event }-->
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-e4c90ac8e77f7" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
+                  <button aria-controls="aria-c-e51ce68038bd2" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-e4c90ac8e77f7">Apply by mail</span>
+                    <span class="c-accordion__heading" id="aria-lb-e51ce68038bd2">Apply by mail</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#feather-chevron-down"></use>
                     </svg>
@@ -210,7 +222,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="true" aria-labelledby="aria-lb-e4c90ac8e77f7" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-e4c90ac8e77f7">
+                <div aria-hidden="true" aria-labelledby="aria-lb-e51ce68038bd2" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-e51ce68038bd2">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Print a <a href="http://otda.ny.gov/programs/applications/4826.pdf" target="_blank" rel="noopener noreferrer" tabindex="-1">paper application</a>, pick one up from a <a href="https://www1.nyc.gov/site/hra/locations/snap-locations.page" target="_blank" rel="noopener noreferrer" tabindex="-1">SNAP Center</a>, or call the HRA Infoline at <a href="tel:718-557-1399" target="_blank" rel="noopener noreferrer" tabindex="-1">718-557-1399</a> to have a paper application mailed to you.</li>
@@ -234,13 +246,13 @@
               </article>
               <article class="c-accordion__group">
                 <h5 class="c-accordion__header">
-                  <!--{ @data-js         "accordion" initalizes component instance }-->
+                  <!--{ @data-js         The value "accordion" is the selector matching value for the click event }-->
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-1ab02be0972a7" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
+                  <button aria-controls="aria-c-200f22764946b" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-1ab02be0972a7">Apply in person</span>
+                    <span class="c-accordion__heading" id="aria-lb-200f22764946b">Apply in person</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#feather-chevron-down"></use>
                     </svg>
@@ -251,7 +263,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="true" aria-labelledby="aria-lb-1ab02be0972a7" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-1ab02be0972a7">
+                <div aria-hidden="true" aria-labelledby="aria-lb-200f22764946b" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-200f22764946b">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Print a <a href="http://otda.ny.gov/programs/applications/4826.pdf" target="_blank" rel="noopener noreferrer" tabindex="-1">paper application</a>, pick one up from a <a href="https://www1.nyc.gov/site/hra/locations/snap-locations.page" target="_blank" rel="noopener noreferrer" tabindex="-1">SNAP Center</a>, or call the HRA Infoline at <a href="tel:718-557-1399" target="_blank" rel="noopener noreferrer" tabindex="-1">718-557-1399</a> to have a paper application mailed to you.</li>
@@ -274,7 +286,7 @@
           </div>
         </div>
         <!--Section Markup-->
-        <div class="page-max layout-content pb-4">
+        <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="accordion-markup">Code</h5>
             <button aria-controls="accordion-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
@@ -285,20 +297,20 @@
             </button>
           </div>
         </div>
-        <div class="page-max layout-content">
+        <div class="page-max layout-content pb-6 mb-6">
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="accordion-markup-block">
             <div class="py-1">
               <div class="code-block">
                 <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-accordion&quot;&gt;
   &lt;article class=&quot;c-accordion__group&quot;&gt;
     &lt;h5 class=&quot;c-accordion__header&quot;&gt;
-      &lt;!--{ @data-js         &quot;accordion&quot; initalizes component instance }--&gt;
+      &lt;!--{ @data-js         The value &quot;accordion&quot; is the selector matching value for the click event }--&gt;
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-ec3ce96568b14&quot; aria-expanded=&quot;true&quot; class=&quot;c-accordion__toggle print:hidden active&quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-8c03accac1b04&quot; aria-expanded=&quot;true&quot; class=&quot;c-accordion__toggle print:hidden active&quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-ec3ce96568b14&quot;&gt;Apply online&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-8c03accac1b04&quot;&gt;Apply online&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#feather-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -309,7 +321,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;false&quot; aria-labelledby=&quot;aria-lb-ec3ce96568b14&quot; class=&quot;c-accordion__body print:active hidden:overflow animated active&quot; id=&quot;aria-c-ec3ce96568b14&quot;&gt;
+    &lt;div aria-hidden=&quot;false&quot; aria-labelledby=&quot;aria-lb-8c03accac1b04&quot; class=&quot;c-accordion__body print:active hidden:overflow animated active&quot; id=&quot;aria-c-8c03accac1b04&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Apply online using &lt;a href=&quot;https://a069-access.nyc.gov/ACCESSNYC/application.do&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;ACCESS HRA&lt;/a&gt;. You can apply for Cash Assistance, SNAP, and Medicaid Renewal &lt;strong&gt;all&lt;/strong&gt; at the same time.&lt;/li&gt;
@@ -331,13 +343,13 @@
   &lt;/article&gt;
   &lt;article class=&quot;c-accordion__group&quot;&gt;
     &lt;h5 class=&quot;c-accordion__header&quot;&gt;
-      &lt;!--{ @data-js         &quot;accordion&quot; initalizes component instance }--&gt;
+      &lt;!--{ @data-js         The value &quot;accordion&quot; is the selector matching value for the click event }--&gt;
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-d746acfe8549a&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-53ddd42d64f0d&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-d746acfe8549a&quot;&gt;Apply by mail&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-53ddd42d64f0d&quot;&gt;Apply by mail&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#feather-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -348,7 +360,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-d746acfe8549a&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-d746acfe8549a&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-53ddd42d64f0d&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-53ddd42d64f0d&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Print a &lt;a href=&quot;http://otda.ny.gov/programs/applications/4826.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;paper application&lt;/a&gt;, pick one up from a &lt;a href=&quot;https://www1.nyc.gov/site/hra/locations/snap-locations.page&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;SNAP Center&lt;/a&gt;, or call the HRA Infoline at &lt;a href=&quot;tel:718-557-1399&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;718-557-1399&lt;/a&gt; to have a paper application mailed to you.&lt;/li&gt;
@@ -372,13 +384,13 @@
   &lt;/article&gt;
   &lt;article class=&quot;c-accordion__group&quot;&gt;
     &lt;h5 class=&quot;c-accordion__header&quot;&gt;
-      &lt;!--{ @data-js         &quot;accordion&quot; initalizes component instance }--&gt;
+      &lt;!--{ @data-js         The value &quot;accordion&quot; is the selector matching value for the click event }--&gt;
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-a636b53a99da5&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-be1ecac381bbb&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-a636b53a99da5&quot;&gt;Apply in person&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-be1ecac381bbb&quot;&gt;Apply in person&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#feather-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -389,7 +401,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-a636b53a99da5&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-a636b53a99da5&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-be1ecac381bbb&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-be1ecac381bbb&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Print a &lt;a href=&quot;http://otda.ny.gov/programs/applications/4826.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;paper application&lt;/a&gt;, pick one up from a &lt;a href=&quot;https://www1.nyc.gov/site/hra/locations/snap-locations.page&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;SNAP Center&lt;/a&gt;, or call the HRA Infoline at &lt;a href=&quot;tel:718-557-1399&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;718-557-1399&lt;/a&gt; to have a paper application mailed to you.&lt;/li&gt;
@@ -413,6 +425,13 @@
             </div>
           </div>
         </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <!-- Headers start with h5 ##### -->
+            <p>The Accordion is a group of expandable and collapsable header and content regions intended to consolidate the amount of space content will occupy on a page. Further guidance on Accordions can be found on the <a href="https://designsystem.digital.gov/components/accordion/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>. Within the Opportunity Standard, when implementing multiple region groups stacked on one another, the first region should be open when the user lands on the page. Additionally, more than one region may be open at the same time.</p>
+          </div>
+        </div>
       </section>
       <section class="pb-4 mb-4" id="usage">
         <header class="page-max layout-content py-4">
@@ -433,7 +452,7 @@
             <!-- Headers start with h5 ##### -->
             <h5 id="global-script">Global Script</h5>
             <p>The Accordion requires JavaScript for functionality and screen reader accessibility. To initialize the Accordion instance from the global script use the following code:</p>
-            <pre><code class="language-html">&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
+            <pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-2/dist/js/default.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
   var Standard = new Default();
@@ -472,50 +491,54 @@ new Accordion();
       </div>
     </div>
     <div class="page-max pt-2">
-      <div class="tablet:flex">
-        <nav aria-labelledby="navigation-main-621bd807e1ed2" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-621bd807e1ed2">Main</span>
-          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-7c6a849223fad" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-7c6a849223fad">Main</span>
+          <a class="block p-1 align-middle" href="index">Home</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-621bd807e1ed2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-621bd807e1ed2">Elements</span>
-          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
-          <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 no-underline align-middle" href="code">Code</a>
-          <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
-          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
-          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
-          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 no-underline align-middle" href="links">Links</a>
-          <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
-          <a class="block p-1 no-underline align-middle" href="options">Options</a>
-          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
-          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-7c6a849223fad" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-7c6a849223fad">Elements</span>
+          <a class="block p-1 align-middle" href="badge">Badge</a>
+          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
+          <a class="block p-1 align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
+          <a class="block p-1 align-middle" href="code">Code</a>
+          <a class="block p-1 align-middle" href="dividers">Dividers</a>
+          <a class="block p-1 align-middle" href="forms">Forms</a>
+          <a class="block p-1 align-middle" href="icons">Icons</a>
+          <a class="block p-1 align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 align-middle" href="labels">Labels</a>
+          <a class="block p-1 align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 align-middle" href="links">Links</a>
+          <a class="block p-1 align-middle" href="navs">Navs</a>
+          <a class="block p-1 align-middle" href="options">Options</a>
+          <a class="block p-1 align-middle" href="selects">Selects</a>
+          <a class="block p-1 align-middle" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-621bd807e1ed2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-621bd807e1ed2">Components</span>
-          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
-          <a class="block p-1 no-underline align-middle" href="card">Card</a>
-          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 no-underline align-middle" href="question">Question</a>
-          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
-          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-7c6a849223fad" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-7c6a849223fad">Components</span>
+          <a class="block p-1 align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 align-middle" href="alert">Alert</a>
+          <a class="block p-1 align-middle" href="card">Card</a>
+          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 align-middle" href="question">Question</a>
+          <a class="block p-1 align-middle" href="utility">Utility</a>
+          <a class="block p-1 align-middle" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-621bd807e1ed2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-621bd807e1ed2">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-7c6a849223fad" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-7c6a849223fad">Objects</span>
+          <a class="block p-1 align-middle" href="application-header">Application Header</a>
+          <a class="block p-1 align-middle" href="attribution">Attribution</a>
+          <a class="block p-1 align-middle" href="menu">Menu</a>
+          <a class="block p-1 align-middle" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-621bd807e1ed2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-621bd807e1ed2">Utilities</span>
-          <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-7c6a849223fad" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-7c6a849223fad">Utilities</span>
+          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>
@@ -523,18 +546,19 @@ new Accordion();
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var Standard = new Default();
-    Standard.icons();
-    Standard.icons('svg/pattern-elements.svg');
-    Standard.icons('svg/feather.svg');
+    Standard.icons('/svg/svgs.svg');
+    Standard.icons('/svg/pattern-elements.svg');
+    Standard.icons('/svg/feather.svg');
     Standard.accordion();
     Standard.activeNavigation();
+    Standard.attribution();
     Standard.copy();
     Standard.dialog();
     Standard.direction();
-    // Standard.menu();
+    Standard.menu();
     Standard.newsletter();
+    Standard.setHeightProperties();
     // Standard.search();
-    Standard.setObjectHeights();
     Standard.themes();
     Standard.toggle();
     Standard.webShare();

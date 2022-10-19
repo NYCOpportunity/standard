@@ -1,7 +1,7 @@
 {
   "name": "@nycopportunity/standard",
   "nice": "Opportunity Standard",
-  "version": "0.0.0-1",
+  "version": "0.0.0-3",
   "description": "This project was scaffolded using the NYCO Patterns CLI",
   "homepage": "https://github.com/nycopportunity/standard",
   "repository": {
@@ -34,7 +34,11 @@
     "tailwindcss-logical": "^3.0.0"
   },
   "dependencies": {
+    "@nycopportunity/pattern-application-header": "file:../pattern-application-header",
+    "@nycopportunity/pattern-attribution": "file:../pattern-attribution",
     "@nycopportunity/pattern-elements": "file:../pattern-elements",
+    "@nycopportunity/pattern-menu": "file:../pattern-menu",
+    "@nycopportunity/pattern-navigation": "file:../pattern-navigation",
     "@nycopportunity/pattern-typography": "file:../pattern-typography",
     "@nycopportunity/pttrn-docs": "file:../../cityofnewyork/patterns-docs",
     "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",

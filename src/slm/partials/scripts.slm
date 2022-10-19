@@ -1,19 +1,20 @@
 javascript:
   var Standard = new Default();
 
-  Standard.icons();
-  Standard.icons('svg/pattern-elements.svg');
-  Standard.icons('svg/feather.svg');
+  Standard.icons('${this.baseURL}/svg/svgs.svg');
+  Standard.icons('${this.baseURL}/svg/pattern-elements.svg');
+  Standard.icons('${this.baseURL}/svg/feather.svg');
 
   Standard.accordion();
   Standard.activeNavigation();
+  Standard.attribution();
   Standard.copy();
   Standard.dialog();
   Standard.direction();
-  // Standard.menu();
+  Standard.menu();
   Standard.newsletter();
+  Standard.setHeightProperties();
   // Standard.search();
-  Standard.setObjectHeights();
   Standard.themes();
   Standard.toggle();
   Standard.webShare();

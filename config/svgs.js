@@ -1,23 +1,18 @@
+let svgs = require('@nycopportunity/pttrn/config/svgs');
+
 /**
  * Plugin options for SVGO
  *
  * @source https://github.com/svg/svgo#built-in-plugins
  */
-const svgo = {
-  plugins: [
-    {
-      name: 'preset-default',
-      params: {
-        overrides: {
-          removeViewBox: false,
-          convertPathData: false,
-          inlineStyles: false,
-          cleanupIDs: false
-        }
-      }
-    }
-  ]
-};
+const svgo = svgs[0].svgo;
+
+/**
+ * Distribution folder
+ *
+ * @var {String}
+ */
+const dist = svgs[0].dist;
 
 /**
  * Config
@@ -26,15 +21,15 @@ const svgo = {
  */
 module.exports = [
   {
-    source: './src/svg',
-    dist: './dist/svg',
+    source: svgs[0].source,
+    dist: dist,
     prefix: '',
-    file: 'svgs.svg',
+    file: svgs[0].file,
     svgo: svgo
   },
   {
     source: './node_modules/@nycopportunity/pattern-elements/src/svg',
-    dist: './dist/svg',
+    dist: dist,
     prefix: '',
     file: 'pattern-elements.svg',
     svgo: svgo,
@@ -44,7 +39,7 @@ module.exports = [
   },
   {
     source: './node_modules/feather-icons/dist/icons',
-    dist: './dist/svg',
+    dist: dist,
     prefix: 'feather-',
     file: 'feather.svg',
     svgo: svgo,

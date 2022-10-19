@@ -1,0 +1,15 @@
+//
+// Variables, Functions, and Mixins
+//
+
+// Dependencies
+// @use ...
+
+@mixin base($type) {
+  color: var(--wnyc-statuses-#{$type}-text);
+  background-color:  var(--wnyc-statuses-#{$type}-background);
+
+  a:not(.btn), a:not(.btn):hover {
+    color: inherit !important
+  }
+}

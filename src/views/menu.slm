@@ -18,5 +18,9 @@
 = content('content')
   = mixin('content-header')
 
-  - mobileMenu = {class: 'grid'}
-  = mixin('section', '/objects/menu/menu')
+  - menu = {class: 'block'}
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-menu/src/menu', {title: false, pkg: '@nycopportunity/pattern-menu'});
+
+  = mixin('section', '/objects/global/global', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
+
+  = mixin('section', '/objects/menu/readme', {title: 'Usage', src: false, markup: false, demo: false});

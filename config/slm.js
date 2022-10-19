@@ -30,6 +30,7 @@ module.exports = {
   marked: {
     gfm: true,
     headerIds: true,
+    headerPrefix: '',
     smartypants: true
   },
   beautify: {

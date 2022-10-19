@@ -1,7 +1,7 @@
 {
   "name": "@nycopportunity/standard",
   "nice": "Opportunity Standard",
-  "version": "0.0.0-2",
+  "version": "0.0.0-3",
   "description": "The Opportunity Standard is the design system for NYC Opportunity's digital products.",
   "homepage": "https://github.com/nycopportunity/standard",
   "repository": {
@@ -28,16 +28,23 @@
     "default": "cross-env NODE_ENV=production pttrn -np"
   },
   "devDependencies": {
+    "@hail2u/css-mqpacker": "^9.0.1",
     "@nycopportunity/pttrn": "latest",
     "@nycopportunity/pttrn-plugin-properties": "^1.1.1",
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
     "tailwindcss": "^3.1.8",
     "tailwindcss-logical": "^3.0.0"
   },
   "dependencies": {
-    "@nycopportunity/pattern-elements": "^0.0.0-2",
+    "@nycopportunity/pattern-application-header": "^1.0.0",
+    "@nycopportunity/pattern-attribution": "^1.1.0",
+    "@nycopportunity/pattern-elements": "^0.0.0-3",
+    "@nycopportunity/pattern-menu": "^1.1.0",
+    "@nycopportunity/pattern-navigation": "^1.1.0",
     "@nycopportunity/pattern-typography": "^0.0.0-1",
-    "@nycopportunity/pttrn-docs": "^1.0.7",
-    "@nycopportunity/pttrn-scripts": "^1.0.14",
+    "@nycopportunity/pttrn-docs": "^1.1.0",
+    "@nycopportunity/pttrn-scripts": "^1.1.0",
     "feather-icons": "^4.29.0",
     "for-cerial": "^1.1.0"
   }

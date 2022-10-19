@@ -13,10 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-  <link href="css/tokens.css" rel="stylesheet" />
-  <link href="css/tokens-default.css" rel="stylesheet" />
-  <link href="css/tokens-dark.css" rel="stylesheet" />
-  <link href="css/default.css" rel="stylesheet" />
+  <link href="/css/tokens.css" rel="stylesheet" />
+  <link href="/css/tokens-default.css" rel="stylesheet" />
+  <link href="/css/tokens-dark.css" rel="stylesheet" />
+  <link href="/css/default.css" rel="stylesheet" />
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
       hljs.configure({
@@ -49,7 +49,7 @@
       <div class="flex items-center">
         <h2 class="h5 m-0">Patterns</h2>
         <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
-          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-1" rel="noopener nofollow" target="_blank">0.0.0-1</a>
+          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-2" rel="noopener nofollow" target="_blank">0.0.0-2</a>
           <button class="flex items-center" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#feather-moon"></use>
@@ -66,53 +66,72 @@
         </nav>
       </div>
     </div>
+    <div class="pb-3 px-3">
+      <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+        <div class="c-alert__graphic">
+          <svg aria-hidden="true" class="icon-ui">
+            <use href="#feather-info"></use>
+          </svg>
+        </div>
+        <!--{ @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }-->
+        <div class="c-alert__body">
+          <!--{ @data-js-alert  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+          <p>The Opportunity Standard is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>
+        </div>
+      </article>
+    </div>
   </header>
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
-      <div class="tablet:flex">
-        <nav aria-labelledby="navigation-main-2726642f498c5" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-2726642f498c5">Main</span>
-          <a class="block p-1 no-underline align-middle" href="index" tabindex="-1">Home</a>
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-ff732e637cf2d" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-ff732e637cf2d">Main</span>
+          <a class="block p-1 align-middle" href="index" tabindex="-1">Home</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
-          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
+          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-2726642f498c5" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-2726642f498c5">Elements</span>
-          <a class="block p-1 no-underline align-middle" href="badge" tabindex="-1">Badge</a>
-          <a class="block p-1 no-underline align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
-          <a class="block p-1 no-underline align-middle" href="buttons" tabindex="-1">Buttons</a>
-          <a class="block p-1 no-underline align-middle" href="description-lists" tabindex="-1">Description Lists</a>
-          <a class="block p-1 no-underline align-middle" href="code" tabindex="-1">Code</a>
-          <a class="block p-1 no-underline align-middle" href="dividers" tabindex="-1">Dividers</a>
-          <a class="block p-1 no-underline align-middle" href="forms" tabindex="-1">Forms</a>
-          <a class="block p-1 no-underline align-middle" href="icons" tabindex="-1">Icons</a>
-          <a class="block p-1 no-underline align-middle" href="inputs" tabindex="-1">Inputs</a>
-          <a class="block p-1 no-underline align-middle" href="labels" tabindex="-1">Labels</a>
-          <a class="block p-1 no-underline align-middle" href="layouts" tabindex="-1">Layouts</a>
-          <a class="block p-1 no-underline align-middle" href="links" tabindex="-1">Links</a>
-          <a class="block p-1 no-underline align-middle" href="navs" tabindex="-1">Navs</a>
-          <a class="block p-1 no-underline align-middle" href="options" tabindex="-1">Options</a>
-          <a class="block p-1 no-underline align-middle" href="selects" tabindex="-1">Selects</a>
-          <a class="block p-1 no-underline align-middle" href="tables" tabindex="-1">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-ff732e637cf2d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-ff732e637cf2d">Elements</span>
+          <a class="block p-1 align-middle" href="badge" tabindex="-1">Badge</a>
+          <a class="block p-1 align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
+          <a class="block p-1 align-middle" href="buttons" tabindex="-1">Buttons</a>
+          <a class="block p-1 align-middle" href="description-lists" tabindex="-1">Description Lists</a>
+          <a class="block p-1 align-middle" href="code" tabindex="-1">Code</a>
+          <a class="block p-1 align-middle" href="dividers" tabindex="-1">Dividers</a>
+          <a class="block p-1 align-middle" href="forms" tabindex="-1">Forms</a>
+          <a class="block p-1 align-middle" href="icons" tabindex="-1">Icons</a>
+          <a class="block p-1 align-middle" href="inputs" tabindex="-1">Inputs</a>
+          <a class="block p-1 align-middle" href="labels" tabindex="-1">Labels</a>
+          <a class="block p-1 align-middle" href="layouts" tabindex="-1">Layouts</a>
+          <a class="block p-1 align-middle" href="links" tabindex="-1">Links</a>
+          <a class="block p-1 align-middle" href="navs" tabindex="-1">Navs</a>
+          <a class="block p-1 align-middle" href="options" tabindex="-1">Options</a>
+          <a class="block p-1 align-middle" href="selects" tabindex="-1">Selects</a>
+          <a class="block p-1 align-middle" href="tables" tabindex="-1">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-2726642f498c5" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-2726642f498c5">Components</span>
-          <a class="block p-1 no-underline align-middle" href="accordion" tabindex="-1">Accordion</a>
-          <a class="block p-1 no-underline align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
-          <a class="block p-1 no-underline align-middle" href="alert" tabindex="-1">Alert</a>
-          <a class="block p-1 no-underline align-middle" href="card" tabindex="-1">Card</a>
-          <a class="block p-1 no-underline align-middle" href="dropdown" tabindex="-1">Dropdown</a>
-          <a class="block p-1 no-underline align-middle" href="question" tabindex="-1">Question</a>
-          <a class="block p-1 no-underline align-middle" href="utility" tabindex="-1">Utility</a>
-          <a class="block p-1 no-underline align-middle" href="web-share" tabindex="-1">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-ff732e637cf2d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-ff732e637cf2d">Components</span>
+          <a class="block p-1 align-middle" href="accordion" tabindex="-1">Accordion</a>
+          <a class="block p-1 align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="block p-1 align-middle" href="alert" tabindex="-1">Alert</a>
+          <a class="block p-1 align-middle" href="card" tabindex="-1">Card</a>
+          <a class="block p-1 align-middle" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="block p-1 align-middle" href="question" tabindex="-1">Question</a>
+          <a class="block p-1 align-middle" href="utility" tabindex="-1">Utility</a>
+          <a class="block p-1 align-middle" href="web-share" tabindex="-1">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-2726642f498c5" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-2726642f498c5">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-ff732e637cf2d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-ff732e637cf2d">Objects</span>
+          <a class="block p-1 align-middle" href="application-header" tabindex="-1">Application Header</a>
+          <a class="block p-1 align-middle" href="attribution" tabindex="-1">Attribution</a>
+          <a class="block p-1 align-middle" href="menu" tabindex="-1">Menu</a>
+          <a class="block p-1 align-middle" href="navigation" tabindex="-1">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-2726642f498c5" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-2726642f498c5">Utilities</span>
-          <a class="block p-1 no-underline align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-ff732e637cf2d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-ff732e637cf2d">Utilities</span>
+          <a class="block p-1 align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
         </nav>
       </div>
       <div class="text-center">
@@ -135,22 +154,69 @@
                 <title>GitHub Source Link</title>
                 <use href="#feather-github"></use>
               </svg>
-              <a href="https://github.com/nycopportunity/standard/tree/main/src/objects/navigation" target="_blank">@nycopportunity/standard/src/objects/navigation</a>
+              <a href="https://github.com/nycopportunity/pattern-navigation/tree/main/src" target="_blank">@nycopportunity/pattern-navigation/src</a>
             </p>
           </div>
         </header>
-        <!--Section Text-->
-        <div class="page-max layout-content pb-6">
-          <div class="wrap"></div>
-        </div>
         <div class="page-max layout-content pb-4">
           <h5 class="wrap flex items-center" id="navigation-example">Demonstration</h5>
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
-          <div class="page-max flex justify-center py-8 wrap"></div>
+          <div class="page-max flex justify-center py-8 wrap">
+            <!--{ @aria-label  Use "Primary Navigation" to identify the nav as a unique and major landmark }-->
+            <!--{ @class       Add "o-navigation-fixed" can be added to production layouts to fix the navigation to the bottom of the screen for the mobile viewport }-->
+            <!--{ @data-js     "navigation" is used as a JavaScript element selector. It is primarily used to set get the client height of the element to add padding to the bottom of the body. This prevents the mobile view of the element from covering the bottom of the page. }-->
+            <nav aria-label="Primary Navigation" class="o-navigation " data-js="navigation">
+              <a class="o-navigation__home o-navigation__menu-item" href="#">
+                <svg class="o-navigation__svg" fill="none" height="26" role="img" viewBox="0 0 456 152" width="78" xmlns="http://www.w3.org/2000/svg">
+                  <title>New York City Logo</title>
+                  <path d="M446.505 66.3803L456 57.0104V28.5052L427.495 0H332.505L304 28.5052V9.51562L294.505 0H256.505L247.01 9.51562V28.5052L228 47.5156L209.01 28.5052V9.51562L199.495 0H161.495L152 9.51562L142.505 0H104.505L95.0104 9.51562V47.5156L47.4948 0H9.49479L0 9.51562V142.505L9.49479 152H47.4948L57.0104 142.505V104.505L104.505 152H142.505L152 142.505V66.5052L199.495 114V142.505L209.01 152H247.01L256.505 142.505V114L304 66.5052V123.516L332.505 152H427.495L456 123.516V95.0104L446.505 85.4948H398.99V95.0104H361.01V57.0104H398.99V66.3803H446.505Z" fill="currentColor"></path>
+                  <path d="M449.233 6.41315C450.128 6.41315 450.899 6.32986 450.899 5.28876C450.899 4.41424 450.045 4.31013 449.337 4.31013H447.9V6.41315H449.233ZM447.921 10.4942H446.734V3.31068H449.462C451.19 3.31068 452.085 3.91452 452.085 5.37205C452.085 6.68383 451.294 7.20438 450.211 7.32931L452.231 10.4942H450.899L449.045 7.4126H447.942V10.4942H447.921ZM449.191 1.41589C446.38 1.41589 444.194 3.62301 444.194 6.78794C444.194 9.74466 446.11 12.16 449.191 12.16C451.981 12.16 454.168 9.9737 454.168 6.78794C454.168 3.62301 451.981 1.41589 449.191 1.41589ZM449.191 13.2844C445.464 13.2844 442.799 10.4942 442.799 6.78794C442.799 2.87342 445.756 0.291504 449.191 0.291504C452.585 0.291504 455.542 2.87342 455.542 6.78794C455.563 10.6816 452.606 13.2844 449.191 13.2844Z" fill="currentColor"></path>
+                </svg>
+              </a>
+              <!--{ View navigation link item }-->
+              <a class="o-navigation__item " href="#">Navigation</a>
+              <!--{ Search site feature item }-->
+              <button aria-controls="aria-c-search" aria-expanded="false" class="o-navigation__item" data-js="search">
+                <svg class="o-navigation__menu-icon icon-ui">
+                  <use href="#feather-search"></use>
+                </svg>
+                <span class="o-navigation__menu-label">Search</span>
+              </button>
+              <!--{ Theme toggling site feature item }-->
+              <button class="o-navigation__item" data-js="themes">
+                <svg class="o-navigation__menu-icon icon-ui">
+                  <use data-js-themes="icon" href="#feather-moon"></use>
+                </svg>
+                <span class="sr-only">Toggle&nbsp;</span>
+                <span class="o-navigation__menu-label" data-js-themes="label">Theme</span>
+              </button>
+              <!--{ Language translation site feature item }-->
+              <label class="o-navigation__menu-item desktop:m-0" for="js-custom-language-selector">
+                <svg class="o-navigation__menu-icon icon-ui">
+                  <use href="#icon-nyco-translate"></use>
+                </svg>
+                <div class="o-navigation__menu-label">
+                  <select id="js-custom-language-selector">
+                    <option disabled="true" selected="true" value="restore">Languages</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                    <option value="ko">한국어</option>
+                    <option value="ar">العربية</option>
+                    <option value="ht">Kreyol</option>
+                    <option value="zh-CN">繁體中文</option>
+                    <option value="fr">Français</option>
+                    <option value="pl">polski</option>
+                    <option value="ur">اردو</option>
+                    <option value="bn">বাংলা</option>
+                  </select>
+                </div>
+              </label>
+            </nav>
+          </div>
         </div>
         <!--Section Markup-->
-        <div class="page-max layout-content pb-4">
+        <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="navigation-markup">Code</h5>
             <button aria-controls="navigation-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
@@ -161,13 +227,160 @@
             </button>
           </div>
         </div>
-        <div class="page-max layout-content">
+        <div class="page-max layout-content pb-6 mb-6">
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="navigation-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1"></pre>
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @aria-label  Use &quot;Primary Navigation&quot; to identify the nav as a unique and major landmark }--&gt;
+&lt;!--{ @class       Add &quot;o-navigation-fixed&quot; can be added to production layouts to fix the navigation to the bottom of the screen for the mobile viewport }--&gt;
+&lt;!--{ @data-js     &quot;navigation&quot; is used as a JavaScript element selector. It is primarily used to set get the client height of the element to add padding to the bottom of the body. This prevents the mobile view of the element from covering the bottom of the page. }--&gt;
+&lt;nav aria-label=&quot;Primary Navigation&quot; class=&quot;o-navigation &quot; data-js=&quot;navigation&quot;&gt;
+  &lt;a class=&quot;o-navigation__home o-navigation__menu-item&quot; href=&quot;#&quot;&gt;
+    &lt;svg class=&quot;o-navigation__svg&quot; fill=&quot;none&quot; height=&quot;26&quot; role=&quot;img&quot; viewBox=&quot;0 0 456 152&quot; width=&quot;78&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+      &lt;title&gt;New York City Logo&lt;/title&gt;
+      &lt;path d=&quot;M446.505 66.3803L456 57.0104V28.5052L427.495 0H332.505L304 28.5052V9.51562L294.505 0H256.505L247.01 9.51562V28.5052L228 47.5156L209.01 28.5052V9.51562L199.495 0H161.495L152 9.51562L142.505 0H104.505L95.0104 9.51562V47.5156L47.4948 0H9.49479L0 9.51562V142.505L9.49479 152H47.4948L57.0104 142.505V104.505L104.505 152H142.505L152 142.505V66.5052L199.495 114V142.505L209.01 152H247.01L256.505 142.505V114L304 66.5052V123.516L332.505 152H427.495L456 123.516V95.0104L446.505 85.4948H398.99V95.0104H361.01V57.0104H398.99V66.3803H446.505Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;
+      &lt;path d=&quot;M449.233 6.41315C450.128 6.41315 450.899 6.32986 450.899 5.28876C450.899 4.41424 450.045 4.31013 449.337 4.31013H447.9V6.41315H449.233ZM447.921 10.4942H446.734V3.31068H449.462C451.19 3.31068 452.085 3.91452 452.085 5.37205C452.085 6.68383 451.294 7.20438 450.211 7.32931L452.231 10.4942H450.899L449.045 7.4126H447.942V10.4942H447.921ZM449.191 1.41589C446.38 1.41589 444.194 3.62301 444.194 6.78794C444.194 9.74466 446.11 12.16 449.191 12.16C451.981 12.16 454.168 9.9737 454.168 6.78794C454.168 3.62301 451.981 1.41589 449.191 1.41589ZM449.191 13.2844C445.464 13.2844 442.799 10.4942 442.799 6.78794C442.799 2.87342 445.756 0.291504 449.191 0.291504C452.585 0.291504 455.542 2.87342 455.542 6.78794C455.563 10.6816 452.606 13.2844 449.191 13.2844Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;!--{ View navigation link item }--&gt;
+  &lt;a class=&quot;o-navigation__item &quot; href=&quot;#&quot;&gt;Navigation&lt;/a&gt;
+  &lt;!--{ Search site feature item }--&gt;
+  &lt;button aria-controls=&quot;aria-c-search&quot; aria-expanded=&quot;false&quot; class=&quot;o-navigation__item&quot; data-js=&quot;search&quot;&gt;
+    &lt;svg class=&quot;o-navigation__menu-icon icon-ui&quot;&gt;
+      &lt;use href=&quot;#feather-search&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;span class=&quot;o-navigation__menu-label&quot;&gt;Search&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;!--{ Theme toggling site feature item }--&gt;
+  &lt;button class=&quot;o-navigation__item&quot; data-js=&quot;themes&quot;&gt;
+    &lt;svg class=&quot;o-navigation__menu-icon icon-ui&quot;&gt;
+      &lt;use data-js-themes=&quot;icon&quot; href=&quot;#feather-moon&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Toggle&amp;nbsp;&lt;/span&gt;
+    &lt;span class=&quot;o-navigation__menu-label&quot; data-js-themes=&quot;label&quot;&gt;Theme&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;!--{ Language translation site feature item }--&gt;
+  &lt;label class=&quot;o-navigation__menu-item desktop:m-0&quot; for=&quot;js-custom-language-selector&quot;&gt;
+    &lt;svg class=&quot;o-navigation__menu-icon icon-ui&quot;&gt;
+      &lt;use href=&quot;#icon-nyco-translate&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;o-navigation__menu-label&quot;&gt;
+      &lt;select id=&quot;js-custom-language-selector&quot;&gt;
+        &lt;option disabled=&quot;true&quot; selected=&quot;true&quot; value=&quot;restore&quot;&gt;Languages&lt;/option&gt;
+        &lt;option value=&quot;es&quot;&gt;Español&lt;/option&gt;
+        &lt;option value=&quot;ru&quot;&gt;Русский&lt;/option&gt;
+        &lt;option value=&quot;ko&quot;&gt;한국어&lt;/option&gt;
+        &lt;option value=&quot;ar&quot;&gt;العربية&lt;/option&gt;
+        &lt;option value=&quot;ht&quot;&gt;Kreyol&lt;/option&gt;
+        &lt;option value=&quot;zh-CN&quot;&gt;繁體中文&lt;/option&gt;
+        &lt;option value=&quot;fr&quot;&gt;Français&lt;/option&gt;
+        &lt;option value=&quot;pl&quot;&gt;polski&lt;/option&gt;
+        &lt;option value=&quot;ur&quot;&gt;اردو&lt;/option&gt;
+        &lt;option value=&quot;bn&quot;&gt;বাংলা&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/label&gt;
+&lt;/nav&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Navigation Pattern is a responsive <code>nav</code> element that contains the main links for accessing different views and button elements for site features (such as language translation). It uses responsive styling to appear as a three-button menu for small viewports. Possible button options include a homepage link (using an SVG logo), a translation button, or a mobile menu toggle. The menu is fixed to the bottom of the screen by default to assist with thumb reach.</p>
+            <hr>
+            <p>On larger devices (tablets), the Navigation sticks to the top of the screen with the same three-button menu set displayed as inline links.</p>
+            <p>On extra large devices (desktop), the Navigation is statically positioned at the top of the page with the complete list of navigation items on display. Navigation items are only visible on desktop viewports.</p>
+            <hr>
+            <p>We recommended three to four items: the logo (home link), the language, search, and the menu buttons. You should display additional navigation items by clicking the menu button using the <a href="/menu">Menu Pattern</a>.</p>
+            <hr>
+            <p>Use the <code>aria-label=&quot;Primary Navigation&quot;</code> attribute to distinguish the <code>nav</code> element from others.</p>
+            <hr>
+            <p>The Navigation below is positioned statically for demonstration purposes. You must add the <code>o-navigation-fixed</code> next to the <code>o-navigation</code> class when you use this pattern in production.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="global-elements-demonstration">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#global-elements-demonstration">
+                <svg class="icon-ui" role="img">
+                  <title>Global Elements Demonstration Anchor Link</title>
+                  <use href="#feather-anchor"></use>
+                </svg>
+              </a>Global Elements Demonstration
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The following demonstration shows the <a href="navigation">Navigation</a>, <a href="menu">Menu</a>, and <a href="attribution">Attribution</a> global elements within the mobile viewport.</p>
+            <div class="flex justify-center py-6">
+              <iframe style="width: 480px; margin: 0 auto" height="768" src="demos/global.html" class="border-4 border-scale-3" tabindex="-1"></iframe>
+            </div>
+            <p>
+              <a href="demos/global" target="_blank" rel="noopener nofollow">View the global elements demonstration at full screen</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="usage">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#usage">
+                <svg class="icon-ui" role="img">
+                  <title>Usage Anchor Link</title>
+                  <use href="#feather-anchor"></use>
+                </svg>
+              </a>Usage
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <!-- Headers start with h5 ##### -->
+            <p>The Navigation may be used by either the global stylesheet or module import.</p>
+            <h5 id="global-stylesheet-and-javascript">Global Stylesheet and JavaScript</h5>
+            <p>The Navigation will display correctly with the global stylesheet.</p>
+            <pre><code class="language-html">&lt;link href=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-2/dist/css/default.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre>
+            <p>The Navigation requires JavaScript to set the <code>--o-navigation-height</code> property. This property is used by CSS utilities to add spacing, equal to the height of the navigation, at the bottom of the page to prevent it from covering up content. To initialize the property heights instance from the global script, use the following code:</p>
+            <pre><code class="language-html">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-2/dist/js/default.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var Standard = new Default();
+
+  Standard.setPropertyHeights();
+&lt;/script&gt;
+</code></pre>
+            <p>This property can also be used to calculate layouts, such as the height of the main visible window.</p>
+            <pre><code class="language-html">&lt;main style=&#39;min-height: var(--100vh); min-height: calc(var(--100vh) - var(--o-navigation-height))&#39;&gt;
+  &lt;!-- ... --&gt;
+&lt;/main&gt;
+</code></pre>
+            <h5 id="stylesheet-and-javascript-module-import">Stylesheet and JavaScript Module Import</h5>
+            <p>The Navigation includes two stylesheets. One sets the default design tokens using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noindex nofollow">CSS Custom Properties</a>, and another adds custom styles.</p>
+            <pre><code class="language-scss">@forward &#39;@nycopportunity/pattern-navigation/src/tokens.css&#39;;
+@forward &#39;@nycopportunity/standard/objects/navigation/_navigation.scss&#39;;
+</code></pre>
+            <p>The Navigation JavaScript source uses the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library to set the <code>--o-navigation-height</code> property, which is a dependency of the Opportunity Standard. This method allows the specification of multiple properties and element heights.</p>
+            <pre><code class="language-javascript">import SetHeightProperties from &#39;@nycopportunity/pttrn-scripts/src/set-height-properties/set-height-properties&#39;;
+
+new SetHeightProperties({
+  &#39;elements&#39;: [
+    {
+      &#39;selector&#39;: &#39;[data-js=&quot;navigation&quot;]&#39;,
+      &#39;property&#39;: &#39;--o-navigation-height&#39;
+    }
+    // Additional elements and properties can be specified here as objects including the selector and propert attributes.
+  ]
+});
+</code></pre>
           </div>
         </div>
       </section>
@@ -192,50 +405,54 @@
       </div>
     </div>
     <div class="page-max pt-2">
-      <div class="tablet:flex">
-        <nav aria-labelledby="navigation-main-82024e7968fd2" class="tablet:flex-1 mb-1 px-1 tablet:px-2" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-82024e7968fd2">Main</span>
-          <a class="block p-1 no-underline align-middle" href="index">Home</a>
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-88165cf40ffbf" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-88165cf40ffbf">Main</span>
+          <a class="block p-1 align-middle" href="index">Home</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 no-underline align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 no-underline align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
+          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-82024e7968fd2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-82024e7968fd2">Elements</span>
-          <a class="block p-1 no-underline align-middle" href="badge">Badge</a>
-          <a class="block p-1 no-underline align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 no-underline align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 no-underline align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 no-underline align-middle" href="code">Code</a>
-          <a class="block p-1 no-underline align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 no-underline align-middle" href="forms">Forms</a>
-          <a class="block p-1 no-underline align-middle" href="icons">Icons</a>
-          <a class="block p-1 no-underline align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 no-underline align-middle" href="labels">Labels</a>
-          <a class="block p-1 no-underline align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 no-underline align-middle" href="links">Links</a>
-          <a class="block p-1 no-underline align-middle" href="navs">Navs</a>
-          <a class="block p-1 no-underline align-middle" href="options">Options</a>
-          <a class="block p-1 no-underline align-middle" href="selects">Selects</a>
-          <a class="block p-1 no-underline align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-88165cf40ffbf" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-88165cf40ffbf">Elements</span>
+          <a class="block p-1 align-middle" href="badge">Badge</a>
+          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
+          <a class="block p-1 align-middle" href="buttons">Buttons</a>
+          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
+          <a class="block p-1 align-middle" href="code">Code</a>
+          <a class="block p-1 align-middle" href="dividers">Dividers</a>
+          <a class="block p-1 align-middle" href="forms">Forms</a>
+          <a class="block p-1 align-middle" href="icons">Icons</a>
+          <a class="block p-1 align-middle" href="inputs">Inputs</a>
+          <a class="block p-1 align-middle" href="labels">Labels</a>
+          <a class="block p-1 align-middle" href="layouts">Layouts</a>
+          <a class="block p-1 align-middle" href="links">Links</a>
+          <a class="block p-1 align-middle" href="navs">Navs</a>
+          <a class="block p-1 align-middle" href="options">Options</a>
+          <a class="block p-1 align-middle" href="selects">Selects</a>
+          <a class="block p-1 align-middle" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-82024e7968fd2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-82024e7968fd2">Components</span>
-          <a class="block p-1 no-underline align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 no-underline align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 no-underline align-middle" href="alert">Alert</a>
-          <a class="block p-1 no-underline align-middle" href="card">Card</a>
-          <a class="block p-1 no-underline align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 no-underline align-middle" href="question">Question</a>
-          <a class="block p-1 no-underline align-middle" href="utility">Utility</a>
-          <a class="block p-1 no-underline align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-88165cf40ffbf" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-88165cf40ffbf">Components</span>
+          <a class="block p-1 align-middle" href="accordion">Accordion</a>
+          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
+          <a class="block p-1 align-middle" href="alert">Alert</a>
+          <a class="block p-1 align-middle" href="card">Card</a>
+          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
+          <a class="block p-1 align-middle" href="question">Question</a>
+          <a class="block p-1 align-middle" href="utility">Utility</a>
+          <a class="block p-1 align-middle" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-82024e7968fd2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-82024e7968fd2">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-88165cf40ffbf" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-88165cf40ffbf">Objects</span>
+          <a class="block p-1 align-middle" href="application-header">Application Header</a>
+          <a class="block p-1 align-middle" href="attribution">Attribution</a>
+          <a class="block p-1 align-middle" href="menu">Menu</a>
+          <a class="block p-1 align-middle" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-82024e7968fd2" class="tablet:flex-1 mb-1 px-1 tablet:px-2 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-82024e7968fd2">Utilities</span>
-          <a class="block p-1 no-underline align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-88165cf40ffbf" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-88165cf40ffbf">Utilities</span>
+          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>
@@ -243,18 +460,19 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var Standard = new Default();
-    Standard.icons();
-    Standard.icons('svg/pattern-elements.svg');
-    Standard.icons('svg/feather.svg');
+    Standard.icons('/svg/svgs.svg');
+    Standard.icons('/svg/pattern-elements.svg');
+    Standard.icons('/svg/feather.svg');
     Standard.accordion();
     Standard.activeNavigation();
+    Standard.attribution();
     Standard.copy();
     Standard.dialog();
     Standard.direction();
-    // Standard.menu();
+    Standard.menu();
     Standard.newsletter();
+    Standard.setHeightProperties();
     // Standard.search();
-    Standard.setObjectHeights();
     Standard.themes();
     Standard.toggle();
     Standard.webShare();

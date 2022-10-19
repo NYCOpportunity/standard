@@ -1,0 +1,28 @@
+- this.title = 'Application Header'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  - applicationHeader = {name: this.package.nice}
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-application-header/src/application-header', {title: false, pkg: '@nycopportunity/pattern-application-header'});
+
+  = mixin('section', '/objects/nyc-account/nyc-account', {title: 'NYC Account', markup: false, demo: false, src: false});
+
+  = mixin('section', '/objects/global/global-nyc-id', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
+
+  = mixin('section', '/objects/application-header/readme', {title: 'Usage', src: false, markup: false, demo: false});

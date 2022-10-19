@@ -1,0 +1,26 @@
+- this.title = 'Attribution (Footer)'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  - attribution = {name: this.package.nice, about: false, learnMore: true}
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-attribution/src/attribution', {title: false, pkg: '@nycopportunity/pattern-attribution'});
+
+  = mixin('section', '/objects/global/global', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
+
+  = mixin('section', '/objects/attribution/readme', {title: 'Usage', src: false, markup: false, demo: false});

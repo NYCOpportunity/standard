@@ -25,9 +25,13 @@
 
   /       p class='text-center' = `v${this.package.version}`
 
+  div class='py-3 wrap'
+    - alert = {class: 'c-alert-status-primary', body: `<p>The ${this.package.nice} is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>`}
+    == this.include('/components/alert/alert');
+
   header class='py-8'
-    div class='layout-wrap layout-content mx-auto py-8'
-      div class='mx-auto py-6'
+    div class='layout-content mx-auto py-8'
+      div class='wrap py-6'
         div class='flex justify-center items-center mb-6'
           svg style='width: 327px; height: 111px;' role='img'
             title New York City
@@ -47,16 +51,13 @@
           a href='${this.package.repository.url}/tree/v${this.package.version}' target='_blank' = 'v' + this.package.version;
 
   main#main-content role='main'
-    section#browse-the-patterns class='page-max p-6 tablet:grid grid-cols-5'
-      / div class='page-max pt-2'
-        / div class='tablet:flex'
-
+    section#browse-the-patterns class='page-max wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2'
       - tabindex = false;
       = partial('/slm/partials/nav.slm');
 
-    section class='p-6'
-      div class='layout-wrap layout-content mx-auto py-6'
-        div class='mx-auto'
+    section class='py-6'
+      div class='layout-content mx-auto py-6'
+        div class='wrap'
           h2 class='text-center mt-0' Installation
 
           p
@@ -72,7 +73,7 @@
 
               span Copy
 
-          p Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprits will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.
+          p Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprites will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.
 
           p class='text-center'
             a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide
@@ -89,14 +90,15 @@
     /         pre
     /           | $ npm install @nycopportunity/standard
 
-    /     section class='c-card m-auto mb-4'
-    /       header class='c-card__header'
-    /         h2 class='c-card__title'
-    /           / svg class='icon-ui icon-3 mie-1' aria-hidden='true'
-    /           /   use href='#feather-figma'
-    /           | Figma
+    section class='py-6'
+      div class='layout-content mx-auto py-6'
+        div class='wrap'
+          h2 class='text-center mt-0' Figma
 
-    /       div class='c-card__body'
-    /         / iframe class='border-0 block w-full mb-4' allowfullscreen='true' height='450' src='https://www.figma.com/embed?embed_host=nyco-wnyc-patterns&url=https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Patterns'
+          p
+            | The <a href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard?node-id=8674%3A35878" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.
+
+          iframe class='aspect-video border-4 border-scale-3 block w-full' allowfullscreen='true' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCH7ZOCW55SgsDnsTj3UrTi%2FOpportunity-Standard%3Fnode-id%3D8674%253A35878'
+
 
 = content('scripts')

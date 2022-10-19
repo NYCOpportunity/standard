@@ -55,13 +55,6 @@
             a href='${source}' target='_blank'
               = label
 
-    / Render the component text specs on the page
-    - if this.config.text
-      /! Section Text
-      div class='page-max layout-content pb-6'
-        div class='wrap'
-          == this.include(this.path + '.md');
-
     / Render the component on the page
     - if this.config.markup
       div class='page-max layout-content pb-4'
@@ -77,7 +70,7 @@
     / Render the componet markup in the code block
     - if this.config.markup
       /! Section Markup
-      div class='page-max layout-content pb-4'
+      div class='page-max layout-content pb-1'
         div class='wrap flex items-center'
           h5 id='${id}-markup' class='sr-only'
             | Code
@@ -88,12 +81,19 @@
             svg class='icon-ui' aria-hidden='true'
               use href='#feather-chevron-down'
 
-      div class='page-max layout-content'
+      div class='page-max layout-content pb-6 mb-6'
         div class='wrap hidden hidden:overflow animated' aria-hidden='true' id='${id}-markup-block'
           div class='py-1'
             div class='code-block'
               pre tabindex='-1' data-toggle-tabindex='0'
                 = this.include(this.path);
+
+    / Render the component text specs on the page
+    - if this.config.text
+      /! Section Text
+      div class='page-max layout-content pb-6'
+        div class='wrap'
+          == this.include(this.path + '.md');
 
           / h5 Imports
 

@@ -19,5 +19,5 @@ footer role='contentinfo' class='text-small py-4 z-20 relative'
       / hr class='divider'
 
   div class='page-max pt-2'
-    div class='tablet:flex'
+    div class='wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2'
       = partial('/slm/partials/nav.slm');

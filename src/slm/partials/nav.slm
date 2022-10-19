@@ -1,8 +1,8 @@
 - this.nav = {class: {}}
 - this.nav.id = this.createId()
-- this.nav.class.main = 'tablet:flex-1 mb-1 px-1 tablet:px-2'
+- this.nav.class.main = 'tablet:flex-1 mb-1'
 - this.nav.class.heading = 'p-1 block'
-- this.nav.class.item = 'block p-1 no-underline align-middle'
+- this.nav.class.item = 'block p-1 align-middle'
 - this.nav.class.divider = 'border-b border-scale-3 mb-1 mt-1'
 - this.nav.tabindex = (typeof tabindex === 'undefined') ? false : tabindex;
 
@@ -54,15 +54,18 @@ nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class=
 
 nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-objects-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Objects
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='application-header' Application Header
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='attribution' Attribution
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='banner' Banner
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='feedback' Feedback
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='footer' Footer
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='header' Header
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='menu' Menu
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='languages' Languages
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='menu' Menu
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='text-controller' Text Controller
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
 
 nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Utilities

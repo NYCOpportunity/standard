@@ -1,0 +1,6 @@
+:root {
+  --o-navigation-item-color: var(--nyco-link);
+  --o-navigation-item-font-weight: var(--nyco-fontWeight-link);
+  --o-navigation-item-text-decoration: var(--nyco-textDecoration-link);
+  --o-navigation-logo-min-width: auto;
+}

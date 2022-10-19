@@ -1,0 +1,17 @@
+doctype html
+html lang='en'
+  = content('head');
+
+  body class='bg' onload="load()" style="visibility: hidden;"
+    = content('content')
+
+    script src='${this.baseURL}/js/default.js'
+
+    = partial('/slm/partials/scripts.slm');
+
+    = content('scripts')
+
+    / The reload script. This should not be compile during production builds
+    / @source https://www.npmjs.com/package/reload
+    - if this.process.env.NODE_ENV !== 'production'
+      script src='/reload/reload.js'

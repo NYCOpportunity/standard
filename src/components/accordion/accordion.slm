@@ -17,7 +17,7 @@ div class='c-accordion'
 
     article class='c-accordion__group'
       h5 class='c-accordion__header'
-        /! { @data-js         "accordion" initalizes component instance }
+        /! { @data-js         The value "accordion" is the selector matching value for the click event }
         /! { @aria-controls   Targets the expandable region }
         /! { @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }
         /! { print:hidden     This CSS utility hides the button when the page is printed }
