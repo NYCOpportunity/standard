@@ -5,7 +5,7 @@ html lang='en'
   body class='bg' onload="load()" style="visibility: hidden;"
     = content('content')
 
-    script src='${this.baseURL}/js/default.js'
+    script src='${this.baseUrl}/js/default.js'
 
     = partial('/slm/partials/scripts.slm');
 

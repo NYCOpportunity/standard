@@ -1,9 +1,9 @@
 javascript:
   var Standard = new Default();
 
-  Standard.icons('${this.baseURL}/svg/svgs.svg');
-  Standard.icons('${this.baseURL}/svg/pattern-elements.svg');
-  Standard.icons('${this.baseURL}/svg/feather.svg');
+  Standard.icons('${this.baseUrl}/svg/svgs.svg');
+  Standard.icons('${this.baseUrl}/svg/pattern-elements.svg');
+  Standard.icons('${this.baseUrl}/svg/feather.svg');
 
   Standard.accordion();
   Standard.activeNavigation();
