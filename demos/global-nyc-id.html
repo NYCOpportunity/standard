@@ -13,10 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-  <link href="https://nycopportunity.github.io/standard/css/tokens.css" rel="stylesheet" />
-  <link href="https://nycopportunity.github.io/standard/css/tokens-default.css" rel="stylesheet" />
-  <link href="https://nycopportunity.github.io/standard/css/tokens-dark.css" rel="stylesheet" />
-  <link href="https://nycopportunity.github.io/standard/css/default.css" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
       hljs.configure({
@@ -66,21 +63,21 @@
     <!--{ NYC account profile item }-->
     <a class="o-navigation__item" href="#">
       <svg aria-hidden="true" class="o-navigation__menu-icon icon-ui">
-        <use href="#feather-user"></use>
+        <use href="#lucide-user"></use>
       </svg>
       <span>Profile</span>
     </a>
     <!--{ NYC account log out item }-->
     <a class="o-navigation__item" href="#">
       <svg aria-hidden="true" class="o-navigation__menu-icon icon-ui">
-        <use href="#feather-log-out"></use>
+        <use href="#lucide-log-out"></use>
       </svg>
       <span>Log Out</span>
     </a>
     <!--{ Theme toggling site feature item }-->
     <button class="o-navigation__item" data-js="themes">
       <svg class="o-navigation__menu-icon icon-ui">
-        <use data-js-themes="icon" href="#feather-moon"></use>
+        <use data-js-themes="icon" href="#lucide-moon"></use>
       </svg>
       <span class="sr-only">Toggle&nbsp;</span>
       <span class="o-navigation__menu-label" data-js-themes="label">Theme</span>
@@ -88,7 +85,7 @@
     <!--{ Language translation site feature item }-->
     <label class="o-navigation__menu-item desktop:m-0" for="js-custom-language-selector">
       <svg class="o-navigation__menu-icon icon-ui">
-        <use href="#icon-nyco-translate"></use>
+        <use href="#lucide-languages"></use>
       </svg>
       <div class="o-navigation__menu-label">
         <select id="js-custom-language-selector">
@@ -113,7 +110,7 @@
     <!--{ @aria-expanded  Indicates to screen readers if the menu target region is expanded or not }-->
     <button aria-controls="aria-c-menu" aria-expanded="false" class="o-navigation__menu-item desktop:hidden m-0" data-js="menu" data-js-menu="open">
       <svg class="o-navigation__menu-icon icon-ui">
-        <use href="#feather-menu"></use>
+        <use href="#lucide-menu"></use>
       </svg>
       <span class="o-navigation__menu-label">Menu</span>
     </button>
@@ -129,7 +126,7 @@
         <button aria-controls="aria-c-menu" aria-expanded="true" class="o-menu__nav-item" data-js="menu" data-js-menu="close" tabindex="-1">
           <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
           <svg aria-hidden="true" class="icon icon-ui" tabindex="-1">
-            <use href="#feather-x"></use>
+            <use href="#lucide-x"></use>
           </svg>
           <span>Close</span>
         </button>
@@ -140,7 +137,7 @@
         <a class="o-menu__nav-item" href="#" tabindex="-1">
           <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
           <svg aria-hidden="true" class="icon icon-ui" tabindex="-1">
-            <use href="#feather-user"></use>
+            <use href="#lucide-user"></use>
           </svg>
           <span>Profile</span>
         </a>
@@ -149,7 +146,7 @@
         <a class="o-menu__nav-item" href="#" tabindex="-1">
           <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
           <svg aria-hidden="true" class="icon icon-ui" tabindex="-1">
-            <use href="#feather-log-out"></use>
+            <use href="#lucide-log-out"></use>
           </svg>
           <span>Log Out</span>
         </a>
@@ -159,7 +156,7 @@
           <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
           <svg aria-hidden="true" class="icon icon-ui" tabindex="-1">
             <!--{ @data-js-themes  "icon" lets the theme toggling utility where change the theme icon }-->
-            <use data-js-themes="icon" href="#feather-sun"></use>
+            <use data-js-themes="icon" href="#lucide-sun"></use>
           </svg>
           <span class="sr-only">Toggle&nbsp;</span>
           <!--{ @data-js-themes  "label" lets the theme toggling utility where to change the theme text label }-->
@@ -211,7 +208,7 @@
       <button aria-controls="aria-c-learn-more" aria-expanded="false" class="o-attribution__toggle" data-js="attribution">
         <span>Learn more</span>
         <svg aria-hidden="true" class="o-attribution__feather">
-          <use href="#feather-chevron-down"></use>
+          <use href="#lucide-chevron-down"></use>
         </svg>
       </button>
     </div>
@@ -250,7 +247,7 @@
     var Standard = new Default();
     Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
     Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
-    Standard.icons('https://nycopportunity.github.io/standard/svg/feather.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();

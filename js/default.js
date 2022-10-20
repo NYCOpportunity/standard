@@ -2291,14 +2291,14 @@ var Default = (function () {
       return new Themes({
         themes: [
           {
-            label: 'Light Theme',
+            label: 'Dark Theme',
             classname: 'default',
-            icon: 'feather-sun'
+            icon: 'lucide-moon'
           },
           {
-            label: 'Dark Theme',
+            label: 'Light Theme',
             classname: 'dark',
-            icon: 'feather-moon'
+            icon: 'lucide-sun'
           }
         ],
         after: thms => document.querySelectorAll(thms.selectors.TOGGLE)
