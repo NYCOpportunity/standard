@@ -23,7 +23,6 @@
         languages: ['html', 'javascript', 'css', 'sass']
       });
       document.querySelectorAll('pre').forEach(function(pre) {
-        // pre.setAttribute('tabindex', '0');
         if (!pre.hasAttribute('tabindex')) {
           pre.setAttribute('tabindex', '0');
         }
@@ -56,12 +55,12 @@
   <header class="py-8">
     <div class="layout-content mx-auto py-8">
       <div class="wrap py-6">
-        <div class="flex justify-center items-center mb-6">
+        <div class="text-center tablet:text-start tablet:flex justify-center items-center mb-6">
           <svg role="img" style="width: 327px; height: 111px;">
             <title>New York City</title>
             <use href="#logo-nyc"></use>
           </svg>
-          <h1 class="jumbo m-0 pis-2 mis-3 font-nyc" style="font-weight: 600; line-height: 1em; border-left: 4px solid;">
+          <h1 class="jumbo m-0 tablet:pis-2 tablet:mis-3 tablet:border-l-4 font-nyc" style="font-weight: 600; line-height: 1em;">
             <div>Opportunity</div>
             <div class="text-brand">Standard</div>
           </h1>
@@ -80,53 +79,77 @@
   </header>
   <main id="main-content" role="main">
     <section class="page-max wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2" id="browse-the-patterns">
-      <nav aria-labelledby="navigation-main-0af71697bcd8" class="tablet:flex-1 mb-1" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-0af71697bcd8">Main</span>
-        <a class="block p-1 align-middle" href="index">Home</a>
+      <nav aria-labelledby="navigation-main-e783efa95622d" class="tablet:flex-1 mb-1" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-e783efa95622d">Main</span>
+        <a class="flex p-1" href="index">Home</a>
+        <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="v0.0.0-3">Latest Release</a>
+        <button class="link-icon flex p-1" data-js="themes">
+          <svg aria-hidden="true" class="icon icon-ui">
+            <use data-js-themes="icon" href="#feather-moon"></use>
+          </svg>
+          <span class="sr-only">Toggle&nbsp;</span>
+          <span data-js-themes="label">Theme</span>
+        </button>
         <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-        <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-        <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+        <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+          <svg aria-hidden="true" class="icon icon-ui">
+            <use href="#feather-figma"></use>
+          </svg>
+          <span>Figma</span>
+        </a>
+        <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+          <svg aria-hidden="true" class="icon icon-ui">
+            <use href="#feather-github"></use>
+          </svg>
+          <span>GitHub Repository</span>
+        </a>
+        <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+          <svg aria-hidden="true" class="icon icon-ui">
+            <use href="#feather-package"></use>
+          </svg>
+          <span>NPM Package</span>
+        </a>
       </nav>
-      <nav aria-labelledby="aria-lb-elements-0af71697bcd8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-0af71697bcd8">Elements</span>
-        <a class="block p-1 align-middle" href="badge">Badge</a>
-        <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
-        <a class="block p-1 align-middle" href="buttons">Buttons</a>
-        <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
-        <a class="block p-1 align-middle" href="code">Code</a>
-        <a class="block p-1 align-middle" href="dividers">Dividers</a>
-        <a class="block p-1 align-middle" href="forms">Forms</a>
-        <a class="block p-1 align-middle" href="icons">Icons</a>
-        <a class="block p-1 align-middle" href="inputs">Inputs</a>
-        <a class="block p-1 align-middle" href="labels">Labels</a>
-        <a class="block p-1 align-middle" href="layouts">Layouts</a>
-        <a class="block p-1 align-middle" href="links">Links</a>
-        <a class="block p-1 align-middle" href="navs">Navs</a>
-        <a class="block p-1 align-middle" href="options">Options</a>
-        <a class="block p-1 align-middle" href="selects">Selects</a>
-        <a class="block p-1 align-middle" href="tables">Tables</a>
+      <nav aria-labelledby="aria-lb-elements-e783efa95622d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-e783efa95622d">Elements</span>
+        <a class="flex p-1" href="badge">Badge</a>
+        <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+        <a class="flex p-1" href="buttons">Buttons</a>
+        <a class="flex p-1" href="description-lists">Description Lists</a>
+        <a class="flex p-1" href="code">Code</a>
+        <a class="flex p-1" href="dividers">Dividers</a>
+        <a class="flex p-1" href="forms">Forms</a>
+        <a class="flex p-1" href="icons">Icons</a>
+        <a class="flex p-1" href="inputs">Inputs</a>
+        <a class="flex p-1" href="labels">Labels</a>
+        <a class="flex p-1" href="layouts">Layouts</a>
+        <a class="flex p-1" href="links">Links</a>
+        <a class="flex p-1" href="navs">Navs</a>
+        <a class="flex p-1" href="options">Options</a>
+        <a class="flex p-1" href="selects">Selects</a>
+        <a class="flex p-1" href="tables">Tables</a>
       </nav>
-      <nav aria-labelledby="aria-lb-components-0af71697bcd8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-0af71697bcd8">Components</span>
-        <a class="block p-1 align-middle" href="accordion">Accordion</a>
-        <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
-        <a class="block p-1 align-middle" href="alert">Alert</a>
-        <a class="block p-1 align-middle" href="card">Card</a>
-        <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
-        <a class="block p-1 align-middle" href="question">Question</a>
-        <a class="block p-1 align-middle" href="utility">Utility</a>
-        <a class="block p-1 align-middle" href="web-share">Web Share</a>
+      <nav aria-labelledby="aria-lb-components-e783efa95622d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-e783efa95622d">Components</span>
+        <a class="flex p-1" href="accordion">Accordion</a>
+        <a class="flex p-1" href="active-navigation">Active Navigation</a>
+        <a class="flex p-1" href="alert">Alert</a>
+        <a class="flex p-1" href="card">Card</a>
+        <a class="flex p-1" href="dropdown">Dropdown</a>
+        <a class="flex p-1" href="question">Question</a>
+        <a class="flex p-1" href="utility">Utility</a>
+        <a class="flex p-1" href="web-share">Web Share</a>
       </nav>
-      <nav aria-labelledby="aria-lb-objects-0af71697bcd8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-0af71697bcd8">Objects</span>
-        <a class="block p-1 align-middle" href="application-header">Application Header</a>
-        <a class="block p-1 align-middle" href="attribution">Attribution</a>
-        <a class="block p-1 align-middle" href="menu">Menu</a>
-        <a class="block p-1 align-middle" href="navigation">Navigation</a>
+      <nav aria-labelledby="aria-lb-objects-e783efa95622d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-e783efa95622d">Objects</span>
+        <a class="flex p-1" href="application-header">Application Header</a>
+        <a class="flex p-1" href="attribution">Attribution</a>
+        <a class="flex p-1" href="menu">Menu</a>
+        <a class="flex p-1" href="navigation">Navigation</a>
       </nav>
-      <nav aria-labelledby="aria-lb-utilities-0af71697bcd8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-0af71697bcd8">Utilities</span>
-        <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
+      <nav aria-labelledby="aria-lb-utilities-e783efa95622d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+        <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-e783efa95622d">Utilities</span>
+        <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
       </nav>
     </section>
     <section class="py-6">
@@ -149,7 +172,6 @@
           <p class="text-center">
             <a class="btn btn-large btn-primary inline-block" href="installation">Read the installation guide</a>
           </p>
-          <p class="text-center">Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.</p>
         </div>
       </div>
     </section>
@@ -157,7 +179,7 @@
       <div class="layout-content mx-auto py-6">
         <div class="wrap">
           <h2 class="text-center mt-0">Figma</h2>
-          <p>The <a href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard?node-id=8674%3A35878" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.</p>
+          <p>The <a href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.</p>
           <iframe allowfullscreen="true" class="aspect-video border-4 border-scale-3 block w-full" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCH7ZOCW55SgsDnsTj3UrTi%2FOpportunity-Standard%3Fnode-id%3D8674%253A35878"></iframe>
         </div>
       </div>
@@ -183,53 +205,77 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-0a7187eb9f60d" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-0a7187eb9f60d">Main</span>
-          <a class="block p-1 align-middle" href="index">Home</a>
+        <nav aria-labelledby="navigation-main-cd3720d4d3684" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-cd3720d4d3684">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="v0.0.0-3">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-0a7187eb9f60d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-0a7187eb9f60d">Elements</span>
-          <a class="block p-1 align-middle" href="badge">Badge</a>
-          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 align-middle" href="code">Code</a>
-          <a class="block p-1 align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 align-middle" href="forms">Forms</a>
-          <a class="block p-1 align-middle" href="icons">Icons</a>
-          <a class="block p-1 align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 align-middle" href="labels">Labels</a>
-          <a class="block p-1 align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 align-middle" href="links">Links</a>
-          <a class="block p-1 align-middle" href="navs">Navs</a>
-          <a class="block p-1 align-middle" href="options">Options</a>
-          <a class="block p-1 align-middle" href="selects">Selects</a>
-          <a class="block p-1 align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-cd3720d4d3684" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-cd3720d4d3684">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-0a7187eb9f60d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-0a7187eb9f60d">Components</span>
-          <a class="block p-1 align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 align-middle" href="alert">Alert</a>
-          <a class="block p-1 align-middle" href="card">Card</a>
-          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 align-middle" href="question">Question</a>
-          <a class="block p-1 align-middle" href="utility">Utility</a>
-          <a class="block p-1 align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-cd3720d4d3684" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-cd3720d4d3684">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-0a7187eb9f60d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-0a7187eb9f60d">Objects</span>
-          <a class="block p-1 align-middle" href="application-header">Application Header</a>
-          <a class="block p-1 align-middle" href="attribution">Attribution</a>
-          <a class="block p-1 align-middle" href="menu">Menu</a>
-          <a class="block p-1 align-middle" href="navigation">Navigation</a>
+        <nav aria-labelledby="aria-lb-objects-cd3720d4d3684" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-cd3720d4d3684">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-0a7187eb9f60d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-0a7187eb9f60d">Utilities</span>
-          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-cd3720d4d3684" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-cd3720d4d3684">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>

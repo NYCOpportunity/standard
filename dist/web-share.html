@@ -23,7 +23,6 @@
         languages: ['html', 'javascript', 'css', 'sass']
       });
       document.querySelectorAll('pre').forEach(function(pre) {
-        // pre.setAttribute('tabindex', '0');
         if (!pre.hasAttribute('tabindex')) {
           pre.setAttribute('tabindex', '0');
         }
@@ -47,17 +46,16 @@
         </a>
       </div>
       <div class="flex items-center">
-        <h2 class="h5 m-0">Patterns</h2>
-        <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
-          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank">0.0.0-3</a>
-          <button class="flex items-center" data-js="themes">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-3</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#feather-moon"></use>
             </svg>
             <span class="sr-only">Toggle&nbsp;</span>
             <span data-js-themes="label">Theme</span>
           </button>
-          <button aria-controls="main-menu" aria-expanded="false" class="flex items-center" data-js="toggle" id="main-menu-control">
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
             <svg aria-hidden="true" class="icon-ui">
               <use href="#feather-menu"></use>
             </svg>
@@ -66,7 +64,7 @@
         </nav>
       </div>
     </div>
-    <div class="pb-3 px-3">
+    <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
       <article class="c-alert c-alert-status-primary" data-js="alert-info">
         <div class="c-alert__graphic">
@@ -85,53 +83,77 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-9bb51c7168045" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-9bb51c7168045">Main</span>
-          <a class="block p-1 align-middle" href="index" tabindex="-1">Home</a>
+        <nav aria-labelledby="navigation-main-a776390376c6d" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-a776390376c6d">Main</span>
+          <a class="flex p-1" href="index" tabindex="-1">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" tabindex="-1" target="_blank" title="v0.0.0-3">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes" tabindex="-1">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
-          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-9bb51c7168045" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-9bb51c7168045">Elements</span>
-          <a class="block p-1 align-middle" href="badge" tabindex="-1">Badge</a>
-          <a class="block p-1 align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
-          <a class="block p-1 align-middle" href="buttons" tabindex="-1">Buttons</a>
-          <a class="block p-1 align-middle" href="description-lists" tabindex="-1">Description Lists</a>
-          <a class="block p-1 align-middle" href="code" tabindex="-1">Code</a>
-          <a class="block p-1 align-middle" href="dividers" tabindex="-1">Dividers</a>
-          <a class="block p-1 align-middle" href="forms" tabindex="-1">Forms</a>
-          <a class="block p-1 align-middle" href="icons" tabindex="-1">Icons</a>
-          <a class="block p-1 align-middle" href="inputs" tabindex="-1">Inputs</a>
-          <a class="block p-1 align-middle" href="labels" tabindex="-1">Labels</a>
-          <a class="block p-1 align-middle" href="layouts" tabindex="-1">Layouts</a>
-          <a class="block p-1 align-middle" href="links" tabindex="-1">Links</a>
-          <a class="block p-1 align-middle" href="navs" tabindex="-1">Navs</a>
-          <a class="block p-1 align-middle" href="options" tabindex="-1">Options</a>
-          <a class="block p-1 align-middle" href="selects" tabindex="-1">Selects</a>
-          <a class="block p-1 align-middle" href="tables" tabindex="-1">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-a776390376c6d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-a776390376c6d">Elements</span>
+          <a class="flex p-1" href="badge" tabindex="-1">Badge</a>
+          <a class="flex p-1" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons" tabindex="-1">Buttons</a>
+          <a class="flex p-1" href="description-lists" tabindex="-1">Description Lists</a>
+          <a class="flex p-1" href="code" tabindex="-1">Code</a>
+          <a class="flex p-1" href="dividers" tabindex="-1">Dividers</a>
+          <a class="flex p-1" href="forms" tabindex="-1">Forms</a>
+          <a class="flex p-1" href="icons" tabindex="-1">Icons</a>
+          <a class="flex p-1" href="inputs" tabindex="-1">Inputs</a>
+          <a class="flex p-1" href="labels" tabindex="-1">Labels</a>
+          <a class="flex p-1" href="layouts" tabindex="-1">Layouts</a>
+          <a class="flex p-1" href="links" tabindex="-1">Links</a>
+          <a class="flex p-1" href="navs" tabindex="-1">Navs</a>
+          <a class="flex p-1" href="options" tabindex="-1">Options</a>
+          <a class="flex p-1" href="selects" tabindex="-1">Selects</a>
+          <a class="flex p-1" href="tables" tabindex="-1">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-9bb51c7168045" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-9bb51c7168045">Components</span>
-          <a class="block p-1 align-middle" href="accordion" tabindex="-1">Accordion</a>
-          <a class="block p-1 align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
-          <a class="block p-1 align-middle" href="alert" tabindex="-1">Alert</a>
-          <a class="block p-1 align-middle" href="card" tabindex="-1">Card</a>
-          <a class="block p-1 align-middle" href="dropdown" tabindex="-1">Dropdown</a>
-          <a class="block p-1 align-middle" href="question" tabindex="-1">Question</a>
-          <a class="block p-1 align-middle" href="utility" tabindex="-1">Utility</a>
-          <a class="block p-1 align-middle" href="web-share" tabindex="-1">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-a776390376c6d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-a776390376c6d">Components</span>
+          <a class="flex p-1" href="accordion" tabindex="-1">Accordion</a>
+          <a class="flex p-1" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="flex p-1" href="alert" tabindex="-1">Alert</a>
+          <a class="flex p-1" href="card" tabindex="-1">Card</a>
+          <a class="flex p-1" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="flex p-1" href="question" tabindex="-1">Question</a>
+          <a class="flex p-1" href="utility" tabindex="-1">Utility</a>
+          <a class="flex p-1" href="web-share" tabindex="-1">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-9bb51c7168045" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-9bb51c7168045">Objects</span>
-          <a class="block p-1 align-middle" href="application-header" tabindex="-1">Application Header</a>
-          <a class="block p-1 align-middle" href="attribution" tabindex="-1">Attribution</a>
-          <a class="block p-1 align-middle" href="menu" tabindex="-1">Menu</a>
-          <a class="block p-1 align-middle" href="navigation" tabindex="-1">Navigation</a>
+        <nav aria-labelledby="aria-lb-objects-a776390376c6d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-a776390376c6d">Objects</span>
+          <a class="flex p-1" href="application-header" tabindex="-1">Application Header</a>
+          <a class="flex p-1" href="attribution" tabindex="-1">Attribution</a>
+          <a class="flex p-1" href="menu" tabindex="-1">Menu</a>
+          <a class="flex p-1" href="navigation" tabindex="-1">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-9bb51c7168045" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-9bb51c7168045">Utilities</span>
-          <a class="block p-1 align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-a776390376c6d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-a776390376c6d">Utilities</span>
+          <a class="flex p-1" href="tailwindcss" tabindex="-1">Tailwindcss</a>
         </nav>
       </div>
       <div class="text-center">
@@ -168,7 +190,7 @@
               <!--{ @data-web-share  Data attribute for holding data sent to the navigator.share() method. Note, in the Markup quotes are escaped as "&quot;" however, they must be regular quotes; "". Inspect the source of the Demostration to see the real example }-->
               <!--{ @aria-controls   Targets the Web Share fallback }-->
               <!--{ @aria-expanded   Indicates if the Web Share fallback is open or not }-->
-              <button aria-controls="aria-c-web-share-fallback-17913dca6f6d5" aria-expanded="false" class="btn btn-small btn-primary m-0" data-js="web-share" data-web-share="{&quot;title&quot;:&quot;Web Share&quot;,&quot;text&quot;:&quot;What users should say about this.&quot;,&quot;url&quot;:&quot;https://nycopportunity.github.io/standard/web-share&quot;}">
+              <button aria-controls="aria-c-web-share-fallback-6771a8072fce3" aria-expanded="false" class="btn btn-small btn-primary m-0" data-js="web-share" data-web-share="{&quot;title&quot;:&quot;Web Share&quot;,&quot;text&quot;:&quot;What users should say about this.&quot;,&quot;url&quot;:&quot;https://nycopportunity.github.io/standard/web-share&quot;}">
                 <svg class="c-web-share__icon icon-ui">
                   <use href="#feather-share-2"></use>
                 </svg>
@@ -178,7 +200,7 @@
               <!--{ @id     Toggle target of the web share button. Must match the "aria-controls" attribute of the toggling button }-->
               <!--{ @role   Indicates an area of significance }-->
               <!--{ @class  Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }-->
-              <div aria-hidden="true" class="c-web-share__fallback hidden z-30" id="aria-c-web-share-fallback-17913dca6f6d5" role="region">
+              <div aria-hidden="true" class="c-web-share__fallback hidden z-30" id="aria-c-web-share-fallback-6771a8072fce3" role="region">
                 <div class="c-web-share__fallback-body">
                   <div class="flex mb-2 items-center flex-row-reverse">
                     <!--{ @data-js        data-js="web-share" designates this element as a toggling element for the dropdown }-->
@@ -186,7 +208,7 @@
                     <!--{ @aria-expanded  Indicates if the dropdown is open or not }-->
                     <!--{ @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }-->
                     <!--{ @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }-->
-                    <button aria-controls="aria-c-web-share-fallback-17913dca6f6d5" aria-expanded="false" class="link-icon m-0" data-js="web-share" tabindex="-1">
+                    <button aria-controls="aria-c-web-share-fallback-6771a8072fce3" aria-expanded="false" class="link-icon m-0" data-js="web-share" tabindex="-1">
                       <!--{ @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }-->
                       <svg aria-hidden="true" class="icon-ui" tabindex="-1">
                         <use href="#feather-x"></use>
@@ -269,7 +291,7 @@
   &lt;!--{ @data-web-share  Data attribute for holding data sent to the navigator.share() method. Note, in the Markup quotes are escaped as &quot;&amp;quot;&quot; however, they must be regular quotes; &quot;&quot;. Inspect the source of the Demostration to see the real example }--&gt;
   &lt;!--{ @aria-controls   Targets the Web Share fallback }--&gt;
   &lt;!--{ @aria-expanded   Indicates if the Web Share fallback is open or not }--&gt;
-  &lt;button aria-controls=&quot;aria-c-web-share-fallback-97480ea270231&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-small btn-primary m-0&quot; data-js=&quot;web-share&quot; data-web-share=&quot;{&amp;quot;title&amp;quot;:&amp;quot;Web Share&amp;quot;,&amp;quot;text&amp;quot;:&amp;quot;What users should say about this.&amp;quot;,&amp;quot;url&amp;quot;:&amp;quot;https://nycopportunity.github.io/standard/web-share&amp;quot;}&quot;&gt;
+  &lt;button aria-controls=&quot;aria-c-web-share-fallback-4e9001a5d42fd&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-small btn-primary m-0&quot; data-js=&quot;web-share&quot; data-web-share=&quot;{&amp;quot;title&amp;quot;:&amp;quot;Web Share&amp;quot;,&amp;quot;text&amp;quot;:&amp;quot;What users should say about this.&amp;quot;,&amp;quot;url&amp;quot;:&amp;quot;https://nycopportunity.github.io/standard/web-share&amp;quot;}&quot;&gt;
     &lt;svg class=&quot;c-web-share__icon icon-ui&quot;&gt;
       &lt;use href=&quot;#feather-share-2&quot;&gt;&lt;/use&gt;
     &lt;/svg&gt;
@@ -279,7 +301,7 @@
   &lt;!--{ @id     Toggle target of the web share button. Must match the &quot;aria-controls&quot; attribute of the toggling button }--&gt;
   &lt;!--{ @role   Indicates an area of significance }--&gt;
   &lt;!--{ @class  Add &quot;hidden&quot; to hide the fallback. Add a z-index utility, such as &quot;z-30&quot; to position the fallback over other elements }--&gt;
-  &lt;div aria-hidden=&quot;true&quot; class=&quot;c-web-share__fallback hidden z-30&quot; id=&quot;aria-c-web-share-fallback-97480ea270231&quot; role=&quot;region&quot;&gt;
+  &lt;div aria-hidden=&quot;true&quot; class=&quot;c-web-share__fallback hidden z-30&quot; id=&quot;aria-c-web-share-fallback-4e9001a5d42fd&quot; role=&quot;region&quot;&gt;
     &lt;div class=&quot;c-web-share__fallback-body&quot;&gt;
       &lt;div class=&quot;flex mb-2 items-center flex-row-reverse&quot;&gt;
         &lt;!--{ @data-js        data-js=&quot;web-share&quot; designates this element as a toggling element for the dropdown }--&gt;
@@ -287,7 +309,7 @@
         &lt;!--{ @aria-expanded  Indicates if the dropdown is open or not }--&gt;
         &lt;!--{ @data-dialog    data-dialog=&quot;close&quot; designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }--&gt;
         &lt;!--{ @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }--&gt;
-        &lt;button aria-controls=&quot;aria-c-web-share-fallback-97480ea270231&quot; aria-expanded=&quot;false&quot; class=&quot;link-icon m-0&quot; data-js=&quot;web-share&quot; tabindex=&quot;-1&quot;&gt;
+        &lt;button aria-controls=&quot;aria-c-web-share-fallback-4e9001a5d42fd&quot; aria-expanded=&quot;false&quot; class=&quot;link-icon m-0&quot; data-js=&quot;web-share&quot; tabindex=&quot;-1&quot;&gt;
           &lt;!--{ @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }--&gt;
           &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot; tabindex=&quot;-1&quot;&gt;
             &lt;use href=&quot;#feather-x&quot;&gt;&lt;/use&gt;
@@ -389,7 +411,7 @@
             <!--{ @id     Toggle target of the web share button. Must match the "aria-controls" attribute of the toggling button }-->
             <!--{ @role   Indicates an area of significance }-->
             <!--{ @class  Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }-->
-            <div aria-hidden="true" class="c-web-share__fallback static" id="aria-c-web-share-fallback-465fdd8d0d5d5" role="region">
+            <div aria-hidden="true" class="c-web-share__fallback static" id="aria-c-web-share-fallback-da499de750414" role="region">
               <div class="c-web-share__fallback-body">
                 <div class="flex mb-2 items-center flex-row-reverse">
                   <!--{ @data-js        data-js="web-share" designates this element as a toggling element for the dropdown }-->
@@ -397,7 +419,7 @@
                   <!--{ @aria-expanded  Indicates if the dropdown is open or not }-->
                   <!--{ @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }-->
                   <!--{ @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }-->
-                  <button aria-controls="aria-c-web-share-fallback-465fdd8d0d5d5" aria-expanded="false" class="link-icon m-0" data-js="web-share">
+                  <button aria-controls="aria-c-web-share-fallback-da499de750414" aria-expanded="false" class="link-icon m-0" data-js="web-share">
                     <!--{ @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }-->
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#feather-x"></use>
@@ -468,7 +490,7 @@
 &lt;!--{ @id     Toggle target of the web share button. Must match the &quot;aria-controls&quot; attribute of the toggling button }--&gt;
 &lt;!--{ @role   Indicates an area of significance }--&gt;
 &lt;!--{ @class  Add &quot;hidden&quot; to hide the fallback. Add a z-index utility, such as &quot;z-30&quot; to position the fallback over other elements }--&gt;
-&lt;div aria-hidden=&quot;true&quot; class=&quot;c-web-share__fallback static&quot; id=&quot;aria-c-web-share-fallback-465fdd8d0d5d5&quot; role=&quot;region&quot;&gt;
+&lt;div aria-hidden=&quot;true&quot; class=&quot;c-web-share__fallback static&quot; id=&quot;aria-c-web-share-fallback-da499de750414&quot; role=&quot;region&quot;&gt;
   &lt;div class=&quot;c-web-share__fallback-body&quot;&gt;
     &lt;div class=&quot;flex mb-2 items-center flex-row-reverse&quot;&gt;
       &lt;!--{ @data-js        data-js=&quot;web-share&quot; designates this element as a toggling element for the dropdown }--&gt;
@@ -476,7 +498,7 @@
       &lt;!--{ @aria-expanded  Indicates if the dropdown is open or not }--&gt;
       &lt;!--{ @data-dialog    data-dialog=&quot;close&quot; designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }--&gt;
       &lt;!--{ @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }--&gt;
-      &lt;button aria-controls=&quot;aria-c-web-share-fallback-465fdd8d0d5d5&quot; aria-expanded=&quot;false&quot; class=&quot;link-icon m-0&quot; data-js=&quot;web-share&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-web-share-fallback-da499de750414&quot; aria-expanded=&quot;false&quot; class=&quot;link-icon m-0&quot; data-js=&quot;web-share&quot;&gt;
         &lt;!--{ @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }--&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#feather-x&quot;&gt;&lt;/use&gt;
@@ -570,19 +592,21 @@
             <p>The Web Share requires JavaScript for calling the <code>navigator.share()</code> API in supported browsers and showing/hiding the fallback for unsupported browsers. It also uses the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a>
               <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/copy" target="_blank" rel="noopener nofollow">Copy Utility</a> for the copy-to-clipboard button and the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle" target="_blank" rel="noopener nofollow">Toggle Utility</a> to show and hide the fallback component. To use the Web Share through the global script use the following code:
             </p>
-            <pre><code class="language-html">&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
+            <div class="code-block">
+              <pre>&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
   var Standard = new Default();
 
   Standard.webShare();
   Standard.copy();
-&lt;/script&gt;
-</code></pre>
+&lt;/script&gt;</pre>
+            </div>
             <p>This will instantiate the Web Share and fallback element.</p>
             <h5 id="module-import">Module Import</h5>
             <p>The Web Share source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library, which is a dependency of this library. This method allows the specification of a callback method for a successful share and the fallback method. The <code>Toggle</code> and <code>Copy</code> modules are optional but required for the fallback in the demo.</p>
-            <pre><code class="language-javascript">import WebShare from &#39;@nycopportunity/pttrn-scripts/src/web-share/web-share&#39;;
+            <div class="code-block">
+              <pre>import WebShare from &#39;@nycopportunity/pttrn-scripts/src/web-share/web-share&#39;;
 import Toggle from &#39;@nycopportunity/pttrn-scripts/src/utilities/toggle/toggle&#39;;
 import Copy from &#39;@nycopportunity/pttrn-scripts/src/utilities/copy/copy&#39;;
 
@@ -597,8 +621,8 @@ new WebShare({
   }
 });
 
-new Copy();
-</code></pre>
+new Copy();</pre>
+            </div>
             <h5 id="configuration">Configuration</h5>
             <p>The <code>WebShare()</code> accepts an object with the following attributes:</p>
             <table>
@@ -655,53 +679,77 @@ new Copy();
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-bd292b8785359" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-bd292b8785359">Main</span>
-          <a class="block p-1 align-middle" href="index">Home</a>
+        <nav aria-labelledby="navigation-main-76ff665a1b4cb" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-76ff665a1b4cb">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="v0.0.0-3">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-bd292b8785359" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-bd292b8785359">Elements</span>
-          <a class="block p-1 align-middle" href="badge">Badge</a>
-          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 align-middle" href="code">Code</a>
-          <a class="block p-1 align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 align-middle" href="forms">Forms</a>
-          <a class="block p-1 align-middle" href="icons">Icons</a>
-          <a class="block p-1 align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 align-middle" href="labels">Labels</a>
-          <a class="block p-1 align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 align-middle" href="links">Links</a>
-          <a class="block p-1 align-middle" href="navs">Navs</a>
-          <a class="block p-1 align-middle" href="options">Options</a>
-          <a class="block p-1 align-middle" href="selects">Selects</a>
-          <a class="block p-1 align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-76ff665a1b4cb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-76ff665a1b4cb">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-bd292b8785359" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-bd292b8785359">Components</span>
-          <a class="block p-1 align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 align-middle" href="alert">Alert</a>
-          <a class="block p-1 align-middle" href="card">Card</a>
-          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 align-middle" href="question">Question</a>
-          <a class="block p-1 align-middle" href="utility">Utility</a>
-          <a class="block p-1 align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-76ff665a1b4cb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-76ff665a1b4cb">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-bd292b8785359" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-bd292b8785359">Objects</span>
-          <a class="block p-1 align-middle" href="application-header">Application Header</a>
-          <a class="block p-1 align-middle" href="attribution">Attribution</a>
-          <a class="block p-1 align-middle" href="menu">Menu</a>
-          <a class="block p-1 align-middle" href="navigation">Navigation</a>
+        <nav aria-labelledby="aria-lb-objects-76ff665a1b4cb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-76ff665a1b4cb">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-bd292b8785359" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-bd292b8785359">Utilities</span>
-          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-76ff665a1b4cb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-76ff665a1b4cb">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>

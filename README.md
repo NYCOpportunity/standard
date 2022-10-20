@@ -36,7 +36,7 @@ After cloning this repo, run `npm install` (it may be necessary to install the d
 ```json
     "@nycopportunity/pattern-application-header": "^1.0.0",
     "@nycopportunity/pattern-attribution": "^1.1.0",
-    "@nycopportunity/pattern-elements": "^0.0.0-3",
+    "@nycopportunity/pattern-elements": "^0.0.0-4",
     "@nycopportunity/pattern-menu": "^1.1.0",
     "@nycopportunity/pattern-navigation": "^1.1.0",
     "@nycopportunity/pattern-typography": "^0.0.0-1",

@@ -32,12 +32,12 @@
   header class='py-8'
     div class='layout-content mx-auto py-8'
       div class='wrap py-6'
-        div class='flex justify-center items-center mb-6'
+        div class='text-center tablet:text-start tablet:flex justify-center items-center mb-6'
           svg style='width: 327px; height: 111px;' role='img'
             title New York City
             use href='#logo-nyc'
 
-          h1 class='jumbo m-0 pis-2 mis-3 font-nyc' style='font-weight: 600; line-height: 1em; border-left: 4px solid;'
+          h1 class='jumbo m-0 tablet:pis-2 tablet:mis-3 tablet:border-l-4 font-nyc' style='font-weight: 600; line-height: 1em;'
             div Opportunity
             div class='text-brand' Standard
 
@@ -78,8 +78,8 @@
           p class='text-center'
             a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide
 
-          p class='text-center'
-            | Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.
+          / p class='text-center'
+            / | Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.
 
     / div class='layout-wrap layout-content mx-auto py-6'
     /   div class='mx-auto py-6'
@@ -96,9 +96,9 @@
           h2 class='text-center mt-0' Figma
 
           p
-            | The <a href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard?node-id=8674%3A35878" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.
+            | The <a href="${this.package.cdn.figma}" target="_blank" rel="noopener nofollow">Opportunity Standard Figma file</a> contains reusable components for creating mockups and prototypes in Figma.
 
-          iframe class='aspect-video border-4 border-scale-3 block w-full' allowfullscreen='true' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCH7ZOCW55SgsDnsTj3UrTi%2FOpportunity-Standard%3Fnode-id%3D8674%253A35878'
+          iframe class='aspect-video border-4 border-scale-3 block w-full' allowfullscreen='true' src='${this.package.cdn.figmaEmbed}'
 
 
 = content('scripts')

@@ -6,26 +6,23 @@ header role='banner' class='bg-scale-2'
           = this.package.nice
 
     div class='flex items-center'
-      h2 class='h5 m-0'
-        | Patterns
+      nav aria-label='Primary Navigation' class='nav-inline flex items-center mis-2'
+        a class='btn-tag hidden tablet:block' href='${this.package.cdn.source}/releases/tag/v${this.package.version}' target='_blank' rel='noopener nofollow' title='Latest Release'
+          | v${this.package.version}
 
-      nav role='navigation' aria-label='navigation-menu' class='nav-inline flex items-center mis-2'
-        a href='${this.package.cdn.source}/releases/tag/v${this.package.version}' target='_blank' rel='noopener nofollow' class='badge no-underline'
-          = this.package.version;
-
-        button class='flex items-center' data-js="themes"
+        button class='hidden tablet:flex link-icon' data-js='themes'
           svg class='icon-ui' aria-hidden='true'
             use data-js-themes='icon' href='#feather-moon'
 
           span class='sr-only' Toggle&nbsp;
           span data-js-themes='label' Theme
 
-        button#main-menu-control class='flex items-center' aria-controls='main-menu' aria-expanded='false' data-js='toggle'
+        button#main-menu-control class='link-icon' aria-controls='main-menu' aria-expanded='false' data-js='toggle'
           svg class='icon-ui' aria-hidden='true'
             use href='#feather-menu'
 
           span Menu
 
-  div class='pb-3 px-3'
+  div class='pb-3 wrap'
     - alert = {class: 'c-alert-status-primary', body: `<p>The ${this.package.nice} is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>`}
     == this.include('/components/alert/alert');

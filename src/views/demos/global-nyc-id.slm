@@ -16,10 +16,10 @@
   - navigation.menu = {include: true, auth: true}
   == this.include('/../node_modules/@nycopportunity/pattern-navigation/src/navigation.slm');
 
-  main style='display: flex; align-items: center; justify-content: center; min-height: calc(var(--100vh) - var(--o-application-header-height) - var(--o-navigation-height))'
+  main style='text-align: center; display: flex; align-items: center; justify-content: center; min-height: calc(var(--100vh) - var(--o-application-header-height) - var(--o-navigation-height))'
     p Scroll down in this frame to view the Attribution Pattern.
 
-  - attribution = {name: this.package.nice}
+  - attribution = {name: this.package.nice, about: false, learnMore: true}
   == this.include('/../node_modules/@nycopportunity/pattern-attribution/src/attribution.slm');
 
 = content('scripts')

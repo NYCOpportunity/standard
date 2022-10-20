@@ -49,7 +49,7 @@
     @include status.base($type);
   }
 
-  @include media.screens-and-prefers-scheme(light) using ($scheme) {
+  @include media.screens-and-prefers-scheme(dark) using ($scheme) {
     .#{$scheme}\:c-alert-status-#{$type} {
       @include status.base($type);
     }

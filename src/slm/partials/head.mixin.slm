@@ -32,7 +32,6 @@
         });
 
         document.querySelectorAll('pre').forEach(function(pre) {
-          // pre.setAttribute('tabindex', '0');
           if (!pre.hasAttribute('tabindex')) {
             pre.setAttribute('tabindex', '0');
           }
