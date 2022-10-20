@@ -75,9 +75,9 @@ class Main {
   copy() {
     return new Copy({
       copied: c => c.element.querySelector('[data-js-copy="icon"]')
-        .setAttribute('href', `#feather-check`),
+        .setAttribute('href', `#lucide-check`),
       after: c => c.element.querySelector('[data-js-copy="icon"]')
-        .setAttribute('href', `#feather-copy`)
+        .setAttribute('href', `#lucide-copy`)
     });
   }
 
