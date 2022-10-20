@@ -23,7 +23,6 @@
         languages: ['html', 'javascript', 'css', 'sass']
       });
       document.querySelectorAll('pre').forEach(function(pre) {
-        // pre.setAttribute('tabindex', '0');
         if (!pre.hasAttribute('tabindex')) {
           pre.setAttribute('tabindex', '0');
         }
@@ -47,17 +46,16 @@
         </a>
       </div>
       <div class="flex items-center">
-        <h2 class="h5 m-0">Patterns</h2>
-        <nav aria-label="navigation-menu" class="nav-inline flex items-center mis-2" role="navigation">
-          <a class="badge no-underline" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank">0.0.0-3</a>
-          <button class="flex items-center" data-js="themes">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-3</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#feather-moon"></use>
             </svg>
             <span class="sr-only">Toggle&nbsp;</span>
             <span data-js-themes="label">Theme</span>
           </button>
-          <button aria-controls="main-menu" aria-expanded="false" class="flex items-center" data-js="toggle" id="main-menu-control">
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
             <svg aria-hidden="true" class="icon-ui">
               <use href="#feather-menu"></use>
             </svg>
@@ -66,7 +64,7 @@
         </nav>
       </div>
     </div>
-    <div class="pb-3 px-3">
+    <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
       <article class="c-alert c-alert-status-primary" data-js="alert-info">
         <div class="c-alert__graphic">
@@ -85,53 +83,77 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-6373dac121d04" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-6373dac121d04">Main</span>
-          <a class="block p-1 align-middle" href="index" tabindex="-1">Home</a>
+        <nav aria-labelledby="navigation-main-668098f2eba1e" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-668098f2eba1e">Main</span>
+          <a class="flex p-1" href="index" tabindex="-1">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" tabindex="-1" target="_blank" title="v0.0.0-3">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes" tabindex="-1">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard" tabindex="-1">NPM Package</a>
-          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard" tabindex="-1">GitHub Repository</a>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" tabindex="-1" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-6373dac121d04" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-6373dac121d04">Elements</span>
-          <a class="block p-1 align-middle" href="badge" tabindex="-1">Badge</a>
-          <a class="block p-1 align-middle" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
-          <a class="block p-1 align-middle" href="buttons" tabindex="-1">Buttons</a>
-          <a class="block p-1 align-middle" href="description-lists" tabindex="-1">Description Lists</a>
-          <a class="block p-1 align-middle" href="code" tabindex="-1">Code</a>
-          <a class="block p-1 align-middle" href="dividers" tabindex="-1">Dividers</a>
-          <a class="block p-1 align-middle" href="forms" tabindex="-1">Forms</a>
-          <a class="block p-1 align-middle" href="icons" tabindex="-1">Icons</a>
-          <a class="block p-1 align-middle" href="inputs" tabindex="-1">Inputs</a>
-          <a class="block p-1 align-middle" href="labels" tabindex="-1">Labels</a>
-          <a class="block p-1 align-middle" href="layouts" tabindex="-1">Layouts</a>
-          <a class="block p-1 align-middle" href="links" tabindex="-1">Links</a>
-          <a class="block p-1 align-middle" href="navs" tabindex="-1">Navs</a>
-          <a class="block p-1 align-middle" href="options" tabindex="-1">Options</a>
-          <a class="block p-1 align-middle" href="selects" tabindex="-1">Selects</a>
-          <a class="block p-1 align-middle" href="tables" tabindex="-1">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-668098f2eba1e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-668098f2eba1e">Elements</span>
+          <a class="flex p-1" href="badge" tabindex="-1">Badge</a>
+          <a class="flex p-1" href="breadcrumbs" tabindex="-1">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons" tabindex="-1">Buttons</a>
+          <a class="flex p-1" href="description-lists" tabindex="-1">Description Lists</a>
+          <a class="flex p-1" href="code" tabindex="-1">Code</a>
+          <a class="flex p-1" href="dividers" tabindex="-1">Dividers</a>
+          <a class="flex p-1" href="forms" tabindex="-1">Forms</a>
+          <a class="flex p-1" href="icons" tabindex="-1">Icons</a>
+          <a class="flex p-1" href="inputs" tabindex="-1">Inputs</a>
+          <a class="flex p-1" href="labels" tabindex="-1">Labels</a>
+          <a class="flex p-1" href="layouts" tabindex="-1">Layouts</a>
+          <a class="flex p-1" href="links" tabindex="-1">Links</a>
+          <a class="flex p-1" href="navs" tabindex="-1">Navs</a>
+          <a class="flex p-1" href="options" tabindex="-1">Options</a>
+          <a class="flex p-1" href="selects" tabindex="-1">Selects</a>
+          <a class="flex p-1" href="tables" tabindex="-1">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-6373dac121d04" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-6373dac121d04">Components</span>
-          <a class="block p-1 align-middle" href="accordion" tabindex="-1">Accordion</a>
-          <a class="block p-1 align-middle" href="active-navigation" tabindex="-1">Active Navigation</a>
-          <a class="block p-1 align-middle" href="alert" tabindex="-1">Alert</a>
-          <a class="block p-1 align-middle" href="card" tabindex="-1">Card</a>
-          <a class="block p-1 align-middle" href="dropdown" tabindex="-1">Dropdown</a>
-          <a class="block p-1 align-middle" href="question" tabindex="-1">Question</a>
-          <a class="block p-1 align-middle" href="utility" tabindex="-1">Utility</a>
-          <a class="block p-1 align-middle" href="web-share" tabindex="-1">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-668098f2eba1e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-668098f2eba1e">Components</span>
+          <a class="flex p-1" href="accordion" tabindex="-1">Accordion</a>
+          <a class="flex p-1" href="active-navigation" tabindex="-1">Active Navigation</a>
+          <a class="flex p-1" href="alert" tabindex="-1">Alert</a>
+          <a class="flex p-1" href="card" tabindex="-1">Card</a>
+          <a class="flex p-1" href="dropdown" tabindex="-1">Dropdown</a>
+          <a class="flex p-1" href="question" tabindex="-1">Question</a>
+          <a class="flex p-1" href="utility" tabindex="-1">Utility</a>
+          <a class="flex p-1" href="web-share" tabindex="-1">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-6373dac121d04" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-6373dac121d04">Objects</span>
-          <a class="block p-1 align-middle" href="application-header" tabindex="-1">Application Header</a>
-          <a class="block p-1 align-middle" href="attribution" tabindex="-1">Attribution</a>
-          <a class="block p-1 align-middle" href="menu" tabindex="-1">Menu</a>
-          <a class="block p-1 align-middle" href="navigation" tabindex="-1">Navigation</a>
+        <nav aria-labelledby="aria-lb-objects-668098f2eba1e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-668098f2eba1e">Objects</span>
+          <a class="flex p-1" href="application-header" tabindex="-1">Application Header</a>
+          <a class="flex p-1" href="attribution" tabindex="-1">Attribution</a>
+          <a class="flex p-1" href="menu" tabindex="-1">Menu</a>
+          <a class="flex p-1" href="navigation" tabindex="-1">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-6373dac121d04" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-6373dac121d04">Utilities</span>
-          <a class="block p-1 align-middle" href="tailwindcss" tabindex="-1">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-668098f2eba1e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-668098f2eba1e">Utilities</span>
+          <a class="flex p-1" href="tailwindcss" tabindex="-1">Tailwindcss</a>
         </nav>
       </div>
       <div class="text-center">
@@ -164,16 +186,16 @@
           </div>
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
-              <div class="c-question " id="37a7cc474cbd4">
+              <div class="c-question " id="a66839294e18c">
                 <!--{ @for  Should match the id of the input }-->
-                <label class="c-question__label" for="question-37a7cc474cbd4">What is your email?</label>
+                <label class="c-question__label" for="question-a66839294e18c">What is your email?</label>
                 <p>We can send you a link to this page to help you get back to it when you’re ready.</p>
                 <div class="c-question__container">
                   <div class="input">
                     <!--{ @required  required="true" specifies wether the input is required by a form }-->
                     <!--{ @pattern   pattern="{{ my regular expression }}" a regular expression the input's value must match in order to validate }-->
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="question-37a7cc474cbd4" name="question['37a7cc474cbd4']" type="email" />
+                    <input id="question-a66839294e18c" name="question['a66839294e18c']" type="email" />
                   </div>
                 </div>
               </div>
@@ -195,16 +217,16 @@
             <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="question-markup-block">
               <div class="py-1">
                 <div class="code-block">
-                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;05a9ef5cdaaf6&quot;&gt;
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;d3d40aecb1ae3&quot;&gt;
   &lt;!--{ @for  Should match the id of the input }--&gt;
-  &lt;label class=&quot;c-question__label&quot; for=&quot;question-05a9ef5cdaaf6&quot;&gt;What is your email?&lt;/label&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-d3d40aecb1ae3&quot;&gt;What is your email?&lt;/label&gt;
   &lt;p&gt;We can send you a link to this page to help you get back to it when you’re ready.&lt;/p&gt;
   &lt;div class=&quot;c-question__container&quot;&gt;
     &lt;div class=&quot;input&quot;&gt;
       &lt;!--{ @required  required=&quot;true&quot; specifies wether the input is required by a form }--&gt;
       &lt;!--{ @pattern   pattern=&quot;{{ my regular expression }}&quot; a regular expression the input's value must match in order to validate }--&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;question-05a9ef5cdaaf6&quot; name=&quot;question['05a9ef5cdaaf6']&quot; type=&quot;email&quot; /&gt;
+      &lt;input id=&quot;question-d3d40aecb1ae3&quot; name=&quot;question['d3d40aecb1ae3']&quot; type=&quot;email&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
@@ -258,16 +280,16 @@
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
               <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
-              <fieldset class="c-question" id="da8503840ad72">
+              <fieldset class="c-question" id="b9bd27ac08bcd">
                 <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
                 <legend class="c-question__label">Which of the following options applies best to you?</legend>
                 <p>Please choose one of the options below.</p>
                 <div class="c-question__container c-question__container-cols">
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="4a317ab9ac80d">
+                  <label class="option " for="8a4079fa49848">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="4a317ab9ac80d" name="option['da8503840ad72']" type="radio" value="option-1" />
+                    <input id="8a4079fa49848" name="option['b9bd27ac08bcd']" type="radio" value="option-1" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -277,9 +299,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="c85c989c1f261">
+                  <label class="option " for="ae06f7d53e17a">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="c85c989c1f261" name="option['da8503840ad72']" type="radio" value="option-2" />
+                    <input id="ae06f7d53e17a" name="option['b9bd27ac08bcd']" type="radio" value="option-2" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -289,9 +311,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="04782b0c2b105">
+                  <label class="option " for="769742a5a3bd">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="04782b0c2b105" name="option['da8503840ad72']" type="radio" value="option-3" />
+                    <input id="769742a5a3bd" name="option['b9bd27ac08bcd']" type="radio" value="option-3" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -301,9 +323,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="47656b16837d2">
+                  <label class="option " for="70346d514b68e">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="47656b16837d2" name="option['da8503840ad72']" type="radio" value="option-4" />
+                    <input id="70346d514b68e" name="option['b9bd27ac08bcd']" type="radio" value="option-4" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -332,16 +354,16 @@
               <div class="py-1">
                 <div class="code-block">
                   <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
-&lt;fieldset class=&quot;c-question&quot; id=&quot;d4e5db2ff1755&quot;&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;da3e25b93a12&quot;&gt;
   &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
   &lt;legend class=&quot;c-question__label&quot;&gt;Which of the following options applies best to you?&lt;/legend&gt;
   &lt;p&gt;Please choose one of the options below.&lt;/p&gt;
   &lt;div class=&quot;c-question__container c-question__container-cols&quot;&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;9abcb2206f338&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;1b564632c2608&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;9abcb2206f338&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
+      &lt;input id=&quot;1b564632c2608&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -351,9 +373,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;51dfdb2a1b7db&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;54041d2eb6d0a&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;51dfdb2a1b7db&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
+      &lt;input id=&quot;54041d2eb6d0a&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -363,9 +385,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;52817b33c4ef3&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;cd4d4f043e674&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;52817b33c4ef3&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
+      &lt;input id=&quot;cd4d4f043e674&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -375,9 +397,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;85acef0de49d5&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;678383fd953a8&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;85acef0de49d5&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
+      &lt;input id=&quot;678383fd953a8&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -429,16 +451,16 @@
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
               <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
-              <fieldset class="c-question" id="d4e5db2ff1755">
+              <fieldset class="c-question" id="da3e25b93a12">
                 <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
                 <legend class="c-question__label">Which of the following options applies best to you?</legend>
                 <p>Please choose one of the options below.</p>
                 <div class="c-question__container c-question__container-cols">
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="22f2add6463e2">
+                  <label class="option " for="ac66d21f894db">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="22f2add6463e2" name="option['d4e5db2ff1755']" type="radio" value="option-1" />
+                    <input id="ac66d21f894db" name="option['da3e25b93a12']" type="radio" value="option-1" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -448,9 +470,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="419f445e21cfe">
+                  <label class="option " for="b38071b78e62f">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="419f445e21cfe" name="option['d4e5db2ff1755']" type="radio" value="option-2" />
+                    <input id="b38071b78e62f" name="option['da3e25b93a12']" type="radio" value="option-2" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -460,9 +482,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="9fc803f94bb7a">
+                  <label class="option " for="182fa80f9208f">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="9fc803f94bb7a" name="option['d4e5db2ff1755']" type="radio" value="option-3" />
+                    <input id="182fa80f9208f" name="option['da3e25b93a12']" type="radio" value="option-3" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -472,9 +494,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="c6c67e3122ad3">
+                  <label class="option " for="a72916190d34e">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="c6c67e3122ad3" name="option['d4e5db2ff1755']" type="radio" value="option-4" />
+                    <input id="a72916190d34e" name="option['da3e25b93a12']" type="radio" value="option-4" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -503,16 +525,16 @@
               <div class="py-1">
                 <div class="code-block">
                   <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
-&lt;fieldset class=&quot;c-question&quot; id=&quot;d4e5db2ff1755&quot;&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;da3e25b93a12&quot;&gt;
   &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
   &lt;legend class=&quot;c-question__label&quot;&gt;Which of the following options applies best to you?&lt;/legend&gt;
   &lt;p&gt;Please choose one of the options below.&lt;/p&gt;
   &lt;div class=&quot;c-question__container c-question__container-cols&quot;&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;bb366000af9fa&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;bd237d348b158&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;bb366000af9fa&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
+      &lt;input id=&quot;bd237d348b158&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-1&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -522,9 +544,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;dfc49a32aa2a3&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;e5edd3b10284c&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;dfc49a32aa2a3&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
+      &lt;input id=&quot;e5edd3b10284c&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-2&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -534,9 +556,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;0e9bded4d22d5&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;294586e316087&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;0e9bded4d22d5&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
+      &lt;input id=&quot;294586e316087&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-3&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -546,9 +568,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;8aa386b7f955f&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;8265069d9a6b2&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;8aa386b7f955f&quot; name=&quot;option['d4e5db2ff1755']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
+      &lt;input id=&quot;8265069d9a6b2&quot; name=&quot;option['da3e25b93a12']&quot; type=&quot;radio&quot; value=&quot;option-4&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -599,16 +621,16 @@
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
               <!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }-->
-              <fieldset class="c-question" id="5aaf81bd2f37c">
+              <fieldset class="c-question" id="3e8ff72b5e45c">
                 <!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }-->
                 <legend class="c-question__label">Do you have an income?</legend>
                 <p>This includes money from jobs, alimony, investments, or gifts.</p>
                 <div class="c-question__container ">
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="3b8868cb1258e">
+                  <label class="option " for="6674d75524f4e">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="3b8868cb1258e" name="option['5aaf81bd2f37c']" type="radio" value="yes" />
+                    <input id="6674d75524f4e" name="option['3e8ff72b5e45c']" type="radio" value="yes" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -618,9 +640,9 @@
                   </label>
                   <!--{ @for       Should match the id of the input }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <label class="option " for="dca7a09ebf7c9">
+                  <label class="option " for="48c38ff596e66">
                     <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                    <input id="dca7a09ebf7c9" name="option['5aaf81bd2f37c']" type="radio" value="no" />
+                    <input id="48c38ff596e66" name="option['3e8ff72b5e45c']" type="radio" value="no" />
                     <span class="option__base">
                       <svg aria-hidden="true" class="option__graphic">
                         <use href="#option-nyco-radio"></use>
@@ -649,16 +671,16 @@
               <div class="py-1">
                 <div class="code-block">
                   <pre data-toggle-tabindex="0" tabindex="-1">&lt;!--{ @fieldset  Checkbox and radio input groups should be grouped in fieldset tags }--&gt;
-&lt;fieldset class=&quot;c-question&quot; id=&quot;a3d5a089f436f&quot;&gt;
+&lt;fieldset class=&quot;c-question&quot; id=&quot;a2ad0d183485e&quot;&gt;
   &lt;!--{ @legend  Checkboxes and radio input groups should be labeled by legend tags }--&gt;
   &lt;legend class=&quot;c-question__label&quot;&gt;Do you have an income?&lt;/legend&gt;
   &lt;p&gt;This includes money from jobs, alimony, investments, or gifts.&lt;/p&gt;
   &lt;div class=&quot;c-question__container &quot;&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;f849814064858&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;41d865189eabb&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;f849814064858&quot; name=&quot;option['a3d5a089f436f']&quot; type=&quot;radio&quot; value=&quot;yes&quot; /&gt;
+      &lt;input id=&quot;41d865189eabb&quot; name=&quot;option['a2ad0d183485e']&quot; type=&quot;radio&quot; value=&quot;yes&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -668,9 +690,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;76d02cea6fc6d&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;3d2c00279c52a&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;76d02cea6fc6d&quot; name=&quot;option['a3d5a089f436f']&quot; type=&quot;radio&quot; value=&quot;no&quot; /&gt;
+      &lt;input id=&quot;3d2c00279c52a&quot; name=&quot;option['a2ad0d183485e']&quot; type=&quot;radio&quot; value=&quot;no&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -718,12 +740,12 @@
           </div>
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
-              <div class="c-question " id="826eb019eeb5c">
-                <label class="c-question__label" for="question-826eb019eeb5c">What type of income have you had most recently?</label>
+              <div class="c-question " id="d07a75591c5c2">
+                <label class="c-question__label" for="question-d07a75591c5c2">What type of income have you had most recently?</label>
                 <p>Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.</p>
                 <div class="c-question__container">
                   <div class="select ">
-                    <select id="question-826eb019eeb5c" name="question['826eb019eeb5c']">
+                    <select id="question-d07a75591c5c2" name="question['d07a75591c5c2']">
                       <option selected="true" value="">Select an option</option>
                       <option value="click-to-add-an-income-type">Click to add an income type</option>
                       <option value="Wages">wages, salaries, tips</option>
@@ -772,12 +794,12 @@
             <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="select-question-markup-block">
               <div class="py-1">
                 <div class="code-block">
-                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;36352c981a177&quot;&gt;
-  &lt;label class=&quot;c-question__label&quot; for=&quot;question-36352c981a177&quot;&gt;What type of income have you had most recently?&lt;/label&gt;
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question &quot; id=&quot;a551435a2f00f&quot;&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-a551435a2f00f&quot;&gt;What type of income have you had most recently?&lt;/label&gt;
   &lt;p&gt;Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.&lt;/p&gt;
   &lt;div class=&quot;c-question__container&quot;&gt;
     &lt;div class=&quot;select &quot;&gt;
-      &lt;select id=&quot;question-36352c981a177&quot; name=&quot;question['36352c981a177']&quot;&gt;
+      &lt;select id=&quot;question-a551435a2f00f&quot; name=&quot;question['a551435a2f00f']&quot;&gt;
         &lt;option selected=&quot;true&quot; value=&quot;&quot;&gt;Select an option&lt;/option&gt;
         &lt;option value=&quot;click-to-add-an-income-type&quot;&gt;Click to add an income type&lt;/option&gt;
         &lt;option value=&quot;Wages&quot;&gt;wages, salaries, tips&lt;/option&gt;
@@ -845,9 +867,9 @@
           </div>
           <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
             <div class="page-max flex justify-center py-8 wrap">
-              <div class="c-question c-question-single" id="a80532cc4eaa2">
+              <div class="c-question c-question-single" id="f264a5b5079eb">
                 <!--{ @for  Should match the id of the input }-->
-                <label class="c-question__label" for="question-a80532cc4eaa2">Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.</label>
+                <label class="c-question__label" for="question-f264a5b5079eb">Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.</label>
                 <p>Please answer to the best of your ability.</p>
                 <div class="c-question__container">
                   <div class="c-question__input">
@@ -855,7 +877,7 @@
                       <!--{ @required  required="true" specifies wether the input is required by a form }-->
                       <!--{ @pattern   pattern="{{ my regular expression }}" a regular expression the input's value must match in order to validate }-->
                       <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                      <input id="question-a80532cc4eaa2" name="EMAIL" placeholder="Enter your email" required="true" type="email" />
+                      <input id="question-f264a5b5079eb" name="EMAIL" placeholder="Enter your email" required="true" type="email" />
                     </div>
                     <div class="c-question__button">
                       <button class="btn btn-primary btn-small" type="submit">Submit</button>
@@ -881,9 +903,9 @@
             <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="single-field-question-markup-block">
               <div class="py-1">
                 <div class="code-block">
-                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question c-question-single&quot; id=&quot;607e01c37cb62&quot;&gt;
+                  <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;c-question c-question-single&quot; id=&quot;6269ada678fda&quot;&gt;
   &lt;!--{ @for  Should match the id of the input }--&gt;
-  &lt;label class=&quot;c-question__label&quot; for=&quot;question-607e01c37cb62&quot;&gt;Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.&lt;/label&gt;
+  &lt;label class=&quot;c-question__label&quot; for=&quot;question-6269ada678fda&quot;&gt;Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.&lt;/label&gt;
   &lt;p&gt;Please answer to the best of your ability.&lt;/p&gt;
   &lt;div class=&quot;c-question__container&quot;&gt;
     &lt;div class=&quot;c-question__input&quot;&gt;
@@ -891,7 +913,7 @@
         &lt;!--{ @required  required=&quot;true&quot; specifies wether the input is required by a form }--&gt;
         &lt;!--{ @pattern   pattern=&quot;{{ my regular expression }}&quot; a regular expression the input's value must match in order to validate }--&gt;
         &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-        &lt;input id=&quot;question-607e01c37cb62&quot; name=&quot;EMAIL&quot; placeholder=&quot;Enter your email&quot; required=&quot;true&quot; type=&quot;email&quot; /&gt;
+        &lt;input id=&quot;question-6269ada678fda&quot; name=&quot;EMAIL&quot; placeholder=&quot;Enter your email&quot; required=&quot;true&quot; type=&quot;email&quot; /&gt;
       &lt;/div&gt;
       &lt;div class=&quot;c-question__button&quot;&gt;
         &lt;button class=&quot;btn btn-primary btn-small&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
@@ -931,7 +953,8 @@
             <!-- Headers start with h5 ##### -->
             <h5 id="global-script">Global Script</h5>
             <p>The Question Component requires JavaScript for native form validation. To use the validation through the global script use the following code. A optional selector targeting the form may be supplied as the first argument to the <code>.validate()</code> method. The second optional argument is a function which handles the form data after it passes validation.</p>
-            <pre><code class="language-html">&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
+            <div class="code-block">
+              <pre>&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
   var Standard = new Default();
@@ -946,21 +969,23 @@
 
     // Add your own custom submission handler
   });
-&lt;/script&gt;
-</code></pre>
+&lt;/script&gt;</pre>
+            </div>
             <h6 id="markup">Markup</h6>
-            <pre><code class="language-html">&lt;form data-js=&quot;validate&quot; action=&quot;/my/action/&quot; method=&quot;post&quot;&gt;
+            <div class="code-block">
+              <pre>&lt;form data-js=&quot;validate&quot; action=&quot;/my/action/&quot; method=&quot;post&quot;&gt;
   &lt;label for=&quot;email&quot;&gt;Please enter your email.&lt;/label&gt;
 
   &lt;input type=&quot;email&quot; id=&quot;email&quot; required=&quot;true&quot;&gt;
 
   &lt;button&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
+&lt;/form&gt;</pre>
+            </div>
             <p>Validation messages will appear when the user leaves a <strong>required</strong> question blank (<code>required=&quot;true&quot;</code> must be set on the <code>&lt;input&gt;</code> tag), enters an answer that does not match a specified <strong>pattern</strong> (<code>pattern=&quot;{{ my regular expression }}&quot;</code> must be set on the <code>&lt;input&gt;</code> tag), or tries to submit the form without filling out any required fields.</p>
             <h5 id="module-import">Module Import</h5>
             <p>The form validation source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library. Install the <code>@nycopportunity/pttrn-scripts</code> module to import the module. This method allows the specification of watching for input errors on blur, setting the error container’s selector, and other customizations. Refer to the the source for details.</p>
-            <pre><code class="language-javascript">import Forms from &#39;@nycopportunity/patterns-scripts/src/forms/forms&#39;;
+            <div class="code-block">
+              <pre>import Forms from &#39;@nycopportunity/patterns-scripts/src/forms/forms&#39;;
 
 this.form = new Forms(document.querySelector(&#39;#question-demo&#39;));
 
@@ -971,8 +996,8 @@ this.form.submit = (event) =&gt; {
 
 this.form.selectors.ERROR_MESSAGE_PARENT = &#39;.c-question__container&#39;;
 
-this.form.watch();
-</code></pre>
+this.form.watch();</pre>
+            </div>
           </div>
         </div>
       </section>
@@ -998,53 +1023,77 @@ this.form.watch();
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-0f65cfb597f2f" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-0f65cfb597f2f">Main</span>
-          <a class="block p-1 align-middle" href="index">Home</a>
+        <nav aria-labelledby="navigation-main-7fe539631f148" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-7fe539631f148">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-3" rel="noopener nofollow" target="_blank" title="v0.0.0-3">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#feather-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
-          <a class="block p-1 align-middle" href="https://www.npmjs.com/package/@nycopportunity/standard">NPM Package</a>
-          <a class="block p-1 align-middle" href="https://github.com/nycopportunity/standard">GitHub Repository</a>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#feather-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-0f65cfb597f2f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-0f65cfb597f2f">Elements</span>
-          <a class="block p-1 align-middle" href="badge">Badge</a>
-          <a class="block p-1 align-middle" href="breadcrumbs">Breadcrumbs</a>
-          <a class="block p-1 align-middle" href="buttons">Buttons</a>
-          <a class="block p-1 align-middle" href="description-lists">Description Lists</a>
-          <a class="block p-1 align-middle" href="code">Code</a>
-          <a class="block p-1 align-middle" href="dividers">Dividers</a>
-          <a class="block p-1 align-middle" href="forms">Forms</a>
-          <a class="block p-1 align-middle" href="icons">Icons</a>
-          <a class="block p-1 align-middle" href="inputs">Inputs</a>
-          <a class="block p-1 align-middle" href="labels">Labels</a>
-          <a class="block p-1 align-middle" href="layouts">Layouts</a>
-          <a class="block p-1 align-middle" href="links">Links</a>
-          <a class="block p-1 align-middle" href="navs">Navs</a>
-          <a class="block p-1 align-middle" href="options">Options</a>
-          <a class="block p-1 align-middle" href="selects">Selects</a>
-          <a class="block p-1 align-middle" href="tables">Tables</a>
+        <nav aria-labelledby="aria-lb-elements-7fe539631f148" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-7fe539631f148">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-0f65cfb597f2f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-0f65cfb597f2f">Components</span>
-          <a class="block p-1 align-middle" href="accordion">Accordion</a>
-          <a class="block p-1 align-middle" href="active-navigation">Active Navigation</a>
-          <a class="block p-1 align-middle" href="alert">Alert</a>
-          <a class="block p-1 align-middle" href="card">Card</a>
-          <a class="block p-1 align-middle" href="dropdown">Dropdown</a>
-          <a class="block p-1 align-middle" href="question">Question</a>
-          <a class="block p-1 align-middle" href="utility">Utility</a>
-          <a class="block p-1 align-middle" href="web-share">Web Share</a>
+        <nav aria-labelledby="aria-lb-components-7fe539631f148" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-7fe539631f148">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-0f65cfb597f2f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-0f65cfb597f2f">Objects</span>
-          <a class="block p-1 align-middle" href="application-header">Application Header</a>
-          <a class="block p-1 align-middle" href="attribution">Attribution</a>
-          <a class="block p-1 align-middle" href="menu">Menu</a>
-          <a class="block p-1 align-middle" href="navigation">Navigation</a>
+        <nav aria-labelledby="aria-lb-objects-7fe539631f148" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-7fe539631f148">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-0f65cfb597f2f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-0f65cfb597f2f">Utilities</span>
-          <a class="block p-1 align-middle" href="tailwindcss">Tailwindcss</a>
+        <nav aria-labelledby="aria-lb-utilities-7fe539631f148" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-7fe539631f148">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
     </div>
