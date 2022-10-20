@@ -38,13 +38,23 @@ module.exports = [
     }
   },
   {
-    source: './node_modules/feather-icons/dist/icons',
+    source: './node_modules/lucide-static/icons',
     dist: dist,
-    prefix: 'feather-',
-    file: 'feather.svg',
+    prefix: 'lucide-',
+    file: 'lucide.svg',
     svgo: svgo,
     write: {
       source: false
     }
   }
+  // {
+  //   source: './node_modules/feather-icons/dist/icons',
+  //   dist: dist,
+  //   prefix: 'feather-',
+  //   file: 'feather.svg',
+  //   svgo: svgo,
+  //   write: {
+  //     source: false
+  //   }
+  // }
 ];

@@ -3,7 +3,7 @@ javascript:
 
   Standard.icons('${this.baseUrl}/svg/svgs.svg');
   Standard.icons('${this.baseUrl}/svg/pattern-elements.svg');
-  Standard.icons('${this.baseUrl}/svg/feather.svg');
+  Standard.icons('${this.baseUrl}/svg/lucide.svg');
 
   Standard.accordion();
   Standard.activeNavigation();

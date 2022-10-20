@@ -20,10 +20,10 @@
     link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css'
     script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js'
 
-    link rel='stylesheet' href='${this.baseUrl}/css/tokens.css'
-    link rel='stylesheet' href='${this.baseUrl}/css/tokens-default.css'
-    link rel='stylesheet' href='${this.baseUrl}/css/tokens-dark.css'
-    link rel='stylesheet' href='${this.baseUrl}/${this.global.entry.stylesDist}'
+    / link rel='stylesheet' href='${this.baseUrl}/css/tokens.css'
+    / link rel='stylesheet' href='${this.baseUrl}/css/tokens-default.css'
+    / link rel='stylesheet' href='${this.baseUrl}/css/tokens-dark.css'
+    link rel='stylesheet' href='${this.baseUrl}/css/documentation.css'
 
     javascript:
       document.addEventListener('DOMContentLoaded', function(event) {

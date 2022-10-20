@@ -3,7 +3,7 @@
 div class='c-utility'
   a href='${this.baseUrl}/demos/programs/index' class='link-icon mie-auto'
     svg class='icon-ui rtl:flip' aria-hidden='true'
-      use href='#feather-chevron-left'
+      use href='#lucide-chevron-left'
 
     span Programs
 
@@ -12,7 +12,7 @@ div class='c-utility'
 
   / a class='btn btn-small btn-primary'
   /   svg class='icon-ui' aria-hidden='true'
-  /     use href='#feather-bookmark'
+  /     use href='#lucide-bookmark'
 
   /   span Save
   - webShare = {}
@@ -24,6 +24,6 @@ div class='c-utility'
 
   / a href='#' class='btn btn-small btn-primary' data-js='web-share' data-web-share='{"title":"${this.title}","text":"${this.description}","url":"${this.url}"}'
   /   svg class='icon-ui' aria-hidden='true'
-  /     use href='#feather-share-2'
+  /     use href='#lucide-share-2'
 
   /   span Share

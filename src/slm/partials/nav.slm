@@ -4,7 +4,12 @@
 - this.nav.class.heading = 'p-1 block'
 - this.nav.class.item = 'flex p-1'
 - this.nav.class.divider = 'border-b border-scale-3 mb-1 mt-1'
-- this.nav.tabindex = (typeof tabindex === 'undefined') ? false : tabindex;
+- this.nav.tabindex = false;
+
+/ Inherit overrides
+- if (typeof nav !== 'undefined')
+  - this.nav = Object.assign(this.nav, nav);
+  - this.nav.class = (nav.hasOwnProperty('class')) ? Object.assign(this.nav.class, nav.class) : this.nav.class;
 
 nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${this.nav.class.main}'
   span id='navigation-main-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Main
@@ -15,7 +20,7 @@ nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${
 
   button class='link-icon ${this.nav.class.item}' data-js="themes" tabindex=(this.nav.tabindex ? '-1' : false)
     svg class='icon icon-ui' aria-hidden='true'
-      use data-js-themes='icon' href='#feather-moon'
+      use data-js-themes='icon' href='#lucide-moon'
 
     span class='sr-only' Toggle&nbsp;
     span data-js-themes='label' Theme
@@ -29,19 +34,19 @@ nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${
   span class='${this.nav.class.heading} ${this.nav.class.divider}' Links
   a tabindex=(this.nav.tabindex ? '-1' : false) class='link-icon ${this.nav.class.item}' href='${this.package.cdn.figma}' target='_blank' rel='noopener nofollow'
     svg class='icon icon-ui' aria-hidden='true'
-      use href='#feather-figma'
+      use href='#lucide-figma'
 
     span Figma
 
   a tabindex=(this.nav.tabindex ? '-1' : false) class='link-icon ${this.nav.class.item}' href='${this.package.cdn.source}' target='_blank' rel='noopener nofollow'
     svg class='icon icon-ui' aria-hidden='true'
-      use href='#feather-github'
+      use href='#lucide-github'
 
     span GitHub Repository
 
   a tabindex=(this.nav.tabindex ? '-1' : false) class='link-icon ${this.nav.class.item}' href='${this.package.cdn.npm}' target='_blank' rel='noopener nofollow'
     svg class='icon icon-ui' aria-hidden='true'
-      use href='#feather-package'
+      use href='#lucide-package'
 
     span NPM Package
 
@@ -108,3 +113,7 @@ nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='toggle' Toggle
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='typography' Typography
+
+
+- delete nav
+- delete this.nav

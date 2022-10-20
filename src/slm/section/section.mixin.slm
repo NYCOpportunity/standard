@@ -39,7 +39,7 @@
             a href='#${id}' class='mie-1 flex items-center'
               svg class='icon-ui' role='img'
                 title ${this.config.title} Anchor Link
-                use href='#feather-anchor'
+                use href='#lucide-anchor'
 
             = this.config.title;
 
@@ -47,7 +47,7 @@
           p class='flex items-center'
             svg class='icon-ui mie-1' role='img'
               title GitHub Source Link
-              use href='#feather-github'
+              use href='#lucide-github'
 
             / span Source:&nbsp;
 
@@ -79,7 +79,7 @@
             span Inspect code
 
             svg class='icon-ui' aria-hidden='true'
-              use href='#feather-chevron-down'
+              use href='#lucide-chevron-down'
 
       div class='page-max layout-content pb-6 mb-6'
         div class='wrap hidden hidden:overflow animated' aria-hidden='true' id='${id}-markup-block'

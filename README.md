@@ -34,11 +34,11 @@ The directory structure would look like the following.
 After cloning this repo, run `npm install` (it may be necessary to install the dependencies above as npm distributions first so their dependencies are installed in the project `node_modules` directory). Once the local repositories are available, the public package block can be replaced.
 
 ```json
-    "@nycopportunity/pattern-application-header": "^1.0.0",
-    "@nycopportunity/pattern-attribution": "^1.1.0",
-    "@nycopportunity/pattern-elements": "^0.0.0-4",
-    "@nycopportunity/pattern-menu": "^1.1.0",
-    "@nycopportunity/pattern-navigation": "^1.1.0",
+    "@nycopportunity/pattern-application-header": "^1.0.1",
+    "@nycopportunity/pattern-attribution": "^1.1.1",
+    "@nycopportunity/pattern-elements": "^0.0.0-5",
+    "@nycopportunity/pattern-menu": "^1.1.1",
+    "@nycopportunity/pattern-navigation": "^1.1.1",
     "@nycopportunity/pattern-typography": "^0.0.0-1",
     "@nycopportunity/pttrn-docs": "^1.1.0",
     "@nycopportunity/pttrn-scripts": "^1.1.0",

@@ -20,19 +20,13 @@ const sass = {
   ]
 };
 
-/**
- * Sass Export
- *
- * @type {Array}
- */
-module.exports = [
+let modules = [
   {
     file: `${process.env.PWD}/src/scss/default.scss`,
     outDir: `${process.env.PWD}/dist/css/`,
     outFile: 'default.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    includePaths: sass.includePaths
   },
 
   /**
@@ -45,13 +39,29 @@ module.exports = [
     outDir: `${process.env.PWD}/dist/css/`,
     outFile: 'tailwindcss.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    // devModule: true
   },
   {
     file: `${process.env.PWD}/src/utilities/tailwindcss/_tailwindcss.scss`,
     outDir: `${process.env.PWD}/src/utilities/tailwindcss/`,
     outFile: '_tailwindsass.scss',
     sourceMapEmbed: sass.sourceMapEmbed,
-    // devModule: true
   }
 ];
+
+if (process.env.NODE_ENV === 'development') {
+  modules.push({
+    file: `${process.env.PWD}/src/scss/default.scss`,
+    outDir: `${process.env.PWD}/dist/css/`,
+    outFile: 'documentation.css',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    includePaths: sass.includePaths,
+    devModule: true
+  })
+}
+
+/**
+ * Sass Export
+ *
+ * @type {Array}
+ */
+module.exports = modules;

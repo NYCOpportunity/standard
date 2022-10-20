@@ -5,7 +5,7 @@
 let global = require('@nycopportunity/pttrn/config/global');
 
 /**
- * [description]
+ * Distributed Stylesheet Path
  */
 global.entry.stylesDist = global.entry.styles.replace(/scss/g, 'css');
 
@@ -18,9 +18,9 @@ global.entry.tailwindcss = '/css/tailwindcss.css';
 global.entry.tailwindsass = '/utilities/tailwindcss/_tailwindsass.scss';
 
 /**
- * [svg description]
+ * Path to main SVG sprite
  *
- * @var {[type]}
+ * @var {String}
  */
 global.entry.svgs = '/svg/svgs.svg';
 

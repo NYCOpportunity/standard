@@ -27,18 +27,18 @@ div class='c-accordion'
             = group.title
 
           svg class='icon-ui' aria-hidden='true'
-            use href='#feather-chevron-down'
+            use href='#lucide-chevron-down'
 
           / span class='c-accordion__toggle-active'
           /   svg class='icon-ui' aria-hidden='true'
-          /     use href='#feather-chevron-down'
+          /     use href='#lucide-chevron-down'
 
           /   /! { Optional screen reader only label }
           /   span class='sr-only' Collapse
 
           / span class='c-accordion__toggle-inactive'
           /   svg class='icon-ui' aria-hidden='true'
-          /     use href='#feather-chevron-up'
+          /     use href='#lucide-chevron-up'
 
           /   /! { Optional screen reader only label }
           /   span class='sr-only' Expand

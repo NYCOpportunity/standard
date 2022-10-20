@@ -20,7 +20,7 @@ div class='c-web-share ${this.webShare.class}'
   /! { @aria-expanded   Indicates if the Web Share fallback is open or not }
   button data-js='web-share' data-web-share='${JSON.stringify(this.webShare.data)}' aria-controls='aria-c-web-share-fallback-${this.webShare.id}' aria-expanded='false' class='btn btn-small btn-primary m-0'
     svg class='c-web-share__icon icon-ui'
-      use href='#feather-share-2'
+      use href='#lucide-share-2'
 
     span Share
 
@@ -33,6 +33,6 @@ div class='c-web-share ${this.webShare.class}'
 /! { @aria-pressed  Will signify a pressed state to screen readers }
 button tabindex='-1' data-js='copy' data-copy='web-share-url' aria-pressed='false' class='btn btn-small btn-primary mis-2 hidden tablet:inline-flex'
   svg class='icon icon-ui'
-    use data-js-copy='icon' href='#feather-copy'
+    use data-js-copy='icon' href='#lucide-copy'
 
   span Copy URL

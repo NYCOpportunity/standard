@@ -12,14 +12,14 @@ header role='banner' class='bg-scale-2'
 
         button class='hidden tablet:flex link-icon' data-js='themes'
           svg class='icon-ui' aria-hidden='true'
-            use data-js-themes='icon' href='#feather-moon'
+            use data-js-themes='icon' href='#lucide-moon'
 
           span class='sr-only' Toggle&nbsp;
           span data-js-themes='label' Theme
 
         button#main-menu-control class='link-icon' aria-controls='main-menu' aria-expanded='false' data-js='toggle'
           svg class='icon-ui' aria-hidden='true'
-            use href='#feather-menu'
+            use href='#lucide-menu'
 
           span Menu
 

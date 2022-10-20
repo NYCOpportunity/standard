@@ -17,10 +17,11 @@ module.exports = {
   /**
    * All classes are only generated for non-development
    */
-  safelist: (process.env.NODE_ENV === 'development') ? [] : [{
-    pattern: /./,
-    variants: Object.keys(tokens.screen)
-  }],
+  safelist: (process.env.NODE_ENV === 'development')
+    ? [] : [{
+      pattern: /./,
+      variants: Object.keys(tokens.screen)
+    }],
 
   // /**
   //  * All classes are generated

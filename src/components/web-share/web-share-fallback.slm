@@ -13,7 +13,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
       button class='link-icon m-0' data-js='web-share' aria-controls='aria-c-web-share-fallback-${webShareFallback.id}' aria-expanded='false' tabindex=(webShareFallback.tabindex ? '-1' : false)
         /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
         svg class='icon-ui' aria-hidden='true' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use href='#feather-x'
+          use href='#lucide-x'
 
         span Close
 
@@ -36,7 +36,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
       button tabindex=(webShareFallback.tabindex ? '-1' : false) data-js='copy' data-copy='web-share-url' aria-pressed='false' class='c-web-share__item c-web-share__copy btn btn-small btn-primary mx-0'
         /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
         svg class='icon icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use data-js-copy='icon' href='#feather-copy'
+          use data-js-copy='icon' href='#lucide-copy'
 
         span Copy URL
 
@@ -45,7 +45,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
       a tabindex=(webShareFallback.tabindex ? '-1' : false) href='https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(webShareFallback.data.url)}' target='_blank' class='c-web-share__item btn btn-small btn-primary mx-0'
         /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
         svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use href='#feather-facebook'
+          use href='#lucide-facebook'
 
         span Facebook
 
@@ -53,6 +53,6 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
       /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
       a tabindex=(webShareFallback.tabindex ? '-1' : false) href='https://twitter.com/intent/tweet?text=${encodeURIComponent(webShareFallback.data.text + ' ' + webShareFallback.data.url)}' target='_blank' class='c-web-share__item btn btn-small btn-primary mx-0'
         svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
-          use href='#feather-twitter'
+          use href='#lucide-twitter'
 
         span Twitter

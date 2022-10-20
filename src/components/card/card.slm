@@ -27,7 +27,7 @@ article class='c-card ${this.card.class}'
 
             - if !this.card.cta && this.card.external
               svg aria-hidden='true' class='icon-ui rtl:flip'
-                use href='#feather-external-link'
+                use href='#lucide-external-link'
 
       - if this.card.subtitle
         h4 class='c-card__subtitle text-alt'
@@ -84,7 +84,7 @@ article class='c-card ${this.card.class}'
     - if this.card.cta
       a href='${this.baseUrl}${this.card.url}' class='c-card__cta'
         svg class='icon-ui rtl:flip' aria-hidden='true'
-          use href='#feather-arrow-left'
+          use href='#lucide-arrow-left'
 
         span
           | ${this.card.cta}&nbsp;
@@ -93,7 +93,7 @@ article class='c-card ${this.card.class}'
             == this.card.title
 
         svg class='icon-ui rtl:flip' aria-hidden='true'
-          use href='#feather-arrow-right'
+          use href='#lucide-arrow-right'
     - else
       /! { @span  This empty span tag currently assists the stylesheed in removing margin on the last visible element in the card. }
       span

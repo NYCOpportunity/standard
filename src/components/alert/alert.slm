@@ -16,7 +16,7 @@
 article class='c-alert ${this.alert.class}' data-js='alert${this.alert.type}' aria-hidden=this.alert.ariaHidden
   div class='c-alert__graphic'
     svg class='icon-ui' aria-hidden='true'
-      use href='#feather-${this.alert.icon}'
+      use href='#lucide-${this.alert.icon}'
 
   /! { @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }
   div class='c-alert__body'

@@ -48,11 +48,15 @@
           a class='btn btn-large btn-primary inline-block' href='#browse-the-patterns' Browse the Patterns
 
         p class='text-center'
-          a href='${this.package.repository.url}/tree/v${this.package.version}' target='_blank' = 'v' + this.package.version;
+          a class='link-icon' href='${this.package.repository.url}/tree/v${this.package.version}' target='_blank'
+            svg aria-hidden='true' class='icon icon-ui'
+              use href='#lucide-github'
+
+            span v${this.package.version}
 
   main#main-content role='main'
     section#browse-the-patterns class='page-max wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2'
-      - tabindex = false;
+      - nav = {tabindex: false, class: {item: 'flex px-1 py-2', heading: 'block border-b border-scale-3 mt-3 mb-2 px-1 pb-2'}};
       = partial('/slm/partials/nav.slm');
 
     section class='py-6'
@@ -69,7 +73,7 @@
 
             button class='btn btn-large px-0 w-full mb-1' data-js='copy' data-copy='installation'
               svg class='icon-ui-copy icon-3 mie-1' aria-hidden='true'
-                use href='#feather-copy'
+                use href='#lucide-copy'
 
               span Copy
 
