@@ -80,8 +80,8 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-0f5726d78b551" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-0f5726d78b551">Main</span>
+        <nav aria-labelledby="navigation-main-5b0c595fc0f88" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-5b0c595fc0f88">Main</span>
           <a class="flex p-1" href="index">Home</a>
           <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-8" rel="noopener nofollow" target="_blank" title="v0.0.0-8">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
@@ -111,8 +111,8 @@
             <span>NPM Package</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-0f5726d78b551" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-0f5726d78b551">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-5b0c595fc0f88" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-5b0c595fc0f88">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
@@ -130,8 +130,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-0f5726d78b551" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-0f5726d78b551">Components</span>
+        <nav aria-labelledby="aria-lb-components-5b0c595fc0f88" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-5b0c595fc0f88">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -141,8 +141,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-0f5726d78b551" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-0f5726d78b551">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-5b0c595fc0f88" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-5b0c595fc0f88">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -154,8 +154,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-0f5726d78b551" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-0f5726d78b551">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-5b0c595fc0f88" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-5b0c595fc0f88">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -300,8 +300,8 @@ module.exports = postCssConfig;</pre>
     outFile: &#39;default.css&#39;,
     includePaths: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -322,8 +322,8 @@ module.exports = postCssConfig;</pre>
   return gulp.src(&#39;./sass/**/*.scss&#39;)
     .pipe(sass.({includePaths: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -346,8 +346,8 @@ module.exports = postCssConfig;</pre>
   resolve: {
     modules: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -373,8 +373,8 @@ module.exports = postCssConfig;</pre>
   build: {
     extend(config) {
       config.resolve.modules.push(`${process.env.PWD}/node_modules`);
-      config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/standard/src`);
+      config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/standard/dist`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`);
@@ -451,8 +451,8 @@ export default config;</pre>
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-c30a5532fdc56" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-c30a5532fdc56">Main</span>
+        <nav aria-labelledby="navigation-main-841bcbb106e6e" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-841bcbb106e6e">Main</span>
           <a class="flex p-1" href="index">Home</a>
           <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-8" rel="noopener nofollow" target="_blank" title="v0.0.0-8">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
@@ -482,8 +482,8 @@ export default config;</pre>
             <span>NPM Package</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-c30a5532fdc56" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-c30a5532fdc56">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-841bcbb106e6e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-841bcbb106e6e">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
@@ -501,8 +501,8 @@ export default config;</pre>
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-c30a5532fdc56" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-c30a5532fdc56">Components</span>
+        <nav aria-labelledby="aria-lb-components-841bcbb106e6e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-841bcbb106e6e">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -512,8 +512,8 @@ export default config;</pre>
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-c30a5532fdc56" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-c30a5532fdc56">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-841bcbb106e6e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-841bcbb106e6e">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -525,8 +525,8 @@ export default config;</pre>
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-c30a5532fdc56" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-c30a5532fdc56">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-841bcbb106e6e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-841bcbb106e6e">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
