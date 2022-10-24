@@ -1,0 +1,22 @@
+/ Defaults
+- this.languages = {}
+- this.languages.id = this.createId()
+- this.languages.tabindex = false
+- this.languages.required = 'true'
+- this.languages.options = [{label: 'Languages', selected: true, value: ''}, {value: 'es', label: 'Español'}, {value: 'ru', label: 'Русский'}, {value: 'ko', label: '한국어'}, {value: 'ar', label: 'العربية'}, {value: 'ht', label: 'Kreyol'}, {value: 'zh-CN', label: '繁體中文'}, {value: 'fr', label: 'Français'}, {value: 'pl', label: 'polski'}, {value: 'ur', label: 'اردو'}, {value: 'bn', label: 'বাংলা'}]
+- this.languages.name = `select['${this.languages.id}']`
+
+/ Inherit overrides
+- if (typeof languages !== 'undefined')
+  - this.languages = Object.assign(this.languages, languages);
+
+div class='select ${this.languages.class}' for='${this.languages.id}'
+  select id='${this.languages.id}' name='${this.languages.name}' tabindex=this.languages.tabindex required=this.languages.required
+    - for (let i in this.languages.options)
+      - option = this.languages.options[i];
+      - value = (option.value) ? option.value : this.createSlug(option.label)
+
+      option value='${value}' = option.label
+
+  svg class='select__graphic' style='stroke: currentColor' aria-hidden='true'
+    use href='#lucide-languages'

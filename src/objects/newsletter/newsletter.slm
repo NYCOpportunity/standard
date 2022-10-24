@@ -1,0 +1,9 @@
+/ Newsletter
+section data-js='newsletter' class='o-newsletter layout-content py-6'
+  div class='pt-2 pb-3 wrap'
+    h2 class='o-newsletter__heading h4 font-normal' Newsletter
+
+    form action='${this.newsletter.action}' id='mc-embedded-subscribe-form' method='post' target='_blank'
+      - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', placeholder: 'Enter your email', type: 'email', name: 'EMAIL', required: 'true', class: 'c-question-single', button: 'Submit'}
+
+      = partial('/components/question/question')

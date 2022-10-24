@@ -1,0 +1,109 @@
+/**
+ * Header
+ */
+
+// Dependencies
+@use 'sass:math';
+@use 'config/grid' as *;
+@use 'config/layouts';
+@use 'config/media';
+@use 'config/nav';
+@use 'config/typography';
+
+$icon-height: calc(var(--nyco-spacing-DEFAULT) * 2);
+$icon-width: calc(var(--nyco-spacing-DEFAULT) * 2);
+
+// Declarations
+.o-header {
+  width: 100%;
+
+  @include layouts.wrap();
+
+  padding-top: calc(var(--nyco-grid) * 4);
+  padding-bottom: calc(var(--nyco-grid) * 4);
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media.screen-and-min-width('tablet') {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  @include media.screen-and-min-width('tablet') {
+    padding-top: calc(var(--nyco-grid) * 7);
+    padding-bottom: calc(var(--nyco-grid) * 9);
+  }
+
+  > div {
+    width: 100%
+  }
+}
+
+.o-header__icon {
+  margin-bottom: calc(var(--nyco-spacing-DEFAULT) / 3);
+
+  @include media.screen-and-min-width('tablet') {
+    margin-inline-end: var(--nyco-spacing-DEFAULT);
+    width: $icon-width;
+
+    .o-header__label {
+      display: none;
+    }
+  }
+}
+
+.o-header__svg {
+  width: $icon-width;
+  height: $icon-height;
+}
+
+.o-header__title {
+  @include typography.set('h3');
+
+  // margin-top: -12px;
+}
+
+.o-header__subtitle {
+  @include typography.set('h5');
+
+  margin-top: 0;
+  margin-bottom: var(--nyco-typography-margin-bottom);
+}
+
+.o-header__supplementary {
+  @include typography.set('small');
+
+  margin-top: 0;
+  margin-bottom: var(--nyco-typography-margin-bottom);
+}
+
+.o-header__breadcrumbs {
+  @include typography.set('small');
+
+  font-family: var(--nyco-fontFamily-primary);
+
+  margin-top: 0;
+  margin-bottom: var(--nyco-typography-margin-bottom);
+}
+
+.o-header__breadcrumbs-chevron {
+  width: calc(var(--nyco-grid) * 2);
+  height: calc(var(--nyco-grid) * 2);
+  vertical-align: middle;
+}
+
+.o-header__tags {
+  @include media.screen-and-min-width('desktop') {
+    margin-inline-start: calc(var(--nyco-grid) * -2);
+  }
+}
+
+.o-header__utility {
+  @include typography.set('small');
+  @include nav.inline();
+
+  display: flex;
+  justify-content: end;
+}

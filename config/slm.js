@@ -71,51 +71,51 @@ module.exports = {
     }
   },
 
-  // /**
-  //  * Newsletter Data
-  //  *
-  //  * @type {Array}
-  //  */
-  // newsletter: {
-  //   action: 'https://nyc.us18.list-manage.com/subscribe/post?u=d04b7b607bddbd338b416fa89&id=aa67394696',
-  //   boroughs: [
-  //     {
-  //       id: 'mce-group[4369]-4369-0',
-  //       name: 'group[4369][1]',
-  //       value: '1',
-  //       label: 'Bronx',
-  //       class: 'mb-0'
-  //     },
-  //     {
-  //       id: 'mce-group[4369]-4369-4',
-  //       name: 'group[4369][16]',
-  //       value: '16',
-  //       label: 'Staten Island',
-  //       class: 'mb-0'
-  //     },
-  //     {
-  //       id: 'mce-group[4369]-4369-3',
-  //       name: 'group[4369][8]',
-  //       value: '8',
-  //       label: 'Queens',
-  //       class: 'mb-0'
-  //     },
-  //     {
-  //       id: 'mce-group[4369]-4369-1',
-  //       name: 'group[4369][2]',
-  //       value: '2',
-  //       label: 'Brooklyn',
-  //       class: 'mb-0'
-  //     },
-  //     {
-  //       id: 'mce-group[4369]-4369-2',
-  //       name: 'group[4369][4]',
-  //       value: '4',
-  //       label: 'Manhattan',
-  //       class: 'mb-0'
-  //     }
-  //   ]
-  // },
+  /**
+   * Newsletter Data
+   *
+   * @type {Array}
+   */
+  newsletter: {
+    action: 'https://nyc.us18.list-manage.com/subscribe/post?u=d04b7b607bddbd338b416fa89&id=aa67394696',
+    boroughs: [
+      {
+        id: 'mce-group[4369]-4369-0',
+        name: 'group[4369][1]',
+        value: '1',
+        label: 'Bronx',
+        class: 'mb-0'
+      },
+      {
+        id: 'mce-group[4369]-4369-4',
+        name: 'group[4369][16]',
+        value: '16',
+        label: 'Staten Island',
+        class: 'mb-0'
+      },
+      {
+        id: 'mce-group[4369]-4369-3',
+        name: 'group[4369][8]',
+        value: '8',
+        label: 'Queens',
+        class: 'mb-0'
+      },
+      {
+        id: 'mce-group[4369]-4369-1',
+        name: 'group[4369][2]',
+        value: '2',
+        label: 'Brooklyn',
+        class: 'mb-0'
+      },
+      {
+        id: 'mce-group[4369]-4369-2',
+        name: 'group[4369][4]',
+        value: '4',
+        label: 'Manhattan',
+        class: 'mb-0'
+      }
+    ]
+  },
 
   /**
    * Sample Programs
@@ -159,13 +159,13 @@ module.exports = {
       features: [
         {
           feature: 'Services',
-          icon: 'feather-award',
+          icon: 'lucide-award',
           title: 'Services Provided',
           label: 'Training for a new job'
         },
         {
           feature: 'Schedule',
-          icon: 'feather-calendar',
+          icon: 'lucide-calendar',
           title: 'Duration and Length',
           label: '1 to less than 3 months. Daytime, Full-time'
         }
@@ -188,7 +188,7 @@ module.exports = {
       features: [
         {
           feature: 'Services',
-          icon: 'feather-shopping-cart',
+          icon: 'lucide-shopping-cart',
           title: 'Services Provided',
           label: 'Cash & Expenses, Food.'
         }
@@ -351,7 +351,7 @@ module.exports = {
       features: [
         {
           feature: 'Last Updated',
-          icon: 'feather-info',
+          icon: 'lucide-info',
           label: 'Updated February 15, 2022 11:10 am'
         }
       ],
@@ -362,7 +362,7 @@ module.exports = {
       title: `
         Get no-cost or low-cost healthcare
         <svg aria-hidden="true" class="icon-nyco-ui rtl:flip">
-          <use href="#feather-external-link"></use>
+          <use href="#lucide-external-link"></use>
         </svg>
       `,
       url: '/demos/news/#',
@@ -370,7 +370,7 @@ module.exports = {
       features: [
         {
           feature: 'Last Updated',
-          icon: 'feather-alert-triangle',
+          icon: 'lucide-alert-triangle',
           text: '<span>Posted Tuesday, November 24th, 10:39am</span>'
         }
       ],
@@ -380,7 +380,7 @@ module.exports = {
     //   title: `
     //     Help Avoiding Eviction
     //     <svg aria-hidden="true" class="icon-nyco-ui rtl:flip">
-    //       <use href="#feather-external-link"></use>
+    //       <use href="#lucide-external-link"></use>
     //     </svg>
     //   `,
     //   url: '/demos/news/#',
@@ -388,7 +388,7 @@ module.exports = {
     //   features: [
     //     {
     //       feature: 'Last Updated',
-    //       icon: 'feather-alert-triangle',
+    //       icon: 'lucide-alert-triangle',
     //       text: '<span>Posted Tuesday, November 24th, 10:39am</span>'
     //     }
     //   ],
@@ -398,7 +398,7 @@ module.exports = {
     //   title: `
     //     Low-cost and free health insurance
     //     <svg aria-hidden="true" class="icon-nyco-ui rtl:flip">
-    //       <use href="#feather-external-link"></use>
+    //       <use href="#lucide-external-link"></use>
     //     </svg>
     //   `,
     //   url: '/demos/news/#',
@@ -406,7 +406,7 @@ module.exports = {
     //   features: [
     //     {
     //       feature: 'Last Updated',
-    //       icon: 'feather-alert-triangle',
+    //       icon: 'lucide-alert-triangle',
     //       text: '<span>Posted Tuesday, November 24th, 10:39am</span>'
     //     }
     //   ],
@@ -433,7 +433,7 @@ module.exports = {
                 <span>Apply online</span>
 
                 <svg aria-hidden="true" class="icon-ui rtl:flip" tabindex="-1">
-                  <use href="#feather-external-link"></use>
+                  <use href="#lucide-external-link"></use>
                 </svg>
               </a>
             </p>
@@ -455,7 +455,7 @@ module.exports = {
                 <span>Download the form</span>
 
                 <svg aria-hidden="true" class="icon-ui rtl:flip" tabindex="-1">
-                  <use href="#feather-external-link"></use>
+                  <use href="#lucide-external-link"></use>
                 </svg>
               </a>
             </p>
@@ -476,7 +476,7 @@ module.exports = {
               <span>Find a location</span>
 
               <svg aria-hidden="true" class="icon-ui rtl:flip" tabindex="-1">
-                <use href="#feather-external-link"></use>
+                <use href="#lucide-external-link"></use>
               </svg>
             </a>
           </p>

@@ -1,0 +1,79 @@
+/**
+ * Text Controller
+ */
+
+// Dependencies
+@use 'config/dropdown';
+@use 'config/layouts';
+@use 'config/media';
+@use 'config/options';
+@use 'config/screen-readers';
+
+// Declarations
+.o-languages-dropdown {
+  @include dropdown.base();
+  @include dropdown.max-height();
+  @include dropdown.min-height();
+}
+
+.o-languages-dropdown__inner {
+  @include dropdown.inner();
+  @include layouts.content();
+
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+
+  > div {
+    width: 100%
+  }
+}
+
+.o-languages-dropdown__languages {
+  ul {
+    @include layouts.rows-gutter();
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    @include media.screen-and-min-width('tablet') {
+      @include layouts.two-columns-gutter();
+    }
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  a {
+    @include options.base();
+
+    &:focus {
+      @include options.focused();
+    }
+
+    &:hover {
+      @include options.hover();
+    }
+  }
+
+  > div {
+    margin-bottom: var(--wnyc-spacing-DEFAULT);
+
+    @include media.screen-and-min-width('tablet') {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ====================================
+// WPML Language Switcher Styles
+// ====================================
+
+// Hides the current language translation in the language switcher
+.o-languages-dropdown__languages .wpml-ls .wpml-ls-current-language,
+.o-languages-dropdown__languages .wpml-ls .wpml-ls-display {
+  @include screen-readers.only();
+}

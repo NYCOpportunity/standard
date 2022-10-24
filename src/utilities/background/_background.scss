@@ -1,0 +1,26 @@
+/**
+ * Background
+ */
+
+// Dependencies
+@use 'config/background';
+@use 'config/media';
+
+// Declarations
+[class*='bg-'] {
+  background-repeat: no-repeat
+}
+
+@each $namespace in ('a', 'b', 'c') {
+  @include background.shapes($namespace);
+}
+
+@include background.shapes-combined;
+
+@include media.screens-and-prefers-scheme(light) using ($scheme) {
+  @each $namespace in ('a', 'b', 'c') {
+    @include background.shapes($namespace, '@#{$scheme}');
+  }
+
+  @include background.shapes-combined('@#{$scheme}');
+}

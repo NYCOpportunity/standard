@@ -1,0 +1,14 @@
+/ Banner
+
+header class='o-banner layout-content flex items-center'
+  div class='wrap'
+    div class='tablet:flex items-center mb-6'
+      svg style='width: 327px; height: 111px;' role='img'
+        title New York City
+        use href='#logo-nyc'
+
+      h1 class='jumbo m-0 tablet:pis-2 tablet:mis-3 tablet:border-l-4 font-nyc' style='font-weight: 600; line-height: 1em;'
+        div Opportunity
+        div class='text-brand' Standard
+
+    h2 ${this.package.description}

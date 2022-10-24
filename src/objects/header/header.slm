@@ -1,0 +1,113 @@
+
+/ Header
+
+/ Defaults
+- this.header = {}
+- this.header.id = this.createId()
+- this.header.title = 'Plain language title'
+- this.header.subtitle = 'Program title by agency and provider'
+- this.header.breadcrumb = 'Program title'
+- this.header.recruitment = 'Recruitment info'
+- this.header.certification = 'Services Provided'
+- this.header.info = 'Sector'
+- this.header.eligibility = 'Eligibility'
+- this.header.schedule = 'Duration and Length'
+- this.header.accessible = true
+- this.header.multilingual = true
+- this.header.timestamp = 'Last updated 2 days ago'
+
+/ Inherit overrides
+- if (typeof header !== 'undefined')
+  - this.header = Object.assign(this.header, header);
+
+header class='o-header'
+  div
+    nav class='breadcrumbs' aria-label='Breadcrumb'
+      a href='${this.baseUrl}/demos/index' Home
+
+      svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
+        use href='#lucide-chevron-right'
+
+      a href='${this.baseUrl}/demos/programs/index' Programs
+
+      svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
+        use href='#lucide-chevron-right'
+
+      b aria-current='page' = this.header.breadcrumb
+
+    h1 class='o-header__title' == this.header.title
+
+    h2 class='o-header__subtitle' == this.header.subtitle
+
+    - if this.header.recruitment
+      p
+        mark class='badge mie-2'
+          = this.header.recruitment
+
+    - if this.header.certification
+      p class='small flex items-center'
+        a class='link-anchor inline-flex mie-1' href='#services'
+          svg class='icon-ui icon-2' role='img'
+            title Services Provided
+
+            use href='#lucide-award'
+
+        == this.header.certification
+
+    - if this.header.eligibility
+      p class='small flex items-center'
+        a class='link-anchor inline-flex mie-1' href='#eligibility'
+          svg class='icon-ui icon-2' role='img'
+            title Eligibility
+
+            use href='#lucide-users'
+
+        == this.header.eligibility
+
+    - if this.header.schedule
+      p class='small flex items-center'
+        a class='link-anchor inline-flex mie-1' href='#schedule'
+          svg class='icon-ui icon-2' role='img'
+            title Schedule and Length
+
+            use href='#lucide-calendar'
+
+        == this.header.schedule
+
+    - if this.header.accessible
+      p class='small flex items-center'
+        a class='link-anchor inline-flex mie-1' href='#disability-accommodation'
+          svg class='icon-ui icon-2' role='img'
+            title Disability Accommodations
+
+            use href='#lucide-accessibility'
+
+        span Accommodates Disabilities
+
+    - if this.header.multilingual
+      p class='small flex items-center'
+        a class='link-anchor inline-flex mie-1' href='#language-access'
+          svg class='icon-ui icon-2' role='img'
+            title Language Access
+
+            use href='#lucide-languages'
+
+        span Language Access
+
+    - if this.header.info
+      p class='small flex items-center'
+        svg class='icon-ui mie-1 icon-2' role='img'
+          title Sector Information
+
+          use href='#lucide-info'
+
+        = this.header.info
+
+    - if this.header.timestamp
+      p class='small flex items-center'
+        svg class='icon-ui mie-1 icon-2' role='img'
+          title Last Updated
+
+          use href='#lucide-alert-triangle'
+
+        = this.header.timestamp

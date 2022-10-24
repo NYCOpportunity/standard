@@ -88,14 +88,14 @@ nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${
   span id='aria-lb-objects-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Objects
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='application-header' Application Header
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='attribution' Attribution
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='banner' Banner
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='feedback' Feedback
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='header' Header
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='languages' Languages
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='banner' Banner
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='feedback' Feedback
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='header' Header
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='languages' Languages
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='menu' Menu
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='text-controller' Text Controller
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
 

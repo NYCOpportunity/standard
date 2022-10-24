@@ -1,0 +1,20 @@
+/**
+ * Newsletter
+ */
+
+// Dependencies
+// @use 'config/tokens';
+
+// Declarations
+.o-newsletter {
+  width: 100%;
+  color: var(--nyco-newsletter-text);
+  background-color: var(--nyco-newsletter-background);
+
+  -webkit-font-smoothing: var(--nyco-newsletter-webkit-font-smoothing);
+  -moz-osx-font-smoothing: var(--nyco-newsletter-moz-osx-font-smoothing);
+}
+
+.o-newsletter__heading {
+  color: var(--nyco-newsletter-heading);
+}

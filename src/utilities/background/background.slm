@@ -1,0 +1,11 @@
+/ Background
+
+/ Defaults
+- this['background'] = {}
+- this['background'].id = this.createId()
+
+/ Inherit overrides
+- if (typeof background !== 'undefined')
+  - this['background'] = Object.assign(this['background'], background);
+
+div class='background'

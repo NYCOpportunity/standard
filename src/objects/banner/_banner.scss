@@ -1,0 +1,22 @@
+/**
+ * Banner
+ */
+
+// Dependencies
+@use 'config/grid' as *;
+@use 'config/dimensions';
+@use 'config/direction';
+@use 'config/layouts';
+@use 'config/media';
+
+// Declarations
+.o-banner {
+  @include layouts.wrap();
+
+  padding-top: calc(var(--nyco-grid) * 4);
+  padding-bottom: calc(var(--nyco-grid) * 4);
+  display: block;
+
+  width: 100%;
+  min-height: min(700px, 80vh);
+}

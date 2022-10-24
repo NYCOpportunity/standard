@@ -1,0 +1,1 @@
+The Languages Dropdown uses a [Dropdown Component](dropdown) to display text controls that are available for the application.

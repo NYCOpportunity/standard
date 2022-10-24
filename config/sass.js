@@ -14,6 +14,7 @@ const sass = {
   sourceMapEmbed: true,
   includePaths: [
     `${process.env.PWD}/src/`,
+    `${process.env.PWD}/dist/`,
     `${process.env.PWD}/node_modules/`,
     `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src/`,
     `${process.env.PWD}/node_modules/@nycopportunity/pattern-typography/src/`

@@ -19,4 +19,4 @@
 = content('content')
   = mixin('content-header')
 
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/installation', {markup: false, demo: false, src: false});
+  = mixin('section', '/docs/installation', {markup: false, demo: false, src: false});

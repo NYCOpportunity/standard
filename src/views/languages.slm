@@ -1,0 +1,24 @@
+- this.title = 'Languages'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/objects/languages/languages', {title: 'Select Element'})
+
+  - langaugesDropdown = {class: 'w-full mx-3'}
+  = mixin('section', '/objects/languages/languages-dropdown', {title: 'Dropdown'})

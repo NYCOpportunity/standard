@@ -20,8 +20,3 @@
   = mixin('section', '/objects/newsletter/newsletter')
   = mixin('section', '/objects/newsletter/newsletter-form', {title: 'Full Form'})
   = mixin('section', '/objects/newsletter/readme', {title: 'Usage', markup: false, demo: false})
-
-= content('script')
-  javascript:
-    patterns.newsletter();
-    patterns.newsletterForm();

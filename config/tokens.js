@@ -15,7 +15,7 @@ const light = {
     'shadow-up': 'none',
     'border': '4px solid var(--nyco-scale-2)',
     'border-radius': '0px'
-  }
+  },
 
   /**
    * Object Tokens
@@ -25,15 +25,15 @@ const light = {
   //   'background': 'var(--nyco-color-blue-l-3)',
   // },
 
-  // 'newsletter' {
-  //   'heading': 'var(--nyco-text-alt)',
-  //   'text': 'inherit',
-  //   'background': 'var(--nyco-scale-2)',
+  'newsletter': {
+    'heading': 'var(--nyco-color-white)',
+    'text': 'var(--nyco-color-white)',
+    'background': 'var(--nyco-color-default-3)',
 
-  //   // Smoothing
-  //   // 'webkit-font-smoothing': 'auto',  // browser default
-  //   // 'moz-osx-font-smoothing': 'auto', // browser default
-  // }
+    // Smoothing
+    'webkit-font-smoothing': 'antialiased', // always
+    'moz-osx-font-smoothing': 'grayscale',  // always
+  }
 };
 
 const dark = {
@@ -51,7 +51,7 @@ const dark = {
     'shadow-up': 'none',
     'border': '4px solid var(--nyco-scale-3)',
     'border-radius': '0px'
-  }
+  },
 
   /**
    * Object Tokens
@@ -61,15 +61,15 @@ const dark = {
   //   'background': 'var(--nyco-color-blue-l-3)',
   // },
 
-  // 'newsletter': {
-  //   'heading': 'var(--nyco-color-white)',
-  //   'text': 'var(--nyco-color-white)',
-  //   'background': 'var(--nyco-color-default-3)',
+  'newsletter': {
+    'heading': 'var(--nyco-color-white)',
+    'text': 'var(--nyco-color-white)',
+    'background': 'var(--nyco-color-default-3)',
 
-  //   // Smoothing
-  //   'webkit-font-smoothing': 'antialiased', // always
-  //   'moz-osx-font-smoothing': 'grayscale',  // always
-  // }
+    // Smoothing
+    'webkit-font-smoothing': 'antialiased', // always
+    'moz-osx-font-smoothing': 'grayscale',  // always
+  }
 };
 
 /**

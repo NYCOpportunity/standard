@@ -13,6 +13,7 @@ javascript:
   Standard.direction();
   Standard.menu();
   Standard.newsletter();
+  Standard.newsletterForm();
   Standard.setHeightProperties();
   // Standard.search();
   Standard.themes();

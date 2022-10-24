@@ -1,0 +1,92 @@
+/ Text Controller
+
+/ Defaults
+- this.languagesDropdown = {}
+- this.languagesDropdown.id = this.createId()
+- this.languagesDropdown.ariaHidden = false
+- this.languagesDropdown.tabindex = false
+
+/ Inherit overrides
+- if (typeof languagesDropdown !== 'undefined')
+  - this.languagesDropdown = Object.assign(this.languagesDropdown, languagesDropdown);
+
+div id='aria-c-languages-dropdown' class='o-languages-dropdown ${this.languagesDropdown.class}' data-js='languages-dropdown' aria-hidden=this.languagesDropdown.ariaHidden
+  div class='o-languages-dropdown__inner'
+    div
+      div class='text-end'
+        button class='btn btn-primary btn-small' data-js='dialog' aria-controls='aria-c-languages-dropdown' aria-expanded='false' data-dialog='close' tabindex=this.languagesDropdown.tabindex
+          svg class='icon-ui' aria-hidden='true' tabindex=this.languagesDropdown.tabindex
+            use href='#lucide-x'
+
+          span Close
+
+          span class='sr-only' and return to site
+
+      p class='h4 block w-full m-0 py-2 text-alt' Select a language
+
+      div class='o-languages-dropdown__options'
+        div class='o-languages-dropdown__languages'
+          div
+            ul
+              li
+                a href='${this.baseUrl}/demos/index' tabindex=this.languagesDropdown.tabindex
+                  span English
+
+              li
+                a href='${this.baseUrl}/demos/es' tabindex=this.languagesDropdown.tabindex
+                  span Español
+
+              li
+                a href='${this.baseUrl}/demos/ru' tabindex=this.languagesDropdown.tabindex
+                  span Русский
+
+              li
+                a href='${this.baseUrl}/demos/ko' tabindex=this.languagesDropdown.tabindex
+                  span 한국어
+
+              li
+                a href='${this.baseUrl}/demos/ar' tabindex=this.languagesDropdown.tabindex
+                  span العربية
+
+              li
+                a href='${this.baseUrl}/demos/ht' tabindex=this.languagesDropdown.tabindex
+                  span Kreyol
+
+              li
+                a href='${this.baseUrl}/demos/zh-hant' tabindex=this.languagesDropdown.tabindex
+                  span 繁體中文
+
+              li
+                a href='${this.baseUrl}/demos/fr' tabindex=this.languagesDropdown.tabindex
+                  span Français
+
+              li
+                a href='${this.baseUrl}/demos/pl' tabindex=this.languagesDropdown.tabindex
+                  span polski
+
+              li
+                a href='${this.baseUrl}/demos/ur' tabindex=this.languagesDropdown.tabindex
+                  span اردو
+
+              li
+                a href='${this.baseUrl}/demos/bn' tabindex=this.languagesDropdown.tabindex
+                  span বাংলা
+
+          p
+            svg class='icon-logo-google-translate' role='img' tabindex=this.languagesDropdown.tabindex
+              title Powered by Google Translate
+              use href='#logo-google-translate'
+
+
+        / div class='o-languages-dropdown__sizer'
+        /   span class='o-languages-dropdown__sizer-text' Adjust text size
+
+        /   button class='o-languages-dropdown__sizer-btn btn-text' data-js='text-larger'
+        /     svg class='icon icon-wnyc-ui icon-3 mr-0'
+        /       use href='#feather-plus-circle'
+        /     div class='sr-only' Larger
+
+        /   button class='o-languages-dropdown__sizer-btn btn-text' data-js='text-smaller'
+        /     svg class='icon icon-wnyc-ui icon-3 mr-0'
+        /       use href='#feather-minus-circle'
+        /     div class='sr-only' Smaller

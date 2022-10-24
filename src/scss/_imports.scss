@@ -5,19 +5,21 @@
 @forward '@nycopportunity/pattern-attribution/src/tokens.css';
 @forward '@nycopportunity/pattern-menu/src/tokens.css';
 @forward '@nycopportunity/pattern-navigation/src/tokens.css';
-@forward '../dist/css/tokens.css';
-@forward '../dist/css/tokens-default.css';
-@forward '../dist/css/tokens-dark.css';
+@forward 'css/tokens.css';
+@forward 'css/tokens-default.css';
+@forward 'css/tokens-dark.css';
 /** Tokens - end */
 
+/** Fonts */
+@forward '@nycopportunity/pattern-typography/src/scss/_imports.scss'; // This module includes @font-face and needs to be imported before all style declarations.
+/** Fonts - end */
+
 /** Elements */
-@forward '@nycopportunity/pattern-typography/src/scss/_imports.scss'; // This module includes @font-face and needs to be imported before all other declarations.
 @forward '@nycopportunity/pattern-elements/src/scss/_imports.scss';
 /** Elements - end */
 
 /** Components */
 @forward 'components/accordion/_accordion.scss';
-// @forward 'components/active-navigation/_active-navigation.scss'; // there is no SASS file for this
 @forward 'components/alert/_alert.scss';
 @forward 'components/card/_card.scss';
 @forward 'components/dropdown/_dropdown.scss';
@@ -29,11 +31,26 @@
 /** Objects */
 @forward '@nycopportunity/pattern-application-header/src/application-header.css';
 @forward 'objects/attribution/_attribution.scss';
+@forward 'objects/banner/_banner.scss';
+@forward 'objects/header/_header.scss';
 @forward 'objects/menu/_menu.scss';
 @forward 'objects/navigation/_navigation.scss';
+@forward 'objects/newsletter/_newsletter.scss';
+@forward 'objects/search/_search.scss';
+@forward 'objects/languages/_languages-dropdown.scss';
 /** Objects - end */
 
 /** Utilities */
 @forward 'utilities/tailwindcss/tailwindcss';
+@forward '@nycopportunity/pattern-elements/src/utilities/animate/animate';
+@forward 'utilities/background/background';
+@forward '@nycopportunity/pattern-elements/src/utilities/cell/cell';
+@forward '@nycopportunity/pattern-elements/src/utilities/clearfix/clearfix';
+// @forward 'utilities/color/color'; ???
+@forward '@nycopportunity/pattern-elements/src/utilities/direction/direction';
+@forward '@nycopportunity/pattern-elements/src/utilities/print/print';
+@forward '@nycopportunity/pattern-elements/src/utilities/scroll/scroll';
+// @forward 'utilities/status/status'; ??
+@forward '@nycopportunity/pattern-elements/src/utilities/toggle/toggle';
 @forward '@nycopportunity/pattern-elements/src/utilities/first-last/_first-last.scss'; // should be the last import
 /** Utilities - end */

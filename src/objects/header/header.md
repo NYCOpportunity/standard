@@ -1,0 +1,1 @@
+The Header Component displays the title and leading content of a page.

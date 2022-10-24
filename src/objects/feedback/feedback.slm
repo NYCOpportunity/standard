@@ -1,0 +1,21 @@
+/ Feedback
+
+/ Defaults
+- this.feedback = {}
+- this.feedback.id = this.createId()
+
+/ Inherit overrides
+- if (typeof feedback !== 'undefined')
+  - this.feedback = Object.assign(this.feedback, feedback);
+
+section class='o-navigation-spacing-bottom' data-js='feedback'
+  div class='layout-content bg-scale-2'
+    div class='tablet:px-3 tablet:py-2'
+      article class='c-alert c-alert-status-primary' data-js='alert-primary'
+        div class='c-alert__graphic'
+          svg aria-hidden='true' class='icon-ui'
+            use href='#lucide-help-circle'
+
+        div class='c-alert__body py-2 pie-2'
+          p data-js-alert='text'
+            | How can we improve this website? Let us know by <a class='link-icon' href='#' target='_blank'><span>sending us feedback</span> <svg aria-hidden='true' class='icon-ui rtl:flip'><use href='#lucide-external-link'></use></svg></a>

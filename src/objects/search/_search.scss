@@ -1,0 +1,112 @@
+/**
+ * Search Box
+ */
+
+// Dependencies
+@use 'config/direction';
+@use 'config/layouts';
+@use 'config/media';
+@use 'config/typography';
+@use 'config/animate';
+
+// Declarations
+.o-search {
+  width: 100%;
+  background-color: var(--nyco-scale-2);
+
+  @include layouts.wrap();
+
+  padding-top: var(--nyco-spacing-DEFAULT);
+  padding-bottom: var(--nyco-spacing-DEFAULT);
+}
+
+.o-search__close {
+  @include typography.set('small');
+
+  text-align: direction.$end;
+}
+
+.o-search__form {
+  padding-top: var(--nyco-spacing-DEFAULT);
+}
+
+// .o-search__suggestions-header {
+//   margin-bottom: var(--nyco-spacing-DEFAULT);
+
+//   @include media.screen-and-min-width('tablet') {
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: space-between;
+//   }
+// }
+
+// .o-search__headings {
+//   margin-bottom: 0;
+// }
+
+// .o-search__suggestions-body {
+//   padding-bottom: var(--nyco-spacing-DEFAULT);
+
+//   @include media.screen-and-min-width('tablet') {
+//     align-items: flex-start;
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+// .o-search__suggestions-item {
+//   padding-inline-end: var(--nyco-spacing-DEFAULT);
+//   margin-bottom: var(--nyco-spacing-DEFAULT);
+
+//   @include media.screen-and-min-width('tablet') {
+//     width: 33.33%;
+//   }
+// }
+
+// Animation
+
+.o-search-fixed {
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+
+  position: fixed !important;
+
+  @include media.screen-and-max-width('tablet') {
+    bottom: 0;
+    padding-bottom: calc(var(--nyco-spacing-DEFAULT) + var(--nyco-dimension-navigation-height-mobile))
+  }
+
+  @include media.screen-and-min-width('tablet') {
+    position: static;
+    height: inherit !important;
+  }
+}
+
+.o-search-fixed {
+  bottom: 100vh;
+  transition-property: transform;
+
+  @include animate.ease();
+}
+
+.o-search-fixed.hidden {
+  display: initial !important;
+  box-shadow: none !important;
+  transform: translateY(100%);
+
+  @include animate.linear();
+
+  @include media.screen-and-min-width('tablet') {
+    transform: translateY(0%)
+  }
+}
+
+.o-search-fixed.active {
+  transform: translateY(0);
+
+  @include media.screen-and-min-width('tablet') {
+    transform: translateY(100%)
+  }
+}
