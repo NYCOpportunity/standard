@@ -148,8 +148,8 @@ Sass.render({
     outFile: 'default.css',
     includePaths: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -170,8 +170,8 @@ gulp.task('sass', () => {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass.({includePaths: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -196,8 +196,8 @@ module.exports = {
   resolve: {
     modules: [
       `${process.env.PWD}/node_modules`,
-      `${process.env.PWD}/node_modules/@nycopportunity`,
       `${process.env.PWD}/node_modules/@nycopportunity/standard/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/standard/dist`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
@@ -225,8 +225,8 @@ const config = {
   build: {
     extend(config) {
       config.resolve.modules.push(`${process.env.PWD}/node_modules`);
-      config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/standard/src`);
+      config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/standard/dist`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-application-header/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`);
