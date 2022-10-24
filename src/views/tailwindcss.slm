@@ -23,8 +23,4 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {title: 'Tailwindcss', markup: false, demo: false, src: false});
 
-  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-logical', {title: 'Tailwindcss Logical Plugin',markup: false, demo: false, src: false});
-
-  / = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-installation', {title: 'Installing Tailwindcss', markup: false, demo: false, src: false});
-
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {title: 'Tailwind UI', markup: false, demo: false, src: false});

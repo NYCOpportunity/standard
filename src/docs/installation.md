@@ -28,7 +28,7 @@ import Accordion from '{{ this.package.name }}/src/components/accordion/accordio
 new Accordion();
 ```
 
-Where applicable, specific installation and usage instructions are noted for each Pattern in this documentation.
+Where applicable, specific installation and usage instructions are noted for each Pattern in this documentation site.
 
 #### Global Import
 
@@ -104,8 +104,8 @@ Including each sprite can also be done manually by copying and pasting each spri
 When compiling stylesheets, you may use the PostCSS configuration to generate stylesheets the same way this library does to ensure the correct Tailwindcss utilities are generated. You can require the PostCSS and Tailwindcss configuration files and modify them to meet your needs. The main attributes that need to be configured are `content` and `safelist`. Below is an example PostCSS configuration file.
 
 ```JavaScript
-let postCssConfig = require('{{ this.package.nice }}/config/postcss');
-let tailwindcssConfig = require('{{ this.package.nice }}/config/tailwindcss');
+let postCssConfig = require('{{ this.package.name }}/config/postcss');
+let tailwindcssConfig = require('{{ this.package.name }}/config/tailwindcss');
 
 postCssConfig.plugins = postCssConfig.plugins.map(p => {
   if (p.postcssPlugin === 'tailwindcss') {
@@ -133,6 +133,8 @@ All Tailwindcss utilities can by imported from either following Sass or CSS file
 // or
 @import '{{ this.package.name }}/{{ this.global.dist }}{{ this.global.entry.tailwindcss }}';
 ```
+
+More information alternative options for installing can be found on the <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noopener nofollow">Tailwindcss site</a>. Details about using the {{ this.package.nice }} utilities can be found on the [Tailwindcss documentation page](tailwindcss).
 
 ---
 
