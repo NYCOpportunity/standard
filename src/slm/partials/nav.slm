@@ -13,10 +13,9 @@
 
 nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${this.nav.class.main}'
   span id='navigation-main-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Main
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='index' Home
 
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='${this.package.cdn.source}/releases/tag/v${this.package.version}' target='_blank' rel='noopener nofollow' title='v${this.package.version}'
-    | Latest Release
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='index' Home
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='${this.package.cdn.source}/releases/tag/v${this.package.version}' target='_blank' rel='noopener nofollow' title='v${this.package.version}' Latest Release
 
   button class='link-icon ${this.nav.class.item}' data-js="themes" tabindex=(this.nav.tabindex ? '-1' : false)
     svg class='icon icon-ui' aria-hidden='true'
@@ -25,13 +24,15 @@ nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${
     span class='sr-only' Toggle&nbsp;
     span data-js-themes='label' Theme
 
-  / span class='${this.nav.class.heading} ${this.nav.class.divider}' Guides
+  span class='${this.nav.class.heading} ${this.nav.class.divider}' Guides
+
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='about' About
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='installation' Installation
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='developer-tools' Developer Tools
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='installation' Installation
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='developer-tools' Developer Tools
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item} ${this.nav.class.divider}' xhref='prototyping' Prototyping
 
   span class='${this.nav.class.heading} ${this.nav.class.divider}' Links
+
   a tabindex=(this.nav.tabindex ? '-1' : false) class='link-icon ${this.nav.class.item}' href='${this.package.cdn.figma}' target='_blank' rel='noopener nofollow'
     svg class='icon icon-ui' aria-hidden='true'
       use href='#lucide-figma'
@@ -50,7 +51,11 @@ nav role='navigation' aria-labelledby='navigation-main-${this.nav.id}' class='${
 
     span NPM Package
 
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='link-icon ${this.nav.class.item}' href='${this.links.nycopportunity.framework}' target='_blank' rel='noopener nofollow'
+    svg class='icon icon-ui' aria-hidden='true'
+      use href='#lucide-frame'
 
+    span UI Patterns Framework
 
 nav role='navigation' aria-labelledby='aria-lb-elements-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-elements-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Elements
@@ -96,7 +101,6 @@ nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='text-controller' Text Controller
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
 
 nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
@@ -113,7 +117,6 @@ nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='toggle' Toggle
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='typography' Typography
-
 
 - delete nav
 - delete this.nav

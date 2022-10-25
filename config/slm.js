@@ -62,9 +62,12 @@ module.exports = {
   links: {
     nycopportunity: {
       homepage: 'http://nyc.gov/opportunity',
+      framework: 'https://nycopportunity.github.io/patterns-framework',
+      policy: 'https://nycopportunity.github.io/loves-open-source',
       social: {
         github: 'https://github.com/nycopportunity',
         twitter:  'https://twitter.com/nycopportunity',
+        linkedin: 'https://www.linkedin.com/company/mayor\'sofficeforeconomicopportunity/',
         facebook: 'https://www.facebook.com/nycopportunity',
         instagram: 'https://www.instagram.com/nycopportunity'
       }

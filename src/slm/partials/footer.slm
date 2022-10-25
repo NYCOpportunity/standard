@@ -8,7 +8,7 @@ footer role='contentinfo' class='text-small py-4 z-20 relative'
 
       div class='py-4'
         p
-          | Maintained by <a href="${this.links.nycopportunity.homepage}" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;
+          | Maintained by <a href="${this.links.nycopportunity.homepage}" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="${this.links.nycopportunity.policy}" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;
 
         div class='mb-4'
           = partial('nav-social.slm');
