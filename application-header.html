@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <link href="/svg/favicon.svg" rel="icon" type="image/x-icon" />
   <title>Opportunity Standard</title>
   <link href="https://cdn.jsdelivr.net" rel="preconnect" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <link href="/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
       hljs.configure({
@@ -38,13 +38,13 @@
   <header class="bg-scale-2" role="banner">
     <div class="flex items-center justify-between py-2 wrap">
       <div>
-        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+        <a class="text-brand no-underline" href="/">
           <h1 class="font-nyc text-body">Opportunity Standard</h1>
         </a>
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-8" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-8</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-9" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-9</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -80,10 +80,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-fd19179b9365f" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-fd19179b9365f">Main</span>
+        <nav aria-labelledby="navigation-main-3841d3d7c7e9f" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-3841d3d7c7e9f">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-8" rel="noopener nofollow" target="_blank" title="v0.0.0-8">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-9" rel="noopener nofollow" target="_blank" title="v0.0.0-9">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -91,6 +91,8 @@
             <span class="sr-only">Toggle&nbsp;</span>
             <span data-js-themes="label">Theme</span>
           </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
           <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
             <svg aria-hidden="true" class="icon icon-ui">
@@ -110,9 +112,15 @@
             </svg>
             <span>NPM Package</span>
           </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-fd19179b9365f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-fd19179b9365f">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-3841d3d7c7e9f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-3841d3d7c7e9f">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
@@ -130,8 +138,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-fd19179b9365f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-fd19179b9365f">Components</span>
+        <nav aria-labelledby="aria-lb-components-3841d3d7c7e9f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-3841d3d7c7e9f">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -141,8 +149,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-fd19179b9365f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-fd19179b9365f">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-3841d3d7c7e9f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-3841d3d7c7e9f">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -154,8 +162,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-fd19179b9365f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-fd19179b9365f">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-3841d3d7c7e9f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-3841d3d7c7e9f">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -304,10 +312,10 @@
           <div class="wrap">
             <p>The following demonstration shows the <a href="application-header">Application Header</a>, <a href="navigation">Navigation</a>, <a href="menu">Menu</a>, and <a href="attribution">Attribution</a> global elements within the mobile viewport.</p>
             <div class="flex justify-center py-6">
-              <iframe style="width: 400px; margin: 0 auto" height="628" src="https://nycopportunity.github.io/standard/demos/global-nyc-id.html" class="border-4 border-scale-3" tabindex="-1"></iframe>
+              <iframe style="width: 400px; margin: 0 auto" height="628" src="/demos/global-nyc-id.html" class="border-4 border-scale-3" tabindex="-1"></iframe>
             </div>
             <p>
-              <a href="https://nycopportunity.github.io/standard/demos/global-nyc-id" target="_blank" rel="noopener nofollow">View the global elements demonstration at full screen</a>.
+              <a href="/demos/global-nyc-id" target="_blank" rel="noopener nofollow">View the global elements demonstration at full screen</a>.
             </p>
           </div>
         </div>
@@ -333,7 +341,7 @@
             <h5 id="global-stylesheet">Global Stylesheet</h5>
             <p>The Application Header will display correctly with the global stylesheet.</p>
             <div class="code-block">
-              <pre>&lt;link href=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-8/dist/css/default.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
+              <pre>&lt;link href=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-9/dist/css/default.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
             </div>
             <h5 id="stylesheet-module-import">Stylesheet Module Import</h5>
             <p>The Application Header source exists in the <a href="https://github.com/nycopportunity/pattern-application-header/" target="_blank" rel="noopener nofollow">Pattern Application Header</a> module, which is a dependency of the Opportunity Standard. It includes two stylesheets. One sets the default design tokens using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noindex nofollow">CSS Custom Properties</a>, and another adds custom styles.</p>
@@ -351,13 +359,14 @@
       <div class="wrap mb-4">
         <hr class="divider" />
         <div class="py-4">
-          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
           <div class="mb-4">
             <nav class="nav-inline">
-              <a href="https://github.com/nycopportunity">GitHub</a>
-              <a href="https://twitter.com/nycopportunity">Twitter</a>
-              <a href="https://www.facebook.com/nycopportunity">Facebook</a>
-              <a href="https://www.instagram.com/nycopportunity">Instagram</a>
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
             </nav>
           </div>
           <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
@@ -366,10 +375,10 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-262289e143d4" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-262289e143d4">Main</span>
+        <nav aria-labelledby="navigation-main-7407ec1442a7e" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-7407ec1442a7e">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-8" rel="noopener nofollow" target="_blank" title="v0.0.0-8">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-9" rel="noopener nofollow" target="_blank" title="v0.0.0-9">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -377,6 +386,8 @@
             <span class="sr-only">Toggle&nbsp;</span>
             <span data-js-themes="label">Theme</span>
           </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
           <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
           <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
             <svg aria-hidden="true" class="icon icon-ui">
@@ -396,9 +407,15 @@
             </svg>
             <span>NPM Package</span>
           </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-262289e143d4" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-262289e143d4">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-7407ec1442a7e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-7407ec1442a7e">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
@@ -416,8 +433,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-262289e143d4" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-262289e143d4">Components</span>
+        <nav aria-labelledby="aria-lb-components-7407ec1442a7e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-7407ec1442a7e">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -427,8 +444,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-262289e143d4" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-262289e143d4">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-7407ec1442a7e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-7407ec1442a7e">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -440,8 +457,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-262289e143d4" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-262289e143d4">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-7407ec1442a7e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-7407ec1442a7e">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -450,9 +467,9 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var Standard = new Default();
-    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
-    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
-    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.icons('/svg/svgs.svg');
+    Standard.icons('/svg/pattern-elements.svg');
+    Standard.icons('/svg/lucide.svg');
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
@@ -469,6 +486,7 @@
     Standard.webShare();
     Standard.validate();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>
