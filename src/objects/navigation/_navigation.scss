@@ -2,6 +2,8 @@
  * Navigation
  */
 
+@use 'config/media';
+
 @forward '@nycopportunity/pattern-navigation/src/navigation';
 @forward '@nycopportunity/pattern-navigation/src/utilities.css';
 
@@ -16,4 +18,24 @@
   --o-navigation-item-font-weight: var(--nyco-fontWeight-link);
   --o-navigation-item-text-decoration: var(--nyco-textDecoration-link);
   --o-navigation-logo-min-width: auto;
+}
+
+.o-navigation-feedback-spacing-bottom {
+  bottom: calc(var(--o-navigation-height) + var(--nyco-feedback-height));
+}
+
+@include media.screen-and-min-width('tablet') {
+  :root {
+    --o-navigation-position: static;
+  }
+
+  .o-navigation-feedback-spacing-bottom {
+    bottom: var(--nyco-feedback-height);
+  }
+}
+
+@include media.screen-and-min-width('desktop') {
+  .o-navigation-feedback-spacing-bottom {
+    bottom: var(--nyco-feedback-height);
+  }
 }

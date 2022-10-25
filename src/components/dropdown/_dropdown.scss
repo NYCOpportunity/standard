@@ -8,8 +8,8 @@
 
 // Declarations
 :root {
-  --nyco-dropdown-max-height: calc(var(--100vh) - var(--nyco-dimensions-navigation-height));
-  --nyco-dropdown-min-height: calc(var(--100vh) - var(--nyco-dimensions-navigation-height));
+  --nyco-dropdown-max-height: calc(var(--100vh) - var(--o-navigation-height));
+  --nyco-dropdown-min-height: calc(var(--100vh) - var(--o-navigation-height));
 }
 
 @include media.screens-and-min-width() using ($variant) {

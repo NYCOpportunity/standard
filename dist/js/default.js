@@ -2235,6 +2235,10 @@ var Default = (function () {
           {
             'selector': '[data-js="navigation"]',
             'property': '--o-navigation-height'
+          },
+          {
+            'selector': '[data-js="feedback"]',
+            'property': '--nyco-feedback-height'
           }
         ]
       });
