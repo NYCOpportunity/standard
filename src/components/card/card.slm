@@ -13,6 +13,7 @@ article class='c-card ${this.card.class}'
     - if this.card.icon
       svg class='c-card__icon text-primary fill-scale-4' role='img'
         title == this.card.icon.title
+
         use href='#${card.icon.icon}'
 
     span
@@ -30,12 +31,12 @@ article class='c-card ${this.card.class}'
                 use href='#lucide-external-link'
 
       - if this.card.subtitle
-        h4 class='c-card__subtitle text-alt'
+        p class='c-card__subtitle text-alt'
           == this.card.subtitle
 
   div class='c-card__body'
     - if this.card.status
-      p class='c-card__status flex items-center'
+      p class='c-card__status'
         - for (let i in this.card.status)
           - status = this.card.status[i]
 
@@ -48,10 +49,12 @@ article class='c-card ${this.card.class}'
 
           - if status.type === 'icon'
             span
-              svg class='icon${(status.icon.includes('accessible') ? '': '-ui')} text-em' role='img'
+              svg class='icon${(status.icon.includes('nyco-accessibility') ? '': '-ui')} text-em' role='img'
                 title = status.label
 
-                use href="#${status.icon}"
+                use href='#${status.icon}'
+
+            span class='sr-only' &nbsp;
 
     - if this.card.summary
       div class='c-card__summary'

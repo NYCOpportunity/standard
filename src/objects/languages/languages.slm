@@ -19,4 +19,4 @@ div class='select ${this.languages.class}' for='${this.languages.id}'
       option value='${value}' = option.label
 
   svg class='select__graphic' style='stroke: currentColor' aria-hidden='true'
-    use href='#lucide-languages'
+    use href='#nyco-languages'

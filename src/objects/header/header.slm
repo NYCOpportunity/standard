@@ -80,7 +80,7 @@ header class='o-header'
           svg class='icon-ui icon-2' role='img'
             title Disability Accommodations
 
-            use href='#lucide-accessibility'
+            use href='#nyco-accessibility'
 
         span Accommodates Disabilities
 
@@ -90,7 +90,7 @@ header class='o-header'
           svg class='icon-ui icon-2' role='img'
             title Language Access
 
-            use href='#lucide-languages'
+            use href='#nyco-languages'
 
         span Language Access
 

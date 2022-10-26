@@ -144,13 +144,13 @@ module.exports = {
         {
           status: 'Disability information',
           type: 'icon',
-          icon: 'icon-nyco-accessible',
+          icon: 'nyco-accessibility',
           label: 'Disability accommodation details are available. View this program to learn more.'
         },
         {
           status: 'Language information',
           type: 'icon',
-          icon: 'icon-nyco-translate',
+          icon: 'nyco-languages',
           label: 'Language access details are available. View this program to learn more.'
         },
       ],
