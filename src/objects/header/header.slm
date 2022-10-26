@@ -77,7 +77,7 @@ header class='o-header'
     - if this.header.accessible
       p class='small flex items-center'
         a class='link-anchor inline-flex mie-1' href='#disability-accommodation'
-          svg class='icon-ui icon-2' role='img'
+          svg class='icon icon-2' role='img'
             title Disability Accommodations
 
             use href='#nyco-accessibility'

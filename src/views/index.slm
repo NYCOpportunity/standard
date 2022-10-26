@@ -56,7 +56,7 @@
 
   main#main-content role='main'
     section#browse-the-patterns class='page-max wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2'
-      - nav = {tabindex: false, class: {item: 'flex px-1 py-2', heading: 'block border-b border-scale-3 mt-3 mb-2 px-1 pb-2'}};
+      - nav = {tabindex: false, class: {item: 'flex px-1 py-1', heading: 'block border-b border-scale-3 mt-4 mb-1 px-1 pb-2'}};
       = partial('/slm/partials/nav.slm');
 
     section class='py-6'

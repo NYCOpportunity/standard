@@ -64,7 +64,7 @@ const dark = {
   'newsletter': {
     'heading': 'var(--nyco-color-white)',
     'text': 'var(--nyco-color-white)',
-    'background': 'var(--nyco-color-default-3)',
+    'background': 'var(--nyco-color-default-2)',
 
     // Smoothing
     'webkit-font-smoothing': 'antialiased', // always
