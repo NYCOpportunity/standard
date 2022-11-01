@@ -43,11 +43,11 @@
 /** Utilities */
 @forward 'utilities/tailwindcss/tailwindcss';
 @forward '@nycopportunity/pattern-elements/src/utilities/animate/animate';
-@forward 'utilities/background/background';
 @forward '@nycopportunity/pattern-elements/src/utilities/cell/cell';
 @forward '@nycopportunity/pattern-elements/src/utilities/clearfix/clearfix';
 // @forward 'utilities/color/color'; ???
 @forward '@nycopportunity/pattern-elements/src/utilities/direction/direction';
+@forward 'utilities/material/material';
 @forward '@nycopportunity/pattern-elements/src/utilities/print/print';
 @forward '@nycopportunity/pattern-elements/src/utilities/scroll/scroll';
 // @forward 'utilities/status/status'; ??

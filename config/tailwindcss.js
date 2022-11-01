@@ -34,7 +34,10 @@ module.exports = {
   important: true,
   theme: {
     colors: tokens.color,
-    borderColor: global.Object.assign({default: ''}, tokens.color),
+    borderColor: {
+      default: '',
+      ...tokens.color
+    },
     borderWidth: tokens.borderWidth,
     // inset: {
     //   '0': 0,

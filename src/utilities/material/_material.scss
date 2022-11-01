@@ -1,0 +1,11 @@
+/**
+ * Background
+ */
+
+// Dependencies
+@use 'config/material';
+
+// Declarations
+.material {
+  @include material.styles;
+}

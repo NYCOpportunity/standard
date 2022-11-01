@@ -11,7 +11,7 @@
 article class='c-card ${this.card.class}'
   header class='c-card__header'
     - if this.card.icon
-      svg class='c-card__icon text-primary fill-scale-4' role='img'
+      svg class='c-card__icon text-blue-d-1 fill-blue-l-1' role='img'
         title == this.card.icon.title
 
         use href='#${card.icon.icon}'
