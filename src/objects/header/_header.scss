@@ -10,9 +10,6 @@
 @use 'config/nav';
 @use 'config/typography';
 
-$icon-height: calc(var(--nyco-spacing-DEFAULT) * 2);
-$icon-width: calc(var(--nyco-spacing-DEFAULT) * 2);
-
 // Declarations
 .o-header {
   width: 100%;
@@ -41,28 +38,39 @@ $icon-width: calc(var(--nyco-spacing-DEFAULT) * 2);
   }
 }
 
-.o-header__icon {
-  margin-bottom: calc(var(--nyco-spacing-DEFAULT) / 3);
+.o-header__title {
+  margin-bottom: var(--nyco-typography-margin-bottom);
+  margin-top: calc(var(--nyco-typography-margin-bottom) * 2);
 
-  @include media.screen-and-min-width('tablet') {
-    margin-inline-end: var(--nyco-spacing-DEFAULT);
-    width: $icon-width;
-
-    .o-header__label {
-      display: none;
-    }
+  @include media.screen-and-min-width('mobile') {
+    display: flex;
   }
 }
 
-.o-header__svg {
-  width: $icon-width;
-  height: $icon-height;
+.o-header__icon {
+  display: block;
+  margin-bottom: calc(var(--nyco-grid) * 1);
+  margin-inline-end: calc(var(--nyco-grid) * 2);
+  flex: none;
+
+  width: calc(var(--nyco-grid) * 6) !important;
+  height: calc(var(--nyco-grid) * 6) !important;
+
+  @include media.screen-and-min-width('mobile') {
+    margin-bottom: 0;
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    width: calc(var(--nyco-grid) * 7) !important;
+    height: calc(var(--nyco-grid) * 7) !important;
+  }
 }
 
-.o-header__title {
+.o-header__heading {
   @include typography.set('h3');
 
-  // margin-top: -12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .o-header__subtitle {

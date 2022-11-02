@@ -35,7 +35,13 @@ header class='o-header'
 
       b aria-current='page' = this.header.breadcrumb
 
-    h1 class='o-header__title' == this.header.title
+    div class='o-header__title'
+      svg class="o-header__icon text-blue-d-1 fill-blue-l-1" role="img"
+        title {{ post.icon.name }}
+
+        use href="#program-card-work"
+
+      h1 class='o-header__heading' == this.header.title
 
     h2 class='o-header__subtitle' == this.header.subtitle
 
