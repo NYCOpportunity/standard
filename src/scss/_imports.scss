@@ -41,16 +41,14 @@
 /** Objects - end */
 
 /** Utilities */
-@forward 'utilities/tailwindcss/tailwindcss';
-@forward '@nycopportunity/pattern-elements/src/utilities/animate/animate';
-@forward '@nycopportunity/pattern-elements/src/utilities/cell/cell';
-@forward '@nycopportunity/pattern-elements/src/utilities/clearfix/clearfix';
-// @forward 'utilities/color/color'; ???
-@forward '@nycopportunity/pattern-elements/src/utilities/direction/direction';
-@forward 'utilities/material/material';
-@forward '@nycopportunity/pattern-elements/src/utilities/print/print';
-@forward '@nycopportunity/pattern-elements/src/utilities/scroll/scroll';
-// @forward 'utilities/status/status'; ??
-@forward '@nycopportunity/pattern-elements/src/utilities/toggle/toggle';
+@forward 'utilities/tailwindcss/_tailwindcss.scss';
+@forward 'utilities/animate/_animate.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/cell/_cell.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/clearfix/_clearfix.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/direction/_direction.scss';
+@forward 'utilities/material/_material.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/print/_print.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/scroll/_scroll.scss';
+@forward '@nycopportunity/pattern-elements/src/utilities/toggle/_toggle.scss';
 @forward '@nycopportunity/pattern-elements/src/utilities/first-last/_first-last.scss'; // should be the last import
 /** Utilities - end */
