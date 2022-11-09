@@ -3,6 +3,7 @@
  */
 
 // Dependencies
+@use 'config/typography';
 @use 'config/interaction';
 @use 'config/buttons';
 @use 'config/material';
@@ -20,6 +21,8 @@
 }
 
 .c-accordion__header {
+  @include typography.set('h4');
+
   background-color: var(--nyco-card-header);
   padding: var(--nyco-spacing-DEFAULT);
   margin: 0;
@@ -27,12 +30,12 @@
 
 .c-accordion__heading {
   flex: 1;
-  font-weight: bold;
   margin: 0;
 }
 
 .c-accordion__toggle {
   @include buttons.toggle();
+
   width: 100%;
 
   // Historical
