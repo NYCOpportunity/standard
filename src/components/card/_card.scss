@@ -142,15 +142,12 @@
   list-style-type: none;
   margin-bottom: var(--nyco-typography-margin-bottom);
 
-  @include typography.selector-body-elements() {
-    @include media.screen-and-min-width('mobile') {
-      @include typography.set('small')
-    }
-  }
-
   li {
+    @include typography.set('small');
+    line-height: 1rem; // match width and height of icon
+
     display: flex;
-    align-items: top;
+    align-items: start;
     margin-bottom: var(--nyco-grid);
   }
 }
