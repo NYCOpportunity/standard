@@ -75,6 +75,7 @@
 
 .o-header__subtitle {
   @include typography.set('h5');
+  font-weight: normal;
 
   margin-top: 0;
   margin-bottom: var(--nyco-typography-margin-bottom);

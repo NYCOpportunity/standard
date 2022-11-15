@@ -5,7 +5,7 @@
 - this.header = {}
 - this.header.id = this.createId()
 - this.header.title = 'Plain language title'
-- this.header.subtitle = 'Program title by agency and provider'
+- this.header.subtitle = '<b>Program title</b> by agency and provider'
 - this.header.breadcrumb = 'Program title'
 - this.header.recruitment = 'Recruitment info'
 - this.header.certification = 'Services Provided'
