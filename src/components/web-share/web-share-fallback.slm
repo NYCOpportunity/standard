@@ -19,7 +19,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
 
       /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
       label tabindex=(webShareFallback.tabindex ? '-1' : false) for='web-share-url' class='c-web-share__label flex-1'
-        | Share this URL
+        | Link to share
 
     div class='c-web-share__input input'
       /! { Copy-to-clipboard Content }
@@ -38,7 +38,10 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
         svg class='icon icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
           use data-js-copy='icon' href='#lucide-copy'
 
-        span Copy URL
+        span
+          /! { @class  "sr-only" visually hides more descriptive text for screen readers }
+          span class='sr-only' == 'Press to&nbsp;'
+          | Copy link
 
       /! { Facebook Sharer }
       /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
@@ -47,7 +50,10 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
         svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
           use href='#lucide-facebook'
 
-        span Facebook
+        span
+          /! { @class  "sr-only" visually hides more descriptive text for screen readers }
+          span class='sr-only' == 'Share to&nbsp;'
+          | Facebook
 
       /! { Twitter Tweet }
       /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
@@ -55,4 +61,7 @@ div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hid
         svg class='icon-ui' tabindex=(webShareFallback.tabindex ? '-1' : false)
           use href='#lucide-twitter'
 
-        span Twitter
+        span
+          /! { @class  "sr-only" visually hides more descriptive text for screen readers }
+          span class='sr-only' == 'Share to&nbsp;'
+          | Twitter

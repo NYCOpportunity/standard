@@ -14,9 +14,11 @@
 .c-utility {
   @include typography.font-family('primary');
   @include typography.features('small');
+
   @include nav.inline('', 'c-utility__item');
 
   display: flex;
+  width: 100%;
   justify-content: end;
   align-items: center;
 

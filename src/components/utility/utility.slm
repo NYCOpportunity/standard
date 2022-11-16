@@ -7,23 +7,18 @@ div class='c-utility'
 
     span Programs
 
-  a href='#next-steps' class='text-inherit mis-3'
+  a href='#next-steps' class='c-utility__item text-inherit'
     | Next steps
 
-  / a class='btn btn-small btn-primary'
-  /   svg class='icon-ui' aria-hidden='true'
-  /     use href='#lucide-bookmark'
+  button class='btn-small c-utility__item' aria-controls='aria-c-text-controller' aria-expanded='false' data-dialog='open' data-dialog-lock='true' data-js='dialog'
+    svg class='icon-ui hidden small:flex'
+      use href='#nyco-languages'
 
-  /   span Save
-  - webShare = {}
+    span Languages
+
+  - webShare = {class: 'c-utility__item'}
   - webShare.fallbackClass = 'hidden right-0 z-30'
 
   = partial('/components/web-share/web-share.slm')
 
   - webShare = {} // reset
-
-  / a href='#' class='btn btn-small btn-primary' data-js='web-share' data-web-share='{"title":"${this.title}","text":"${this.description}","url":"${this.url}"}'
-  /   svg class='icon-ui' aria-hidden='true'
-  /     use href='#lucide-share-2'
-
-  /   span Share

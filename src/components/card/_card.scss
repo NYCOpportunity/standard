@@ -124,13 +124,13 @@
   display: flex;
   flex-direction: column;
 
-  // > *:nth-last-child(2) {
-  //   margin-bottom: 0;
+  > *:nth-last-child(2) {
+    margin-bottom: 0;
 
-  //   @include media.screen-and-min-width('desktop') {
-  //     margin-bottom: var(--nyco-typography-margin-bottom);
-  //   }
-  // }
+    @include media.screen-and-min-width('desktop') {
+      margin-bottom: var(--nyco-typography-margin-bottom);
+    }
+  }
 }
 
 .c-card__summary {
@@ -142,6 +142,10 @@
   list-style-type: none;
   margin-bottom: var(--nyco-typography-margin-bottom);
 
+  // @include media.screen-and-min-width('desktop') {
+  //   margin-bottom: var(--nyco-typography-margin-bottom);
+  // }
+
   li {
     @include typography.set('small');
     line-height: 1rem; // match width and height of icon
@@ -149,6 +153,10 @@
     display: flex;
     align-items: start;
     margin-bottom: var(--nyco-grid);
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -3,12 +3,10 @@
  */
 
 // Dependencies
-@use 'config/grid' as *;
-@use 'config/dimensions';
-@use 'config/direction';
 @use 'config/layouts';
 @use 'config/typography';
 @use 'config/media';
+@use 'config/material';
 
 // Declarations
 .c-web-share {
@@ -17,11 +15,14 @@
   pointer-events: auto;
 }
 
+.c-web-share__wrap {
+  display: flex;
+  align-items: center;
+}
+
 .c-web-share__fallback {
   @include typography.set('small');
-
-  background-color: var(--nyco-card-body);
-  box-shadow: var(--nyco-shadow-up);
+  @include material.styles;
 
   position: absolute;
   margin-top: var(--nyco-grid);

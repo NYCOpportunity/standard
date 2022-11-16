@@ -98,7 +98,7 @@ article class='c-card ${this.card.class}'
         svg class='icon-ui rtl:flip' aria-hidden='true'
           use href='#lucide-arrow-right'
     - else
-      /! { @span  This empty span tag currently assists the stylesheed in removing margin on the last visible element in the card. }
+      /! { @span  This empty span tag currently assists the stylesheet in removing margin on the last visible element in the card. }
       span
 
 / - if (typeof card !== 'undefined')
