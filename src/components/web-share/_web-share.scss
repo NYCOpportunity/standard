@@ -24,6 +24,8 @@
   @include typography.set('small');
   @include material.styles;
 
+  background-color: var(--nyco-web-share-fallback-body);
+
   position: absolute;
   margin-top: var(--nyco-grid);
   margin-bottom: var(--nyco-grid);

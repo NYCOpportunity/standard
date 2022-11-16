@@ -15,7 +15,7 @@
 }
 
 .c-accordion__group {
-  background-color: var(--nyco-card-body);
+  background-color: var(--nyco-accordion-body);
 
   @include material.styles;
 }
@@ -23,7 +23,7 @@
 .c-accordion__header {
   @include typography.set('h4');
 
-  background-color: var(--nyco-card-header);
+  background-color: var(--nyco-accordion-header);
   padding: var(--nyco-spacing-DEFAULT);
   margin: 0;
 }

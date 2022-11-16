@@ -10,6 +10,15 @@ const light = {
     'body': 'var(--nyco-scale-0)'
   },
 
+  'accordion': {
+    'header': 'var(--nyco-scale-3)',
+    'body': 'var(--nyco-scale-0)'
+  },
+
+  'web-share-fallback': {
+    'body': 'var(--nyco-scale-0)'
+  },
+
   'material': {
     // 'shadow-up': '0 3px 12px 2px rgba(21, 60, 96, 0.13)',
     'shadow-up': 'none',
@@ -43,6 +52,15 @@ const dark = {
 
   'card': {
     'header': 'var(--nyco-scale-3)',
+    'body': 'var(--nyco-scale-4)'
+  },
+
+  'accordion': {
+    'header': 'var(--nyco-scale-2)',
+    'body': 'var(--nyco-scale-4)'
+  },
+
+  'web-share-fallback': {
     'body': 'var(--nyco-scale-4)'
   },
 
