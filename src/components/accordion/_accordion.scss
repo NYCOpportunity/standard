@@ -15,9 +15,10 @@
 }
 
 .c-accordion__group {
-  background-color: var(--nyco-accordion-body);
-
   @include material.styles;
+
+  background-color: var(--nyco-accordion-body);
+  border-color: var(--nyco-accordion-header);
 }
 
 .c-accordion__header {
