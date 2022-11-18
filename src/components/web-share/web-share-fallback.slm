@@ -1,7 +1,8 @@
 /! { Web Share Fallback }
-/! { @id     Toggle target of the web share button. Must match the "aria-controls" attribute of the toggling button }
-/! { @role   Indicates an area of significance }
-/! { @class  Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }
+/! { @id           Toggle target of the web share button. Must match the "aria-controls" attribute of the toggling button }
+/! { @role         Indicates an area of significance }
+/! { @class        Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }
+/! { @aria-hidden  Hides content from assistive technology }
 div id='aria-c-web-share-fallback-${webShareFallback.id}' role='region' aria-hidden='true' class='c-web-share__fallback ${webShareFallback.fallbackClass}'
   div class='c-web-share__fallback-body'
     div class='flex mb-2 items-center flex-row-reverse'

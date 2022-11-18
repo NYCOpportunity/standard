@@ -5,88 +5,120 @@
 - this.languagesDropdown.id = this.createId()
 - this.languagesDropdown.ariaHidden = false
 - this.languagesDropdown.tabindex = false
+- this.languagesDropdown.toggle = false
+- this.languagesDropdown.gt = false
 
 / Inherit overrides
 - if (typeof languagesDropdown !== 'undefined')
   - this.languagesDropdown = Object.assign(this.languagesDropdown, languagesDropdown);
 
-div id='aria-c-languages-dropdown' class='o-languages-dropdown ${this.languagesDropdown.class}' data-js='languages-dropdown' aria-hidden=this.languagesDropdown.ariaHidden
-  div class='o-languages-dropdown__inner'
-    div
-      div class='text-end'
-        button class='btn btn-primary btn-small' data-js='dialog' aria-controls='aria-c-languages-dropdown' aria-expanded='false' data-dialog='close' tabindex=this.languagesDropdown.tabindex
-          svg class='icon-ui' aria-hidden='true' tabindex=this.languagesDropdown.tabindex
-            use href='#lucide-x'
+div class='w-full'
+  - if this.languagesDropdown.toggle
+    div class='w-full text-center pb-3'
+      /! { @data-js        data-js="dialog" designates this element as a toggling element for the dropdown }
+      /! { @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }
+      /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+      /! { @aria-expanded  Indicates if the dropdown is open or not }
+      button class='btn' aria-controls='aria-c-languages-dropdown' aria-expanded='${(this.languagesDropdown.ariaHidden) ? 'false' : 'true'}' data-js='dialog' data-dialog='open' data-dialog-lock='false'
+        svg class='icon-ui'
+          use href='#nyco-languages'
 
-          span Close
+          span Languages
 
-          span class='sr-only' and return to site
+  /! { @data-js      data-js="languages-dropdown" is used as a selector for JavaScript utilities to target this element }
+  /! { @class        Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }
+  /! { @aria-hidden  "true" hides the area from screen readers }
+  div id='aria-c-languages-dropdown' class='o-languages-dropdown ${this.languagesDropdown.class}' data-js='languages-dropdown' aria-hidden='${(this.languagesDropdown.ariaHidden) ? 'true' : 'false'}'
+    div class='o-languages-dropdown__inner'
+      div
+        div class='text-end'
+          /! { @data-js        data-js="dialog" designates this element as a toggling element for the dropdown }
+          /! { @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }
+          /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+          /! { @aria-expanded  Indicates if the dropdown is open or not }
+          /! { @tabindex       Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+          button class='btn btn-primary btn-small' data-js='dialog' aria-controls='aria-c-languages-dropdown' aria-expanded='${(this.languagesDropdown.ariaHidden) ? 'false' : 'true'}' data-dialog='close' tabindex=this.languagesDropdown.tabindex
+            svg class='icon-ui' tabindex=this.languagesDropdown.tabindex
+              use href='#lucide-x'
 
-      p class='h4 block w-full m-0 py-2 text-alt' Select a language
+            span Close
 
-      div class='o-languages-dropdown__options'
-        div class='o-languages-dropdown__languages'
-          div
-            ul
-              li
-                a href='${this.baseUrl}/demos/index' tabindex=this.languagesDropdown.tabindex
-                  span English
+        p class='h4 block w-full m-0 py-2 text-alt' Select a language
 
-              li
-                a href='${this.baseUrl}/demos/es' tabindex=this.languagesDropdown.tabindex
-                  span Español
+        div class='o-languages-dropdown__options'
+          div class='o-languages-dropdown__languages'
+            div
+              ul
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='en' English
 
-              li
-                a href='${this.baseUrl}/demos/ru' tabindex=this.languagesDropdown.tabindex
-                  span Русский
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='es' Español
 
-              li
-                a href='${this.baseUrl}/demos/ko' tabindex=this.languagesDropdown.tabindex
-                  span 한국어
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='ru' Русский
 
-              li
-                a href='${this.baseUrl}/demos/ar' tabindex=this.languagesDropdown.tabindex
-                  span العربية
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='ko' 한국어
 
-              li
-                a href='${this.baseUrl}/demos/ht' tabindex=this.languagesDropdown.tabindex
-                  span Kreyol
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='ko' العربية
 
-              li
-                a href='${this.baseUrl}/demos/zh-hant' tabindex=this.languagesDropdown.tabindex
-                  span 繁體中文
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='ht' Kreyol
 
-              li
-                a href='${this.baseUrl}/demos/fr' tabindex=this.languagesDropdown.tabindex
-                  span Français
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='zh-hant' 繁體中文
 
-              li
-                a href='${this.baseUrl}/demos/pl' tabindex=this.languagesDropdown.tabindex
-                  span polski
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='fr' Français
 
-              li
-                a href='${this.baseUrl}/demos/ur' tabindex=this.languagesDropdown.tabindex
-                  span اردو
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='pl' polski
 
-              li
-                a href='${this.baseUrl}/demos/bn' tabindex=this.languagesDropdown.tabindex
-                  span বাংলা
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='ur' اردو
 
-          p
-            svg class='icon-logo-google-translate' role='img' tabindex=this.languagesDropdown.tabindex
-              title Powered by Google Translate
-              use href='#logo-google-translate'
+                li
+                  /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                  a href='#' tabindex=this.languagesDropdown.tabindex
+                    /! { @lang  This attribute identifies the language change in this label from the lang attribute on the html document }
+                    span lang='bn' বাংলা
 
+            - if this.languagesDropdown.gt
+              p
+                /! { @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }
+                svg class='icon-logo-google-translate' role='img' tabindex=this.languagesDropdown.tabindex
+                  title Powered by Google Translate
 
-        / div class='o-languages-dropdown__sizer'
-        /   span class='o-languages-dropdown__sizer-text' Adjust text size
-
-        /   button class='o-languages-dropdown__sizer-btn btn-text' data-js='text-larger'
-        /     svg class='icon icon-wnyc-ui icon-3 mr-0'
-        /       use href='#feather-plus-circle'
-        /     div class='sr-only' Larger
-
-        /   button class='o-languages-dropdown__sizer-btn btn-text' data-js='text-smaller'
-        /     svg class='icon icon-wnyc-ui icon-3 mr-0'
-        /       use href='#feather-minus-circle'
-        /     div class='sr-only' Smaller
+                  use href='#logo-google-translate'
