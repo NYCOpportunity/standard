@@ -13,7 +13,7 @@
 
 div class='w-full'
   div class='c-active-navigation layout-content sticky top-0 bg-scale-0 z-20'
-    div class='px-2 tablet:px-3'
+    div class='c-active-navigation__wrap'
       /! { @data-active-navigation  "scroll" designates this region as the horizontally scrolling element for JavaScript selecting }
       div class='c-active-navigation__scroll' data-active-navigation='scroll'
         /! { @data-js     "active-navigation" the selector that designates this element as the main navigation element containing navigation items for selecting }

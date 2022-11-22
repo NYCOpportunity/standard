@@ -4,7 +4,6 @@
 
 // Dependencies
 @use 'config/layouts';
-// @use 'config/media';
 @use 'config/nav';
 @use 'config/typography';
 
@@ -15,13 +14,15 @@
   white-space: nowrap;
 }
 
+.c-active-navigation__wrap {
+  @include layouts.wrap();
+}
+
 .c-active-navigation__nav {
   @include typography.font-family('primary');
   @include typography.features('small');
 
   @include nav.inline('', 'c-active-navigation__item');
-
-  @include layouts.wrap();
 
   position: relative;
   width: auto;
