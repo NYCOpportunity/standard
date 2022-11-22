@@ -3,9 +3,46 @@
 / Defaults
 - this['active-navigation'] = {}
 - this['active-navigation'].id = this.createId()
+- let text = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Arcu cursus euismod quis viverra nibh. Convallis aenean et tortor at risus viverra adipiscing at. Pretium vulputate sapien nec sagittis aliquam. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. A diam sollicitudin tempor id eu. Malesuada pellentesque elit eget gravida. Vel quam elementum pulvinar etiam non. Morbi tristique senectus et netus et malesuada. Nulla posuere sollicitudin aliquam ultrices sagittis. Et tortor at risus viverra adipiscing at in. Nibh nisl condimentum id venenatis a. Eu facilisis sed odio morbi quis commodo. Sit amet massa vitae tortor condimentum.</p><p>Potenti nullam ac tortor vitae purus faucibus. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Viverra orci sagittis eu volutpat. Habitant morbi tristique senectus et netus et malesuada fames. Et tortor consequat id porta nibh venenatis. Ridiculus mus mauris vitae ultricies leo. Eget duis at tellus at urna condimentum mattis pellentesque id. Vitae aliquet nec ullamcorper sit amet. Pulvinar elementum integer enim neque volutpat. Et tortor at risus viverra adipiscing at in. Velit dignissim sodales ut eu sem integer vitae. Ornare lectus sit amet est.</p>'
+- this['active-navigation'].items = [{'heading': 'Get help finding work', 'text': text}, {'heading': 'Internships and short term jobs', 'text': text}, {'heading': 'Job boards', 'text': text}, {'heading': 'Working for the City of New York', 'text': text}, {'heading': 'Immediate hiring', 'text': text}, {'heading': 'Resources for all', 'text': text}]
+- this['active-navigation'].showContent = true
 
 / Inherit overrides
 - if (typeof activeNavigation !== 'undefined')
   - this['active-navigation'] = Object.assign(this['active-navigation'], activeNavigation);
 
-div class='c-active-navigation'
+div class='w-full'
+  div class='c-active-navigation layout-content sticky top-0 bg-scale-0 z-20'
+    div class='px-2 tablet:px-3'
+      /! { @data-active-navigation  "scroll" designates this region as the horizontally scrolling element for JavaScript selecting }
+      div class='c-active-navigation__scroll' data-active-navigation='scroll'
+        /! { @data-js     "active-navigation" the selector that designates this element as the main navigation element containing navigation items for selecting }
+        /! { @aria-label  "Jump Navigation" designates this nav element as a unique landmark for screen-readers }
+        nav class='c-active-navigation__nav' data-js='active-navigation' aria-label='Jump Navigation'
+          span class='c-active-navigation__item' Jump to
+
+          a class='c-active-navigation__item' href='#page-heading' Top of page
+
+          - for (i in this['active-navigation'].items)
+            - item = this['active-navigation'].items[i]
+            /! { @data-active-navigation-item    "active" designates the class or classes that will be applied to the link when it is "in view"  }
+            /! { @data-inactive-navigation-item  "inactive" designates the class or classes that will be applied to the link when it is not highlighted by the active class }
+            /! { @href                           ID Anchor target for the section it links to }
+            a class='c-active-navigation__item' data-active-navigation-item='active' data-inactive-navigation-item='inactive' href='#${this.createSlug(item.heading)}' = item.heading
+
+  - if this['active-navigation'].showContent
+    /! { @data-active-navigation                "observe" the selector that designates the container of items that will be observed }
+    /! { @data-active-navigation-observe-items  Designates the items in the container that will be observed. The value of this attibute does not need to be "heading" but must be the same as the value of individual items that will be observed, designated by the @data-active-navigation-observe-item attribute }
+    div class='layout-content' data-active-navigation='observe' data-active-navigation-observe-items='heading'
+      div class='wrap'
+        - for (i in this['active-navigation'].items)
+          - item = this['active-navigation'].items[i]
+          /! { @class                                "pt-utility-anchor" adds sufficient padding to the top of this element for when the anchor link is clicked }
+          /! { @data-active-navigation-observe-item  Designates this item as an observable item in the container. The value of this attribute does not need to be "heading" but it must be the same as the value of @data-active-navigation-observe-items }
+          /! { @id                                   The ID of the anchor link target }
+          div class='pt-utility-anchor' data-active-navigation-observe-item='heading' id='${this.createSlug(item.heading)}'
+            div class='pt-utility-anchor sticky top-0 bg-scale-0 pb-2'
+              /! { @data-active-navigation-item  "focus" indicates this element will receive focus when a user selects an anchor target }
+              h6 data-active-navigation-item='focus' = item.heading
+
+            == item.text

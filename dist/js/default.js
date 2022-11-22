@@ -1791,7 +1791,9 @@ var Default = (function () {
 
       this.fallback = (s.fallback) ? s.fallback : WebShare.fallback;
 
-      if (navigator.share) {
+      this.fallbackCondition = (s.fallbackCondition) ? s.fallbackCondition : WebShare.fallbackCondition;
+
+      if (this.fallbackCondition()) {
         // Remove fallback aria toggling attributes
         document.querySelectorAll(this.selector).forEach(item => {
           item.removeAttribute('aria-controls');
@@ -1840,6 +1842,11 @@ var Default = (function () {
 
   /** Placeholder for the WebShare fallback */
   WebShare.fallback = () => {
+  };
+
+  /** Conditional function for the Web Share fallback */
+  WebShare.fallbackCondition = () => {
+    return navigator.share;
   };
 
   /**
@@ -1899,10 +1906,14 @@ var Default = (function () {
    * A wrapper around Intersection Observer class
    */
   class Observe {
-    constructor(s) {
+    constructor(s = {}) {
+      if (!s.element) return;
+
       this.options = (s.options) ? Object.assign(Observe.options, s.options) : Observe.options;
 
       this.trigger = (s.trigger) ? s.trigger : Observe.trigger;
+
+      this.selectors = (s.selectors) ? s.selectors : Observe.selectors;
 
       // Instantiate the Intersection Observer
       this.observer = new IntersectionObserver((entries, observer) => {
@@ -1910,7 +1921,10 @@ var Default = (function () {
       }, this.options);
 
       // Select all of the items to observe
-      this.items = s.element.querySelectorAll(`[data-js-observe-item="${s.element.dataset.jsObserveItems}"]`);
+      let selectorItem = this.selectors.ITEM.replace('{{ item }}',
+          s.element.dataset[this.selectors.ITEMS_ATTR]);
+
+      this.items = s.element.querySelectorAll(selectorItem);
 
       for (let i = 0; i < this.items.length; i++) {
         const item = this.items[i];
@@ -1932,26 +1946,43 @@ var Default = (function () {
     }
   }
 
+  /** Options for the Intersection Observer API */
   Observe.options = {
     root: null,
     rootMargin: '0px',
     threshold: [0.15]
   };
 
+  /** Placeholder entry function for what happens with items are observed */
   Observe.trigger = entry => {
     console.dir(entry);
     console.dir('Observed! Create a entry trigger function and pass it to the instantiated Observe settings object.');
   };
 
+  /** Main selector for the utility */
   Observe.selector = '[data-js*="observe"]';
+
+  /** Misc. selectors for the observer utility */
+  Observe.selectors = {
+    ITEM: '[data-js-observe-item="{{ item }}"]',
+    ITEMS_ATTR: 'jsObserveItems'
+  };
 
   class ActiveNavigation {
     /**
      * @constructor
      *
-     * @return {Object}            The instantiated pattern
+     * @return {Object}  The instantiated pattern
      */
-    constructor() {
+    constructor(s = {}) {
+      this.selector = (s.selector) ? s.selector : ActiveNavigation.selector;
+
+      this.selectors = (s.selectors) ?
+        Object.assign(ActiveNavigation.selectors, s.selectors) : ActiveNavigation.selectors;
+
+      this.observeOptions = (s.observeOptions) ?
+        Object.assign(ActiveNavigation.observeOptions, s.observeOptions) : ActiveNavigation.observeOptions;
+
       /**
        * Method for toggling the jump navigation item, used by the click event
        * handler and the intersection observer event handler.
@@ -1962,7 +1993,7 @@ var Default = (function () {
         for (let i = 0; i < item.parentNode.children.length; i++) {
           const sibling = item.parentNode.children[i];
 
-          if ('activeNavigationItem' in sibling.dataset) {
+          if (this.selectors.FOCUS_ATTR in sibling.dataset) {
             let classActive = sibling.dataset.activeNavigationItem.split(' ');
             let classInactive = sibling.dataset.inactiveNavigationItem.split(' ');
 
@@ -1992,11 +2023,19 @@ var Default = (function () {
             a.addEventListener('click', event => {
               setTimeout(() => {
                 jumpClassToggle(event.target);
+
+                let item = document.querySelector(event.target.getAttribute('href'));
+                let focusItem = item.querySelector(this.selectors.FOCUS);
+
+                if (focusItem) {
+                  focusItem.setAttribute('tabindex', '-1');
+                  focusItem.focus();
+                }
               }, 200);
             });
           }
         }
-      })(document.querySelector('[data-js*="active-navigation"]'));
+      })(document.querySelector(this.selector));
 
       /**
        * Intersection Observer event handler for jump navigation items
@@ -2007,6 +2046,11 @@ var Default = (function () {
         elements.forEach(element => {
           new Observe({
             element: element,
+            options: this.observeOptions,
+            selectors: {
+              ITEM: this.selectors.OBSERVE_ITEM,
+              ITEMS_ATTR: this.selectors.OBSERVE_ITEMS_ATTR
+            },
             trigger: (entry) => {
               if (!entry.isIntersecting) return;
 
@@ -2014,22 +2058,45 @@ var Default = (function () {
 
               if (!jumpItem) return;
 
-              jumpItem.closest('[data-js*="active-navigation-scroll"]').scrollTo({
+              jumpItem.closest(this.selectors.SCROLL).scrollTo({
                 left: jumpItem.offsetLeft,
                 top: 0,
                 behavior: 'smooth'
               });
 
+              let focusItems = document.querySelectorAll(this.selectors.FOCUS);
+
+              for (let i = 0; i < focusItems.length; i++) {
+                focusItems[i].removeAttribute('tabindex');
+              }
+
               jumpClassToggle(jumpItem);
             }
           });
         });
-      })(document.querySelectorAll(Observe.selector));
+      })(document.querySelectorAll(this.selectors.OBSERVE));
     }
   }
 
-  /** @type  String  Main DOM selector */
+  /** @type {String}  Main DOM selector */
   ActiveNavigation.selector = '[data-js*=\"active-navigation\"]';
+
+  /** @type {Object}  Selectors for the element */
+  ActiveNavigation.selectors = {
+    OBSERVE: '[data-active-navigation="observe"]',
+    OBSERVE_ITEM: '[data-active-navigation-observe-item="{{ item }}"]',
+    OBSERVE_ITEMS_ATTR: 'activeNavigationObserveItems',
+    SCROLL: '[data-active-navigation="scroll"]',
+    FOCUS: '[data-active-navigation-item="focus"]',
+    FOCUS_ATTR: 'activeNavigationItem'
+  };
+
+  /** @type {Object}  Observation utility options */
+  ActiveNavigation.observeOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: [0.15]
+  };
 
   /**
    * The Attribution module
@@ -2133,8 +2200,8 @@ var Default = (function () {
      *
      * @return  {Object}  Instance of ActiveNavigation
      */
-    activeNavigation() {
-      return new ActiveNavigation();
+    activeNavigation(settings = false) {
+      return (settings) ? new ActiveNavigation(settings) : new ActiveNavigation();
     }
 
     /**

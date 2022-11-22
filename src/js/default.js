@@ -54,8 +54,8 @@ class Main {
    *
    * @return  {Object}  Instance of ActiveNavigation
    */
-  activeNavigation() {
-    return new ActiveNavigation();
+  activeNavigation(settings = false) {
+    return (settings) ? new ActiveNavigation(settings) : new ActiveNavigation();
   }
 
   /**

@@ -18,3 +18,5 @@
 = content('content')
   = mixin('content-header')
   = mixin('section', '/components/active-navigation/active-navigation', {title: false})
+
+  = mixin('section', '/components/active-navigation/readme', {title: 'Usage', markup: false, demo: false})
