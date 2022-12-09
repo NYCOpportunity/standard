@@ -11,22 +11,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-      hljs.configure({
-        languages: ['html', 'javascript', 'css', 'sass']
-      });
-      document.querySelectorAll('pre').forEach(function(pre) {
-        if (!pre.hasAttribute('tabindex')) {
-          pre.setAttribute('tabindex', '0');
-        }
-        hljs.highlightBlock(pre);
-      });
-    });
-
     function load() {
       document.body.style.visibility = 'visible'
     };
@@ -44,7 +30,7 @@
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-30</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -63,7 +49,7 @@
     </div>
     <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
-      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
         <div class="c-alert__graphic">
           <svg aria-hidden="true" class="icon-ui">
             <use href="#lucide-info"></use>
@@ -80,10 +66,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-6721db690b3fb" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-6721db690b3fb">Main</span>
+        <nav aria-labelledby="navigation-main-ac03729fa71c9" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-ac03729fa71c9">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -119,13 +105,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-6721db690b3fb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-6721db690b3fb">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-ac03729fa71c9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-ac03729fa71c9">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -138,8 +125,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-6721db690b3fb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-6721db690b3fb">Components</span>
+        <nav aria-labelledby="aria-lb-components-ac03729fa71c9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-ac03729fa71c9">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -149,8 +136,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-6721db690b3fb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-6721db690b3fb">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-ac03729fa71c9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-ac03729fa71c9">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -162,8 +149,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-6721db690b3fb" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-6721db690b3fb">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-ac03729fa71c9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-ac03729fa71c9">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -203,9 +190,9 @@
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-b02d7cb4ab316" aria-expanded="true" class="c-accordion__toggle print:hidden active" data-js="accordion">
+                  <button aria-controls="aria-c-8aac25e4ceecb" aria-expanded="true" class="c-accordion__toggle print:hidden active" data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-b02d7cb4ab316">Apply online</span>
+                    <span class="c-accordion__heading" id="aria-lb-8aac25e4ceecb">Apply online</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#lucide-chevron-down"></use>
                     </svg>
@@ -216,7 +203,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="false" aria-labelledby="aria-lb-b02d7cb4ab316" class="c-accordion__body print:active hidden:overflow animated active" id="aria-c-b02d7cb4ab316">
+                <div aria-hidden="false" aria-labelledby="aria-lb-8aac25e4ceecb" class="c-accordion__body print:active hidden:overflow animated active" id="aria-c-8aac25e4ceecb">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Apply online using <a href="https://a069-access.nyc.gov/ACCESSNYC/application.do" target="_blank" rel="noopener noreferrer" tabindex="-1">ACCESS HRA</a>. You can apply for Cash Assistance, SNAP, and Medicaid Renewal <strong>all</strong> at the same time.</li>
@@ -242,9 +229,9 @@
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-75c0ee07373dc" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
+                  <button aria-controls="aria-c-f69b62649a268" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-75c0ee07373dc">Apply by mail</span>
+                    <span class="c-accordion__heading" id="aria-lb-f69b62649a268">Apply by mail</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#lucide-chevron-down"></use>
                     </svg>
@@ -255,7 +242,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="true" aria-labelledby="aria-lb-75c0ee07373dc" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-75c0ee07373dc">
+                <div aria-hidden="true" aria-labelledby="aria-lb-f69b62649a268" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-f69b62649a268">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Print a <a href="http://otda.ny.gov/programs/applications/4826.pdf" target="_blank" rel="noopener noreferrer" tabindex="-1">paper application</a>, pick one up from a <a href="https://www1.nyc.gov/site/hra/locations/snap-locations.page" target="_blank" rel="noopener noreferrer" tabindex="-1">SNAP Center</a>, or call the HRA Infoline at <a href="tel:718-557-1399" target="_blank" rel="noopener noreferrer" tabindex="-1">718-557-1399</a> to have a paper application mailed to you.</li>
@@ -283,9 +270,9 @@
                   <!--{ @aria-controls   Targets the expandable region }-->
                   <!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }-->
                   <!--{ print:hidden     This CSS utility hides the button when the page is printed }-->
-                  <button aria-controls="aria-c-20823dcadf9b2" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
+                  <button aria-controls="aria-c-cff6d96783418" aria-expanded="false" class="c-accordion__toggle print:hidden " data-js="accordion">
                     <!--{ @id  Identifies this content as the region label }-->
-                    <span class="c-accordion__heading" id="aria-lb-20823dcadf9b2">Apply in person</span>
+                    <span class="c-accordion__heading" id="aria-lb-cff6d96783418">Apply in person</span>
                     <svg aria-hidden="true" class="icon-ui">
                       <use href="#lucide-chevron-down"></use>
                     </svg>
@@ -296,7 +283,7 @@
                 <!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }-->
                 <!--{ @aria-hidden      hides the content of the toggle element when collapsed }-->
                 <!--{ print:hidden      This CSS utility expands the region when the page is printed }-->
-                <div aria-hidden="true" aria-labelledby="aria-lb-20823dcadf9b2" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-20823dcadf9b2">
+                <div aria-hidden="true" aria-labelledby="aria-lb-cff6d96783418" class="c-accordion__body print:active hidden:overflow animated hidden" id="aria-c-cff6d96783418">
                   <div class="c-accordion__padding">
                     <ol>
                       <li>Print a <a href="http://otda.ny.gov/programs/applications/4826.pdf" target="_blank" rel="noopener noreferrer" tabindex="-1">paper application</a>, pick one up from a <a href="https://www1.nyc.gov/site/hra/locations/snap-locations.page" target="_blank" rel="noopener noreferrer" tabindex="-1">SNAP Center</a>, or call the HRA Infoline at <a href="tel:718-557-1399" target="_blank" rel="noopener noreferrer" tabindex="-1">718-557-1399</a> to have a paper application mailed to you.</li>
@@ -322,7 +309,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="accordion-markup">Code</h5>
-            <button aria-controls="accordion-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="accordion-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -341,9 +328,9 @@
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-d2618bce95b02&quot; aria-expanded=&quot;true&quot; class=&quot;c-accordion__toggle print:hidden active&quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-68fcb99b9e39b&quot; aria-expanded=&quot;true&quot; class=&quot;c-accordion__toggle print:hidden active&quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-d2618bce95b02&quot;&gt;Apply online&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-68fcb99b9e39b&quot;&gt;Apply online&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#lucide-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -354,7 +341,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;false&quot; aria-labelledby=&quot;aria-lb-d2618bce95b02&quot; class=&quot;c-accordion__body print:active hidden:overflow animated active&quot; id=&quot;aria-c-d2618bce95b02&quot;&gt;
+    &lt;div aria-hidden=&quot;false&quot; aria-labelledby=&quot;aria-lb-68fcb99b9e39b&quot; class=&quot;c-accordion__body print:active hidden:overflow animated active&quot; id=&quot;aria-c-68fcb99b9e39b&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Apply online using &lt;a href=&quot;https://a069-access.nyc.gov/ACCESSNYC/application.do&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;ACCESS HRA&lt;/a&gt;. You can apply for Cash Assistance, SNAP, and Medicaid Renewal &lt;strong&gt;all&lt;/strong&gt; at the same time.&lt;/li&gt;
@@ -380,9 +367,9 @@
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-3e65dff35a86d&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-3d5a1a7ec7188&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-3e65dff35a86d&quot;&gt;Apply by mail&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-3d5a1a7ec7188&quot;&gt;Apply by mail&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#lucide-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -393,7 +380,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-3e65dff35a86d&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-3e65dff35a86d&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-3d5a1a7ec7188&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-3d5a1a7ec7188&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Print a &lt;a href=&quot;http://otda.ny.gov/programs/applications/4826.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;paper application&lt;/a&gt;, pick one up from a &lt;a href=&quot;https://www1.nyc.gov/site/hra/locations/snap-locations.page&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;SNAP Center&lt;/a&gt;, or call the HRA Infoline at &lt;a href=&quot;tel:718-557-1399&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;718-557-1399&lt;/a&gt; to have a paper application mailed to you.&lt;/li&gt;
@@ -421,9 +408,9 @@
       &lt;!--{ @aria-controls   Targets the expandable region }--&gt;
       &lt;!--{ @aria-expanded   Indicates to screen readers if the toggle target region is expanded or not }--&gt;
       &lt;!--{ print:hidden     This CSS utility hides the button when the page is printed }--&gt;
-      &lt;button aria-controls=&quot;aria-c-bf314ea66ad92&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
+      &lt;button aria-controls=&quot;aria-c-09e1d4b88ebb&quot; aria-expanded=&quot;false&quot; class=&quot;c-accordion__toggle print:hidden &quot; data-js=&quot;accordion&quot;&gt;
         &lt;!--{ @id  Identifies this content as the region label }--&gt;
-        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-bf314ea66ad92&quot;&gt;Apply in person&lt;/span&gt;
+        &lt;span class=&quot;c-accordion__heading&quot; id=&quot;aria-lb-09e1d4b88ebb&quot;&gt;Apply in person&lt;/span&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
           &lt;use href=&quot;#lucide-chevron-down&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
@@ -434,7 +421,7 @@
     &lt;!--{ @aria-labelledby  This is used along with the `role` attribute to label the content of the region }--&gt;
     &lt;!--{ @aria-hidden      hides the content of the toggle element when collapsed }--&gt;
     &lt;!--{ print:hidden      This CSS utility expands the region when the page is printed }--&gt;
-    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-bf314ea66ad92&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-bf314ea66ad92&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;aria-lb-09e1d4b88ebb&quot; class=&quot;c-accordion__body print:active hidden:overflow animated hidden&quot; id=&quot;aria-c-09e1d4b88ebb&quot;&gt;
       &lt;div class=&quot;c-accordion__padding&quot;&gt;
         &lt;ol&gt;
           &lt;li&gt;Print a &lt;a href=&quot;http://otda.ny.gov/programs/applications/4826.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;paper application&lt;/a&gt;, pick one up from a &lt;a href=&quot;https://www1.nyc.gov/site/hra/locations/snap-locations.page&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;SNAP Center&lt;/a&gt;, or call the HRA Infoline at &lt;a href=&quot;tel:718-557-1399&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; tabindex=&quot;-1&quot;&gt;718-557-1399&lt;/a&gt; to have a paper application mailed to you.&lt;/li&gt;
@@ -486,7 +473,7 @@
             <h5 id="global-script">Global Script</h5>
             <p>The Accordion requires JavaScript for functionality and screen reader accessibility. To initialize the Accordion instance from the global script use the following code:</p>
             <div class="code-block">
-              <pre>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-30/dist/js/default.js&quot;&gt;&lt;/script&gt;
+              <pre>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-31/dist/js/default.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
   var Standard = new Default();
@@ -528,10 +515,10 @@ new Accordion();</pre>
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-cd00f78d6895f" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-cd00f78d6895f">Main</span>
+        <nav aria-labelledby="navigation-main-c7496102f6d22" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-c7496102f6d22">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -567,13 +554,14 @@ new Accordion();</pre>
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-cd00f78d6895f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-cd00f78d6895f">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-c7496102f6d22" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-c7496102f6d22">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -586,8 +574,8 @@ new Accordion();</pre>
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-cd00f78d6895f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-cd00f78d6895f">Components</span>
+        <nav aria-labelledby="aria-lb-components-c7496102f6d22" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-c7496102f6d22">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -597,8 +585,8 @@ new Accordion();</pre>
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-cd00f78d6895f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-cd00f78d6895f">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-c7496102f6d22" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-c7496102f6d22">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -610,8 +598,8 @@ new Accordion();</pre>
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-cd00f78d6895f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-cd00f78d6895f">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-c7496102f6d22" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-c7496102f6d22">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -626,6 +614,7 @@ new Accordion();</pre>
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
+    Standard.codeHighlight();
     Standard.copy();
     Standard.dialog();
     Standard.direction();

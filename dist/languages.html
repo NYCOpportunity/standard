@@ -11,22 +11,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-      hljs.configure({
-        languages: ['html', 'javascript', 'css', 'sass']
-      });
-      document.querySelectorAll('pre').forEach(function(pre) {
-        if (!pre.hasAttribute('tabindex')) {
-          pre.setAttribute('tabindex', '0');
-        }
-        hljs.highlightBlock(pre);
-      });
-    });
-
     function load() {
       document.body.style.visibility = 'visible'
     };
@@ -44,7 +30,7 @@
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-30</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -63,7 +49,7 @@
     </div>
     <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
-      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
         <div class="c-alert__graphic">
           <svg aria-hidden="true" class="icon-ui">
             <use href="#lucide-info"></use>
@@ -80,10 +66,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-430fd4569f183" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-430fd4569f183">Main</span>
+        <nav aria-labelledby="navigation-main-3ea7e0eaf9809" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-3ea7e0eaf9809">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -119,13 +105,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-430fd4569f183" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-430fd4569f183">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-3ea7e0eaf9809" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-3ea7e0eaf9809">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -138,8 +125,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-430fd4569f183" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-430fd4569f183">Components</span>
+        <nav aria-labelledby="aria-lb-components-3ea7e0eaf9809" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-3ea7e0eaf9809">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -149,8 +136,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-430fd4569f183" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-430fd4569f183">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-3ea7e0eaf9809" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-3ea7e0eaf9809">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -162,8 +149,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-430fd4569f183" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-430fd4569f183">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-3ea7e0eaf9809" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-3ea7e0eaf9809">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -204,8 +191,8 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <div class="select " for="b1740d0e9991d">
-              <select id="b1740d0e9991d" name="select['b1740d0e9991d']" required="true">
+            <div class="select " for="4daedca372fbe">
+              <select id="4daedca372fbe" name="select['4daedca372fbe']" required="true">
                 <option value="languages">Languages</option>
                 <option value="es">Español</option>
                 <option value="ru">Русский</option>
@@ -228,7 +215,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="languages-select-element-markup">Code</h5>
-            <button aria-controls="languages-select-element-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="languages-select-element-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -240,8 +227,8 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="languages-select-element-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;select &quot; for=&quot;f407d4f4a6246&quot;&gt;
-  &lt;select id=&quot;f407d4f4a6246&quot; name=&quot;select['f407d4f4a6246']&quot; required=&quot;true&quot;&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;select &quot; for=&quot;5920bb6743654&quot;&gt;
+  &lt;select id=&quot;5920bb6743654&quot; name=&quot;select['5920bb6743654']&quot; required=&quot;true&quot;&gt;
     &lt;option value=&quot;languages&quot;&gt;Languages&lt;/option&gt;
     &lt;option value=&quot;es&quot;&gt;Español&lt;/option&gt;
     &lt;option value=&quot;ru&quot;&gt;Русский&lt;/option&gt;
@@ -428,7 +415,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="languages-dropdown-markup">Code</h5>
-            <button aria-controls="languages-dropdown-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="languages-dropdown-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -596,10 +583,10 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-5725319c3d0b2" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-5725319c3d0b2">Main</span>
+        <nav aria-labelledby="navigation-main-2f76a3e0c6059" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-2f76a3e0c6059">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -635,13 +622,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-5725319c3d0b2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-5725319c3d0b2">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-2f76a3e0c6059" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-2f76a3e0c6059">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -654,8 +642,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-5725319c3d0b2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-5725319c3d0b2">Components</span>
+        <nav aria-labelledby="aria-lb-components-2f76a3e0c6059" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-2f76a3e0c6059">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -665,8 +653,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-5725319c3d0b2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-5725319c3d0b2">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-2f76a3e0c6059" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-2f76a3e0c6059">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -678,8 +666,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-5725319c3d0b2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-5725319c3d0b2">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-2f76a3e0c6059" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-2f76a3e0c6059">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -694,6 +682,7 @@
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
+    Standard.codeHighlight();
     Standard.copy();
     Standard.dialog();
     Standard.direction();

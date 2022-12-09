@@ -8,6 +8,7 @@ javascript:
   Standard.accordion();
   Standard.activeNavigation();
   Standard.attribution();
+  Standard.codeHighlight();
   Standard.copy();
   Standard.dialog();
   Standard.direction();

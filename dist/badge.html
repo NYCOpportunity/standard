@@ -11,22 +11,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-      hljs.configure({
-        languages: ['html', 'javascript', 'css', 'sass']
-      });
-      document.querySelectorAll('pre').forEach(function(pre) {
-        if (!pre.hasAttribute('tabindex')) {
-          pre.setAttribute('tabindex', '0');
-        }
-        hljs.highlightBlock(pre);
-      });
-    });
-
     function load() {
       document.body.style.visibility = 'visible'
     };
@@ -44,7 +30,7 @@
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-30</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -63,7 +49,7 @@
     </div>
     <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
-      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
         <div class="c-alert__graphic">
           <svg aria-hidden="true" class="icon-ui">
             <use href="#lucide-info"></use>
@@ -80,10 +66,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-ca69ff501f719" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-ca69ff501f719">Main</span>
+        <nav aria-labelledby="navigation-main-95a8e746d38a1" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-95a8e746d38a1">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -119,13 +105,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-ca69ff501f719" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-ca69ff501f719">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-95a8e746d38a1" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-95a8e746d38a1">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -138,8 +125,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-ca69ff501f719" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-ca69ff501f719">Components</span>
+        <nav aria-labelledby="aria-lb-components-95a8e746d38a1" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-95a8e746d38a1">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -149,8 +136,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-ca69ff501f719" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-ca69ff501f719">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-95a8e746d38a1" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-95a8e746d38a1">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -162,8 +149,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-ca69ff501f719" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-ca69ff501f719">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-95a8e746d38a1" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-95a8e746d38a1">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -203,7 +190,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="badge-markup">Code</h5>
-            <button aria-controls="badge-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="badge-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -223,13 +210,13 @@
         <!--Section Text-->
         <div class="page-max layout-content pb-6">
           <div class="wrap">
-            <p>The Badges in the Opportunity Standard focus attention on timely or essential content that users might otherwise miss. The markup example below uses the mark element within paragraphs, headings, and other content elements. It is most closely associated with the Tag element in the U.S. Web Design System (USWDS). However, there are a few key differences.</p>
+            <p>Badges in the Opportunity Standard focus attention on timely or essential content that users might otherwise miss. The markup example below uses the mark element within paragraphs, headings, and other content elements. It is most closely associated with the <a href="https://designsystem.digital.gov/components/tag/" target="_blank" rel="noopener">Tag Component in the U.S. Web Design System (USWDS)</a> with a few key differences.</p>
             <hr>
-            <p>Other elements, such as <code>span</code>, may also be used. However, the badge is never an interactive element such as a link or button.</p>
+            <p>Other elements, such as the <code>span</code> tag, may also be used. However, the badge is never an interactive element such as a link or button. <a href="/buttons#tag-button">Tag Buttons</a> may be used for this purpose instead.</p>
             <hr>
             <p>Per <a href="https://blueprint.cityofnewyork.us/content/plain-language-and-readability/" target="_blank" rel="noopener nofollow">plain language guidelines</a>, normal case is preferred over all caps.</p>
             <hr>
-            <p>Further guidance can be found on the <a href="https://designsystem.digital.gov/components/tag/" target="_blank" rel="noopener nofollow">(USWDS) site</a>.</p>
+            <p>Further Tag guidance can be found on the <a href="https://designsystem.digital.gov/components/tag/" target="_blank" rel="noopener nofollow">(USWDS) site</a>.</p>
           </div>
         </div>
       </section>
@@ -256,10 +243,10 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-6e80644edf24e" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-6e80644edf24e">Main</span>
+        <nav aria-labelledby="navigation-main-3cd4e9316459d" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-3cd4e9316459d">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -295,13 +282,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-6e80644edf24e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-6e80644edf24e">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-3cd4e9316459d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-3cd4e9316459d">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -314,8 +302,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-6e80644edf24e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-6e80644edf24e">Components</span>
+        <nav aria-labelledby="aria-lb-components-3cd4e9316459d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-3cd4e9316459d">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -325,8 +313,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-6e80644edf24e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-6e80644edf24e">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-3cd4e9316459d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-3cd4e9316459d">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -338,8 +326,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-6e80644edf24e" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-6e80644edf24e">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-3cd4e9316459d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-3cd4e9316459d">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -354,6 +342,7 @@
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
+    Standard.codeHighlight();
     Standard.copy();
     Standard.dialog();
     Standard.direction();

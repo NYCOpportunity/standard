@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+          <h1 class="font-nyc text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#lucide-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+    <div class="pb-3 wrap">
+      <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
+        <div class="c-alert__graphic">
+          <svg aria-hidden="true" class="icon-ui">
+            <use href="#lucide-info"></use>
+          </svg>
+        </div>
+        <!--{ @aria-live  Setting aria-live="polite" dynamically is recommended for new content that appears based on user interaction }-->
+        <div class="c-alert__body">
+          <!--{ @data-js-alert  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
+          <p>The Opportunity Standard is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>
+        </div>
+      </article>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-18a9d4390860f" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-18a9d4390860f">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-18a9d4390860f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-18a9d4390860f">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-18a9d4390860f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-18a9d4390860f">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-18a9d4390860f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-18a9d4390860f">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-18a9d4390860f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-18a9d4390860f">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3 id="page-heading">Code</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="inline-code">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#inline-code">
+                <svg class="icon-ui" role="img">
+                  <title>Inline Code Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Inline Code
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/code" target="_blank">@nycopportunity/pattern-elements/src/elements/code</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="inline-code-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <p>An example of <code>inline code</code>.</p>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="inline-code-markup">Code</h5>
+            <button aria-controls="inline-code-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="inline-code-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;p&gt;An example of &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Code is primarily a utility for documentation, particularly for the Opportunity Standard documentation site. However, it may be used in other contexts as well. Inline code is styled within <code>p</code>, <code>li</code>, <code>td</code>, <code>dt</code>, and <code>dd</code> tags.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="code-block">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#code-block">
+                <svg class="icon-ui" role="img">
+                  <title>Code Block Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Code Block
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/code" target="_blank">@nycopportunity/pattern-elements/src/elements/code</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="code-block-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="code-block">
+              <!--{ @tabindex  "0" adds the element to the tabbing order }-->
+              <pre tabindex="0">&lt;!DOCTYPE html&gt;
+&lt;html dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      /** CSS */
+      body {
+        visibility: hidden;
+      }
+    &lt;/style&gt;
+
+    &lt;script&gt;
+      // JavaScript
+      function load() {
+        document.body.style.visibility = &quot;visible&quot;
+      };
+    &lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Opportunity Standard&lt;/h1&gt;
+    &lt;p&gt;The Opportunity Standard is the design system for NYC Opportunity's digital products.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="code-block-markup">Code</h5>
+            <button aria-controls="code-block-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="code-block-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;code-block&quot;&gt;
+  &lt;!--{ @tabindex  &quot;0&quot; adds the element to the tabbing order }--&gt;
+  &lt;pre tabindex=&quot;0&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html dir=&amp;quot;ltr&amp;quot; lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;style&amp;gt;
+      /** CSS */
+      body {
+        visibility: hidden;
+      }
+    &amp;lt;/style&amp;gt;
+
+    &amp;lt;script&amp;gt;
+      // JavaScript
+      function load() {
+        document.body.style.visibility = &amp;quot;visible&amp;quot;
+      };
+    &amp;lt;/script&amp;gt;
+  &amp;lt;/head&amp;gt;
+
+  &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;Opportunity Standard&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The Opportunity Standard is the design system for NYC Opportunity's digital products.&amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Code blocks enable the demonstration of multiple lines of code. Supported block syntax is HTML, CSS, JavaScript, or Sass.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="font-face">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#font-face">
+                <svg class="icon-ui" role="img">
+                  <title>Font Face Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Font Face
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/main/src/elements/code" target="_blank">@nycopportunity/standard/src/elements/code</a>
+            </p>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Opportunity Standard uses <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener">JetBrains Mono</a> as it’s mono spaced font face. To import this font, include the following stylesheet link to it in the head of the document.</p>
+            <div class="code-block">
+              <pre>&lt;link rel=&quot;stylesheet&quot; href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="syntax-highlighting">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#syntax-highlighting">
+                <svg class="icon-ui" role="img">
+                  <title>Syntax Highlighting Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Syntax Highlighting
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/main/src/@nycopportunity/pattern-elements/src/elements/code" target="_blank">@nycopportunity/standard/src/@nycopportunity/pattern-elements/src/elements/code</a>
+            </p>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <!-- Headers start with h5 ##### -->
+            <h5 id="global-script">Global Script</h5>
+            <p>Code requires JavaScript for syntax highlighting. The Opportunity Standard uses <a href="https://highlightjs.org/" target="_blank" rel="noopener">highlight.js</a> to and a helper utility to provide syntax highlighting. To use the code highlight utility through the global script use the following code:</p>
+            <div class="code-block">
+              <pre>&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var Standard = new Default();
+
+  Standard.codeHighlight();
+&lt;/script&gt;</pre>
+            </div>
+            <p>This will instantiate the utility.</p>
+            <h5 id="module-import">Module Import</h5>
+            <p>To use the utility directly import the module from the source.</p>
+            <div class="code-block">
+              <pre>import CodeHighlight from &#39;@nycopportunity/pattern-elements/src/elements/code/code-highlight&#39;;
+
+new CodeHighlight();</pre>
+            </div>
+            <h5 id="configuration">Configuration</h5>
+            <p>The utility can be configured by passing and object <code>{}</code> with any of the following properties.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>script</code>
+                  </td>
+                  <td>The CDN URL for the highlight.js JavaScript. Defaults to loading version <code>9.18.1</code> via JsDelivr.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>link</code>
+                  </td>
+                  <td>The CDN URL for the highlight.js stylesheet. Defaults to loading version <code>9.18.1</code> via JsDelivr.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>syntax</code>
+                  </td>
+                  <td>The languages to support. Defaults to HTML, CSS, JavaScript, and Sass.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>callback</code>
+                  </td>
+                  <td>The callback method to execute when the script loads. Defaults to a configuration for highlight.js and adds all all <code>pre</code> tags to the tabbing order by setting their tabindex to “0”.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-fe511a52596d3" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-fe511a52596d3">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-fe511a52596d3" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-fe511a52596d3">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-fe511a52596d3" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-fe511a52596d3">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-fe511a52596d3" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-fe511a52596d3">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-fe511a52596d3" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-fe511a52596d3">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.attribution();
+    Standard.codeHighlight();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    Standard.menu();
+    Standard.newsletter();
+    Standard.newsletterForm();
+    Standard.setHeightProperties();
+    // Standard.search();
+    Standard.themes();
+    Standard.toggle();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+</body>
+
+</html>

@@ -11,22 +11,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-      hljs.configure({
-        languages: ['html', 'javascript', 'css', 'sass']
-      });
-      document.querySelectorAll('pre').forEach(function(pre) {
-        if (!pre.hasAttribute('tabindex')) {
-          pre.setAttribute('tabindex', '0');
-        }
-        hljs.highlightBlock(pre);
-      });
-    });
-
     function load() {
       document.body.style.visibility = 'visible'
     };
@@ -44,7 +30,7 @@
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-30</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -63,7 +49,7 @@
     </div>
     <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
-      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
         <div class="c-alert__graphic">
           <svg aria-hidden="true" class="icon-ui">
             <use href="#lucide-info"></use>
@@ -80,10 +66,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-d05917ba8dbb9" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-d05917ba8dbb9">Main</span>
+        <nav aria-labelledby="navigation-main-77a7e04760f69" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-77a7e04760f69">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -119,13 +105,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-d05917ba8dbb9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-d05917ba8dbb9">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-77a7e04760f69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-77a7e04760f69">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -138,8 +125,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-d05917ba8dbb9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-d05917ba8dbb9">Components</span>
+        <nav aria-labelledby="aria-lb-components-77a7e04760f69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-77a7e04760f69">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -149,8 +136,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-d05917ba8dbb9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-d05917ba8dbb9">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-77a7e04760f69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-77a7e04760f69">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -162,8 +149,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-d05917ba8dbb9" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-d05917ba8dbb9">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-77a7e04760f69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-77a7e04760f69">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -204,7 +191,7 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button type="button">
+            <button>
               <span>Default Button (Unstyled)</span>
             </button>
           </div>
@@ -213,7 +200,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="default-button-markup">Code</h5>
-            <button aria-controls="default-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="default-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -225,7 +212,7 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="default-button-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button type=&quot;button&quot;&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button&gt;
   &lt;span&gt;Default Button (Unstyled)&lt;/span&gt;
 &lt;/button&gt;</pre>
               </div>
@@ -235,24 +222,30 @@
         <!--Section Text-->
         <div class="page-max layout-content pb-6">
           <div class="wrap">
-            <p>Buttons should be written using the <code>&lt;button&gt;</code> html tag. However, if a button is an <code>&lt;a&gt;</code> tag styled with the <code>.btn</code> class and has in-page functionality (such as toggling elements), the <code>role</code> attribute should be set to “button” and the <code>tabindex</code> attribute should be set to “0.” Refer to the best practices described in the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#Best_practices" target="_blank" rel="noopener nofollow">MDN documentation for the “button” role</a>.</p>
+            <p>Buttons in the Opportunity Standard are the same as the <a href="https://designsystem.digital.gov/components/breadcrumb" target="_blank" rel="noopener">Button Component in the U.S. Web Design System (USWDS)</a> and follow similar usage guidelines. A button element without the <code>btn</code> class appears as other links do. It is the same semantically as other buttons and can be used for in-page functionality when space is limited for styled button elements.</p>
             <hr>
-            <p>If the button is a <code>&lt;button&gt;</code> element and appears within a <code>&lt;form&gt;</code> tag, the <code>type</code> attribute should be explicitly set to “button,” “reset,” or “submit.” By default (without the type attribute) <code>&lt;button&gt;</code> elements are set to the “submit” type.</p>
+            <p>Styled buttons may be used as links. However, a consistent <a href="#button-types">type</a> class (unstyled, styled, primary, secondary, or tertiary), and an icon should be used for buttons styled as links. See the <a href="#link-button">link button</a> and <a href="#external-link-button">external link button</a> for icon references below.</p>
             <hr>
-            <p>The base button class, <code>.btn</code>, is extended with additional button classes described below.</p>
+            <p>Buttons should be written using the <code>button</code> element. However, if a button is an <code>a</code> element styled with the .btn class and has in-page functionality (such as toggling elements), the role attribute should be set to “button,” and the <code>tabindex</code> attribute should be set to “0.” Refer to the best practices illustrated in the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#Best_practices" target="_blank" rel="noopener">MDN documentation for the “button” role</a>.</p>
+            <hr>
+            <p>If the button is a <code>button</code> element and appears within a <code>form</code> tag, the type attribute should be explicitly set to “button,” “reset,” or “submit.” By default (without the type attribute) <code>button</code> elements are set to the “submit” type in forms.</p>
+            <hr>
+            <p>Buttons may have an icon prefix or postfix next to the label, but they should never be only icons.</p>
+            <hr>
+            <p>Further Button guidance can be found on the <a href="https://designsystem.digital.gov/components/button" target="_blank" rel="noopener">USWDS site</a>.</p>
           </div>
         </div>
       </section>
-      <section class="pb-4 mb-4" id="styled-button">
+      <section class="pb-4 mb-4" id="button-types">
         <header class="page-max layout-content py-4">
           <div class="wrap">
             <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#styled-button">
+              <a class="mie-1 flex items-center" href="#button-types">
                 <svg class="icon-ui" role="img">
-                  <title>Styled Button Anchor Link</title>
+                  <title>Button Types Anchor Link</title>
                   <use href="#lucide-anchor"></use>
                 </svg>
-              </a>Styled Button
+              </a>Button Types
             </h4>
             <p class="flex items-center">
               <svg class="icon-ui mie-1" role="img">
@@ -264,20 +257,31 @@
           </div>
         </header>
         <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="styled-button-example">Demonstration</h5>
+          <h5 class="wrap flex items-center" id="button-types-example">Demonstration</h5>
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn" type="button">
-              <span>Styled Button</span>
-            </button>
+            <div class="grid gap-3">
+              <button class="btn">
+                <span>Styled Button</span>
+              </button>
+              <button class="btn-primary">
+                <span>Primary Button</span>
+              </button>
+              <button class="btn-secondary">
+                <span>Secondary Button</span>
+              </button>
+              <button class="btn-tertiary">
+                <span>Tertiary Button</span>
+              </button>
+            </div>
           </div>
         </div>
         <!--Section Markup-->
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
-            <h5 class="sr-only" id="styled-button-markup">Code</h5>
-            <button aria-controls="styled-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <h5 class="sr-only" id="button-types-markup">Code</h5>
+            <button aria-controls="button-types-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -286,27 +290,52 @@
           </div>
         </div>
         <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="styled-button-markup-block">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="button-types-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn&quot; type=&quot;button&quot;&gt;
-  &lt;span&gt;Styled Button&lt;/span&gt;
-&lt;/button&gt;</pre>
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid gap-3&quot;&gt;
+  &lt;button class=&quot;btn&quot;&gt;
+    &lt;span&gt;Styled Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-primary&quot;&gt;
+    &lt;span&gt;Primary Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-secondary&quot;&gt;
+    &lt;span&gt;Secondary Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-tertiary&quot;&gt;
+    &lt;span&gt;Tertiary Button&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</pre>
               </div>
             </div>
           </div>
         </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Button Types help designate specific usability patterns. The rules guiding the designation of types are not strict, but here is some guidance on how to use the different types in the Opportunity Standard.</p>
+            <hr>
+            <p>The <strong>Styled Button</strong> is the first styling level used to designate in-page functionality or linking. It is commonly used when the unstyled button doesn’t have a strong enough presence, and its functionality is not as important as other buttons.</p>
+            <hr>
+            <p>The <strong>Primary Button</strong> is commonly used for in-page functionality. It should be reserved for the most important action on a page or viewport. Primary buttons may more commonly have an <a href="#functional-buttons">icon prefix</a> to help designate the functionality.</p>
+            <hr>
+            <p>The <strong>Secondary Button</strong> is commonly used for links and call-to-actions that take users to another page. Examples can be seen in <a href="/card">Card</a> and <a href="/accordion">Accordion</a> components. Secondary buttons may more commonly have an <a href="#link-buttons">icon postfix</a>, as described below.</p>
+            <hr>
+            <p>The <strong>Tertiary Button</strong> should be reserved for in-page functionality, links, or call-to-actions that are unique or not typically available on the website. For example, if a user’s attention needs to be drawn to a particular link with timely information during an emergency.</p>
+          </div>
+        </div>
       </section>
-      <section class="pb-4 mb-4" id="primary-button">
+      <section class="pb-4 mb-4" id="link-buttons">
         <header class="page-max layout-content py-4">
           <div class="wrap">
             <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#primary-button">
+              <a class="mie-1 flex items-center" href="#link-buttons">
                 <svg class="icon-ui" role="img">
-                  <title>Primary Button Anchor Link</title>
+                  <title>Link Buttons Anchor Link</title>
                   <use href="#lucide-anchor"></use>
                 </svg>
-              </a>Primary Button
+              </a>Link Buttons
             </h4>
             <p class="flex items-center">
               <svg class="icon-ui mie-1" role="img">
@@ -318,20 +347,35 @@
           </div>
         </header>
         <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="primary-button-example">Demonstration</h5>
+          <h5 class="wrap flex items-center" id="link-buttons-example">Demonstration</h5>
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-primary" type="button">
-              <span>Primary Button</span>
-            </button>
+            <div class="grid gap-3">
+              <a class="btn" href="/links">
+                <span>Learn more about links</span>
+                <!--{ @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }-->
+                <!--{ @aria-hidden  "true" removes this non-critical icon from screen reader view }-->
+                <svg aria-hidden="true" class="icon-ui rtl:flip">
+                  <use href="#lucide-arrow-right"></use>
+                </svg>
+              </a>
+              <a class="btn" href="https://designsystem.digital.gov/components/button/" rel="noopener" target="_blank">
+                <span>Go to designsystem.digital.gov</span>
+                <!--{ @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }-->
+                <!--{ @aria-hidden  "true" removes this non-critical icon from screen reader view }-->
+                <svg aria-hidden="true" class="icon-ui rtl:flip">
+                  <use href="#lucide-external-link"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <!--Section Markup-->
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
-            <h5 class="sr-only" id="primary-button-markup">Code</h5>
-            <button aria-controls="primary-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <h5 class="sr-only" id="link-buttons-markup">Code</h5>
+            <button aria-controls="link-buttons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -340,27 +384,48 @@
           </div>
         </div>
         <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="primary-button-markup-block">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="link-buttons-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-primary&quot; type=&quot;button&quot;&gt;
-  &lt;span&gt;Primary Button&lt;/span&gt;
-&lt;/button&gt;</pre>
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid gap-3&quot;&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;/links&quot;&gt;
+    &lt;span&gt;Learn more about links&lt;/span&gt;
+    &lt;!--{ @class        &quot;rtl:flip&quot; changes the orientation of the chevron icon based on the reading direction of the page }--&gt;
+    &lt;!--{ @aria-hidden  &quot;true&quot; removes this non-critical icon from screen reader view }--&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+      &lt;use href=&quot;#lucide-arrow-right&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;https://designsystem.digital.gov/components/button/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;
+    &lt;span&gt;Go to designsystem.digital.gov&lt;/span&gt;
+    &lt;!--{ @class        &quot;rtl:flip&quot; changes the orientation of the chevron icon based on the reading direction of the page }--&gt;
+    &lt;!--{ @aria-hidden  &quot;true&quot; removes this non-critical icon from screen reader view }--&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+      &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre>
               </div>
             </div>
           </div>
         </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>If a link appears as a Styled Button, it is recommended to accompany it with an icon such as an arrow, chevron, or external link icon. Link labels should be actionable and unique, and external links should be specified using the external link icon. More information about links can be found on the <a href="/links">links page</a>.</p>
+          </div>
+        </div>
       </section>
-      <section class="pb-4 mb-4" id="secondary-button">
+      <section class="pb-4 mb-4" id="functional-buttons">
         <header class="page-max layout-content py-4">
           <div class="wrap">
             <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#secondary-button">
+              <a class="mie-1 flex items-center" href="#functional-buttons">
                 <svg class="icon-ui" role="img">
-                  <title>Secondary Button Anchor Link</title>
+                  <title>Functional Buttons Anchor Link</title>
                   <use href="#lucide-anchor"></use>
                 </svg>
-              </a>Secondary Button
+              </a>Functional Buttons
             </h4>
             <p class="flex items-center">
               <svg class="icon-ui mie-1" role="img">
@@ -372,239 +437,13 @@
           </div>
         </header>
         <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="secondary-button-example">Demonstration</h5>
+          <h5 class="wrap flex items-center" id="functional-buttons-example">Demonstration</h5>
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-secondary" type="button">
-              <span>Secondary Button</span>
-            </button>
-          </div>
-        </div>
-        <!--Section Markup-->
-        <div class="page-max layout-content pb-1">
-          <div class="wrap flex items-center">
-            <h5 class="sr-only" id="secondary-button-markup">Code</h5>
-            <button aria-controls="secondary-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
-              <span>Inspect code</span>
-              <svg aria-hidden="true" class="icon-ui">
-                <use href="#lucide-chevron-down"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="secondary-button-markup-block">
-            <div class="py-1">
-              <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-secondary&quot; type=&quot;button&quot;&gt;
-  &lt;span&gt;Secondary Button&lt;/span&gt;
-&lt;/button&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pb-4 mb-4" id="tertiary-button">
-        <header class="page-max layout-content py-4">
-          <div class="wrap">
-            <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#tertiary-button">
-                <svg class="icon-ui" role="img">
-                  <title>Tertiary Button Anchor Link</title>
-                  <use href="#lucide-anchor"></use>
-                </svg>
-              </a>Tertiary Button
-            </h4>
-            <p class="flex items-center">
-              <svg class="icon-ui mie-1" role="img">
-                <title>GitHub Source Link</title>
-                <use href="#lucide-github"></use>
-              </svg>
-              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/buttons" target="_blank">@nycopportunity/pattern-elements/src/elements/buttons</a>
-            </p>
-          </div>
-        </header>
-        <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="tertiary-button-example">Demonstration</h5>
-        </div>
-        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
-          <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-tertiary" type="button">
-              <span>Tertiary Button</span>
-            </button>
-          </div>
-        </div>
-        <!--Section Markup-->
-        <div class="page-max layout-content pb-1">
-          <div class="wrap flex items-center">
-            <h5 class="sr-only" id="tertiary-button-markup">Code</h5>
-            <button aria-controls="tertiary-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
-              <span>Inspect code</span>
-              <svg aria-hidden="true" class="icon-ui">
-                <use href="#lucide-chevron-down"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="tertiary-button-markup-block">
-            <div class="py-1">
-              <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-tertiary&quot; type=&quot;button&quot;&gt;
-  &lt;span&gt;Tertiary Button&lt;/span&gt;
-&lt;/button&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pb-4 mb-4" id="link-button">
-        <header class="page-max layout-content py-4">
-          <div class="wrap">
-            <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#link-button">
-                <svg class="icon-ui" role="img">
-                  <title>Link Button Anchor Link</title>
-                  <use href="#lucide-anchor"></use>
-                </svg>
-              </a>Link Button
-            </h4>
-            <p class="flex items-center">
-              <svg class="icon-ui mie-1" role="img">
-                <title>GitHub Source Link</title>
-                <use href="#lucide-github"></use>
-              </svg>
-              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/buttons" target="_blank">@nycopportunity/pattern-elements/src/elements/buttons</a>
-            </p>
-          </div>
-        </header>
-        <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="link-button-example">Demonstration</h5>
-        </div>
-        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
-          <div class="page-max flex justify-center py-8 wrap">
-            <a class="btn btn" href="/links">
-              <span>Learn more about links</span>
-              <svg aria-hidden="true" class="icon-ui rtl:flip">
-                <use href="#lucide-arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!--Section Markup-->
-        <div class="page-max layout-content pb-1">
-          <div class="wrap flex items-center">
-            <h5 class="sr-only" id="link-button-markup">Code</h5>
-            <button aria-controls="link-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
-              <span>Inspect code</span>
-              <svg aria-hidden="true" class="icon-ui">
-                <use href="#lucide-chevron-down"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="link-button-markup-block">
-            <div class="py-1">
-              <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;a class=&quot;btn btn&quot; href=&quot;/links&quot;&gt;
-  &lt;span&gt;Learn more about links&lt;/span&gt;
-  &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
-    &lt;use href=&quot;#lucide-arrow-right&quot;&gt;&lt;/use&gt;
-  &lt;/svg&gt;
-&lt;/a&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pb-4 mb-4" id="external-link-button">
-        <header class="page-max layout-content py-4">
-          <div class="wrap">
-            <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#external-link-button">
-                <svg class="icon-ui" role="img">
-                  <title>External Link Button Anchor Link</title>
-                  <use href="#lucide-anchor"></use>
-                </svg>
-              </a>External Link Button
-            </h4>
-            <p class="flex items-center">
-              <svg class="icon-ui mie-1" role="img">
-                <title>GitHub Source Link</title>
-                <use href="#lucide-github"></use>
-              </svg>
-              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/buttons" target="_blank">@nycopportunity/pattern-elements/src/elements/buttons</a>
-            </p>
-          </div>
-        </header>
-        <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="external-link-button-example">Demonstration</h5>
-        </div>
-        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
-          <div class="page-max flex justify-center py-8 wrap">
-            <a class="btn btn" href="https://designsystem.digital.gov/components/button/" rel="noopener" target="_blank">
-              <span>designsystem.digital.gov</span>
-              <svg aria-hidden="true" class="icon-ui rtl:flip">
-                <use href="#lucide-external-link"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!--Section Markup-->
-        <div class="page-max layout-content pb-1">
-          <div class="wrap flex items-center">
-            <h5 class="sr-only" id="external-link-button-markup">Code</h5>
-            <button aria-controls="external-link-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
-              <span>Inspect code</span>
-              <svg aria-hidden="true" class="icon-ui">
-                <use href="#lucide-chevron-down"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="external-link-button-markup-block">
-            <div class="py-1">
-              <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;a class=&quot;btn btn&quot; href=&quot;https://designsystem.digital.gov/components/button/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;
-  &lt;span&gt;designsystem.digital.gov&lt;/span&gt;
-  &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
-    &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
-  &lt;/svg&gt;
-&lt;/a&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pb-4 mb-4" id="button-with-icon-prefix">
-        <header class="page-max layout-content py-4">
-          <div class="wrap">
-            <h4 class="flex items-center">
-              <a class="mie-1 flex items-center" href="#button-with-icon-prefix">
-                <svg class="icon-ui" role="img">
-                  <title>Button with Icon Prefix Anchor Link</title>
-                  <use href="#lucide-anchor"></use>
-                </svg>
-              </a>Button with Icon Prefix
-            </h4>
-            <p class="flex items-center">
-              <svg class="icon-ui mie-1" role="img">
-                <title>GitHub Source Link</title>
-                <use href="#lucide-github"></use>
-              </svg>
-              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/elements/buttons" target="_blank">@nycopportunity/pattern-elements/src/elements/buttons</a>
-            </p>
-          </div>
-        </header>
-        <div class="page-max layout-content pb-4">
-          <h5 class="wrap flex items-center" id="button-with-icon-prefix-example">Demonstration</h5>
-        </div>
-        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
-          <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn" type="button">
+            <button class="btn">
+              <!--{ @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }-->
+              <!--{ @aria-hidden  "true" removes this non-critical icon from screen reader view }-->
               <svg aria-hidden="true" class="icon-ui rtl:flip">
                 <use href="#lucide-share-2"></use>
               </svg>
@@ -615,8 +454,8 @@
         <!--Section Markup-->
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
-            <h5 class="sr-only" id="button-with-icon-prefix-markup">Code</h5>
-            <button aria-controls="button-with-icon-prefix-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <h5 class="sr-only" id="functional-buttons-markup">Code</h5>
+            <button aria-controls="functional-buttons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -625,10 +464,12 @@
           </div>
         </div>
         <div class="page-max layout-content pb-6 mb-6">
-          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="button-with-icon-prefix-markup-block">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="functional-buttons-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn&quot; type=&quot;button&quot;&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn&quot;&gt;
+  &lt;!--{ @class        &quot;rtl:flip&quot; changes the orientation of the chevron icon based on the reading direction of the page }--&gt;
+  &lt;!--{ @aria-hidden  &quot;true&quot; removes this non-critical icon from screen reader view }--&gt;
   &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
     &lt;use href=&quot;#lucide-share-2&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
@@ -636,6 +477,12 @@
 &lt;/button&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>If a button triggers an event or in-page functionality, it is recommended to accompany it with an icon prefix that uses a common symbol to convey what it will do. Buttons with an icon but without text labels are discouraged. Other icons can be found on the <a href="/icons">icons page</a>.</p>
           </div>
         </div>
       </section>
@@ -664,7 +511,7 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-small" type="button">
+            <button class="btn-small">
               <span>Small Button</span>
             </button>
           </div>
@@ -673,7 +520,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="small-button-markup">Code</h5>
-            <button aria-controls="small-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="small-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -685,11 +532,17 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="small-button-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-small&quot; type=&quot;button&quot;&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-small&quot;&gt;
   &lt;span&gt;Small Button&lt;/span&gt;
 &lt;/button&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Small Button is available when the standard button size is too large. It will remain smaller than other standard buttons in all viewports.</p>
           </div>
         </div>
       </section>
@@ -718,16 +571,27 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-small desktop:btn" type="button">
-              <span>Responsive Button</span>
-            </button>
+            <div class="grid gap-3">
+              <button class="btn-small small:btn">
+                <span>Responsive Small Button</span>
+              </button>
+              <button class="btn-small mobile:btn">
+                <span>Responsive Mobile Button</span>
+              </button>
+              <button class="btn-small tablet:btn">
+                <span>Responsive Tablet Button</span>
+              </button>
+              <button class="btn-small desktop:btn">
+                <span>Responsive Desktop Button</span>
+              </button>
+            </div>
           </div>
         </div>
         <!--Section Markup-->
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="responsive-button-markup">Code</h5>
-            <button aria-controls="responsive-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="responsive-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -739,11 +603,62 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="responsive-button-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-small desktop:btn&quot; type=&quot;button&quot;&gt;
-  &lt;span&gt;Responsive Button&lt;/span&gt;
-&lt;/button&gt;</pre>
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid gap-3&quot;&gt;
+  &lt;button class=&quot;btn-small small:btn&quot;&gt;
+    &lt;span&gt;Responsive Small Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-small mobile:btn&quot;&gt;
+    &lt;span&gt;Responsive Mobile Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-small tablet:btn&quot;&gt;
+    &lt;span&gt;Responsive Tablet Button&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;btn-small desktop:btn&quot;&gt;
+    &lt;span&gt;Responsive Desktop Button&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Responsive Button utility will make the button appear as the small size but will grow into the larger size in larger viewports. The breakpoint can be specified using the <code>{{ size }}:btn</code> utility.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Utility class</th>
+                  <th>Standard size breakpoint</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>desktop:btn</code>
+                  </td>
+                  <td>1112px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>tablet:btn</code>
+                  </td>
+                  <td>768px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>mobile:btn</code>
+                  </td>
+                  <td>480px</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>small:btn</code>
+                  </td>
+                  <td>400px</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -772,7 +687,7 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <button class="btn-tag" type="button">
+            <button class="btn-tag">
               <span>Tag Button</span>
             </button>
           </div>
@@ -781,7 +696,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="tag-button-markup">Code</h5>
-            <button aria-controls="tag-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="tag-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -793,11 +708,17 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="tag-button-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-tag&quot; type=&quot;button&quot;&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;button class=&quot;btn-tag&quot;&gt;
   &lt;span&gt;Tag Button&lt;/span&gt;
 &lt;/button&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Tag Button is a link button used for linking from one piece of categorized content to another category. Clicking on it should typically reveal more content categorized by the label.</p>
           </div>
         </div>
       </section>
@@ -826,10 +747,10 @@
         </div>
         <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
           <div class="page-max flex justify-center py-8 wrap">
-            <div class="grid grid-cols-3 gap-3">
-              <button disabled="" type="button">Disabled Default Button</button>
-              <button class="btn" disabled="" type="button">Disabled Styled Button</button>
-              <button class="btn btn-primary" disabled="" type="button">Disabled Primary Button</button>
+            <div class="grid gap-3">
+              <button disabled="">Disabled Default Button</button>
+              <button class="btn" disabled="">Disabled Styled Button</button>
+              <button class="btn btn-primary" disabled="">Disabled Primary Button</button>
             </div>
           </div>
         </div>
@@ -837,7 +758,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="disabled-buttons-markup">Code</h5>
-            <button aria-controls="disabled-buttons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="disabled-buttons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -849,13 +770,19 @@
           <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="disabled-buttons-markup-block">
             <div class="py-1">
               <div class="code-block">
-                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid grid-cols-3 gap-3&quot;&gt;
-  &lt;button disabled=&quot;&quot; type=&quot;button&quot;&gt;Disabled Default Button&lt;/button&gt;
-  &lt;button class=&quot;btn&quot; disabled=&quot;&quot; type=&quot;button&quot;&gt;Disabled Styled Button&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary&quot; disabled=&quot;&quot; type=&quot;button&quot;&gt;Disabled Primary Button&lt;/button&gt;
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid gap-3&quot;&gt;
+  &lt;button disabled=&quot;&quot;&gt;Disabled Default Button&lt;/button&gt;
+  &lt;button class=&quot;btn&quot; disabled=&quot;&quot;&gt;Disabled Styled Button&lt;/button&gt;
+  &lt;button class=&quot;btn btn-primary&quot; disabled=&quot;&quot;&gt;Disabled Primary Button&lt;/button&gt;
 &lt;/div&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Disabled buttons that are disabled appear inactive.</p>
           </div>
         </div>
       </section>
@@ -886,13 +813,26 @@
           <div class="page-max flex justify-center py-8 wrap">
             <div class="layout-content w-full">
               <div class="wrap">
-                <button aria-controls="btn-toggle-target" aria-expanded="true" class="btn-toggle w-full mb-2" data-js="toggle" type="button">
+                <!--{! @class          "active" or "inactive" indicates the state of the toggle the element visually }-->
+                <!--{! @data-js        "toggle" adds the toggleing utility to the button }-->
+                <!--{! @aria-controls  Designates the target of the toggle by its ID }-->
+                <!--{! @aria-expanded  Indicates the toggled state of the target }-->
+                <button aria-controls="ac-toggle-button-target" aria-expanded="true" class="btn-toggle w-full mb-2 active" data-js="toggle">
                   <span>Toggle Button</span>
+                  <!--{ @aria-hidden  Hides the non-critical icon from assistive technology }-->
                   <svg aria-hidden="true" class="icon-ui">
                     <use href="#lucide-chevron-down"></use>
                   </svg>
                 </button>
-                <div aria-hidden="false" class="bg-scale-2 p-4 text-center active" id="btn-toggle-target">Toggle button target element area</div>
+                <!--{! @id             Indicates the ID of the element and must match the @aria-controls attribute }-->
+                <!--{! @class          "active" or "inactive" shows and hides the element visually, respectively }-->
+                <!--{! @aria-expanded  Hides content in the element from assistive technology }-->
+                <div aria-hidden="false" class="bg-scale-2 p-4 text-center active" id="ac-toggle-button-target">
+                  <p>Toggle button target element area.
+                    <!--{ @tabindex  "-1" removes this link from the tabbing order when the parent's aria-hidden attribute is set to "true" }-->
+                    <a href="#">Target element link</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -901,7 +841,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="toggle-button-markup">Code</h5>
-            <button aria-controls="toggle-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="toggle-button-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -915,17 +855,36 @@
               <div class="code-block">
                 <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content w-full&quot;&gt;
   &lt;div class=&quot;wrap&quot;&gt;
-    &lt;button aria-controls=&quot;btn-toggle-target&quot; aria-expanded=&quot;true&quot; class=&quot;btn-toggle w-full mb-2&quot; data-js=&quot;toggle&quot; type=&quot;button&quot;&gt;
+    &lt;!--{! @class          &quot;active&quot; or &quot;inactive&quot; indicates the state of the toggle the element visually }--&gt;
+    &lt;!--{! @data-js        &quot;toggle&quot; adds the toggleing utility to the button }--&gt;
+    &lt;!--{! @aria-controls  Designates the target of the toggle by its ID }--&gt;
+    &lt;!--{! @aria-expanded  Indicates the toggled state of the target }--&gt;
+    &lt;button aria-controls=&quot;ac-toggle-button-target&quot; aria-expanded=&quot;true&quot; class=&quot;btn-toggle w-full mb-2 active&quot; data-js=&quot;toggle&quot;&gt;
       &lt;span&gt;Toggle Button&lt;/span&gt;
+      &lt;!--{ @aria-hidden  Hides the non-critical icon from assistive technology }--&gt;
       &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
         &lt;use href=&quot;#lucide-chevron-down&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
-    &lt;div aria-hidden=&quot;false&quot; class=&quot;bg-scale-2 p-4 text-center active&quot; id=&quot;btn-toggle-target&quot;&gt;Toggle button target element area&lt;/div&gt;
+    &lt;!--{! @id             Indicates the ID of the element and must match the @aria-controls attribute }--&gt;
+    &lt;!--{! @class          &quot;active&quot; or &quot;inactive&quot; shows and hides the element visually, respectively }--&gt;
+    &lt;!--{! @aria-expanded  Hides content in the element from assistive technology }--&gt;
+    &lt;div aria-hidden=&quot;false&quot; class=&quot;bg-scale-2 p-4 text-center active&quot; id=&quot;ac-toggle-button-target&quot;&gt;
+      &lt;p&gt;Toggle button target element area.
+        &lt;!--{ @tabindex  &quot;-1&quot; removes this link from the tabbing order when the parent's aria-hidden attribute is set to &quot;true&quot; }--&gt;
+        &lt;a href=&quot;#&quot;&gt;Target element link&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
               </div>
             </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Toggle Button uses the <a href="/toggle">Toggle Utility</a> for expanding and collapsing a single content area. It rotates the downward-facing chevron icon to indicate that the area is expanded or collapsed. It also toggles the appropriate <code>aria-expanded</code>, <code>aria-hidden</code>, and <code>tabindex</code> of the target element and its potentially focusable child elements to hide it from screen readers.</p>
           </div>
         </div>
       </section>
@@ -952,10 +911,10 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-289a9b9baec81" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-289a9b9baec81">Main</span>
+        <nav aria-labelledby="navigation-main-af3f3cde98796" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-af3f3cde98796">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -991,13 +950,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-289a9b9baec81" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-289a9b9baec81">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-af3f3cde98796" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-af3f3cde98796">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -1010,8 +970,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-289a9b9baec81" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-289a9b9baec81">Components</span>
+        <nav aria-labelledby="aria-lb-components-af3f3cde98796" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-af3f3cde98796">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -1021,8 +981,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-289a9b9baec81" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-289a9b9baec81">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-af3f3cde98796" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-af3f3cde98796">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -1034,8 +994,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-289a9b9baec81" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-289a9b9baec81">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-af3f3cde98796" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-af3f3cde98796">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -1050,6 +1010,7 @@
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
+    Standard.codeHighlight();
     Standard.copy();
     Standard.dialog();
     Standard.direction();

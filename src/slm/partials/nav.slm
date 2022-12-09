@@ -63,8 +63,9 @@ nav role='navigation' aria-labelledby='aria-lb-elements-${this.nav.id}' class='$
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='badge' Badge
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='breadcrumbs' Breadcrumbs
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='buttons' Buttons
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='description-lists' Description Lists
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='code' Code
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='color' Color
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='description-lists' Description Lists
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='dividers' Dividers
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='forms' Forms
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='icons' Icons

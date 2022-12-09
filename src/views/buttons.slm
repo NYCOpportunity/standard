@@ -21,38 +21,18 @@
   - button = {class: '', label: 'Default Button (Unstyled)'}
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Default Button', pkg: '@nycopportunity/pattern-elements'})
 
-  - button = {class: 'btn', label: 'Styled Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Styled Button', text: false, pkg: '@nycopportunity/pattern-elements'})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-types', {title: 'Button Types', pkg: '@nycopportunity/pattern-elements'})
 
-  - button = {class: 'btn-primary', label: 'Primary Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Primary Button', text: false, pkg: '@nycopportunity/pattern-elements'})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-links', {title: 'Link Buttons', pkg: '@nycopportunity/pattern-elements'});
 
-  - button = {class: 'btn-secondary', label: 'Secondary Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Secondary Button', text: false, pkg: '@nycopportunity/pattern-elements'})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-functional', {title: 'Functional Buttons', pkg: '@nycopportunity/pattern-elements'});
 
-  - button = {class: 'btn-tertiary', label: 'Tertiary Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Tertiary Button', text: false, pkg: '@nycopportunity/pattern-elements'})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-small', {title:'Small Button', pkg: '@nycopportunity/pattern-elements'});
 
-  - button = {class: 'btn', label: 'Learn more about links', href: '/links', postfix: 'arrow-right'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Link Button', text: false, pkg: '@nycopportunity/pattern-elements'});
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-responsive', {title: 'Responsive Button', pkg: '@nycopportunity/pattern-elements'});
 
-  - button = {class: 'btn', label: 'designsystem.digital.gov', href: 'https://designsystem.digital.gov/components/button/', postfix: 'external-link', external: true}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'External Link Button', text: false, pkg: '@nycopportunity/pattern-elements'});
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-tag', {title: 'Tag Button', pkg: '@nycopportunity/pattern-elements'});
 
-  - button = {class: 'btn', label: 'Share this page', prefix: 'share-2'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Button with Icon Prefix', text: false, pkg: '@nycopportunity/pattern-elements'});
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-disabled', {title: 'Disabled Buttons', pkg: '@nycopportunity/pattern-elements'})
 
-  - button = {class: 'btn-small', label: 'Small Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: button.label, text: false, pkg: '@nycopportunity/pattern-elements'});
-
-  - button = {class: 'btn-small desktop:btn', label: 'Responsive Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: button.label, text: false, pkg: '@nycopportunity/pattern-elements'});
-
-  - button = {class: 'btn-tag', label: 'Tag Button'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: button.label, text: false, pkg: '@nycopportunity/pattern-elements'});
-
-  - button = {type: 'disabled'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Disabled Buttons', text: false, pkg: '@nycopportunity/pattern-elements'})
-
-  - button = {type: 'toggle'}
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons', {title: 'Toggle Button', text: false, pkg: '@nycopportunity/pattern-elements'});
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-toggle', {title: 'Toggle Button', pkg: '@nycopportunity/pattern-elements'});

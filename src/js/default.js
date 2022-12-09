@@ -15,6 +15,8 @@ import WebShare from '@nycopportunity/pttrn-scripts/src/web-share/web-share';
 import WindowVh from '@nycopportunity/pttrn-scripts/src/window-vh/window-vh';
 
 // import serialize from 'for-cerial';
+// Elements
+import CodeHighlight from '@nycopportunity/pattern-elements/src/elements/code/code-highlight';
 
 // Components
 import Accordion from '../components/accordion/accordion';
@@ -65,6 +67,15 @@ class Main {
    */
   attribution() {
     return new Attribution();
+  }
+
+  /**
+   * An API for Code Syntax Highlighting
+   *
+   * @return  {Object}  Instance of CodeHighlight
+   */
+  codeHighlight(s = {}) {
+    return new CodeHighlight(s);
   }
 
   /**

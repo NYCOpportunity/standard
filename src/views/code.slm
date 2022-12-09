@@ -1,0 +1,27 @@
+- this.title = 'Code'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/code/code', {title: 'Inline Code', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/code/code-block', {title: 'Code Block', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/elements/code/code-font-face', {title: 'Font Face', demo: false, markup: false})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/code/readme', {title: 'Syntax Highlighting', demo: false, markup: false})

@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 0.0.0-13,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-13/dist/",
+  version: 0.0.0-16,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-16/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -137,12 +137,12 @@ $tokens:(
     blue-l-1: #217CEB,
     blue-l-2: #53B3FC,
     blue-l-3: #C9EEFE,
+    green-d-2: #006333,
     green-d-1: #007539,
-    green: #006333,
-    green-l-1: #008E46,
-    green-l-2: #4BAC4C,
-    green-l-3: #A8DD7C,
-    green-l-4: #DFEED2,
+    green: #008E46,
+    green-l-1: #4BAC4C,
+    green-l-2: #A8DD7C,
+    green-l-3: #DFEED2,
     yellow-d-4: #5C3D00,
     yellow-d-3: #8F5F00,
     yellow-d-2: #AD7200,
@@ -162,6 +162,7 @@ $tokens:(
     transparent: rgba(255, 255, 255, 0),
     inherit: inherit,
     text: var(--nyco-text),
+    background: var(--nyco-background),
     brand: var(--nyco-brand),
     alt: var(--nyco-alt),
     em: var(--nyco-em),
@@ -181,9 +182,9 @@ $tokens:(
       alt: var(--nyco-color-blue-l-3),
       em: var(--nyco-color-yellow-l-2),
       error: var(--nyco-color-yellow-l-2),
-      primary: var(--nyco-color-blue-l-1),
+      primary: var(--nyco-color-blue-l-2),
       secondary: var(--nyco-color-green-l-3),
-      tertiary: var(--nyco-color-yellow-l-2),
+      tertiary: var(--nyco-color-yellow-l-1),
       link: var(--nyco-color-blue-l-2),
       link-hover: var(--nyco-color-blue-l-3),
       link-visited: inherit,
@@ -363,7 +364,7 @@ $tokens:(
         ),
         secondary: (
           text: var(--nyco-text),
-          background: var(--nyco-color-green-l-4)
+          background: var(--nyco-color-green-l-3)
         ),
         tertiary: (
           text: var(--nyco-text),
@@ -606,5 +607,6 @@ $tokens:(
   ),
   cell: (
     padding: 0.8rem 1rem
-  )
+  ),
+  googleFontsCode: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 );

@@ -11,22 +11,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
   <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function(event) {
-      hljs.configure({
-        languages: ['html', 'javascript', 'css', 'sass']
-      });
-      document.querySelectorAll('pre').forEach(function(pre) {
-        if (!pre.hasAttribute('tabindex')) {
-          pre.setAttribute('tabindex', '0');
-        }
-        hljs.highlightBlock(pre);
-      });
-    });
-
     function load() {
       document.body.style.visibility = 'visible'
     };
@@ -44,7 +30,7 @@
       </div>
       <div class="flex items-center">
         <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
-          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-30</a>
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-31</a>
           <button class="hidden tablet:flex link-icon" data-js="themes">
             <svg aria-hidden="true" class="icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -63,7 +49,7 @@
     </div>
     <div class="pb-3 wrap">
       <!--{ @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }-->
-      <article class="c-alert c-alert-status-primary" data-js="alert-info">
+      <article class="c-alert c-alert-status-primary" data-js="alert-info" role="region">
         <div class="c-alert__graphic">
           <svg aria-hidden="true" class="icon-ui">
             <use href="#lucide-info"></use>
@@ -80,10 +66,10 @@
   <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
     <div class="page-max py-4 animated">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-d21df873fef69" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-d21df873fef69">Main</span>
+        <nav aria-labelledby="navigation-main-434589fbd8f1c" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-434589fbd8f1c">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -119,13 +105,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-d21df873fef69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-d21df873fef69">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-434589fbd8f1c" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-434589fbd8f1c">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -138,8 +125,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-d21df873fef69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-d21df873fef69">Components</span>
+        <nav aria-labelledby="aria-lb-components-434589fbd8f1c" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-434589fbd8f1c">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -149,8 +136,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-d21df873fef69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-d21df873fef69">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-434589fbd8f1c" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-434589fbd8f1c">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -162,8 +149,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-d21df873fef69" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-d21df873fef69">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-434589fbd8f1c" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-434589fbd8f1c">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -203,13 +190,13 @@
                   <!--{ @required  required="true" specifies wether the input is required by a form }-->
                   <!--{ @pattern   pattern="{{ my regular expression }}" a regular expression the input's value must match in order to validate }-->
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <input id="68846ff22208b" name="input['68846ff22208b']" required="true" type="text" />
+                  <input id="dd408f51de5d8" name="input['dd408f51de5d8']" required="true" type="text" />
                 </div>
               </div>
               <div class="fieldset">
                 <label class="legend">Select</label>
                 <div class="select ">
-                  <select id="question-585fd87dcccd2" name="question['585fd87dcccd2']">
+                  <select id="question-56ee1d6c02bbd" name="question['56ee1d6c02bbd']">
                     <option selected="true" value="">Select an option</option>
                     <option value="click-to-add-an-income-type">Click to add an income type</option>
                     <option value="Wages">wages, salaries, tips</option>
@@ -243,9 +230,9 @@
                 <legend>True or False</legend>
                 <!--{ @for       Should match the id of the input }-->
                 <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                <label class="option " for="5507497a6f382">
+                <label class="option " for="729ef0af8b51">
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <input id="5507497a6f382" name="boolean" type="radio" value="true" />
+                  <input id="729ef0af8b51" name="boolean" type="radio" value="true" />
                   <span class="option__base">
                     <svg aria-hidden="true" class="option__graphic">
                       <use href="#option-nyco-radio"></use>
@@ -255,9 +242,9 @@
                 </label>
                 <!--{ @for       Should match the id of the input }-->
                 <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                <label class="option " for="0461dec8e9344">
+                <label class="option " for="5d6309a02fce9">
                   <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
-                  <input id="0461dec8e9344" name="boolean" type="radio" value="false" />
+                  <input id="5d6309a02fce9" name="boolean" type="radio" value="false" />
                   <span class="option__base">
                     <svg aria-hidden="true" class="option__graphic">
                       <use href="#option-nyco-radio"></use>
@@ -276,7 +263,7 @@
         <div class="page-max layout-content pb-1">
           <div class="wrap flex items-center">
             <h5 class="sr-only" id="forms-markup">Code</h5>
-            <button aria-controls="forms-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle" type="button">
+            <button aria-controls="forms-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
               <span>Inspect code</span>
               <svg aria-hidden="true" class="icon-ui">
                 <use href="#lucide-chevron-down"></use>
@@ -295,13 +282,13 @@
       &lt;!--{ @required  required=&quot;true&quot; specifies wether the input is required by a form }--&gt;
       &lt;!--{ @pattern   pattern=&quot;{{ my regular expression }}&quot; a regular expression the input's value must match in order to validate }--&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;68846ff22208b&quot; name=&quot;input['68846ff22208b']&quot; required=&quot;true&quot; type=&quot;text&quot; /&gt;
+      &lt;input id=&quot;dd408f51de5d8&quot; name=&quot;input['dd408f51de5d8']&quot; required=&quot;true&quot; type=&quot;text&quot; /&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;fieldset&quot;&gt;
     &lt;label class=&quot;legend&quot;&gt;Select&lt;/label&gt;
     &lt;div class=&quot;select &quot;&gt;
-      &lt;select id=&quot;question-585fd87dcccd2&quot; name=&quot;question['585fd87dcccd2']&quot;&gt;
+      &lt;select id=&quot;question-56ee1d6c02bbd&quot; name=&quot;question['56ee1d6c02bbd']&quot;&gt;
         &lt;option selected=&quot;true&quot; value=&quot;&quot;&gt;Select an option&lt;/option&gt;
         &lt;option value=&quot;click-to-add-an-income-type&quot;&gt;Click to add an income type&lt;/option&gt;
         &lt;option value=&quot;Wages&quot;&gt;wages, salaries, tips&lt;/option&gt;
@@ -335,9 +322,9 @@
     &lt;legend&gt;True or False&lt;/legend&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;56ff70fdec7cf&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;6bfc2f2ed3877&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;56ff70fdec7cf&quot; name=&quot;boolean&quot; type=&quot;radio&quot; value=&quot;true&quot; /&gt;
+      &lt;input id=&quot;6bfc2f2ed3877&quot; name=&quot;boolean&quot; type=&quot;radio&quot; value=&quot;true&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -347,9 +334,9 @@
     &lt;/label&gt;
     &lt;!--{ @for       Should match the id of the input }--&gt;
     &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-    &lt;label class=&quot;option &quot; for=&quot;96b897aed43fe&quot;&gt;
+    &lt;label class=&quot;option &quot; for=&quot;807693ebca5aa&quot;&gt;
       &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
-      &lt;input id=&quot;96b897aed43fe&quot; name=&quot;boolean&quot; type=&quot;radio&quot; value=&quot;false&quot; /&gt;
+      &lt;input id=&quot;807693ebca5aa&quot; name=&quot;boolean&quot; type=&quot;radio&quot; value=&quot;false&quot; /&gt;
       &lt;span class=&quot;option__base&quot;&gt;
         &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot;&gt;
           &lt;use href=&quot;#option-nyco-radio&quot;&gt;&lt;/use&gt;
@@ -394,10 +381,10 @@
     </div>
     <div class="page-max pt-2">
       <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
-        <nav aria-labelledby="navigation-main-00bfcb5ff00b8" class="tablet:flex-1 mb-1" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-00bfcb5ff00b8">Main</span>
+        <nav aria-labelledby="navigation-main-0d2d94e16e3cd" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-0d2d94e16e3cd">Main</span>
           <a class="flex p-1" href="index">Home</a>
-          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-30" rel="noopener nofollow" target="_blank" title="v0.0.0-30">Latest Release</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-31" rel="noopener nofollow" target="_blank" title="v0.0.0-31">Latest Release</a>
           <button class="link-icon flex p-1" data-js="themes">
             <svg aria-hidden="true" class="icon icon-ui">
               <use data-js-themes="icon" href="#lucide-moon"></use>
@@ -433,13 +420,14 @@
             <span>UI Patterns Framework</span>
           </a>
         </nav>
-        <nav aria-labelledby="aria-lb-elements-00bfcb5ff00b8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-00bfcb5ff00b8">Elements</span>
+        <nav aria-labelledby="aria-lb-elements-0d2d94e16e3cd" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-0d2d94e16e3cd">Elements</span>
           <a class="flex p-1" href="badge">Badge</a>
           <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
           <a class="flex p-1" href="buttons">Buttons</a>
-          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
           <a class="flex p-1" href="dividers">Dividers</a>
           <a class="flex p-1" href="forms">Forms</a>
           <a class="flex p-1" href="icons">Icons</a>
@@ -452,8 +440,8 @@
           <a class="flex p-1" href="selects">Selects</a>
           <a class="flex p-1" href="tables">Tables</a>
         </nav>
-        <nav aria-labelledby="aria-lb-components-00bfcb5ff00b8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-00bfcb5ff00b8">Components</span>
+        <nav aria-labelledby="aria-lb-components-0d2d94e16e3cd" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-0d2d94e16e3cd">Components</span>
           <a class="flex p-1" href="accordion">Accordion</a>
           <a class="flex p-1" href="active-navigation">Active Navigation</a>
           <a class="flex p-1" href="alert">Alert</a>
@@ -463,8 +451,8 @@
           <a class="flex p-1" href="utility">Utility</a>
           <a class="flex p-1" href="web-share">Web Share</a>
         </nav>
-        <nav aria-labelledby="aria-lb-objects-00bfcb5ff00b8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-00bfcb5ff00b8">Objects</span>
+        <nav aria-labelledby="aria-lb-objects-0d2d94e16e3cd" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-0d2d94e16e3cd">Objects</span>
           <a class="flex p-1" href="application-header">Application Header</a>
           <a class="flex p-1" href="attribution">Attribution</a>
           <a class="flex p-1" href="banner">Banner</a>
@@ -476,8 +464,8 @@
           <a class="flex p-1" href="newsletter">Newsletter</a>
           <a class="flex p-1" href="search">Search</a>
         </nav>
-        <nav aria-labelledby="aria-lb-utilities-00bfcb5ff00b8" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
-          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-00bfcb5ff00b8">Utilities</span>
+        <nav aria-labelledby="aria-lb-utilities-0d2d94e16e3cd" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-0d2d94e16e3cd">Utilities</span>
           <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
         </nav>
       </div>
@@ -492,6 +480,7 @@
     Standard.accordion();
     Standard.activeNavigation();
     Standard.attribution();
+    Standard.codeHighlight();
     Standard.copy();
     Standard.dialog();
     Standard.direction();

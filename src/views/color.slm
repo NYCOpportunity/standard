@@ -17,7 +17,14 @@
 
 = content('content')
   = mixin('content-header')
-  = mixin('section', '/utilities/color/color', {title: false, markup: false})
-  = mixin('section', '/utilities/color/color-figma', {title: 'Figma Color Page', markup: false})
-  / = mixin('section', '/utilities/fonts/readme', {title: 'Usage', markup: false, demo: false})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color', {title: false, demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
 
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-base-scale', {title: 'Base Scale', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-primary-secondary-tertiary', {title: 'Primary, Secondary, and Tertiary Colors', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-background-text', {title: 'Background and Text', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-scales', {title: 'Color Scales', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
+
+  / = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-figma', {title: 'Figma Color Page', markup: false})

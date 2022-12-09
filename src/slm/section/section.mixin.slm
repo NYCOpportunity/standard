@@ -75,7 +75,7 @@
           h5 id='${id}-markup' class='sr-only'
             | Code
 
-          button class='btn-primary btn-toggle w-full' aria-controls='${id}-markup-block' aria-expanded='false' data-js='toggle' type='button'
+          button class='btn-primary btn-toggle w-full' aria-controls='${id}-markup-block' aria-expanded='false' data-js='toggle'
             span Inspect code
 
             svg class='icon-ui' aria-hidden='true'

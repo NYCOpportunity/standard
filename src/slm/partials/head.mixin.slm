@@ -16,30 +16,11 @@
     link rel='preconnect' href='https://fonts.googleapis.com'
     link rel='preconnect' href='https://fonts.gstatic.com' crossorigin=true
 
-    link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'
-    link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css'
-    script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js'
+    link rel='stylesheet' href=this.tokens.googleFontsCode.replace('"', '').replace('"', '')
 
-    / link rel='stylesheet' href='${this.baseUrl}/css/tokens.css'
-    / link rel='stylesheet' href='${this.baseUrl}/css/tokens-default.css'
-    / link rel='stylesheet' href='${this.baseUrl}/css/tokens-dark.css'
     link rel='stylesheet' href='${this.baseUrl}/css/documentation.css'
 
     javascript:
-      document.addEventListener('DOMContentLoaded', function(event) {
-        hljs.configure({
-          languages: ['html', 'javascript', 'css', 'sass']
-        });
-
-        document.querySelectorAll('pre').forEach(function(pre) {
-          if (!pre.hasAttribute('tabindex')) {
-            pre.setAttribute('tabindex', '0');
-          }
-
-          hljs.highlightBlock(pre);
-        });
-      });
-
       function load() {
         document.body.style.visibility = 'visible'
       };
