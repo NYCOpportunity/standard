@@ -6,6 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/nav-last.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -27,4 +28,8 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-scales', {title: 'Color Scales', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
 
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-usage', {title: 'Color Usage', demo: false, markup: false, src: false, pkg: '@nycopportunity/pattern-elements'})
+
   / = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-figma', {title: 'Figma Color Page', markup: false})
+
+  = mixin('nav-last', {related: {label: 'Tailwindcss', href: '/tailwindcss'}, next: {label: 'Description Lists', href: '/description-lists'}})

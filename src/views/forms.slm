@@ -6,6 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/nav-last.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -17,4 +18,9 @@
 
 = content('content')
   = mixin('content-header')
+
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/forms', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/readme', {title: 'Usage', src: false, markup: false, demo: false})
+
+  = mixin('nav-last', {related: {label: 'Question', href: '/question'}, next: {label: 'Icons', href: '/icons'}})

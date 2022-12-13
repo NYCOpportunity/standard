@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 0.0.0-16,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-16/dist/",
+  version: 0.0.0-17,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-17/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -177,6 +177,13 @@ $tokens:(
   ),
   colorMode: (
     dark: (
+      scale: (
+        0: var(--nyco-color-default-0),
+        1: var(--nyco-color-default-1),
+        2: var(--nyco-color-default-2),
+        3: var(--nyco-color-default-3),
+        4: var(--nyco-color-default-4)
+      ),
       text: var(--nyco-color-white),
       brand: var(--nyco-color-blue-l-2),
       alt: var(--nyco-color-blue-l-3),
@@ -191,15 +198,9 @@ $tokens:(
       focus: var(--nyco-color-blue-l-2),
       focus-background: var(--nyco-background),
       background: var(--nyco-scale-1),
+      divider: var(--nyco-scale-3),
       webkit-font-smoothing: antialiased,
       moz-osx-font-smoothing: grayscale,
-      scale: (
-        0: var(--nyco-color-default-0),
-        1: var(--nyco-color-default-1),
-        2: var(--nyco-color-default-2),
-        3: var(--nyco-color-default-3),
-        4: var(--nyco-color-default-4)
-      ),
       input: (
         text: var(--nyco-scale-1),
         background: var(--nyco-color-white),
@@ -317,6 +318,13 @@ $tokens:(
       )
     ),
     default: (
+      scale: (
+        0: var(--nyco-color-light-0),
+        1: var(--nyco-color-light-1),
+        2: var(--nyco-color-light-2),
+        3: var(--nyco-color-light-3),
+        4: var(--nyco-color-light-4)
+      ),
       text: var(--nyco-color-default-3),
       brand: var(--nyco-color-blue),
       alt: var(--nyco-text),
@@ -331,15 +339,9 @@ $tokens:(
       focus: var(--nyco-color-blue),
       focus-background: var(--nyco-background),
       background: var(--nyco-scale-1),
+      divider: var(--nyco-scale-3),
       webkit-font-smoothing: auto,
       moz-osx-font-smoothing: auto,
-      scale: (
-        0: var(--nyco-color-light-0),
-        1: var(--nyco-color-light-1),
-        2: var(--nyco-color-light-2),
-        3: var(--nyco-color-light-3),
-        4: var(--nyco-color-light-4)
-      ),
       input: (
         text: var(--nyco-color-default-1),
         background: var(--nyco-color-white),
@@ -501,6 +503,7 @@ $tokens:(
   ),
   borderWidth: (
     0: 0,
+    1: 1px,
     2: 2px,
     3: 3px,
     4: 4px,

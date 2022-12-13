@@ -286,13 +286,13 @@ class Main {
    * @param  {String}    selector  A custom selector for a form
    * @param  {Function}  submit    A custom event handler for a form
    */
-  validate(selector = '[data-js="validate"]', submit = false) {
-    if (document.querySelector(selector)) {
-      let form = new Forms(document.querySelector(selector));
+  validate(selector = '[data-js="validate"]', submit = (event) => {event.target.submit()}) {
+    let validate = document.querySelector(selector);
 
-      form.submit = (submit) ? submit : (event) => {
-        event.target.submit();
-      };
+    if (validate) {
+      let form = new Forms(validate);
+
+      form.submit = submit;
 
       form.selectors.ERROR_MESSAGE_PARENT = '.c-question__container';
 
