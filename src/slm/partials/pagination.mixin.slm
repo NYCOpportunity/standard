@@ -1,4 +1,4 @@
-= mixin('nav-last', 'nav = {related: false, next: false}');
+= mixin('pagination', 'nav = {related: false, next: false}');
   - this.nav = (!this.nav || typeof this.nav === 'string') ? {} : this.nav
 
   - this.nav.related = (this.nav.hasOwnProperty('related')) ? this.nav.related : false
@@ -7,10 +7,10 @@
   div class='layout-content page-max'
     div class='wrap mb-4'
       nav class='grid tablet:grid-cols-2 gap-3'
-        a class='btn' href="${this.nav.related.href}"
+        a class='btn' href="${this.baseUrl}${this.nav.related.href}"
           span See related, "${this.nav.related.label}"
 
-        a class='btn-secondary' href="${this.nav.next.href}"
+        a class='btn-secondary' href="${this.baseUrl}${this.nav.next.href}"
           span Next, "${this.nav.next.label}"
 
           svg aria-hidden='true' class='icon-ui rtl:flip'

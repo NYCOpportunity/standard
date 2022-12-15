@@ -6,7 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
-= partial('/slm/partials/nav-last.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -20,3 +20,9 @@
   = mixin('content-header')
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-prefix-suffix', {title: 'Input with Prefix or Suffix', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-mask', {title: 'Input Mask', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Labels', href: 'labels'}})

@@ -1,0 +1,22 @@
+- icons = [];
+- icons.push({'title': 'Career Services', 'code': 'program-card-career-services', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Cash & Expenses', 'code': 'program-card-cash-expenses', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Certification', 'code': 'program-card-certification', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Child Care', 'code': 'program-card-child-care', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Education', 'code': 'program-card-education', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'English & Math', 'code': 'program-card-english-math', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Enrichment', 'code': 'program-card-enrichment', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Family Services', 'code': 'program-card-family-services', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Food', 'code': 'program-card-food', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Health', 'code': 'program-card-health', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Housing', 'code': 'program-card-housing', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Identification', 'code': 'program-card-identification', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'People with Disabilities', 'code': 'program-card-people-disabilities', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+- icons.push({'title': 'Work', 'code': 'program-card-work', 'class': 'icon-8 fill-icon-tone-1 text-icon-tone-2'})
+
+ul class='list-none p-0 grid grid-cols-1 small:grid-cols-2 tablet:grid-cols-3 gap-2'
+  - for (let i in icons)
+    - icon = icons[i]
+    = partial('/slm/partials/swatch-icon.slm')
+
+  - delete Icons

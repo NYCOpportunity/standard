@@ -1,0 +1,19 @@
+/ ul class='list-none p-0 grid grid-cols-1 small:grid-cols-2 tablet:grid-cols-3 gap-2'
+- if icon
+  li class='m-0 aspect-square relative'
+    input value='#${icon.code}' class='sr-only' data-copy-target='copy-${icon.code}-value' tabindex='-1'
+    button class='material no-underline absolute top-0 left-0 w-full h-full select-text' title='Copy icon ID to clipboard' aria-label='Copy icon ID to clipboard' aria-pressed='false' data-copy='copy-${icon.code}-value' data-js='copy'
+      svg class='m-0 mb-1 icon-8 ${icon.class}' role='img'
+        title = icon.title
+        use href='#${icon.code}'
+
+      svg class='absolute m-2 top-0 right-0 icon-ui' aria-hidden='true'
+        use data-js-copy='icon' href='#lucide-copy'
+
+      div class='select-text'
+        div class='mb-1' = icon.title
+
+        small
+          code #${icon.code}
+
+  - delete icon

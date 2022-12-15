@@ -6,7 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
-= partial('/slm/partials/nav-last.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -21,4 +21,4 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/breadcrumbs/breadcrumbs', {title: false, pkg: '@nycopportunity/pattern-elements'})
 
-  = mixin('nav-last', {related: {label: 'Navs', href: '/navs'}, next: {label: 'Buttons', href: '/buttons'}})
+  = mixin('pagination', {related: {label: 'Navs', href: 'navs'}, next: {label: 'Buttons', href: 'buttons'}})

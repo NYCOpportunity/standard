@@ -6,7 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
-= partial('/slm/partials/nav-last.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -32,4 +32,4 @@
 
   / = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/color/color-figma', {title: 'Figma Color Page', markup: false})
 
-  = mixin('nav-last', {related: {label: 'Tailwindcss', href: '/tailwindcss'}, next: {label: 'Description Lists', href: '/description-lists'}})
+  = mixin('pagination', {related: {label: 'Tailwindcss', href: 'tailwindcss'}, next: {label: 'Description Lists', href: 'description-lists'}})

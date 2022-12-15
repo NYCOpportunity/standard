@@ -6,7 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
-= partial('/slm/partials/nav-last.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -22,3 +22,5 @@
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/dividers/dividers', {title: false, pkg: '@nycopportunity/pattern-elements'})
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/dividers/dividers-large', {title: 'Large Dividers', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('pagination', {related: {label: 'Typography', href: 'typography'}, next: {label: 'Forms', href: 'forms'}})

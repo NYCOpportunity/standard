@@ -1,0 +1,10 @@
+div class='grid grid-cols-2 gap-2'
+  svg class='icon' role='img'
+    title Disability accommodation details are available. View this program to learn more.
+
+    use href='#nyco-accessibility'
+
+  svg class='icon-ui' role='img'
+    title Language access details are available. View this program to learn more.
+
+    use href='#nyco-languages'

@@ -1,6 +1,24 @@
 const tokens = require('@nycopportunity/pattern-elements/config/tokens');
 
+/**
+ * Adding color utilities
+ */
+
+tokens.color['icon-tone-1'] = 'var(--nyco-icon-tone-1)';
+tokens.color['icon-tone-2'] = 'var(--nyco-icon-tone-2)';
+
+/**
+ * Themes
+ */
+
 const light = {
+  /**
+   * Elements
+   */
+
+  'icon-tone-1': 'var(--nyco-color-blue-l-2)',
+  'icon-tone-2': 'var(--nyco-color-blue)',
+
   /**
    * Component Tokens
    */
@@ -46,6 +64,13 @@ const light = {
 };
 
 const dark = {
+  /**
+   * Elements
+   */
+
+   'icon-tone-1': 'var(--nyco-color-blue-l-2)',
+   'icon-tone-2': 'var(--nyco-color-blue)',
+
   /**
    * Component Tokens
    */
@@ -120,6 +145,23 @@ tokens.dimension = {
   ...tokens.dimension,
   ...dimension
 };
+
+/**
+ * Icon Sizes
+ */
+
+let iconSizes = {
+  'logo-google-translate': ['175px', '16px'],
+  'logo-standard-menu-item': ['130px', '18px'],
+  'logo-stacked-menu-item': ['100px', '32px'],
+  'logo-nyco-menu-item': ['150px', '17px'],
+  'logo-nyc-copyright': ['41px', '15px']
+}
+
+tokens.iconSizes = {
+  ...tokens.iconSizes,
+  ...iconSizes
+}
 
 /**
  * Fonts

@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 0.0.0-17,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-17/dist/",
+  version: 0.0.0-18,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-18/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -159,6 +159,16 @@ $tokens:(
     purple-l-2: #A9ACFC,
     black: #000000,
     white: #FFFFFF,
+    eighth-avenue: #2850AD,
+    sixth-avenue: #FF6319,
+    crosstown: #6CBE45,
+    canarsie: #A7A9AC,
+    nassau: #996633,
+    broadway: #FCCC0A,
+    broadway-seventh-avenue: #EE352E,
+    lexington-avenue: #00933C,
+    flushing: #B933AD,
+    shuttles: #808183,
     transparent: rgba(255, 255, 255, 0),
     inherit: inherit,
     text: var(--nyco-text),
@@ -173,7 +183,9 @@ $tokens:(
     scale-1: var(--nyco-scale-1),
     scale-2: var(--nyco-scale-2),
     scale-3: var(--nyco-scale-3),
-    scale-4: var(--nyco-scale-4)
+    scale-4: var(--nyco-scale-4),
+    icon-tone-1: var(--nyco-icon-tone-1),
+    icon-tone-2: var(--nyco-icon-tone-2)
   ),
   colorMode: (
     dark: (
@@ -293,6 +305,8 @@ $tokens:(
       shadow: (
         up: 0 3px 12px 2px rgba(0, 0, 0, 0.15)
       ),
+      icon-tone-1: var(--nyco-color-blue-l-2),
+      icon-tone-2: var(--nyco-color-blue),
       card: (
         header: var(--nyco-scale-3),
         body: var(--nyco-scale-4)
@@ -434,6 +448,8 @@ $tokens:(
       shadow: (
         up: 0 3px 12px 2px rgba(21, 60, 96, 0.13)
       ),
+      icon-tone-1: var(--nyco-color-blue-l-2),
+      icon-tone-2: var(--nyco-color-blue),
       card: (
         header: var(--nyco-scale-2),
         body: var(--nyco-scale-0)
@@ -547,12 +563,7 @@ $tokens:(
     6: (calc(var(--nyco-grid) * 6), calc(var(--nyco-grid) * 6)),
     7: (calc(var(--nyco-grid) * 7), calc(var(--nyco-grid) * 7)),
     8: (calc(var(--nyco-grid) * 8), calc(var(--nyco-grid) * 8)),
-    default: (1rem, 1rem),
-    logo-google-translate: (175px, 16px),
-    logo-standard-menu-item: (130px, 18px),
-    logo-stacked-menu-item: (100px, 32px),
-    logo-nyco-menu-item: (150px, 17px),
-    logo-nyc-copyright: (41px, 15px)
+    default: (1rem, 1rem)
   ),
   focus: (
     gap: 4px,
@@ -610,6 +621,13 @@ $tokens:(
   ),
   cell: (
     padding: 0.8rem 1rem
+  ),
+  iconSizes: (
+    logo-google-translate: (175px, 16px),
+    logo-standard-menu-item: (130px, 18px),
+    logo-stacked-menu-item: (100px, 32px),
+    logo-nyco-menu-item: (150px, 17px),
+    logo-nyc-copyright: (41px, 15px)
   ),
   googleFontsCode: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 );

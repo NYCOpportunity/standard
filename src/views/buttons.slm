@@ -6,7 +6,7 @@
 / Partials
 = partial('/slm/partials/head.mixin.slm')
 = partial('/slm/partials/content-header.mixin.slm')
-= partial('/slm/partials/nav-last.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
 = partial('/slm/section/section.mixin.slm')
 
 / Content blocks
@@ -38,4 +38,4 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/buttons/buttons-toggle', {title: 'Toggle Button', pkg: '@nycopportunity/pattern-elements'});
 
-  = mixin('nav-last', {related: {label: 'Links', href: '/links'}, next: {label: 'Code', href: '/code'}})
+  = mixin('pagination', {related: {label: 'Links', href: 'links'}, next: {label: 'Code', href: 'code'}})

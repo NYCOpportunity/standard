@@ -1,0 +1,34 @@
+- this.title = 'Icons'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/elements/icons/icons', {title: false, src: false})
+
+  = mixin('section', '/elements/icons/readme', {title: 'Icon Sprite Usage', demo: false, markup: false, src: false})
+
+  = mixin('section', '/elements/icons/icons-program', {title: 'Program Icons', demo: false, markup: false, src: false})
+
+  = mixin('section', '/elements/icons/icons-ui', {title: 'User Interface (UI) Icons', src: false})
+
+  = mixin('section', '/elements/icons/icons-custom-ui', {title: 'Custom UI Icons', src: false})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/icons/icons-utilities', {title: 'Icon Size Utilities', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'SVGs Installation', href: 'installation#svgs'}, next: {label: 'Inputs', href: 'inputs'}})

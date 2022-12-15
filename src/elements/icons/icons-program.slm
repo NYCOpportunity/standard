@@ -1,0 +1,23 @@
+- icons = [];
+
+- icons.push({'title': 'Career Services', 'code': 'program-career-services', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Cash & Expenses', 'code': 'program-cash-expenses', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Certification', 'code': 'program-certification', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Child Care', 'code': 'program-child-care', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Education', 'code': 'program-education', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'English & Math', 'code': 'program-english-math', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Enrichment', 'code': 'program-enrichment', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Family Services', 'code': 'program-family-services', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Food', 'code': 'program-food', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Health', 'code': 'program-health', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Housing', 'code': 'program-housing', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Identification', 'code': 'program-identification', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'People with Disabilities', 'code': 'program-people-disabilities', 'class': 'fill-icon-tone-1'})
+- icons.push({'title': 'Work', 'code': 'program-work', 'class': 'fill-icon-tone-1'})
+
+ul class='list-none p-0 grid grid-cols-1 small:grid-cols-2 tablet:grid-cols-3 gap-2'
+  - for (let i in icons)
+    - icon = icons[i]
+    = partial('/slm/partials/swatch-icon.slm')
+
+  - delete Icons

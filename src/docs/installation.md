@@ -2,7 +2,7 @@
 
 There are two main methods of installation. The preferred method is to use <a href="https://www.npmjs.com/" target="_blank" rel="noopener nofollow">NPM (Node Package Manager)</a> to install the source in the _node_modules/_ directory of your project. This method enables you to compile the {{ this.package.nice }} with your application's CSS, JavaScript, and SVGs. It also maintains a dependency link with the {{ this.package.nice }} source.
 
-The second option involve using distributed stylesheets and scripts via a public CDN. These are linked to the page using `<link>` and `<script>` tags.
+The second option involves using distributed stylesheets and scripts via a public CDN. These are linked to the page using `<link>` and `<script>` tags.
 
 #### Module Install
 
@@ -17,7 +17,7 @@ All pattern sources in the {{ this.package.nice }} is module-based and can be im
 **Dart Sass Modules**
 
 ```scss
-@forward 'components/accordion/_accordion.scss';
+@forward '{{ this.package.name }}/components/accordion/_accordion.scss';
 ```
 
 **JavaScript ES Modules**
