@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+          <h1 class="font-nyc text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-33" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-33</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#lucide-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-a6a4082aee87d" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-a6a4082aee87d">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-33" rel="noopener nofollow" target="_blank" title="v0.0.0-33">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-a6a4082aee87d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-a6a4082aee87d">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-a6a4082aee87d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-a6a4082aee87d">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-a6a4082aee87d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-a6a4082aee87d">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-a6a4082aee87d" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-a6a4082aee87d">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3 id="page-heading">Icons</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="icons">
+        <header class="page-max layout-content py-4">
+          <div class="wrap"></div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="icons-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <svg class="icon" role="img">
+              <title>Disability accommodation details are available. View this program to learn more.</title>
+              <use href="#nyco-accessibility"></use>
+            </svg>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="icons-markup">Code</h5>
+            <button aria-controls="icons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="icons-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;svg class=&quot;icon&quot; role=&quot;img&quot;&gt;
+  &lt;title&gt;Disability accommodation details are available. View this program to learn more.&lt;/title&gt;
+  &lt;use href=&quot;#nyco-accessibility&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Icons are supplementary visual aids that help add emphasis and meaning. Icons in the Opportunity Standard follow guidance from the <a target="_blank" rel="noopener" href="https://designsystem.digital.gov/components/icon/">U.S. Web Design System (USWDS) Icon component</a> but includes its own set of custom icons and integration of open source icon libraries.</p>
+            <hr>
+            <p>It’s important to <strong>combine an icon with text</strong> as it is the most certain way of communicating the meaning of the icon. Test with users or follow guidance from Nielson Norman Group on <a href="https://www.nngroup.com/articles/icon-usability/" target="_blank" rel="nofollow noopener">“Icon Usability.”</a>.</p>
+            <hr>
+            <p>Icons can be implemented using <strong>Scalable Vector Graphic (SVG) sprites</strong> which is a collection of individual icons (SVGs) in a single SVG file. Read more about <a href="#icon-sprite-usage">Icon Sprite Usage</a> below.</p>
+            <hr>
+            <p>If using an icon without a visual label, set the <code>role</code> attribute of the <code>svg</code> element to <code>img</code> and add <strong>alternative text</strong> in the SVG <code>title</code> tag for screen readers.</p>
+            <div class="code-block">
+              <pre>&lt;svg class=&quot;icon&quot; role=&quot;img&quot;&gt;
+  &lt;title&gt;Disability accommodation details are available. View this program to learn more.&lt;/title&gt;
+  &lt;use href=&quot;#nyco-accessibility&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;</pre>
+            </div>
+            <p>Otherwise, if the icon doesn’t add any contextual value as a label or it is already paired with a visible text label, it can be visually hidden by setting its <code>aria-hidden</code> attribute to <code>true</code>.</p>
+            <div class="code-block">
+              <pre>&lt;p class=&quot;flex items-center&quot;&gt;
+  &lt;svg class=&quot;icon mie-1&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;use href=&quot;#nyco-accessibility&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt; &lt;span&gt;Disability accommodation details are available. View this program to learn more.&lt;/span&gt;
+&lt;p&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="icon-sprite-usage">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#icon-sprite-usage">
+                <svg class="icon-ui" role="img">
+                  <title>Icon Sprite Usage Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Icon Sprite Usage
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The common method for implementing SVG sprites is to include them in the page dynamically. Then, individual icons are referenced on the page with the <code>use</code> tag using their ID which corresponds with their filename.</p>
+            <p>The SVG sprite for Opportunity Standard icons, including <a href="#custom-ui-icons">Custom UI Icons</a>, <a href="#program-icons">Program Icons</a>, and <strong>Logos</strong> can be referenced at the following path.</p>
+            <div class="code-block">
+              <pre>&#39;@nycopportunity/standard/dist/svg/svgs.svg&#39;</pre>
+            </div>
+            <p>A sprite for the <a href="https://github.com/NYCOpportunity/pattern-elements" target="_blank" rel="noopener">Patterns Elements</a> package is found at the following path.</p>
+            <div class="code-block">
+              <pre>&#39;@nycopportunity/standard/dist/svg/pattern-elements.svg&#39;</pre>
+            </div>
+            <p>Lastly, a sprite for the <a target="_blank" rel="noopener nofollow" href="https://lucide.dev">Lucide open source</a> library (<a href="#user-interface-ui-icons">described below</a>) is found at the following path.</p>
+            <div class="code-block">
+              <pre>&#39;@nycopportunity/standard/dist/svg/lucide.svg&#39;</pre>
+            </div>
+            <p>Follow the <a href="installation#svgs">SVGs Installation</a> instructions to add icon sprites to the page dynamically.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="program-icons">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#program-icons">
+                <svg class="icon-ui" role="img">
+                  <title>Program Icons Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Program Icons
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Opportunity Standard contains a collection of <strong>Program Icons</strong> that representing public benefit and service categories. The set is not an exhaustive representation of programs but currently features categories from the <a href="https://access.nyc.gov" target="_blank" rel="noopener">ACCESS NYC</a> and <a href="https://working.nyc.gov" target="_blank" rel="noopener">Working NYC</a> websites.</p>
+            <p>
+            <ul class="list-none p-0 grid grid-cols-1 small:grid-cols-2 tablet:grid-cols-3 gap-2">
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-career-services-value" tabindex="-1" value="#program-career-services" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-career-services-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Career Services</title>
+                    <use href="#program-career-services"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Career Services</div>
+                    <small>
+                      <code>#program-career-services</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-cash-expenses-value" tabindex="-1" value="#program-cash-expenses" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-cash-expenses-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Cash &amp; Expenses</title>
+                    <use href="#program-cash-expenses"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Cash &amp; Expenses</div>
+                    <small>
+                      <code>#program-cash-expenses</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-certification-value" tabindex="-1" value="#program-certification" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-certification-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Certification</title>
+                    <use href="#program-certification"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Certification</div>
+                    <small>
+                      <code>#program-certification</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-child-care-value" tabindex="-1" value="#program-child-care" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-child-care-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Child Care</title>
+                    <use href="#program-child-care"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Child Care</div>
+                    <small>
+                      <code>#program-child-care</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-education-value" tabindex="-1" value="#program-education" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-education-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Education</title>
+                    <use href="#program-education"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Education</div>
+                    <small>
+                      <code>#program-education</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-english-math-value" tabindex="-1" value="#program-english-math" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-english-math-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>English &amp; Math</title>
+                    <use href="#program-english-math"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">English &amp; Math</div>
+                    <small>
+                      <code>#program-english-math</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-enrichment-value" tabindex="-1" value="#program-enrichment" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-enrichment-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Enrichment</title>
+                    <use href="#program-enrichment"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Enrichment</div>
+                    <small>
+                      <code>#program-enrichment</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-family-services-value" tabindex="-1" value="#program-family-services" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-family-services-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Family Services</title>
+                    <use href="#program-family-services"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Family Services</div>
+                    <small>
+                      <code>#program-family-services</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-food-value" tabindex="-1" value="#program-food" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-food-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Food</title>
+                    <use href="#program-food"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Food</div>
+                    <small>
+                      <code>#program-food</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-health-value" tabindex="-1" value="#program-health" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-health-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Health</title>
+                    <use href="#program-health"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Health</div>
+                    <small>
+                      <code>#program-health</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-housing-value" tabindex="-1" value="#program-housing" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-housing-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Housing</title>
+                    <use href="#program-housing"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Housing</div>
+                    <small>
+                      <code>#program-housing</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-identification-value" tabindex="-1" value="#program-identification" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-identification-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Identification</title>
+                    <use href="#program-identification"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Identification</div>
+                    <small>
+                      <code>#program-identification</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-people-disabilities-value" tabindex="-1" value="#program-people-disabilities" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-people-disabilities-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>People with Disabilities</title>
+                    <use href="#program-people-disabilities"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">People with Disabilities</div>
+                    <small>
+                      <code>#program-people-disabilities</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-work-value" tabindex="-1" value="#program-work" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-work-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 fill-icon-tone-1" role="img">
+                    <title>Work</title>
+                    <use href="#program-work"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Work</div>
+                    <small>
+                      <code>#program-work</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+            </ul>
+            </p>
+            <h5 id="program-card-icons">Program Card Icons</h5>
+            <p>
+              <strong>Program Card Icons</strong> are an alternative display for <strong>Program Icons</strong> for use in the <a href="card#program-card-with-icon">Card component</a>.
+            </p>
+            <p>
+            <ul class="list-none p-0 grid grid-cols-1 small:grid-cols-2 tablet:grid-cols-3 gap-2">
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-career-services-value" tabindex="-1" value="#program-card-career-services" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-career-services-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Career Services</title>
+                    <use href="#program-card-career-services"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Career Services</div>
+                    <small>
+                      <code>#program-card-career-services</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-cash-expenses-value" tabindex="-1" value="#program-card-cash-expenses" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-cash-expenses-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Cash &amp; Expenses</title>
+                    <use href="#program-card-cash-expenses"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Cash &amp; Expenses</div>
+                    <small>
+                      <code>#program-card-cash-expenses</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-certification-value" tabindex="-1" value="#program-card-certification" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-certification-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Certification</title>
+                    <use href="#program-card-certification"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Certification</div>
+                    <small>
+                      <code>#program-card-certification</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-child-care-value" tabindex="-1" value="#program-card-child-care" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-child-care-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Child Care</title>
+                    <use href="#program-card-child-care"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Child Care</div>
+                    <small>
+                      <code>#program-card-child-care</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-education-value" tabindex="-1" value="#program-card-education" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-education-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Education</title>
+                    <use href="#program-card-education"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Education</div>
+                    <small>
+                      <code>#program-card-education</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-english-math-value" tabindex="-1" value="#program-card-english-math" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-english-math-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>English &amp; Math</title>
+                    <use href="#program-card-english-math"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">English &amp; Math</div>
+                    <small>
+                      <code>#program-card-english-math</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-enrichment-value" tabindex="-1" value="#program-card-enrichment" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-enrichment-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Enrichment</title>
+                    <use href="#program-card-enrichment"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Enrichment</div>
+                    <small>
+                      <code>#program-card-enrichment</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-family-services-value" tabindex="-1" value="#program-card-family-services" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-family-services-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Family Services</title>
+                    <use href="#program-card-family-services"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Family Services</div>
+                    <small>
+                      <code>#program-card-family-services</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-food-value" tabindex="-1" value="#program-card-food" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-food-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Food</title>
+                    <use href="#program-card-food"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Food</div>
+                    <small>
+                      <code>#program-card-food</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-health-value" tabindex="-1" value="#program-card-health" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-health-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Health</title>
+                    <use href="#program-card-health"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Health</div>
+                    <small>
+                      <code>#program-card-health</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-housing-value" tabindex="-1" value="#program-card-housing" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-housing-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Housing</title>
+                    <use href="#program-card-housing"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Housing</div>
+                    <small>
+                      <code>#program-card-housing</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-identification-value" tabindex="-1" value="#program-card-identification" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-identification-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Identification</title>
+                    <use href="#program-card-identification"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Identification</div>
+                    <small>
+                      <code>#program-card-identification</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-people-disabilities-value" tabindex="-1" value="#program-card-people-disabilities" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-people-disabilities-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>People with Disabilities</title>
+                    <use href="#program-card-people-disabilities"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">People with Disabilities</div>
+                    <small>
+                      <code>#program-card-people-disabilities</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+              <li class="m-0 aspect-square relative">
+                <input class="sr-only" data-copy-target="copy-program-card-work-value" tabindex="-1" value="#program-card-work" />
+                <button aria-label="Copy icon ID to clipboard" aria-pressed="false" class="material no-underline absolute top-0 left-0 w-full h-full select-text" data-copy="copy-program-card-work-value" data-js="copy" title="Copy icon ID to clipboard">
+                  <svg class="m-0 mb-1 icon-8 icon-8 fill-icon-tone-1 text-icon-tone-2" role="img">
+                    <title>Work</title>
+                    <use href="#program-card-work"></use>
+                  </svg>
+                  <svg aria-hidden="true" class="absolute m-2 top-0 right-0 icon-ui">
+                    <use data-js-copy="icon" href="#lucide-copy"></use>
+                  </svg>
+                  <div class="select-text">
+                    <div class="mb-1">Work</div>
+                    <small>
+                      <code>#program-card-work</code>
+                    </small>
+                  </div>
+                </button>
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="user-interface-ui-icons">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#user-interface-ui-icons">
+                <svg class="icon-ui" role="img">
+                  <title>User Interface (UI) Icons Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>User Interface (UI) Icons
+            </h4>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="user-interface-ui-icons-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <svg class="icon-ui" role="img">
+              <title>User Interface (UI) icon example</title>
+              <use href="#lucide-feather"></use>
+            </svg>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="user-interface-ui-icons-markup">Code</h5>
+            <button aria-controls="user-interface-ui-icons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="user-interface-ui-icons-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;svg class=&quot;icon-ui&quot; role=&quot;img&quot;&gt;
+  &lt;title&gt;User Interface (UI) icon example&lt;/title&gt;
+  &lt;use href=&quot;#lucide-feather&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Opportunity Standard integrates the <a target="_blank" rel="noopener nofollow" href="https://lucide.dev">Lucide open source library</a> for use as <strong>UI icons</strong>. These icons are used throughout applications to provide visual context to <a href="links">Link</a> or <a href="buttons">Button</a> labels and components such as <a href="alerts">Alerts</a>.</p>
+            <hr>
+            <p>The class name <code>icon-ui</code> sets the stroke width and default dimensions for UI icons. The width and height for these icons will match the base font size for each major viewport (<code>1rem</code>). Custom sizing can be achieved using icon size utility classes described below.</p>
+            <hr>
+            <p>When using the Lucide icon SVG sprite included with Opportunity Standard, icon IDs a reprefixed with <code>#lucide-</code> followed by the name of the individual file in the library.</p>
+            <hr>
+            <p>
+              <small>The Lucide icon library is a fork of the <a target="_blank" rel="noopener nofollow" href="https://feathericons.com">Feather icon collection</a>, which was the previous UI icon set used by the Opportunity Standard. Currently, Lucide is more actively maintained and provides an expanded icon set that can be integrated independently into different projects based on React, Vue.js, Angular, Svelte, etc.</small>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="custom-ui-icons">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#custom-ui-icons">
+                <svg class="icon-ui" role="img">
+                  <title>Custom UI Icons Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Custom UI Icons
+            </h4>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="custom-ui-icons-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="grid grid-cols-2 gap-2">
+              <svg class="icon" role="img">
+                <title>Disability accommodation details are available. View this program to learn more.</title>
+                <use href="#nyco-accessibility"></use>
+              </svg>
+              <svg class="icon-ui" role="img">
+                <title>Language access details are available. View this program to learn more.</title>
+                <use href="#nyco-languages"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="custom-ui-icons-markup">Code</h5>
+            <button aria-controls="custom-ui-icons-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="custom-ui-icons-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;grid grid-cols-2 gap-2&quot;&gt;
+  &lt;svg class=&quot;icon&quot; role=&quot;img&quot;&gt;
+    &lt;title&gt;Disability accommodation details are available. View this program to learn more.&lt;/title&gt;
+    &lt;use href=&quot;#nyco-accessibility&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+  &lt;svg class=&quot;icon-ui&quot; role=&quot;img&quot;&gt;
+    &lt;title&gt;Language access details are available. View this program to learn more.&lt;/title&gt;
+    &lt;use href=&quot;#nyco-languages&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The Opportunity Standard includes two custom UI icons which are not available in the <a target="_blank" rel="noopener nofollow" href="https://feathericons.com">Feather icon collection</a>. There are counterparts in the <strong>Lucide open source library</strong> for <a target="_blank" rel="noopener nofollow" href="https://lucide.dev/icon/accessibility?search=accessibility">accessibility</a> and <a target="_blank" rel="noopener nofollow" href="https://lucide.dev/icon/languages?search=languages">languages</a>.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="icon-size-utilities">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#icon-size-utilities">
+                <svg class="icon-ui" role="img">
+                  <title>Icon Size Utilities Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Icon Size Utilities
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>To modify the display size of the icons, use the icon size utilities. The dimensions are multiples of the value of <code>--nyco-grid</code> which is <strong>8px</strong>.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Dimensions (width,height)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>icon-default</code>
+                  </td>
+                  <td>1rem,1rem</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-1</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 1),calc(var(--nyco-grid) * 1)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-2</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 2),calc(var(--nyco-grid) * 2)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-3</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 3),calc(var(--nyco-grid) * 3)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-4</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 4),calc(var(--nyco-grid) * 4)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-5</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 5),calc(var(--nyco-grid) * 5)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-6</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 6),calc(var(--nyco-grid) * 6)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-7</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 7),calc(var(--nyco-grid) * 7)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>icon-8</code>
+                  </td>
+                  <td>calc(var(--nyco-grid) * 8),calc(var(--nyco-grid) * 8)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <div class="layout-content page-max">
+        <div class="wrap mb-4">
+          <nav class="grid tablet:grid-cols-2 gap-3">
+            <a class="btn" href="https://nycopportunity.github.io/standardinstallation#svgs">
+              <span>See related, "SVGs Installation"</span>
+            </a>
+            <a class="btn-secondary" href="https://nycopportunity.github.io/standardinputs">
+              <span>Next, "Inputs"</span>
+              <svg aria-hidden="true" class="icon-ui rtl:flip">
+                <use href="#lucide-arrow-right"></use>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-8903475903541" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-8903475903541">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-33" rel="noopener nofollow" target="_blank" title="v0.0.0-33">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-8903475903541" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-8903475903541">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-8903475903541" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-8903475903541">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-8903475903541" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-8903475903541">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-8903475903541" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-8903475903541">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.attribution();
+    Standard.codeHighlight();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    Standard.menu();
+    Standard.newsletter();
+    Standard.newsletterForm();
+    Standard.setHeightProperties();
+    // Standard.search();
+    Standard.themes();
+    Standard.toggle();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+</body>
+
+</html>
