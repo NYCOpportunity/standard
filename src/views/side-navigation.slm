@@ -1,0 +1,26 @@
+- this.title = 'Side Navigation'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/components/side-navigation/side-navigation', {title: false})
+
+  = mixin('section', '/components/side-navigation/side-navigation-unordered', {title: 'Unordered Side Navigation'})
+
+  = mixin('pagination', {related: {label: 'Active Navigation', href: 'active-navigation'}, next: {label: 'Utility', href: 'utility'}})

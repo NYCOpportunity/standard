@@ -1,0 +1,3 @@
+The **Disclaimer Toggle** shows or hides the disclaimer based on the visibility of another element on the page such as a form for sharing contact information (see the [Share Form](share-form)). It uses the `aria-describedby` attribute on the toggling button to find the disclaimer and reveal it.
+
+When the viewport is less than `{{ this.tokens.screen.desktop }}` wide the browser will scroll the area into view. This is to ensure that users see the disclaimer in smaller viewports.

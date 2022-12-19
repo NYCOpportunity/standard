@@ -1,0 +1,47 @@
+div class='layout-map desktop:layout-sidebar bg-scale-2'
+  div class='layout-map__sidebar p-2'
+    div class='c-question mb-2' id='62777f6b2c6f9'
+      label class='c-question__label' for='question-62777f6b2c6f9' Enter an address or zip code
+
+      div class='c-question__container'
+        div class='input'
+          input class='input' id='question-62777f6b2c6f9' name='question["62777f6b2c6f9"]' type='text'
+
+    ul class='list-none p-0 m-0'
+      li
+        article class='c-card c-card-transparent p-3 desktop:p-2 bg-scale-1'
+          header class='c-card__header pb-2'
+            svg class='c-card__icon icon-ui icon-3 mie-1 text-primary' role='img'
+              title Government Office
+              use href='#lucide-landmark'
+
+            span
+              a class='c-card__header-link'  target='_blank' rel='noopener' href='https://www.nyc.gov/site/hra/locations/job-locations-and-service-centers.page'
+                h3 class='c-card__title text-h5'
+                  span class='c-card__underline' Clinton Hill SNAP Center / Job Center
+
+          div class='c-card__body pt-2'
+            ul class='c-card__features mb-0'
+              li
+                svg class='icon-ui c-card__feature-icon' role='img'
+                  title Get help with
+                  use href='#lucide-heart-handshake'
+
+                | Supplemental Nutrition Assistance Program (SNAP)
+
+              li
+                svg class='icon-ui c-card__feature-icon' role='img'
+                  title Address
+                  use href='#lucide-map-pin'
+
+                | 495 Clermont Avenue, Brooklyn, NY 11238
+
+            a class='c-card__cta desktop:hidden' target='_blank' rel='noopener' href='https://www.nyc.gov/site/hra/locations/job-locations-and-service-centers.page'
+              span
+                | Learn more
+                span class='sr-only'&nbsp;more about <span>Clinton Hill SNAP Center / Job Center</span>
+
+              svg aria-hidden='true' class='icon-ui rtl:flip'
+                use href='#lucide-external-link'
+
+  iframe class='layout-map__map' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48394.37658769109!2d-73.98928515241421!3d40.70373758543211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba520bf8555%3A0xa07e6b91f20b035b!2sNYC%20Human%20Resources%20Administration%20Job%20Centers!5e0!3m2!1sen!2sus!4v1671221565098!5m2!1sen!2sus' style='border: 0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'

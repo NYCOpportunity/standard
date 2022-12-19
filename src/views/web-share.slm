@@ -28,6 +28,4 @@
 
   = mixin('section', '/components/web-share/readme', {title: 'Usage', markup: false, demo: false})
 
-= content('script')
-  / javascript:
-  /   patterns.webShare();
+  = mixin('pagination', {related: {label: 'Share Form', href: 'share-form'}, next: {label: 'Application Header', href: 'application-header'}})

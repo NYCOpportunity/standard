@@ -1,0 +1,37 @@
+/
+/ Nearby Stops
+/
+
+div
+  p
+    | Stops near
+    br
+    b 2 MetroTech Center, Brooklyn, NY 11201
+
+  ul class='c-nearby-stops' data-js='nearby-stops' data-nearby-stops-location='[40.693364, -73.9857147]' data-nearby-stops-amount='3' data-nearby-stops-endpoint='data/kk4q-3rt2.json'
+    li class='c-nearby-stops__stop'
+      span class='c-nearby-stops__subway bg-eighth-avenue' A
+      span class='c-nearby-stops__subway bg-eighth-avenue' C
+      span class='c-nearby-stops__subway bg-eighth-avenue' E
+      span class='c-nearby-stops__subway bg-sixth-avenue' B
+      span class='c-nearby-stops__subway bg-sixth-avenue' D
+      span class='c-nearby-stops__subway bg-sixth-avenue' F
+      span class='c-nearby-stops__subway bg-sixth-avenue' M
+      span class='c-nearby-stops__subway bg-crosstown' G
+      span class='c-nearby-stops__subway bg-canarsie' L
+      span class='c-nearby-stops__subway bg-nassau' J
+      span class='c-nearby-stops__subway bg-nassau' Z
+      span class='c-nearby-stops__subway bg-broadway' N
+      span class='c-nearby-stops__subway bg-broadway' Q
+      span class='c-nearby-stops__subway bg-broadway' R
+      span class='c-nearby-stops__subway bg-broadway' W
+      span class='c-nearby-stops__subway bg-broadway-seventh-avenue' 1
+      span class='c-nearby-stops__subway bg-broadway-seventh-avenue' 2
+      span class='c-nearby-stops__subway bg-broadway-seventh-avenue' 3
+      span class='c-nearby-stops__subway bg-lexington-avenue' 4
+      span class='c-nearby-stops__subway bg-lexington-avenue' 5
+      span class='c-nearby-stops__subway bg-lexington-avenue' 6
+      span class='c-nearby-stops__subway-express border-lexington-avenue' 6<span class='sr-only'> Express</span>
+      span class='c-nearby-stops__subway bg-flushing' 7
+      span class='c-nearby-stops__subway-express border-flushing' 7<span class='sr-only'> Express</span>
+      span class='c-nearby-stops__subway bg-shuttles' S

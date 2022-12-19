@@ -21,3 +21,5 @@
   = mixin('section', '/components/active-navigation/active-navigation', {title: false})
 
   = mixin('section', '/components/active-navigation/readme', {title: 'Usage', markup: false, demo: false})
+
+  = mixin('pagination', {related: {label: 'Side Navigation', href: 'side-navigation'}, next: {label: 'Alert', href: 'alert'}})

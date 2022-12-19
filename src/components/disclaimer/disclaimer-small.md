@@ -1,0 +1,1 @@
+The **Small Disclaimer** is a more compact for fitting into more crowded areas.

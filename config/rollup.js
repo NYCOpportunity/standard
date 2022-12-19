@@ -33,7 +33,11 @@ let plugins = [
   replace({
     preventAssignment: true,
     values: {
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'SCREEN_DESKTOP': 960,
+      'SCREEN_TABLET': 768,
+      'SCREEN_MOBILE': 480,
+      'SCREEM_SM_MOBILE': 400
     }
   }),
   nodeResolve.nodeResolve({

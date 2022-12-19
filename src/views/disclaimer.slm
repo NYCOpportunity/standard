@@ -1,0 +1,30 @@
+- this.title = 'Disclaimer'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/components/disclaimer/disclaimer', {title: false})
+
+  = mixin('section', '/components/disclaimer/disclaimer-small', {title: 'Small Disclaimer'})
+
+  = mixin('section', '/components/disclaimer/disclaimer-toggle', {title: 'Disclaimer Toggle'})
+
+  = mixin('section', '/components/disclaimer/readme', {title: 'Usage', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Alert', href: 'alert'}, next: {label: 'Dropdown', href: 'dropdown'}})

@@ -85,8 +85,12 @@ nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class=
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='active-navigation' Active Navigation
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='alert' Alert
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='card' Card
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='disclaimer' Disclaimer
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='dropdown' Dropdown
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='nearby-stops' Nearby Stops
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='question' Question
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='share-form' Share Form
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='side-navigation' Side Navigation
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='utility' Utility
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='web-share' Web Share
 
@@ -102,6 +106,7 @@ nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navigation' Navigation
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='newsletter' Newsletter
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='search' Search
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='step-by-step' Step by Step
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
 
 nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'

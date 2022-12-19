@@ -1,0 +1,26 @@
+- this.title = 'Step by Step'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/objects/step-by-step/step-by-step', {title: false})
+
+  = mixin('section', '/objects/step-by-step/readme', {title: 'Usage', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Web Share', href: 'web-share'}, next: {label: 'Side Navigation', href: 'side-navigation'}})

@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 0.0.0-18,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-18/dist/",
+  version: 0.0.0-19,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v0.0.0-19/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -98,7 +98,7 @@ $tokens:(
     h5: normal,
     h6: normal,
     p: 1.6,
-    small: normal,
+    small: 1.4,
     button: normal,
     tables: 1.6,
     option: normal,
@@ -176,6 +176,7 @@ $tokens:(
     brand: var(--nyco-brand),
     alt: var(--nyco-alt),
     em: var(--nyco-em),
+    error: var(--nyco-error),
     primary: var(--nyco-primary),
     secondary: var(--nyco-secondary),
     tertiary: var(--nyco-tertiary),
@@ -310,6 +311,9 @@ $tokens:(
       card: (
         header: var(--nyco-scale-3),
         body: var(--nyco-scale-4)
+      ),
+      disclaimer: (
+        body: var(--nyco-scale-1)
       ),
       accordion: (
         header: var(--nyco-scale-2),
@@ -454,6 +458,9 @@ $tokens:(
         header: var(--nyco-scale-2),
         body: var(--nyco-scale-0)
       ),
+      disclaimer: (
+        body: var(--nyco-scale-1)
+      ),
       accordion: (
         header: var(--nyco-scale-3),
         body: var(--nyco-scale-0)
@@ -492,6 +499,11 @@ $tokens:(
     content-width: calc(var(--nyco-grid) * 112),
     site-max-width: calc(var(--nyco-grid) * 180),
     site-min-width: calc(var(--nyco-grid) * 40),
+    sidebar-width: 20rem,
+    sidebar-width-small: 12rem,
+    map-container-height: 90vh,
+    map-height: 50vh,
+    topbar-height: calc(var(--nyco-grid) * 11),
     scroll-peek-column-width: 88%,
     navigation-logo: calc(var(--nyco-grid) * 16),
     feedback-height: calc(var(--nyco-grid) * 12.5),
@@ -514,7 +526,7 @@ $tokens:(
   animate: (
     ease-in: cubic-bezier(0.755, 0.05, 0.855, 0.06),
     ease-out: cubic-bezier(0.23, 1, 0.32, 1),
-    duration: 0.25s,
+    duration: 1s,
     timing-function: cubic-bezier(0.23, 1, 0.32, 1)
   ),
   borderWidth: (

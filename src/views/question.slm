@@ -20,7 +20,7 @@
   = mixin('content-header')
 
   form id='question-demo'
-    - question = {type: 'email', label: 'What is your email?', description: 'We can send you a link to this page to help you get back to it when you’re ready.'}
+    - question = {type: 'email', label: 'What is your email?', description: 'We can send you a link to this page to help you get back to it when you\'re ready.'}
     = mixin('section', '/components/question/question')
 
     = mixin('section', '/components/question/question-options-radio', {title: 'Option Question, Radio'})
@@ -47,6 +47,8 @@
     = mixin('section', '/components/question/question', {title: 'Single Field Question', text: false})
 
   = mixin('section', '/components/question/readme', {title: 'Validation', markup: false, demo: false})
+
+  = mixin('pagination', {related: {label: 'Forms', href: 'forms'}, next: {label: 'Share Form', href: 'share-form'}})
 
 = content('script');
   javascript:

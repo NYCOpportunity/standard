@@ -3,16 +3,18 @@
 / Defaults
 - this.question = {}
 - this.question.id = this.createId()
-- this.question.type = 'text'
 - this.question.label = 'Will you please fill out this required question?'
 - this.question.description = 'Please answer to the best of your ability.'
 - this.question.for = `question-${this.question.id}`
-- this.question.name = `question['${this.question.id}']`
 - this.question.required = false
-- this.question.pattern = false
 - this.question.tabindex = false
-- this.question.ariaHidden = false
-- this.question.submit = false
+- this.question.button = false
+
+- this.question.input = {}
+- this.question.input.type = 'text'
+- this.question.input.name = `question['${this.question.id}']`
+- this.question.input.pattern = false
+- this.question.input.ariaHidden = false
 
 / Inherit overrides
 - if (typeof question !== 'undefined')
@@ -20,31 +22,36 @@
   - this.question.value = (question.value) ? question.value : this.createSlug(this.question.label)
 
 div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
-  /! { @for  Should match the id of the input }
-  label class='c-question__label' for='${this.question.for}'
+  /! { @for       Should match the id of the input }
+  /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+  label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
     = this.question.label
+
+    - if this.question.required
+      span class='text-error'
+        | &nbsp;*
 
   - if (this.question.description)
     p = this.question.description
 
   div class='c-question__container'
-    - input = this.question
-    / - input.name = this.question.name
+    - input = {}
+    - input = Object.assign(input, this.question.input)
+    - input.required = this.question.required
+    - input.tabindex = this.question.tabindex
     - input.id = this.question.for
-    - delete input.class
-    - delete input.ariaHidden
-    - type = (['text', 'email'].includes(this.question.type)) ? '' : `-${this.question.type}`;
 
     - if this.question.button
       div class='c-question__input'
-        = partial(`/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs${type}.slm`);
+        = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs.slm');
 
         - if this.question.button
           div class='c-question__button'
-            button class='btn btn-primary btn-small' type='submit' = this.question.button
+            /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+            button class='btn btn-primary btn-small' type='submit' tabindex=this.question.tabindex = this.question.button
 
     - else
-      = partial(`/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs${type}.slm`);
+      = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs.slm');
 
 / - if (typeof question !== 'undefined')
   / - delete question

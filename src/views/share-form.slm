@@ -1,0 +1,26 @@
+- this.title = 'Share Form'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/components/share-form/share-form', {title: false})
+
+  = mixin('section', '/components/share-form/readme', {title: 'Usage', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Web Share', href: 'web-share'}, next: {label: 'Side Navigation', href: 'side-navigation'}})

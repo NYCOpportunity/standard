@@ -1,0 +1,19 @@
+/
+/ Disclaimer
+/
+
+- this.disclaimer = {}
+- this.disclaimer.id = this.createId()
+- this.disclaimer.tabindex = false
+
+- if (typeof disclaimer !== 'undefined')
+  - this.disclaimer = Object.assign(this.disclaimer, disclaimer);
+
+article class='c-disclaimer' role='region' aria-labelledby='aria-lb-disclaimer-${this.disclaimer.id}'
+  h4 class='c-disclaimer__title' id='aria-lb-disclaimer-${this.disclaimer.id}' Disclaimer for public benefit program screening
+
+  p ACCESS NYC offers a screening tool that recommends public benefits programs for you to consider based upon information you provide about your household.
+
+  p To enroll in a benefit, you need to apply through the appropriate administering agency. ACCESS NYC will tell you how to apply for any benefit on this website, but cannot guarantee eligibility. The administering agency will determine final eligibility upon your submission of an application for each program.
+
+  p The information you share for purposes of public benefits screening will be anonymous and can be shared with City agencies to improve access to benefits and programs. To find out more about how the City might use the data you share with ACCESS NYC, visit the <a href='http://www1.nyc.gov/home/terms-of-use.page' target='_blank' rel='noopener'>terms of use for nyc.gov</a>, and <a href='http://www1.nyc.gov/home/privacy-policy.page' target='_blank' rel='noopener'>privacy policy for nyc.gov</a>.

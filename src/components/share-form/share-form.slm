@@ -1,0 +1,21 @@
+/
+/ Share Form
+/
+
+- this.shareForm = {}
+- this.shareForm.describedby = this.createId()
+
+div class='layout-content'
+  div class='wrap'
+    h5 class='mb-1' Come back to it later
+
+    p We can send you a link to this page to help you get back to it when you're ready.
+
+    div class='grid gap-3'
+      = partial('share-form-text.slm')
+
+      = partial('share-form-email.slm')
+
+      div id='aria-db-share-${this.shareForm.describedby}' class='hidden' aria-hidden='true'
+        - disclaimer = {tabindex: '-1'}
+        = partial('/components/disclaimer/disclaimer-small.slm');

@@ -22,3 +22,5 @@
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/navs/navs-inline', {title: 'Inline Nav', pkg: '@nycopportunity/pattern-elements'})
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/navs/navs-block', {title: 'Block Nav', pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('pagination', {related: {label: 'Breadcrumbs', href: 'breadcrumbs'}, next: {label: 'Options', href: 'options'}})

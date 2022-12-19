@@ -1,0 +1,1 @@
+The **Disclaimer** contains import legal information for the user to read. It is similar to an [Alert](alert), however, it does not interrupt a user's normal workflow. Disclaimers use the `role="region"` and `aria-label` or `aria-labelledby` attribute to signify to users that they will likely want to navigate to the section easily.

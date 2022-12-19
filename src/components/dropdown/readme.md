@@ -1,10 +1,8 @@
 <!-- Headers start with h5 ##### -->
 
-##### Usage
+##### Global Script
 
 The Dropdown Component uses JavaScript for toggling and accessibility.
-
-###### Global Script
 
 ```html
 <script src="{{ this.package.name }}/{{ this.global.dist }}/{{ this.global.entry.scripts }}"></script>
@@ -16,7 +14,7 @@ The Dropdown Component uses JavaScript for toggling and accessibility.
 </script>
 ```
 
-###### Module Import
+##### Module Import
 
 For module imports, import the Dropdown module from the source.
 

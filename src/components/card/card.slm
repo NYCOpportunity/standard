@@ -86,9 +86,6 @@ article class='c-card ${this.card.class}'
 
     - if this.card.cta
       a href='${this.baseUrl}${this.card.url}' class='c-card__cta'
-        svg class='icon-ui rtl:flip' aria-hidden='true'
-          use href='#lucide-arrow-left'
-
         span
           | ${this.card.cta}&nbsp;
           span class='sr-only'

@@ -1,0 +1,100 @@
+- this.stepByStep = {}
+- this.stepByStep.id = this.createId()
+
+/! { @data-js  "step-by-step" instantiates this element as a Step by Step }
+section class='tablet:layout-sidebar-small desktop:layout-sidebar' data-js='step-by-step'
+  aside class='mb-2'
+    div class='wrap py-1 tablet:pie-0'
+      - sideNav = {items: [], label: 'On this page'}
+      - sideNav.items.push({label: 'How it works', href: '#how-it-works', active: true})
+      - sideNav.items.push({label: 'Determine your eligibility', href: '#determine-your-eligibility', active: true})
+      - sideNav.items.push({label: 'What you need to include', href: '#what-you-need-to-include', active: true})
+      - sideNav.items.push({label: 'How to apply', href: '#how-to-apply', active: true})
+
+      = partial('/components/side-navigation/side-navigation.slm')
+
+  article class='w-full'
+    /! { @id           The id of the step region is targeted by the @href attribute of the toggling element }
+    /! { @data-step    Indicates this as a step region. The value should match the value of @data-step-go-to on the toggling element }
+    /! { @aria-hidden  "false" reveals the step region content. It will be toggled to "true" when the step is hidden }
+    /! { @class        "active" indicates the step region is active. This class will be toggled to "hidden" when the step isn't active. "hidden:overflow" provides an alternative hiding mechanism using the overflow property as opposed to the display property to ensure elements within the region display correctly. "print:active" will show the the region when th page is printed }
+    section#how-it-works data-step='how-it-works' class='active hidden:overflow print:active' aria-hidden='false'
+      div class='wrap py-1'
+        header
+          /! { @data-step-by-step  "focus" indicates this element will receive focus when a user selects an anchor target }
+          h5 data-step-by-step='focus' 1. How it Works
+          span
+
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Justo laoreet sit amet cursus sit amet dictum sit. Eget nulla facilisi etiam dignissim diam. Tempor id eu nisl nunc mi. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Et pharetra pharetra massa massa ultricies. Facilisis magna etiam tempor orci eu lobortis elementum. Massa massa ultricies mi quis hendrerit dolor magna. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Urna et pharetra pharetra massa massa ultricies mi. Orci sagittis eu volutpat odio facilisis mauris sit amet. Cras semper auctor neque vitae tempus. Magna fermentum iaculis eu non diam phasellus vestibulum. Imperdiet sed euismod nisi porta lorem. Facilisi etiam dignissim diam quis. Aliquam id diam maecenas ultricies mi. Nisl condimentum id venenatis a. Congue nisi vitae suscipit tellus.
+
+        p
+          /! { @data-step-go-to  Indicates this a toggling element for jumping to and revealing a step. The value should match the step region's @data-step attribute }
+          /! { @href             Targets the ID of the step region to toggle }
+          a data-step-go-to='determine-your-eligibility' class='btn btn-secondary' href='#determine-your-eligibility'
+            span 2. Determine Your Eligibility
+
+            /! { @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }
+            /! { @aria-hidden  "true" removes this non-critical icon from screen reader view }
+            svg class='icon-ui rtl:flip' aria-hidden='true'
+              use href='#lucide-arrow-right'
+
+    /! { @id           The id of the step region is targeted by the @href attribute of the toggling element }
+    /! { @data-step    Indicates this as a step region. The value should match the value of @data-step-go-to on the toggling element }
+    /! { @aria-hidden  "false" reveals the step region content. It will be toggled to "true" when the step is hidden }
+    /! { @class        "active" indicates the step region is active. This class will be toggled to "hidden" when the step isn't active. "hidden:overflow" provides an alternative hiding mechanism using the overflow property as opposed to the display property to ensure elements within the region display correctly. "print:active" will show the the region when th page is printed }
+    section#determine-your-eligibility data-step='determine-your-eligibility' class='active hidden:overflow print:active' aria-hidden='false'
+      div class='wrap py-1'
+        header
+          /! { @data-step-by-step  "focus" indicates this element will receive focus when a user selects an anchor target }
+          h5 data-step-by-step='focus' 2. Determine your eligibility
+          span
+
+        p Felis donec et odio pellentesque. A erat nam at lectus urna duis convallis convallis. Mi sit amet mauris commodo quis imperdiet. Eget egestas purus viverra accumsan in nisl. Viverra justo nec ultrices dui sapien eget mi proin. Tortor vitae purus faucibus ornare suspendisse sed. Nunc sed blandit libero volutpat sed cras. Nunc scelerisque viverra mauris in aliquam sem fringilla. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Massa sed elementum tempus egestas sed sed risus pretium quam. Dignissim enim sit amet venenatis urna cursus eget nunc. Odio euismod lacinia at quis. Massa id neque aliquam vestibulum morbi blandit.
+
+        p
+          /! { @data-step-go-to  Indicates this a toggling element for jumping to and revealing a step. The value should match the step region's @data-step attribute }
+          /! { @href             Targets the ID of the step region to toggle }
+          a data-step-go-to='what-you-need-to-include' class='btn btn-secondary' href='#what-you-need-to-include'
+            span 3. What you need to include
+
+            /! { @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }
+            /! { @aria-hidden  "true" removes this non-critical icon from screen reader view }
+            svg class='icon-ui rtl:flip' aria-hidden='true'
+              use href='#lucide-arrow-right'
+
+    /! { @id           The id of the step region is targeted by the @href attribute of the toggling element }
+    /! { @data-step    Indicates this as a step region. The value should match the value of @data-step-go-to on the toggling element }
+    /! { @aria-hidden  "false" reveals the step region content. It will be toggled to "true" when the step is hidden }
+    /! { @class        "active" indicates the step region is active. This class will be toggled to "hidden" when the step isn't active. "hidden:overflow" provides an alternative hiding mechanism using the overflow property as opposed to the display property to ensure elements within the region display correctly. "print:active" will show the the region when th page is printed }
+    section#what-you-need-to-include data-step='what-you-need-to-include' class='active hidden:overflow print:active' aria-hidden='false'
+      div class='wrap py-1'
+        header
+          /! { @data-step-by-step  "focus" indicates this element will receive focus when a user selects an anchor target }
+          h5 data-step-by-step='focus' 3. What you need to include
+          span
+
+        p Nisl suscipit adipiscing bibendum est ultricies. Aliquam malesuada bibendum arcu vitae elementum curabitur. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Purus in massa tempor nec feugiat nisl pretium. Egestas pretium aenean pharetra magna ac. Amet purus gravida quis blandit turpis cursus in. Quis ipsum suspendisse ultrices gravida. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Tellus molestie nunc non blandit massa enim nec dui nunc. Urna porttitor rhoncus dolor purus non enim praesent. A lacus vestibulum sed arcu. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Nisl tincidunt eget nullam non nisi est. Diam maecenas sed enim ut sem viverra aliquet eget sit.
+
+        p
+          /! { @data-step-go-to  Indicates this a toggling element for jumping to and revealing a step. The value should match the step region's @data-step attribute }
+          /! { @href             Targets the ID of the step region to toggle }
+          a data-step-go-to='how-to-apply' class='btn btn-secondary' href='#how-to-apply'
+            span 4. How to apply
+
+            /! { @class        "rtl:flip" changes the orientation of the chevron icon based on the reading direction of the page }
+            /! { @aria-hidden  "true" removes this non-critical icon from screen reader view }
+            svg class='icon-ui rtl:flip' aria-hidden='true'
+              use href='#lucide-arrow-right'
+
+    /! { @id           The id of the step region is targeted by the @href attribute of the toggling element }
+    /! { @data-step    Indicates this as a step region. The value should match the value of @data-step-go-to on the toggling element }
+    /! { @aria-hidden  "false" reveals the step region content. It will be toggled to "true" when the step is hidden }
+    /! { @class        "active" indicates the step region is active. This class will be toggled to "hidden" when the step isn't active. "hidden:overflow" provides an alternative hiding mechanism using the overflow property as opposed to the display property to ensure elements within the region display correctly. "print:active" will show the the region when th page is printed }
+    section#how-to-apply data-step='how-to-apply' class='active hidden:overflow print:active' aria-hidden='false'
+      div class='wrap py-1'
+        header
+          /! { @data-step-by-step  "focus" indicates this element will receive focus when a user selects an anchor target }
+          h5 data-step-by-step='focus' 4. How to apply
+          span
+
+        p Proin nibh nisl condimentum id venenatis a condimentum vitae. Nibh nisl condimentum id venenatis. Facilisis volutpat est velit egestas dui id ornare. Turpis in eu mi bibendum. Felis bibendum ut tristique et egestas quis. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Consectetur lorem donec massa sapien faucibus. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Amet nulla facilisi morbi tempus iaculis urna id. Sit amet nisl purus in mollis nunc. Accumsan tortor posuere ac ut. Nibh cras pulvinar mattis nunc sed.

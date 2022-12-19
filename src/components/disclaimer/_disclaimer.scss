@@ -1,0 +1,69 @@
+/**
+ * Disclaimer
+ */
+
+// Dependencies
+@use 'config/typography';
+@use 'config/material';
+@use 'config/media';
+
+// Declarations
+.c-disclaimer, [class*='c-disclaimer-'] {
+  @include material.border;
+
+  background-color: var(--nyco-disclaimer-body);
+
+  padding: calc(var(--nyco-grid) * 3);
+
+  @include media.screen-and-min-width('tablet') {
+    padding: calc(var(--nyco-grid) * 4);
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    padding: calc(var(--nyco-grid) * 5);
+  }
+
+  > p {
+    @include typography.set('small')
+  }
+}
+
+.c-disclaimer__title {
+  @include typography.set('h4');
+}
+
+.c-disclaimer-small {
+  padding: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    padding: calc(var(--nyco-grid) * 3);
+  }
+
+  @include media.screen-and-min-width('desktop') {
+    padding: calc(var(--nyco-grid) * 3);
+  }
+}
+
+.c-disclaimer-small .c-disclaimer__title {
+  @include typography.set('h5');
+}
+
+.c-disclaimer__icon {
+  width: calc(var(--nyco-grid) * 3);
+  height: calc(var(--nyco-grid) * 3)
+}
+
+.c-disclaimer__icon--pre {
+  float: start;
+  margin-inline-end: var(--nyco-grid);
+  position: relative;
+  bottom: -3px
+}
+
+// .c-disclaimer-instruction {
+//   @include typography.set('small');
+// }
+
+// .c-disclaimer-acknowledgment {
+//   margin-bottom: calc(var(--nyco-grid) * 3);
+// }

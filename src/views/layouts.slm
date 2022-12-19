@@ -29,8 +29,10 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-sidebar-small', {title: 'Small Sidebar Layout', pkg: '@nycopportunity/pattern-elements'});
 
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-map', {title: 'Map Layout', pkg: '@nycopportunity/pattern-elements'});
+
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-topbar', {title: 'Topbar Layout', pkg: '@nycopportunity/pattern-elements'});
 
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-map', {title: 'Map', pkg: '@nycopportunity/pattern-elements'});
+  = mixin('section', '/elements/layouts/layouts-columns', {title: 'Column Layouts', src: false});
 
-  / = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/layouts/layouts-figma', {title: 'Figma Layouts, Columns, and Spacing', pkg: '@nycopportunity/pattern-elements'});
+  = mixin('pagination', {related: {label: 'Tailwindcss', href: 'tailwindcss'}, next: {label: 'Links', href: 'links'}})

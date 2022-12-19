@@ -1,0 +1,9 @@
+- sideNav = {label: 'On this page', items: [], ordered: false}
+- sideNav.items.push({label: 'Training Sessions & Events', href: '#', active: false})
+- sideNav.items.push({label: 'Promotional Materials', href: '#', active: false})
+- sideNav.items.push({label: 'Newsletter', href: '#', active: false})
+- sideNav.items.push({label: 'Link to ACCESS NYC', href: '#', active: false})
+
+= partial('side-navigation.slm');
+
+- sideNav = {}

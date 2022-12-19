@@ -24,3 +24,5 @@
 
   - option = {type: 'radio', label: 'Radio Option'}
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/options/options', {title: 'Radio Option', text: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Selects', href: 'selects'}})

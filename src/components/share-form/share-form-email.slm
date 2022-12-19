@@ -1,0 +1,39 @@
+- this.shareFormEmail = {}
+- this.shareFormEmail.id = this.createId()
+
+/! { @data-js  "share-form" designates this element as a share form }
+div class='c-share-form' data-js='share-form'
+  /! { @data-js                        "share-form-toggle" designates this element as a toggling element while "disclaimer" designates it as a disclaimer toggling element }
+  /! { @aria-controls                  Designates the toggling target by its ID }
+  /! { @aria-describedby               Designates the toggling elements disclaimer by its ID }
+  /! { @data-disclaimer-scroll-offset  Sets the amount of pixels to scroll to above the toggling element when the viewport is less than desktop width }
+  button class='btn btn-secondary c-share-form__toggle' data-disclaimer-scroll-offset='16' data-js='share-form-control disclaimer' aria-controls='aria-c-share-${this.shareFormEmail.id}' aria-expanded='false' aria-describedby='aria-db-share-${this.shareForm.describedby}' Email
+
+  /! { @action       The endpoint for the share form to post data to }
+  /! { @aria-hidden  Hides the form from view until the toggle element is clicked }
+  form id='aria-c-share-${this.shareFormEmail.id}' class='c-share-form__form hidden' aria-hidden='true' action='{{ MY_ACTION }}' method='post'
+    /! { Share form data }
+    input type='hidden' name='action' value='email_send'
+    input type='hidden' name='url' value='{{ MY_URL }}' readonly=true
+    input type='hidden' name='hash' value='{{ MY_HASH }}' readonly=true
+    input type='hidden' name='GUID' value='{{ MY_GUID }}' maxlength='13' readonly=true
+
+    div class='c-share-form__fieldset'
+      div class='c-share-form__input'
+        /! { @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }
+        label class='sr-only' for='share-form-input-${this.shareFormEmail.id}' tabindex='-1' Enter your email address
+
+        /! { @data-share-form  "input" designates this element as the main share form input }
+        /! { @tabindex         "-1" hides this potentially focusable element from screen readers while the form is hidden }
+        input id='share-form-input-${this.shareFormEmail.id}' type='email' name='to' placeholder='Email address' required='true' data-share-form='input' tabindex='-1'
+
+      div class='c-share-form__button'
+        /! { @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }
+        button type='submit' class='btn btn-primary btn-small' tabindex='-1' Send
+
+        div class='c-share-form__spinner' data-js='spinner' aria-hidden='true'
+          - spinner = {tabindex: '-1'}
+          = partial(`/../node_modules/@nycopportunity/pattern-elements/src/elements/spinner/spinner.slm`);
+
+        /! { @data-share-form  "message" designates this as the share form message }
+        div class='c-share-form__success' data-share-form='message' aria-hidden='true' Sent!

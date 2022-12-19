@@ -21,12 +21,16 @@ import CodeHighlight from '@nycopportunity/pattern-elements/src/elements/code/co
 // Components
 import Accordion from '../components/accordion/accordion';
 import ActiveNavigation from '../components/active-navigation/active-navigation';
+import Disclaimer from '../components/disclaimer/disclaimer';
+import NearbyStops from '../components/nearby-stops/nearby-stops';
+import ShareForm from '../components/share-form/share-form';
 // import ... from '../components/...';
 
 // Objects
 import Attribution from '@nycopportunity/pattern-attribution/src/attribution';
 import Menu from '@nycopportunity/pattern-menu/src/menu';
-// import Search from '../objects/search/search';
+import Search from '../objects/search/search';
+import StepByStep from '../objects/step-by-step/step-by-step';
 // import ... from '../objects/...';
 
 /** import modules here as they are written. */
@@ -111,6 +115,15 @@ class Main {
   }
 
   /**
+   * An API for the Disclaimer Component
+   *
+   * @return  {Object}  Instance of Disclaimer
+   */
+  disclaimer() {
+    return new Disclaimer();
+  }
+
+  /**
    * An API for the Icons Utility
    *
    * @param   {String}  path  The path of the icon file
@@ -128,6 +141,15 @@ class Main {
    */
   menu() {
     return new Menu();
+  }
+
+  /**
+   * An API for Nearby Stops
+   *
+   * @return  {Object}  Instance of NearbyStops
+   */
+  nearbyStops() {
+    return new NearbyStops();
   }
 
   /**
@@ -216,6 +238,29 @@ class Main {
    */
   search() {
     return new Search();
+  }
+
+  /**
+   * An API for the Share Form
+   */
+  shareForm() {
+    let elements = document.querySelectorAll(ShareForm.selector);
+
+    elements.forEach(element => {
+      new ShareForm(element);
+    });
+  }
+
+  /**
+   * An API for the Step by Step
+   */
+  stepByStep() {
+    /**
+     * Instantiate the Program Guide
+     */
+    (element => {
+      if (element) new StepByStep(element);
+    })(document.querySelector(StepByStep.selector));
   }
 
   /**

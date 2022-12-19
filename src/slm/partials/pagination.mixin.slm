@@ -7,11 +7,17 @@
   div class='layout-content page-max'
     div class='wrap mb-4'
       nav class='grid tablet:grid-cols-2 gap-3'
-        a class='btn' href="${this.baseUrl}${this.nav.related.href}"
-          span See related, "${this.nav.related.label}"
+        - if this.nav.related
+          a class='btn' href="${this.baseUrl}${this.nav.related.href}"
+            span See related, "${this.nav.related.label}"
+        - else
+          span
 
-        a class='btn-secondary' href="${this.baseUrl}${this.nav.next.href}"
-          span Next, "${this.nav.next.label}"
+        - if this.nav.next
+          a class='btn-secondary' href="${this.baseUrl}${this.nav.next.href}"
+            span Next, "${this.nav.next.label}"
 
-          svg aria-hidden='true' class='icon-ui rtl:flip'
-            use href='#lucide-arrow-right'
+            svg aria-hidden='true' class='icon-ui rtl:flip'
+              use href='#lucide-arrow-right'
+        - else
+          span

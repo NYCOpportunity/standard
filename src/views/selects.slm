@@ -21,3 +21,5 @@
 
   - select = {tabindex: false}
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Tables', href: 'tables'}})

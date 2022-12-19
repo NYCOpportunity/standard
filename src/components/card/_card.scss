@@ -50,22 +50,24 @@
   }
 }
 
-.c-card__icon {
+.c-card__icon, svg[class*='c-card__icon'] {
   display: block;
   margin-bottom: calc(var(--nyco-grid) * 1);
   margin-inline-end: calc(var(--nyco-grid) * 2);
   flex: none;
 
-  width: calc(var(--nyco-grid) * 6) !important;
-  height: calc(var(--nyco-grid) * 6) !important;
+  // width: calc(var(--nyco-grid) * 6) !important;
+  // height: calc(var(--nyco-grid) * 6) !important;
+  width: calc(var(--nyco-grid) * 6);
+  height: calc(var(--nyco-grid) * 6);
 
   @include media.screen-and-min-width('mobile') {
     margin-bottom: 0;
   }
 
   @include media.screen-and-min-width('desktop') {
-    width: calc(var(--nyco-grid) * 8) !important;
-    height: calc(var(--nyco-grid) * 8) !important;
+    width: calc(var(--nyco-grid) * 8);
+    height: calc(var(--nyco-grid) * 8);
   }
 }
 

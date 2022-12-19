@@ -43,6 +43,6 @@ div class='w-full'
           div class='pt-utility-anchor' data-active-navigation-observe-item='heading' id='${this.createSlug(item.heading)}'
             div class='pt-utility-anchor sticky top-0 bg-scale-0 pb-2'
               /! { @data-active-navigation-item  "focus" indicates this element will receive focus when a user selects an anchor target }
-              h6 data-active-navigation-item='focus' = item.heading
+              h5 data-active-navigation-item='focus' = item.heading
 
             == item.text

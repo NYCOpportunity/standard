@@ -9,6 +9,7 @@ import Toggle from '@nycopportunity/pttrn-scripts/src/toggle/toggle';
 class Accordion {
   /**
    * @constructor
+   *
    * @return {object} The class
    */
   constructor() {
@@ -22,6 +23,7 @@ class Accordion {
 
 /**
  * The dom selector for the module
+ *
  * @type {String}
  */
 Accordion.selector = '[data-js*="accordion"]';

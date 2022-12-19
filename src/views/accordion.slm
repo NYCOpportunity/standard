@@ -24,6 +24,4 @@
 
   = mixin('section', '/components/accordion/readme', {title: 'Usage', src: false, markup: false, demo: false})
 
-= content('script')
-/   javascript:
-/     patterns.accordion()
+  = mixin('pagination', {related: {label: 'Card', href: 'card'}, next: {label: 'Active Navigation', href: 'active-navigation'}})

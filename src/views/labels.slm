@@ -20,3 +20,5 @@
   = mixin('content-header')
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/labels/labels', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Layouts', href: 'layouts'}})

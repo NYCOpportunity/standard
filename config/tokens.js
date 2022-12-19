@@ -28,6 +28,10 @@ const light = {
     'body': 'var(--nyco-scale-0)'
   },
 
+  'disclaimer': {
+    'body': 'var(--nyco-scale-1)'
+  },
+
   'accordion': {
     'header': 'var(--nyco-scale-3)',
     'body': 'var(--nyco-scale-0)'
@@ -78,6 +82,10 @@ const dark = {
   'card': {
     'header': 'var(--nyco-scale-3)',
     'body': 'var(--nyco-scale-4)'
+  },
+
+  'disclaimer': {
+    'body': 'var(--nyco-scale-1)'
   },
 
   'accordion': {

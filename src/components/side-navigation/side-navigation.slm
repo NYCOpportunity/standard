@@ -1,0 +1,39 @@
+/
+/ Side Navigation
+/
+
+/ Defaults
+- this.sideNav = {}
+- this.sideNav.id = this.createId()
+- this.sideNav.label = 'Side Navigation Example'
+- this.sideNav.items = []
+- this.sideNav.items.push({label: 'How It Works', href: '#how-it-works', active: false})
+- this.sideNav.items.push({label: 'Determine Your Eligibility', href: '#determine-your-eligibility', active: false})
+- this.sideNav.items.push({label: 'What You Need to Include', href: '#what-you-need-to-include', active: false})
+- this.sideNav.items.push({label: 'How to Apply', href: '#how-to-apply', active: false})
+- this.sideNav.ordered = true
+
+/ Inherit overrides
+- if (typeof sideNav !== 'undefined')
+  - this.sideNav = Object.assign(this.sideNav, sideNav);
+
+/! { @class  "print:hidden" will hide this element when it is printed }
+nav class='c-side-navigation print:hidden' aria-label='${this.sideNav.label}'
+  - if this.sideNav.ordered
+    ol
+     - for (let i in this.sideNav.items)
+        - let item = this.sideNav.items[i]
+        li
+          /! { @data-step-go-to  Indicates this a toggling element for jumping to and revealing a step for the "Step by Step" pattern. The value should match the step region's @data-step attribute }
+          /! { @href  Used by the "Step by Step" to target the step region by its ID }
+          a data-step-go-to='${item.href.replace('#', '')}' class='${(item.active) ? 'active' : ''}' href='${item.href}' = item.label
+  - else
+    ul
+      - for (let i in this.sideNav.items)
+        - let item = this.sideNav.items[i]
+        li
+          /! { @data-step-go-to  Indicates this a toggling element for jumping to and revealing a step for the "Step by Step" pattern. The value should match the step region's @data-step attribute }
+          /! { @href  Used by the "Step by Step" to target the step region by its ID }
+          a data-step-go-to='${item.href.replace('#', '')}' class='${(item.active) ? 'active' : ''}' href='${item.href}' = item.label
+
+- this.sideNav = {}
