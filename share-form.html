@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+          <h1 class="font-nyc text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-34" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.0-34</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#lucide-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-f2033781d886f" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-f2033781d886f">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-34" rel="noopener nofollow" target="_blank" title="v0.0.0-34">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-f2033781d886f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-f2033781d886f">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-f2033781d886f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-f2033781d886f">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-f2033781d886f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-f2033781d886f">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-f2033781d886f" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-f2033781d886f">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3 id="page-heading">Share Form</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="share-form">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/main/src/components/share-form" target="_blank">@nycopportunity/standard/src/components/share-form</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="share-form-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap">
+                <h5 class="mb-1">Come back to it later</h5>
+                <p>We can send you a link to this page to help you get back to it when you're ready.</p>
+                <div class="grid gap-3">
+                  <!--{ @data-js  "share-form" designates this element as a share form }-->
+                  <div class="c-share-form w-full" data-js="share-form">
+                    <!--{ @data-js                        "share-form-toggle" designates this element as a toggling element while "disclaimer" designates it as a disclaimer toggling element }-->
+                    <!--{ @aria-controls                  Designates the toggling target by its ID }-->
+                    <!--{ @aria-describedby               Designates the toggling elements disclaimer by its ID }-->
+                    <!--{ @data-disclaimer-scroll-offset  Sets the amount of pixels to scroll to above the toggling element when the viewport is less than desktop width }-->
+                    <button aria-controls="aria-c-share-b57b5126537af" aria-describedby="aria-db-share-a2fea71ec1305" aria-expanded="false" class="btn btn-secondary c-share-form__toggle" data-disclaimer-scroll-offset="16" data-js="share-form-control disclaimer">Text</button>
+                    <!--{ @action       The endpoint for the share form to post data to }-->
+                    <!--{ @aria-hidden  Hides the form from view until the toggle element is clicked }-->
+                    <form action="{{ MY_ACTION }}" aria-hidden="true" class="c-share-form__form hidden" id="aria-c-share-b57b5126537af" method="post">
+                      <!--{ Share form data }-->
+                      <input name="action" type="hidden" value="sms_send" />
+                      <input name="url" readonly="" type="hidden" value="{{ MY_URL }}" />
+                      <input name="hash" readonly="" type="hidden" value="{{ MY_HASH }}" />
+                      <input maxlength="13" name="GUID" readonly="" type="hidden" value="{{ MY_GUID }}" />
+                      <div class="c-share-form__fieldset">
+                        <div class="input-prefix c-share-form__input">
+                          <!--{ @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <label class="sr-only" for="share-form-input-b57b5126537af" tabindex="-1">Enter your phone number</label>
+                          <!--{ @data-share-form  "input" designates this element as the main share form input }-->
+                          <!--{ @tabindex         "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <input data-share-form="input" id="share-form-input-b57b5126537af" name="to" placeholder="Phone number" required="true" tabindex="-1" type="tel" />
+                          <span aria-hidden="true" class="input__prefix">+1</span>
+                        </div>
+                        <div class="c-share-form__button">
+                          <!--{ @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <button class="btn btn-primary btn-small" tabindex="-1" type="submit">Send</button>
+                          <div aria-hidden="true" class="c-share-form__spinner" data-js="spinner">
+                            <svg class="spinner icon-4 text-tertiary" tabindex="-1" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <circle class="spinner__path" cx="12" cy="12" fill="none" r="10"></circle>
+                            </svg>
+                          </div>
+                          <!--{ @data-share-form  "message" designates this as the share form message }-->
+                          <div aria-hidden="true" class="c-share-form__success" data-share-form="message">Sent!</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--{ @data-js  "share-form" designates this element as a share form }-->
+                  <div class="c-share-form" data-js="share-form">
+                    <!--{ @data-js                        "share-form-toggle" designates this element as a toggling element while "disclaimer" designates it as a disclaimer toggling element }-->
+                    <!--{ @aria-controls                  Designates the toggling target by its ID }-->
+                    <!--{ @aria-describedby               Designates the toggling elements disclaimer by its ID }-->
+                    <!--{ @data-disclaimer-scroll-offset  Sets the amount of pixels to scroll to above the toggling element when the viewport is less than desktop width }-->
+                    <button aria-controls="aria-c-share-a04ec76f96757" aria-describedby="aria-db-share-a2fea71ec1305" aria-expanded="false" class="btn btn-secondary c-share-form__toggle" data-disclaimer-scroll-offset="16" data-js="share-form-control disclaimer">Email</button>
+                    <!--{ @action       The endpoint for the share form to post data to }-->
+                    <!--{ @aria-hidden  Hides the form from view until the toggle element is clicked }-->
+                    <form action="{{ MY_ACTION }}" aria-hidden="true" class="c-share-form__form hidden" id="aria-c-share-a04ec76f96757" method="post">
+                      <!--{ Share form data }-->
+                      <input name="action" type="hidden" value="email_send" />
+                      <input name="url" readonly="" type="hidden" value="{{ MY_URL }}" />
+                      <input name="hash" readonly="" type="hidden" value="{{ MY_HASH }}" />
+                      <input maxlength="13" name="GUID" readonly="" type="hidden" value="{{ MY_GUID }}" />
+                      <div class="c-share-form__fieldset">
+                        <div class="c-share-form__input">
+                          <!--{ @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <label class="sr-only" for="share-form-input-a04ec76f96757" tabindex="-1">Enter your email address</label>
+                          <!--{ @data-share-form  "input" designates this element as the main share form input }-->
+                          <!--{ @tabindex         "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <input data-share-form="input" id="share-form-input-a04ec76f96757" name="to" placeholder="Email address" required="true" tabindex="-1" type="email" />
+                        </div>
+                        <div class="c-share-form__button">
+                          <!--{ @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }-->
+                          <button class="btn btn-primary btn-small" tabindex="-1" type="submit">Send</button>
+                          <div aria-hidden="true" class="c-share-form__spinner" data-js="spinner">
+                            <svg class="spinner icon-4 text-tertiary" tabindex="-1" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <circle class="spinner__path" cx="12" cy="12" fill="none" r="10"></circle>
+                            </svg>
+                          </div>
+                          <!--{ @data-share-form  "message" designates this as the share form message }-->
+                          <div aria-hidden="true" class="c-share-form__success" data-share-form="message">Sent!</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div aria-hidden="true" class="hidden" id="aria-db-share-a2fea71ec1305">
+                    <article aria-labelledby="aria-lb-disclaimer-small-9df43d118343d" class="c-disclaimer-small" role="region">
+                      <h4 class="c-disclaimer__title" id="aria-lb-disclaimer-9df43d118343d">Disclaimer for sharing contact information</h4>
+                      <p>By providing your email address or phone number, you agree to be contacted by the City of New York regarding your ACCESS NYC public benefit screening results. Your activity on ACCESS NYC is anonymous, but providing your phone number may identify you and reveal that you used the website. To find out more about how the City might use the data you share with ACCESS NYC, visit the&nbsp;<a href="http://www1.nyc.gov/home/terms-of-use.page" rel="noopener" target="_blank">terms of use for nyc.gov</a>, and&nbsp;<a href="http://www1.nyc.gov/home/privacy-policy.page" rel="noopener" target="_blank">privacy policy for nyc.gov</a>.</a>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="share-form-markup">Code</h5>
+            <button aria-controls="share-form-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="share-form-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;h5 class=&quot;mb-1&quot;&gt;Come back to it later&lt;/h5&gt;
+    &lt;p&gt;We can send you a link to this page to help you get back to it when you're ready.&lt;/p&gt;
+    &lt;div class=&quot;grid gap-3&quot;&gt;
+      &lt;!--{ @data-js  &quot;share-form&quot; designates this element as a share form }--&gt;
+      &lt;div class=&quot;c-share-form w-full&quot; data-js=&quot;share-form&quot;&gt;
+        &lt;!--{ @data-js                        &quot;share-form-toggle&quot; designates this element as a toggling element while &quot;disclaimer&quot; designates it as a disclaimer toggling element }--&gt;
+        &lt;!--{ @aria-controls                  Designates the toggling target by its ID }--&gt;
+        &lt;!--{ @aria-describedby               Designates the toggling elements disclaimer by its ID }--&gt;
+        &lt;!--{ @data-disclaimer-scroll-offset  Sets the amount of pixels to scroll to above the toggling element when the viewport is less than desktop width }--&gt;
+        &lt;button aria-controls=&quot;aria-c-share-1396ee153b0da&quot; aria-describedby=&quot;aria-db-share-84ff59728b7be&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-secondary c-share-form__toggle&quot; data-disclaimer-scroll-offset=&quot;16&quot; data-js=&quot;share-form-control disclaimer&quot;&gt;Text&lt;/button&gt;
+        &lt;!--{ @action       The endpoint for the share form to post data to }--&gt;
+        &lt;!--{ @aria-hidden  Hides the form from view until the toggle element is clicked }--&gt;
+        &lt;form action=&quot;{{ MY_ACTION }}&quot; aria-hidden=&quot;true&quot; class=&quot;c-share-form__form hidden&quot; id=&quot;aria-c-share-1396ee153b0da&quot; method=&quot;post&quot;&gt;
+          &lt;!--{ Share form data }--&gt;
+          &lt;input name=&quot;action&quot; type=&quot;hidden&quot; value=&quot;sms_send&quot; /&gt;
+          &lt;input name=&quot;url&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_URL }}&quot; /&gt;
+          &lt;input name=&quot;hash&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_HASH }}&quot; /&gt;
+          &lt;input maxlength=&quot;13&quot; name=&quot;GUID&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_GUID }}&quot; /&gt;
+          &lt;div class=&quot;c-share-form__fieldset&quot;&gt;
+            &lt;div class=&quot;input-prefix c-share-form__input&quot;&gt;
+              &lt;!--{ @tabindex  &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;label class=&quot;sr-only&quot; for=&quot;share-form-input-1396ee153b0da&quot; tabindex=&quot;-1&quot;&gt;Enter your phone number&lt;/label&gt;
+              &lt;!--{ @data-share-form  &quot;input&quot; designates this element as the main share form input }--&gt;
+              &lt;!--{ @tabindex         &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;input data-share-form=&quot;input&quot; id=&quot;share-form-input-1396ee153b0da&quot; name=&quot;to&quot; placeholder=&quot;Phone number&quot; required=&quot;true&quot; tabindex=&quot;-1&quot; type=&quot;tel&quot; /&gt;
+              &lt;span aria-hidden=&quot;true&quot; class=&quot;input__prefix&quot;&gt;+1&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;c-share-form__button&quot;&gt;
+              &lt;!--{ @tabindex  &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;button class=&quot;btn btn-primary btn-small&quot; tabindex=&quot;-1&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+              &lt;div aria-hidden=&quot;true&quot; class=&quot;c-share-form__spinner&quot; data-js=&quot;spinner&quot;&gt;
+                &lt;svg class=&quot;spinner icon-4 text-tertiary&quot; tabindex=&quot;-1&quot; viewBox=&quot;0 0 24 24&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+                  &lt;circle class=&quot;spinner__path&quot; cx=&quot;12&quot; cy=&quot;12&quot; fill=&quot;none&quot; r=&quot;10&quot;&gt;&lt;/circle&gt;
+                &lt;/svg&gt;
+              &lt;/div&gt;
+              &lt;!--{ @data-share-form  &quot;message&quot; designates this as the share form message }--&gt;
+              &lt;div aria-hidden=&quot;true&quot; class=&quot;c-share-form__success&quot; data-share-form=&quot;message&quot;&gt;Sent!&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;!--{ @data-js  &quot;share-form&quot; designates this element as a share form }--&gt;
+      &lt;div class=&quot;c-share-form&quot; data-js=&quot;share-form&quot;&gt;
+        &lt;!--{ @data-js                        &quot;share-form-toggle&quot; designates this element as a toggling element while &quot;disclaimer&quot; designates it as a disclaimer toggling element }--&gt;
+        &lt;!--{ @aria-controls                  Designates the toggling target by its ID }--&gt;
+        &lt;!--{ @aria-describedby               Designates the toggling elements disclaimer by its ID }--&gt;
+        &lt;!--{ @data-disclaimer-scroll-offset  Sets the amount of pixels to scroll to above the toggling element when the viewport is less than desktop width }--&gt;
+        &lt;button aria-controls=&quot;aria-c-share-7a8fafdbcca61&quot; aria-describedby=&quot;aria-db-share-84ff59728b7be&quot; aria-expanded=&quot;false&quot; class=&quot;btn btn-secondary c-share-form__toggle&quot; data-disclaimer-scroll-offset=&quot;16&quot; data-js=&quot;share-form-control disclaimer&quot;&gt;Email&lt;/button&gt;
+        &lt;!--{ @action       The endpoint for the share form to post data to }--&gt;
+        &lt;!--{ @aria-hidden  Hides the form from view until the toggle element is clicked }--&gt;
+        &lt;form action=&quot;{{ MY_ACTION }}&quot; aria-hidden=&quot;true&quot; class=&quot;c-share-form__form hidden&quot; id=&quot;aria-c-share-7a8fafdbcca61&quot; method=&quot;post&quot;&gt;
+          &lt;!--{ Share form data }--&gt;
+          &lt;input name=&quot;action&quot; type=&quot;hidden&quot; value=&quot;email_send&quot; /&gt;
+          &lt;input name=&quot;url&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_URL }}&quot; /&gt;
+          &lt;input name=&quot;hash&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_HASH }}&quot; /&gt;
+          &lt;input maxlength=&quot;13&quot; name=&quot;GUID&quot; readonly=&quot;&quot; type=&quot;hidden&quot; value=&quot;{{ MY_GUID }}&quot; /&gt;
+          &lt;div class=&quot;c-share-form__fieldset&quot;&gt;
+            &lt;div class=&quot;c-share-form__input&quot;&gt;
+              &lt;!--{ @tabindex  &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;label class=&quot;sr-only&quot; for=&quot;share-form-input-7a8fafdbcca61&quot; tabindex=&quot;-1&quot;&gt;Enter your email address&lt;/label&gt;
+              &lt;!--{ @data-share-form  &quot;input&quot; designates this element as the main share form input }--&gt;
+              &lt;!--{ @tabindex         &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;input data-share-form=&quot;input&quot; id=&quot;share-form-input-7a8fafdbcca61&quot; name=&quot;to&quot; placeholder=&quot;Email address&quot; required=&quot;true&quot; tabindex=&quot;-1&quot; type=&quot;email&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;c-share-form__button&quot;&gt;
+              &lt;!--{ @tabindex  &quot;-1&quot; hides this potentially focusable element from screen readers while the form is hidden }--&gt;
+              &lt;button class=&quot;btn btn-primary btn-small&quot; tabindex=&quot;-1&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+              &lt;div aria-hidden=&quot;true&quot; class=&quot;c-share-form__spinner&quot; data-js=&quot;spinner&quot;&gt;
+                &lt;svg class=&quot;spinner icon-4 text-tertiary&quot; tabindex=&quot;-1&quot; viewBox=&quot;0 0 24 24&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+                  &lt;circle class=&quot;spinner__path&quot; cx=&quot;12&quot; cy=&quot;12&quot; fill=&quot;none&quot; r=&quot;10&quot;&gt;&lt;/circle&gt;
+                &lt;/svg&gt;
+              &lt;/div&gt;
+              &lt;!--{ @data-share-form  &quot;message&quot; designates this as the share form message }--&gt;
+              &lt;div aria-hidden=&quot;true&quot; class=&quot;c-share-form__success&quot; data-share-form=&quot;message&quot;&gt;Sent!&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;div aria-hidden=&quot;true&quot; class=&quot;hidden&quot; id=&quot;aria-db-share-84ff59728b7be&quot;&gt;
+        &lt;article aria-labelledby=&quot;aria-lb-disclaimer-small-4860c242f36e3&quot; class=&quot;c-disclaimer-small&quot; role=&quot;region&quot;&gt;
+          &lt;h4 class=&quot;c-disclaimer__title&quot; id=&quot;aria-lb-disclaimer-4860c242f36e3&quot;&gt;Disclaimer for sharing contact information&lt;/h4&gt;
+          &lt;p&gt;By providing your email address or phone number, you agree to be contacted by the City of New York regarding your ACCESS NYC public benefit screening results. Your activity on ACCESS NYC is anonymous, but providing your phone number may identify you and reveal that you used the website. To find out more about how the City might use the data you share with ACCESS NYC, visit the&amp;nbsp;&lt;a href=&quot;http://www1.nyc.gov/home/terms-of-use.page&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;terms of use for nyc.gov&lt;/a&gt;, and&amp;nbsp;&lt;a href=&quot;http://www1.nyc.gov/home/privacy-policy.page&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;privacy policy for nyc.gov&lt;/a&gt;.&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The <strong>Share Form</strong> enables a user to text or email themselves a link to a web page. It uses JavaScript to post the form data to an endpoint that can pass the data to a email to text messaging service. The <strong>Share Form</strong> also uses the <a href="disclaimer#disclaimer-toggle">Disclaimer Toggle</a> to show or hide disclaimer based on the visibility of either form input. The disclaimer provides informed consent as to how the data submitted in the form may or may not be used.</p>
+            <hr>
+            <p>The <strong>Share Form</strong> exposes text messaging and email sharing directly in the interface. It is useful for sharing timely and important information as well as collecting contact information for outreach.</p>
+            <hr>
+            <p>The <a href="web-share">Web Share</a> form can be used in place of the <strong>Share Form</strong> to enabling users to open a native dialog for sharing URLs on the platform of their choice. The Web Share doesn’t require a backend service for emailing or text messaging. However, information from the Web Share can’t be collected for outreach.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="usage">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#usage">
+                <svg class="icon-ui" role="img">
+                  <title>Usage Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Usage
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <!-- Headers start with h5 ##### -->
+            <h5 id="global-script">Global Script</h5>
+            <p>The <strong>Share Form</strong> requires JavaScript for showing and hiding the form input and disclaimer, for form validation, and submitting the form to an endpoint backend processing. To initialize the <strong>Share Form</strong> and Disclaimer instances from the global script use the following code:</p>
+            <div class="code-block">
+              <pre>&lt;!-- Global Script --&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/nycopportunity/standard@v0.0.0-34/dist/js/default.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var Standard = new Default();
+
+  Standard.disclaimer();
+  Standard.shareForm();
+&lt;/script&gt;</pre>
+            </div>
+            <p>This will attach event listeners for toggling the form and disclaimer open and form validation and submission.</p>
+            <h5 id="module-import">Module Import</h5>
+            <p>For module imports, import the Disclaimer and <strong>Share Form</strong> modules from the source. You must pass a DOM selection of each <strong>Share Form</strong> to a new instance of the class. A selector reference is stored in the class.</p>
+            <div class="code-block">
+              <pre>import Disclaimer from &#39;@nycopportunity/standard/src/components/disclaimer/disclaimer&#39;;
+import ShareForm from &#39;@nycopportunity/standard/src/components/share-form/share-form&#39;;
+
+new Disclaimer();
+
+let elements = document.querySelectorAll(ShareForm.selector);
+
+elements.forEach(element =&gt; {
+  new ShareForm(element);
+});</pre>
+            </div>
+            <h5 id="submit-method">Submit method</h5>
+            <p>When submitted, the script will post the form data to the URL endpoint in the form <code>action</code> attribute. Below is an example of the data submitted by the text message form;</p>
+            <div class="code-block">
+              <pre>{
+  &#39;action&#39;: &#39;sms_send&#39;
+  &#39;url&#39;: &#39;{{ MY_URL }}&#39;
+  &#39;hash&#39;: &#39;{{ MY_HASH }}&#39;
+  &#39;GUID&#39;: &#39;{{ MY_GUID }}&#39;
+  &#39;to&#39;: &#39;{{ PHONE_NUMBER or EMAIL_ADDRESS }}&#39;
+  &#39;lang&#39;: &#39;en&#39;
+}</pre>
+            </div>
+            <p>The body can be modified to meet the needs of the application. The endpoint will need to be set up on the server side to direct the request to the email or SMS service of choice.</p>
+            <hr>
+            <p>
+              <small>
+                <a target="_blank" rel="noopener nofollow" href="https://access.nyc.gov">ACCESS NYC</a> uses the <a target="_blank" rel="noopener" href="https://aws.amazon.com/ses/">Amazon SES</a> service to send emails and the <a target="_blank" rel="noopener nofollow" href="https://www.twilio.com/">Twilio</a> service to send text messages.
+              </small>
+            </p>
+            <h5 id="response">Response</h5>
+            <p>The proxy service should respond with a JSON object to indicate success or failure of the response.</p>
+            <div class="code-block">
+              <pre>{
+  &#39;success&#39;: true
+}</pre>
+            </div>
+            <h5 id="localization">Localization</h5>
+            <p>Strings (and other properties) can be passed in an object <code>{}</code> to the <strong>Share Form</strong> for localization. View the source link at the top of this page for defaults.</p>
+            <div class="code-block">
+              <pre>let element = document.querySelector(ShareForm.selector);
+
+let shareForm = new ShareForm(element);
+
+shareForm.strings = {
+  {{ MY_CUSTOM_STRINGS }}
+};</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="layout-content page-max">
+        <div class="wrap mb-4">
+          <nav class="grid tablet:grid-cols-2 gap-3">
+            <a class="btn" href="https://nycopportunity.github.io/standardweb-share">
+              <span>See related, "Web Share"</span>
+            </a>
+            <a class="btn-secondary" href="https://nycopportunity.github.io/standardside-navigation">
+              <span>Next, "Side Navigation"</span>
+              <svg aria-hidden="true" class="icon-ui rtl:flip">
+                <use href="#lucide-arrow-right"></use>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2022 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-5b0589c2cc421" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-5b0589c2cc421">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.0-34" rel="noopener nofollow" target="_blank" title="v0.0.0-34">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-5b0589c2cc421" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-5b0589c2cc421">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="tables">Tables</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-5b0589c2cc421" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-5b0589c2cc421">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-5b0589c2cc421" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-5b0589c2cc421">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header</a>
+          <a class="flex p-1" href="attribution">Attribution</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-5b0589c2cc421" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-5b0589c2cc421">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.toggle(); // The Toggle Utility must be instantiated first
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.attribution();
+    Standard.codeHighlight();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    Standard.disclaimer();
+    Standard.menu();
+    Standard.nearbyStops();
+    Standard.search();
+    Standard.shareForm();
+    Standard.stepByStep();
+    Standard.newsletter();
+    Standard.newsletterForm();
+    Standard.setHeightProperties();
+    Standard.themes();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+</body>
+
+</html>
