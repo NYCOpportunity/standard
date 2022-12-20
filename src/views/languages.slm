@@ -23,3 +23,5 @@
 
   - languagesDropdown = {class: 'hidden', ariaHidden: true, tabindex: '-1', toggle: true}
   = mixin('section', '/objects/languages/languages-dropdown', {title: 'Languages Dropdown'})
+
+  = mixin('pagination', {related: {label: 'Navigation', href: 'navigation'}, next: {label: 'Menu', href: 'menu'}})

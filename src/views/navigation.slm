@@ -25,3 +25,5 @@
   = mixin('section', '/objects/global/global', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
 
   = mixin('section', '/objects/navigation/readme', {title: 'Usage', src: false, markup: false, demo: false});
+
+  = mixin('pagination', {related: {label: 'Menu', href: 'menu'}, next: {label: 'Newsletter', href: 'newsletter'}})

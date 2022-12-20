@@ -1,1 +1,1 @@
-The Member List Component is an illustration of a household using colored dots to represent individual members.
+The **Household Component** displays a list of members within a household. It is used while filling out long forms of information for benefit eligibility. It helps the applicant to see who in their household they have added information about and provides actionable links for them to return to and edit specific member information.

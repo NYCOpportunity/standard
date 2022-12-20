@@ -23,4 +23,4 @@
 
   = mixin('section', '/objects/step-by-step/readme', {title: 'Usage', demo: false, markup: false, src: false})
 
-  = mixin('pagination', {related: {label: 'Web Share', href: 'web-share'}, next: {label: 'Side Navigation', href: 'side-navigation'}})
+  = mixin('pagination', {related: {label: 'Side Navigation', href: 'side-navigation'}, next: {label: 'Tailwindcss', href: 'tailwindcss'}})

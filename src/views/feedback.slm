@@ -21,5 +21,4 @@
 
   = mixin('section', '/objects/feedback/feedback')
 
-= content('script')
-  / javascript:
+  = mixin('pagination', {related: {label: 'Modal', href: 'modal'}, next: {label: 'Languages', href: 'languages'}})

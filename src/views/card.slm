@@ -31,4 +31,4 @@
   = mixin('section', '/components/card/card-transparent', {title: 'Transparent Cards'})
   = mixin('section', '/components/card/card-announcement', {title: 'Announcement Card', markup: false, demo: false})
 
-  / = mixin('section', '/components/card/card-figma', {title: 'Figma', markup: false, demo: false})
+  = mixin('pagination', {related: {label: 'Accordion', href: 'accordion'}, next: {label: 'Disclaimer', href: 'disclaimer'}})

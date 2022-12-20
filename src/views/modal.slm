@@ -23,4 +23,4 @@
 
   = mixin('section', '/objects/modal/readme', {title: 'Usage', src: false, markup: false, demo: false});
 
-  = mixin('pagination', {related: {label: 'Web Share', href: 'web-share'}, next: {label: 'Navigation', href: 'navigation'}})
+  = mixin('pagination', {related: {label: 'Dropdown', href: 'dropdown'}, next: {label: 'Navigation', href: 'navigation'}})

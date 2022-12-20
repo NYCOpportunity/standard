@@ -87,6 +87,7 @@ nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class=
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='card' Card
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='disclaimer' Disclaimer
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='dropdown' Dropdown
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='household' Household
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='nearby-stops' Nearby Stops
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='popover' Popover
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='question' Question
@@ -97,8 +98,8 @@ nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class=
 
 nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-objects-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Objects
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='application-header' Application Header
-  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='attribution' Attribution
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='application-header' Application Header (NYC.ID)
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='attribution' Attribution (Footer)
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='banner' Banner
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='feedback' Feedback
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='header' Header

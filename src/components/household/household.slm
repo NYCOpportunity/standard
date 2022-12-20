@@ -1,30 +1,104 @@
 /
-/ Member List
+/ Household
 /
 
-ul class='c-household screen-tablet:layout-columns'
-  li
-    span class='c-household__item' You
-    span class='c-household__item' Head of Household
-    span class='c-household__item' 30
-  li
-    span class='c-household__item' Spouse
-    span class='c-household__item' 30
-  li
-    span class='c-household__item' Sister/Brother
-    span class='c-household__item' 28
-  li
-    span class='c-household__item' Sister/Brother
-    span class='c-household__item' 31
-  li
-    span class='c-household__item' Parent
-    span class='c-household__item' 63
-  li
-    span class='c-household__item' Parent
-    span class='c-household__item' 67
-  li
-    span class='c-household__item' Step-child
-    span class='c-household__item' 6
-  li
-    span class='c-household__item' Step-child
-    span class='c-household__item' 10
+div
+  p
+    b So far you've told us about:
+
+  ul class='c-household'
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b You,
+        span Head of Household, 30
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Spouse,
+        span 30
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Sister/Brother,
+        span 28
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Sister/Brother,
+        span 31
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Parent,
+        span 63
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Parent,
+        span 67
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Step-child,
+        span 6
+
+      button title='Edit this household member'
+        span Edit
+
+    li class='c-household__member'
+      svg class='c-household__member-icon icon-ui' role='img'
+        title Household member
+        use href='#nyco-person'
+
+      span class='c-household__description'
+        b Step-child,
+        span 10
+
+      button title='Edit this household member'
+        span Edit

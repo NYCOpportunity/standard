@@ -18,4 +18,7 @@
 
 = content('content')
   = mixin('content-header')
+
   = mixin('section', '/components/utility/utility')
+
+  = mixin('pagination', {related: {label: 'Breadcrumbs', href: 'breadcrumbs'}, next: {label: 'Web Share', href: 'web-share'}})

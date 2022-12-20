@@ -21,3 +21,5 @@
 
   - search = {};
   = mixin('section', '/objects/search/search')
+
+  = mixin('pagination', {related: {label: 'Input with Prefix or Suffix', href: 'inputs#input-with-prefix-or-suffix'}, next: {label: 'Step by Step', href: 'step-by-step'}})

@@ -24,3 +24,5 @@
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {title: 'Tailwindcss', markup: false, demo: false, src: false});
 
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {title: 'Tailwind UI', markup: false, demo: false, src: false});
+
+  = mixin('pagination', {related: {label: 'Installation', href: 'installation'}})

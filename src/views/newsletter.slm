@@ -18,6 +18,11 @@
 
 = content('content')
   = mixin('content-header')
+
   = mixin('section', '/objects/newsletter/newsletter')
+
   = mixin('section', '/objects/newsletter/newsletter-form', {title: 'Full Form'})
+
   = mixin('section', '/objects/newsletter/readme', {title: 'Usage', markup: false, demo: false})
+
+  = mixin('pagination', {related: {label: 'Single Field Question', href: 'question#single-field-question'}, next: {label: 'Search', href: 'search'}})

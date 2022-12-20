@@ -22,3 +22,5 @@
   = mixin('section', '/components/dropdown/dropdown')
 
   = mixin('section', '/components/dropdown/readme', {title: 'Usage', markup: false, demo: false})
+
+  = mixin('pagination', {related: {label: 'Languages Dropdown', href: 'languages#languages-dropdown'}, next: {label: 'Household', href: 'household'}})

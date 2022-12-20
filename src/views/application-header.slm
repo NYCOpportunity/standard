@@ -27,3 +27,5 @@
   = mixin('section', '/objects/global/global-nyc-id', {title: 'Global Elements Demonstration', markup: false, demo: false, src: false});
 
   = mixin('section', '/objects/application-header/readme', {title: 'Usage', src: false, markup: false, demo: false});
+
+  = mixin('pagination', {related: {label: 'Navigation', href: 'navigation'}, next: {label: 'Attribution', href: 'attribution'}})

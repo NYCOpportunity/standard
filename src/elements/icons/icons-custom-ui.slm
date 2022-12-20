@@ -1,4 +1,4 @@
-div class='grid grid-cols-2 gap-2'
+div class='grid grid-cols-3 gap-2'
   svg class='icon' role='img'
     title Disability accommodation details are available. View this program to learn more.
 
@@ -8,3 +8,8 @@ div class='grid grid-cols-2 gap-2'
     title Language access details are available. View this program to learn more.
 
     use href='#nyco-languages'
+
+  svg class='icon-ui' role='img'
+    title Household member
+
+    use href='#nyco-person'

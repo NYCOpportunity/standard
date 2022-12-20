@@ -9,11 +9,18 @@
 // Declarations
 .c-nearby-stops {
   padding: 0;
+
+  display: grid;
+  gap: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .c-nearby-stops__stop {
-  margin-bottom: calc(var(--nyco-grid) * 2);
   display: block;
+  margin-bottom: 0;
 
   @include media.screen-and-min-width('mobile') {
     display: flex;
@@ -23,6 +30,7 @@
 
 .c-nearby-stops__description {
   @include typography.set('small');
+
   font-weight: bold;
 
   display: block;
@@ -33,16 +41,8 @@
   }
 }
 
-a.c-nearby-stops__stop {
-  text-decoration: none;
-}
-
-a .c-nearby-stops__description {
-  text-decoration: underline;
-}
-
 .c-nearby-stops__stop > *:nth-last-child(2) {
-  margin-inline-end: calc(var(--nyco-grid) * 2);
+  margin-inline-end: var(--nyco-grid);
 }
 
 .c-nearby-stops__subway {

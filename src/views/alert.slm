@@ -30,3 +30,5 @@
 
   - alert = {type: 'tertiary', class: 'c-alert-status-tertiary', body: '<p data-js-alert=\'text\'>A warning message or callout.</p>', role: 'error'}
   = mixin('section', '/components/alert/alert', {title: 'Warning Alert', text: false})
+
+  = mixin('pagination', {related: {label: 'Disclaimer', href: 'disclaimer'}, next: {label: 'Card', href: 'card'}})

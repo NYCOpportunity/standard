@@ -1,3 +1,3 @@
 <!-- Headers start with h5 ##### -->
 
-Alert Components contain contextually relevant messages for the user. The primary uses for alerts on the site are to indicate a successful or unsuccessful interaction and provide time-sensitive information about content within a view.
+**Alerts** contain contextually relevant messages for the user. The primary uses for alerts are to indicate a successful or unsuccessful interaction and provide time-sensitive information about content within a view. Further guidance on **Alerts** can be found on the <a href="https://designsystem.digital.gov/components/alert/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) site</a>.
