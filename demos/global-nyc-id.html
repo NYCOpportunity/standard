@@ -69,26 +69,12 @@
       <span class="o-navigation__menu-label" data-js-themes="label">Theme</span>
     </button>
     <!--{ Language translation site feature item }-->
-    <label class="o-navigation__menu-item desktop:m-0" for="js-custom-language-selector">
+    <button aria-controls="aria-c-languages-dropdown" aria-expanded="false" class="o-navigation__menu-item desktop:m-0" data-dialog="open" data-dialog-lock="true" data-js="dialog">
       <svg class="o-navigation__menu-icon icon-ui">
         <use href="#nyco-languages"></use>
       </svg>
-      <div class="o-navigation__menu-label">
-        <select id="js-custom-language-selector">
-          <option disabled="true" selected="true" value="restore">Languages</option>
-          <option value="es">Español</option>
-          <option value="ru">Русский</option>
-          <option value="ko">한국어</option>
-          <option value="ar">العربية</option>
-          <option value="ht">Kreyol</option>
-          <option value="zh-CN">繁體中文</option>
-          <option value="fr">Français</option>
-          <option value="pl">polski</option>
-          <option value="ur">اردو</option>
-          <option value="bn">বাংলা</option>
-        </select>
-      </div>
-    </label>
+      <span class="o-navigation__menu-label">Languages</span>
+    </button>
     <!--{ Menu site feature item }-->
     <!--{ @data-js        The value "menu" is the selector matching value for the click event }-->
     <!--{ @data-js-menu   The value "open" designates this element as the opening trigger }-->
@@ -244,7 +230,9 @@
     Standard.direction();
     Standard.disclaimer();
     Standard.menu();
+    Standard.modal();
     Standard.nearbyStops();
+    Standard.popover();
     Standard.search();
     Standard.shareForm();
     Standard.stepByStep();

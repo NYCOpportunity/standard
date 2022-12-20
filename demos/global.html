@@ -42,26 +42,12 @@
       <span class="o-navigation__menu-label" data-js-themes="label">Theme</span>
     </button>
     <!--{ Language translation site feature item }-->
-    <label class="o-navigation__menu-item desktop:m-0" for="js-custom-language-selector">
+    <button aria-controls="aria-c-languages-dropdown" aria-expanded="false" class="o-navigation__menu-item desktop:m-0" data-dialog="open" data-dialog-lock="true" data-js="dialog">
       <svg class="o-navigation__menu-icon icon-ui">
         <use href="#nyco-languages"></use>
       </svg>
-      <div class="o-navigation__menu-label">
-        <select id="js-custom-language-selector">
-          <option disabled="true" selected="true" value="restore">Languages</option>
-          <option value="es">Español</option>
-          <option value="ru">Русский</option>
-          <option value="ko">한국어</option>
-          <option value="ar">العربية</option>
-          <option value="ht">Kreyol</option>
-          <option value="zh-CN">繁體中文</option>
-          <option value="fr">Français</option>
-          <option value="pl">polski</option>
-          <option value="ur">اردو</option>
-          <option value="bn">বাংলা</option>
-        </select>
-      </div>
-    </label>
+      <span class="o-navigation__menu-label">Languages</span>
+    </button>
     <!--{ Menu site feature item }-->
     <!--{ @data-js        The value "menu" is the selector matching value for the click event }-->
     <!--{ @data-js-menu   The value "open" designates this element as the opening trigger }-->
@@ -111,6 +97,116 @@
       </div>
     </aside>
   </nav>
+  <div class="w-full">
+    <!--{ @data-js      data-js="languages-dropdown" is used as a selector for JavaScript utilities to target this element }-->
+    <!--{ @class        Add "hidden" to hide the fallback. Add a z-index utility, such as "z-30" to position the fallback over other elements }-->
+    <!--{ @aria-hidden  "true" hides the area from screen readers }-->
+    <div aria-hidden="true" class="o-languages-dropdown hidden" data-js="languages-dropdown" id="aria-c-languages-dropdown">
+      <div class="o-languages-dropdown__inner">
+        <div>
+          <div class="text-end">
+            <!--{ @data-js        data-js="dialog" designates this element as a toggling element for the dropdown }-->
+            <!--{ @data-dialog    data-dialog="close" designates this element as the primary close toggle for the dropdown. It will be focused on when the dropdown is opened. Only one close toggle associated with this aria-controls value can exist on the page }-->
+            <!--{ @aria-controls  Targets the element that will be shown and hidden by the toggle }-->
+            <!--{ @aria-expanded  Indicates if the dropdown is open or not }-->
+            <!--{ @tabindex       Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+            <button aria-controls="aria-c-languages-dropdown" aria-expanded="false" class="btn btn-primary btn-small" data-dialog="close" data-js="dialog" tabindex="-1">
+              <svg class="icon-ui" tabindex="-1">
+                <use href="#lucide-x"></use>
+              </svg>
+              <span>Close</span>
+            </button>
+          </div>
+          <p class="h4 block w-full m-0 py-2 text-alt">Select a language</p>
+          <div class="o-languages-dropdown__options">
+            <div class="o-languages-dropdown__languages">
+              <div>
+                <ul>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="en">English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="es">Español</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="ru">Русский</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="ko">한국어</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="ko">العربية</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="ht">Kreyol</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="zh-hant">繁體中文</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="fr">Français</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="pl">polski</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="ur">اردو</span>
+                    </a>
+                  </li>
+                  <li>
+                    <!--{ @tabindex  Set the tabindex to "-1" on focusable elements if this area is hidden when the page is rendered }-->
+                    <a href="#" tabindex="-1">
+                      <!--{ @lang  This attribute identifies the language change in this label from the lang attribute on the html document }-->
+                      <span lang="bn">বাংলা</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <main style="text-align: center; display: flex; align-items: center; justify-content: center; min-height: calc(var(--100vh) - var(--o-navigation-height))">
     <p>Scroll down in this frame to view the Attribution Pattern.</p>
   </main>
@@ -198,7 +294,9 @@
     Standard.direction();
     Standard.disclaimer();
     Standard.menu();
+    Standard.modal();
     Standard.nearbyStops();
+    Standard.popover();
     Standard.search();
     Standard.shareForm();
     Standard.stepByStep();
