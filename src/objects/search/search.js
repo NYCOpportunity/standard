@@ -37,7 +37,7 @@ class Search {
 Search.selector = '[data-js*="search"]';
 
 Search.selectors = {
-  input: '[data-js*="search__input"]'
+  input: '[data-search*="input"]'
 };
 
 export default Search;

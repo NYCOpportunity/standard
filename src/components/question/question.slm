@@ -25,14 +25,14 @@ div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidd
   /! { @for       Should match the id of the input }
   /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
   label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
-    = this.question.label
+    == this.question.label
 
     - if this.question.required
       span class='text-error'
         | &nbsp;*
 
   - if (this.question.description)
-    p = this.question.description
+    p == this.question.description
 
   div class='c-question__container'
     - input = {}

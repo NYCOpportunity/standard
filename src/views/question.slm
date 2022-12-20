@@ -29,7 +29,7 @@
 
     = mixin('section', '/components/question/question-toggle', {title: 'Toggle Question'})
 
-    - question = {label: 'What type of income have you had most recently?', description: 'Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.'}
+    - question = {label: 'What type of income have you had most recently?', description: 'Answer the best you can. You will be able to include additional types of income.<br>The more you include, the more accurate your results will be.'}
     - question.options = [{value: '', selected: true, label: 'Click to add an income type'}, {value: 'Wages', label: 'wages, salaries, tips'}, {value: 'SelfEmployment', label: 'self-employment income'}, {value: 'Unemployment', label: 'unemployment benefits'}, {value: 'CashAssistance', label: 'Cash Assistance grant'}, {value: 'ChildSupport', label: 'child support (received)'}, {value: 'DisabilityMedicaid', label: 'disability-related Medicaid'}, {value: 'SSI', label: 'Supplemental Security Income (SSI)'}, {value: 'SSDependent', label: 'Social Security Dependent Benefits'}, {value: 'SSDisability', label: 'Social Security Disability Benefits'}, {value: 'SSSurvivor', label: 'Social Security Survivor’s Benefits'}, {value: 'SSRetirement', label: 'Social Security Retirement Benefits'}, {value: 'NYSDisability', label: 'New York State Disability Benefits'}, {value: 'Veteran', label: 'Veteran’s Pension or Benefits'}, {value: 'Pension', label: 'Government or Private Pension'}, {value: 'DeferredComp', label: 'Withdrawals from Deferred Compensation (IRA, Keogh, etc.)'}, {value: 'WorkersComp', label: 'Worker’s Compensation'}, {value: 'Alimony', label: 'alimony (received)'}, {value: 'Boarder', label: 'boarder or lodger'}, {value: 'Gifts', label: 'gifts/contributions (received)'}, {value: 'Rental', label: 'rental income'}, {value: 'Investment', label: 'investment income (interest, dividends, and profit from selling stocks)'}]
     = mixin('section', '/components/question/question-select', {title: 'Select Question'})
 
@@ -43,7 +43,7 @@
 
     / Search Question
 
-    - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', placeholder: 'Enter your email', type: 'email', name: 'EMAIL', required: 'true', class: 'c-question-single', button: 'Submit'}
+    - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', description: '', placeholder: 'Enter your email', type: 'email', name: 'EMAIL', required: 'true', class: 'c-question-single', button: 'Submit'}
     = mixin('section', '/components/question/question', {title: 'Single Field Question', text: false})
 
   = mixin('section', '/components/question/readme', {title: 'Validation', markup: false, demo: false})
@@ -51,10 +51,10 @@
   = mixin('pagination', {related: {label: 'Forms', href: 'forms'}, next: {label: 'Share Form', href: 'share-form'}})
 
 = content('script');
-  javascript:
-    patterns.validate('#question-demo', function(event) {
-      event.preventDefault();
+  / javascript:
+  /   patterns.validate('#question-demo', function(event) {
+  /     event.preventDefault();
 
-      return false;
-    });
+  /     return false;
+  /   });
 

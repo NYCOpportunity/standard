@@ -25,8 +25,8 @@
   - alert = {type: 'primary', class: 'c-alert-status-primary', body: '<p data-js-alert=\'text\'>An informational message or callout.</p>'}
   = mixin('section', '/components/alert/alert', {title: 'Information Alert', text: false})
 
-  - alert = {type: 'secondary', class: 'c-alert-status-secondary', body: '<p data-js-alert=\'text\'>A successful message or callout.</p>'}
+  - alert = {type: 'secondary', class: 'c-alert-status-secondary', body: '<p data-js-alert=\'text\'>A successful message or callout.</p>', role: 'status'}
   = mixin('section', '/components/alert/alert', {title: 'Success Alert', text: false})
 
-  - alert = {type: 'tertiary', class: 'c-alert-status-tertiary', body: '<p data-js-alert=\'text\'>A warning message or callout.</p>'}
+  - alert = {type: 'tertiary', class: 'c-alert-status-tertiary', body: '<p data-js-alert=\'text\'>A warning message or callout.</p>', role: 'error'}
   = mixin('section', '/components/alert/alert', {title: 'Warning Alert', text: false})

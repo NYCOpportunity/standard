@@ -1,0 +1,19 @@
+/**
+ * Modal
+ */
+
+ @forward '@nycopportunity/pattern-modal/src/modal';
+
+ :root {
+  --o-modal-grid-base: var(--nyco-grid);
+  --o-modal-body-background-color: var(--nyco-modal-body);
+  --o-modal-body-max-width: var(--nyco-dimension-modal-body);
+
+  --o-modal-close-font-size: var(--nyco-fontSize-small);
+  --o-modal-close-font-weight: var(--nyco-fontWeight-small);
+  --o-modal-close-line-height: var(--nyco-lineHeight-small);
+
+  --o-modal-heading-font-size: var(--nyco-fontSize-h4);
+  --o-modal-heading-font-weight: var(--nyco-fontWeight-h4);
+  --o-modal-heading-line-height: var(--nyco-lineHeight-h4);
+ }

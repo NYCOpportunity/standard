@@ -23,4 +23,4 @@
 
   = mixin('section', '/components/nearby-stops/readme', {title: 'Usage', demo: false, markup: false, src: false})
 
-  = mixin('pagination', {next: {label: 'Question', href: 'question'}})
+  = mixin('pagination', {next: {label: 'Popover', href: 'popover'}})

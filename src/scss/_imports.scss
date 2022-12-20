@@ -4,6 +4,7 @@
 @forward '@nycopportunity/pattern-application-header/src/tokens.css';
 @forward '@nycopportunity/pattern-attribution/src/tokens.css';
 @forward '@nycopportunity/pattern-menu/src/tokens.css';
+@forward '@nycopportunity/pattern-modal/src/tokens.css';
 @forward '@nycopportunity/pattern-navigation/src/tokens.css';
 @forward 'css/tokens.css';
 @forward 'css/tokens-default.css';
@@ -26,6 +27,7 @@
 @forward 'components/disclaimer/_disclaimer.scss';
 @forward 'components/dropdown/_dropdown.scss';
 @forward 'components/nearby-stops/_nearby-stops.scss';
+@forward 'components/popover/_popover.scss';
 @forward 'components/share-form/_share-form.scss';
 @forward 'components/side-navigation/_side-navigation.scss';
 @forward 'components/question/_question.scss';
@@ -39,6 +41,7 @@
 @forward 'objects/banner/_banner.scss';
 @forward 'objects/header/_header.scss';
 @forward 'objects/menu/_menu.scss';
+@forward 'objects/modal/_modal.scss';
 @forward 'objects/navigation/_navigation.scss';
 @forward 'objects/newsletter/_newsletter.scss';
 @forward 'objects/search/_search.scss';

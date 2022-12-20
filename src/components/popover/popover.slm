@@ -1,0 +1,12 @@
+/! { @data-js           "popover" instantiates this element as the popover toggle }
+/! { @type              "button" defines this as a standard button if it appears in a form or question }
+/! { @aria-describedby  Matches the ID of the popover element }
+button type='button' class='c-question__info' data-js='popover' aria-describedby='aria-db-popover'
+  svg class='icon-ui' aria-hidden='true'
+    use href='#lucide-info'
+
+  span Here's why we are asking.
+
+/! { @id  Matches the @aria-describedby attribute of the toggling element }
+div id='aria-db-popover' class='c-popover animated fadeInUp'
+  p Many benefit programs are meant for people of a specific age group. Sharing your age will help us choose the programs that will be most helpful to you right now. The information you share for the purposes of public benefits screening will be anonymous.

@@ -5,6 +5,8 @@
 - this.search.id = this.createId()
 - this.search.ariaHidden = false
 - this.search.tabindex = false
+- this.search.close = false
+- this.search.label = 'Search for programs';
 
 / Inherit overrides
 - if (typeof search !== 'undefined')
@@ -14,21 +16,29 @@
 /! { @class        Add "o-search-fixed" in production layouts }
 /! { @aria-hidden  Add aria-hidden="true" in production layouts }
 div#aria-c-search class='o-search ${this.search.class}' aria-hidden=this.search.ariaHidden
-  div class='o-search__close'
-    /! { @tabindex       Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
-    /! { @aria-controls  Targets the Search ID for toggling }
-    /! { @aria-expanded  Indicates the toggled state of the target }
-    button class='link-icon' data-js='toggle' aria-controls='aria-c-search' tabindex=this.search.tabindex aria-expanded='${this.search.ariaHidden ? 'false' : 'true' }'
-      svg class='icon-ui'
-        use href='#lucide-x'
+  - if this.search.close
+    div class='o-search__close'
+      /! { @tabindex       Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
+      /! { @aria-controls  Targets the Search ID for toggling }
+      /! { @aria-expanded  Indicates the toggled state of the target }
+      button class='link-icon' data-js='toggle' aria-controls='aria-c-search' tabindex=this.search.tabindex aria-expanded='${this.search.ariaHidden ? 'false' : 'true' }'
+        svg class='icon-ui'
+          use href='#lucide-x'
 
-      span Close
+        span Close
 
   form tabindex=this.search.tabindex class='o-search__form'
-    - inputSearch = {}
-    - inputSearch.id = this.createId()
-    - inputSearch.tabindex = this.search.tabindex
-    label class='label' for='${inputSearch.id}' tabindex=this.search.tabindex
-      | Search for programs and occupations
+    - this.search.input = {}
+    - this.search.input.id = this.createId()
+    label class='label' for='${this.search.input.id}' tabindex=this.search.tabindex
+      = this.search.label
 
-    = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-search.slm');
+    div class='input o-search__input'
+      /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
+      input type='text' name='s' value='' placeholder='Search' data-js='search__input' id='${this.search.input.id}' tabindex=this.search.tabindex
+
+      /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
+      button class='o-search__submit' type='submit' tabindex=this.search.tabindex
+        /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
+        svg class='icon-ui' tabindex=this.search.tabindex
+          use href='#lucide-search'

@@ -1,1 +1,0 @@
-The Search Object provides easy access to search for content in all views.

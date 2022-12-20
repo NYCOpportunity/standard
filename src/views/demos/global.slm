@@ -13,6 +13,9 @@
   - navigation.menu = {include: true}
   == this.include('/../node_modules/@nycopportunity/pattern-navigation/src/navigation.slm');
 
+  - languagesDropdown = {class: 'hidden', ariaHidden: true, tabindex: '-1', toggle: false}
+  == this.include('/objects/languages/languages-dropdown.slm');
+
   main style='text-align: center; display: flex; align-items: center; justify-content: center; min-height: calc(var(--100vh) - var(--o-navigation-height))'
     p Scroll down in this frame to view the Attribution Pattern.
 

@@ -7,6 +7,7 @@
 - this.question.for = `question-${this.question.id}`
 - this.question.name = `question['${this.question.id}']`
 - this.question.options = [{label: 'Option 1'}, {label: 'Option 2'}, {label: 'Option 3'}, {label: 'Option 4'}]
+- this.question.required = false
 - this.question.tabindex = false
 - this.question.required = false
 - this.question.ariaHidden = false
@@ -17,15 +18,20 @@
 
 div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
   label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
-    = this.question.label
+    == this.question.label
+
+    - if this.question.required
+      span class='text-error'
+        | &nbsp;*
 
   - if (this.question.description)
-    p = this.question.description
+    p == this.question.description
 
   div class='c-question__container'
     - select = this.question;
     - select.name = this.question.name
     - select.id = this.question.for
+    - select.required = this.question.required
     - delete select.class;
     - delete select.ariaHidden;
 

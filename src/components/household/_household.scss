@@ -1,0 +1,147 @@
+/**
+ * Member List
+ */
+
+// Dependencies
+// @import 'config/fonts';
+// @import 'config/dimensions';
+// @import 'config/direction';
+// @import 'config/colors';
+// @import 'config/media';
+
+// Declarations
+.c-household {
+  list-style: none;
+  margin: 0 0 var(--nyco-spacing-DEFAULT);
+  padding: 0;
+
+  > li {
+    font-weight: bold;
+    line-height: var(--nyco-spacing-DEFAULT);
+
+    position: relative;
+    padding-inline-end: calc(var(--nyco-spacing-DEFAULT) + var(--nyco-grid));
+    margin-bottom: 8px;
+
+    &::before {
+      content: '';
+      width: var(--nyco-spacing-DEFAULT);
+      height: var(--nyco-spacing-DEFAULT);
+      border-radius: 500px;
+      // background-color: $color-blue;
+
+      display: inline-block;
+      position: absolute;
+
+      inset-inline-end: 0;
+    }
+
+    // &:nth-child(8n+2) {
+    //   &::before {
+    //     background-color: $color-yellow-access;
+    //   }
+    // }
+
+    // &:nth-child(8n+3) {
+    //   &::before {
+    //     background-color: $color-blue-bright;
+    //   }
+    // }
+
+    // &:nth-child(8n+4) {
+    //   &::before {
+    //     background-color: $color-pink;
+    //   }
+    // }
+
+    // &:nth-child(8n+5) {
+    //   &::before {
+    //     background-color: $color-green;
+    //   }
+    // }
+
+    // &:nth-child(8n+6) {
+    //   &::before {
+    //     background-color: $color-green-mid;
+    //   }
+    // }
+
+    // &:nth-child(8n+7) {
+    //   &::before {
+    //     background-color: $color-grey-mid;
+    //   }
+    // }
+
+    // &:nth-child(8n+8) {
+    //   &::before {
+    //     background-color: $color-blue-dark;
+    //   }
+    // }
+  }
+
+  .recap-household-member {
+    margin-bottom: var(--nyco-spacing-DEFAULT) * 2;
+    width: 100%;
+
+    &::before {
+      top: .3em;
+    }
+  }
+}
+
+.c-household__item {
+  vertical-align: text-top;
+
+  &::after {
+    content: ', '
+  }
+
+  &:last-of-type::after {
+    content: none
+  }
+}
+
+.c-household__icon {
+  width: 20px;
+  height: 20px;
+
+  // background-color: $color-blue;
+
+  border-radius: 10px;
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 2px;
+
+  // &.i-0 {
+  //   background-color: $color-yellow-access;
+  // }
+
+  // &.i-1 {
+  //   background-color: $color-blue;
+  // }
+
+  // &.i-2 {
+  //   background-color: $color-blue-bright;
+  // }
+
+  // &.i-3 {
+  //   background-color: $color-pink;
+  // }
+
+  // &.i-4 {
+  //   background-color: $color-green;
+  // }
+
+  // &.i-5 {
+  //   background-color: $color-green-mid;
+  // }
+
+  // &.i-6 {
+  //   background-color: $color-grey-mid;
+  // }
+
+  // &.i-7 {
+  //   background-color: $color-blue-dark;
+  // }
+}

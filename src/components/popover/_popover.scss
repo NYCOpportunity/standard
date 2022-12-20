@@ -1,0 +1,37 @@
+/**
+ * Popovers
+ */
+
+// Dependencies
+// @import 'config/Popovers';
+// @import 'config/colors';
+// @import 'config/fonts';
+// @import 'config/dimensions';
+@use 'config/typography';
+@use 'config/media';
+@use 'config/material';
+
+// Declarations
+.c-popover {
+  @include material.styles;
+  background-color: var(--nyco-popover-body);
+
+  z-index: 3;
+
+  max-width: 100%;
+  width: calc(var(--nyco-grid) * 62);
+  padding: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    padding: calc(var(--nyco-grid) * 3);
+  }
+
+  p {
+    @include typography.set('small')
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

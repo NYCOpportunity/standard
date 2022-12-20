@@ -1,0 +1,30 @@
+/
+/ Member List
+/
+
+ul class='c-household screen-tablet:layout-columns'
+  li
+    span class='c-household__item' You
+    span class='c-household__item' Head of Household
+    span class='c-household__item' 30
+  li
+    span class='c-household__item' Spouse
+    span class='c-household__item' 30
+  li
+    span class='c-household__item' Sister/Brother
+    span class='c-household__item' 28
+  li
+    span class='c-household__item' Sister/Brother
+    span class='c-household__item' 31
+  li
+    span class='c-household__item' Parent
+    span class='c-household__item' 63
+  li
+    span class='c-household__item' Parent
+    span class='c-household__item' 67
+  li
+    span class='c-household__item' Step-child
+    span class='c-household__item' 6
+  li
+    span class='c-household__item' Step-child
+    span class='c-household__item' 10

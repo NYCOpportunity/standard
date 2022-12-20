@@ -23,6 +23,11 @@ const light = {
    * Component Tokens
    */
 
+  'accordion': {
+    'header': 'var(--nyco-scale-3)',
+    'body': 'var(--nyco-scale-0)'
+  },
+
   'card': {
     'header': 'var(--nyco-scale-2)',
     'body': 'var(--nyco-scale-0)'
@@ -32,8 +37,7 @@ const light = {
     'body': 'var(--nyco-scale-1)'
   },
 
-  'accordion': {
-    'header': 'var(--nyco-scale-3)',
+  'popover': {
     'body': 'var(--nyco-scale-0)'
   },
 
@@ -52,9 +56,9 @@ const light = {
    * Object Tokens
    */
 
-  // 'modal': {
-  //   'background': 'var(--nyco-color-blue-l-3)',
-  // },
+  'modal': {
+    'body': 'var(--nyco-scale-1)',
+  },
 
   'newsletter': {
     'heading': 'var(--nyco-color-white)',
@@ -79,6 +83,11 @@ const dark = {
    * Component Tokens
    */
 
+  'accordion': {
+    'header': 'var(--nyco-scale-2)',
+    'body': 'var(--nyco-scale-4)'
+  },
+
   'card': {
     'header': 'var(--nyco-scale-3)',
     'body': 'var(--nyco-scale-4)'
@@ -88,8 +97,7 @@ const dark = {
     'body': 'var(--nyco-scale-1)'
   },
 
-  'accordion': {
-    'header': 'var(--nyco-scale-2)',
+  'popover': {
     'body': 'var(--nyco-scale-4)'
   },
 
@@ -108,9 +116,9 @@ const dark = {
    * Object Tokens
    */
 
-  // 'modal': {
-  //   'background': 'var(--nyco-color-blue-l-3)',
-  // },
+  'modal': {
+    'body': 'var(--nyco-scale-1)',
+  },
 
   'newsletter': {
     'heading': 'var(--nyco-color-white)',
@@ -146,7 +154,8 @@ const dimension = {
   'navigation-logo': 'calc(var(--nyco-grid) * 16)',   // '128px',
   'feedback-height': 'calc(var(--nyco-grid) * 12.5)', // '100px', // Static reference. Overridden via JavaScript
   'navigation-height': 'calc(var(--nyco-grid) * 10)', // '80px', // Static reference. Overridden via JavaScript
-  'webshare-fallback': 'calc(var(--nyco-grid) * 54)'  // '432px'
+  'webshare-fallback': 'calc(var(--nyco-grid) * 54)', // '432px',
+  'modal-body': 'calc(var(--nyco-grid) * 80)'
 };
 
 tokens.dimension = {

@@ -20,10 +20,14 @@
 fieldset id='${this.question.id}' class='c-question' aria-hidden=this.question.ariaHidden
   /! { @legend  Checkboxes and radio input groups should be labeled by legend tags }
   legend class='c-question__label' tabindex=this.question.tabindex
-    = this.question.label
+    == this.question.label
+
+    - if this.question.required
+      span class='text-error'
+        | &nbsp;*
 
   - if (this.question.description)
-    p = this.question.description
+    p == this.question.description
 
   div class='c-question__container ${this.question.optionColumns ? 'c-question__container-cols' : ''}'
     - input = this.question;

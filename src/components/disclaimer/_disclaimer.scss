@@ -23,7 +23,7 @@
     padding: calc(var(--nyco-grid) * 5);
   }
 
-  > p {
+  p {
     @include typography.set('small')
   }
 }

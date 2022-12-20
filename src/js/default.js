@@ -23,12 +23,14 @@ import Accordion from '../components/accordion/accordion';
 import ActiveNavigation from '../components/active-navigation/active-navigation';
 import Disclaimer from '../components/disclaimer/disclaimer';
 import NearbyStops from '../components/nearby-stops/nearby-stops';
+import Popover from '../components/popover/popover';
 import ShareForm from '../components/share-form/share-form';
 // import ... from '../components/...';
 
 // Objects
 import Attribution from '@nycopportunity/pattern-attribution/src/attribution';
 import Menu from '@nycopportunity/pattern-menu/src/menu';
+import Modal from '@nycopportunity/pattern-modal/src/modal';
 import Search from '../objects/search/search';
 import StepByStep from '../objects/step-by-step/step-by-step';
 // import ... from '../objects/...';
@@ -144,6 +146,15 @@ class Main {
   }
 
   /**
+   * An API for the Modal
+   *
+   * @return  {Object}  Instance of Modal
+   */
+  modal() {
+    return new Modal();
+  }
+
+  /**
    * An API for Nearby Stops
    *
    * @return  {Object}  Instance of NearbyStops
@@ -176,6 +187,15 @@ class Main {
 
       return newsletter;
     }
+  }
+
+  /**
+   * An API for the popover
+   */
+  popover() {
+    (elements => {
+      elements.forEach(element => new Popover(element));
+    })(document.querySelectorAll(Popover.selector));
   }
 
   /**
@@ -244,11 +264,9 @@ class Main {
    * An API for the Share Form
    */
   shareForm() {
-    let elements = document.querySelectorAll(ShareForm.selector);
-
-    elements.forEach(element => {
-      new ShareForm(element);
-    });
+    (elements => {
+      elements.forEach(element => new ShareForm(element));
+    })(document.querySelectorAll(ShareForm.selector));
   }
 
   /**

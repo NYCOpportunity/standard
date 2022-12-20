@@ -51,18 +51,27 @@ Each module needs to be instantiated individually.
 ```javascript
 import Main from '{{ this.package.name }}/src/js/default'
 
+Main.toggle(); // The Toggle Utility must be instantiated first
+
 Main.accordion();
 Main.activeNavigation();
 Main.attribution();
+Main.codeHighlight();
 Main.copy();
 Main.dialog();
 Main.direction();
+Main.disclaimer();
 Main.menu();
+Main.modal();
+Main.nearbyStops();
+Main.popover();
+Main.search();
+Main.shareForm();
+Main.stepByStep();
 Main.newsletter();
 Main.newsletterForm();
 Main.setHeightProperties();
 Main.themes();
-Main.toggle();
 Main.webShare();
 Main.validate();
 ```
@@ -154,6 +163,7 @@ Sass.render({
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-menu/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/pattern-modal/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-navigation/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-typography/src`
     ]
@@ -176,6 +186,7 @@ gulp.task('sass', () => {
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-menu/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/pattern-modal/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-navigation/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-typography/src`
     ]})).pipe(gulp.dest('./css'));
@@ -202,6 +213,7 @@ module.exports = {
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-menu/src`,
+      `${process.env.PWD}/node_modules/@nycopportunity/pattern-modal/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-navigation/src`,
       `${process.env.PWD}/node_modules/@nycopportunity/pattern-typography/src`
     ]
@@ -231,6 +243,7 @@ const config = {
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-attribution/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-elements/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-menu/src`);
+      config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-modal/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-navigation/src`);
       config.resolve.modules.push(`${process.env.PWD}/node_modules/@nycopportunity/pattern-typography/src`);
     }
@@ -258,18 +271,27 @@ The following global script source can be copied and pasted before your HTML doc
 <script>
   var Standard = new {{ this.global.entry.name }}();
 
+  Standard.toggle(); // The Toggle Utility must be instantiated first
+
   Standard.accordion();
   Standard.activeNavigation();
   Standard.attribution();
+  Standard.codeHighlight();
   Standard.copy();
   Standard.dialog();
   Standard.direction();
+  Standard.disclaimer();
   Standard.menu();
+  Standard.modal();
+  Standard.nearbyStops();
+  Standard.popover();
+  Standard.search();
+  Standard.shareForm();
+  Standard.stepByStep();
   Standard.newsletter();
   Standard.newsletterForm();
   Standard.setHeightProperties();
   Standard.themes();
-  Standard.toggle();
   Standard.webShare();
   Standard.validate();
 </script>

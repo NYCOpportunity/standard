@@ -16,7 +16,9 @@ javascript:
   Standard.direction();
   Standard.disclaimer();
   Standard.menu();
+  Standard.modal();
   Standard.nearbyStops();
+  Standard.popover();
   Standard.search();
   Standard.shareForm();
   Standard.stepByStep();
