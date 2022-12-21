@@ -30,6 +30,11 @@
   }
 }
 
+.c-question__container-rows {
+  display: grid;
+  gap: calc(var(--nyco-grid) * 2);
+}
+
 .c-question__container-cols {
   display: grid;
   gap: calc(var(--nyco-grid) * 2);

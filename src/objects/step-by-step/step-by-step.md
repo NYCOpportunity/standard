@@ -1,8 +1,4 @@
-The **Step by Step** pattern.
-
----
-
-Uses the [Side Navigation](side-navigation).
+The **Step by Step** pattern creates a paginated experience that guides users through a process such as a guide for a public benefit program. The steps are outlined using a [Side Navigation](side-navigation) and the process is described in the body of the step content region.
 
 ---
 

@@ -18,7 +18,7 @@ article class='c-card ${this.card.class}'
 
     span
       - if this.card.title
-        a class='c-card__header-link' href='${this.baseUrl}${this.card.url}'
+        a class='c-card__header-link' href='${this.baseUrl}/${this.card.url}'
           h3 class='c-card__title'
             - if this.card.badge
               mark class='badge'
@@ -75,7 +75,7 @@ article class='c-card ${this.card.class}'
 
     - if this.card.webShare
       - webShare = {}
-      - webShare.data = {title: this.card.title, text: this.card.summary, url: `${this.baseUrl}${this.card.url}`};
+      - webShare.data = {title: this.card.title, text: this.card.summary, url: `${this.baseUrl}/${this.card.url}`};
       - webShare.class = ''
       - webShare.fallbackClass = 'hidden z-30'
 

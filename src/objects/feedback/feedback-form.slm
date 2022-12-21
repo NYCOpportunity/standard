@@ -1,0 +1,76 @@
+- this.feedbackForm = {}
+- this.feedbackForm.id = this.createId();
+- this.feedbackForm.class = false
+- this.feedbackForm.tabindex = false
+
+/ Inherit overrides
+- if (typeof feedbackForm !== 'undefined')
+  - this.feedbackForm = Object.assign(this.feedbackForm, feedbackForm);
+
+form class=feedbackForm.class tabindex=feedbackForm.tabindex
+  - question = {}
+  - question.id = this.createId();
+
+  fieldset class='c-question' id='${question.id}' tabindex=feedbackForm.tabindex
+    legend class='c-question__label' tabindex=feedbackForm.tabindex Do you agree with the following? The website helped me meet my needs.<span class='text-error'>&nbsp;*</span>
+
+    div class='c-question__container c-question__container-rows'
+      - options = ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+      - for (let i in options)
+        - option = {}
+        - option.id = this.createId()
+        - option.value = `requirements-${i}`
+        - option.label = options[i]
+
+        label class='option' for='${option.id}' tabindex=feedbackForm.tabindex
+          input id='${option.id}' name="option['${question.id}']" type='radio' value='${option.value}' tabindex=feedbackForm.tabindex
+
+          span class='option__base'
+            svg aria-hidden='true' class='option__graphic' tabindex=feedbackForm.tabindex
+              use href='#option-nyco-radio'
+
+            span class='option__label' = option.label
+
+  - question = {}
+  - question.id = this.createId();
+
+  fieldset class='c-question' id='${question.id}' tabindex=feedbackForm.tabindex
+    legend class='c-question__label' tabindex=feedbackForm.tabindex Do you agree with the following? The website is easy to use.<span class='text-error'>&nbsp;*</span>
+
+    div class='c-question__container c-question__container-rows'
+      - options = ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree']
+      - for (let i in options)
+        - option = {}
+        - option.id = this.createId()
+        - option.value = `requirements-${i}`
+        - option.label = options[i]
+
+        label class='option' for='${option.id}' tabindex=feedbackForm.tabindex
+          input id='${option.id}' name="option['${question.id}']" type='radio' value='${option.value}' tabindex=feedbackForm.tabindex
+
+          span class='option__base'
+            svg aria-hidden='true' class='option__graphic' tabindex=feedbackForm.tabindex
+              use href='#option-nyco-radio'
+
+            span class='option__label' = option.label
+
+  - question = {}
+  - question.id = this.createId();
+
+  div class='c-question' id='${question.id}' tabindex=feedbackForm.tabindex
+    label class='c-question__label' for='question-${question.id}' tabindex=feedbackForm.tabindex What is one thing we could do to make the website better for you?<span class='text-error'>&nbsp;*</span>
+
+    p Please describe in as much detail as possible.
+
+    div class='c-question__container'
+      div class='input'
+        input class='input' id='question-${question.id}' name="question['${question.id}']" type='text' tabindex=feedbackForm.tabindex
+
+  - if this.feedbackForm.modal
+    button class='btn' data-js='dialog' aria-controls='aria-c-modal' aria-expanded='false' tabindex=feedbackForm.tabindex
+      span Cancel
+
+  button class='btn-primary' tabindex=feedbackForm.tabindex
+    span Submit
+
+  - this.feedbackForm = {}
