@@ -1,6 +1,6 @@
 Questions request information from a user to guide them into completing a form. This pattern follows the usage guidelines of the <a href="https://designsystem.digital.gov/components/form-controls/" target="_blank" rel="noopener nofollow">U.S. Web Design System (USWDS) Form Component</a>. Forms use different types of questions to gather specific pieces of information. These usually correlate with native form element input types such as text or radio buttons. However, differing native form elements may be used or combined to collect specific types of information.
 
-Below are common Opportunity Standard Questions, interpreting or extending the guidance from their counterparts in the USWDS. Guidance to inform additional scenarios can be found on the USWDS site.
+Below are common Opportunity Standard Questions, interpreting or extending the guidance from their counterparts in the <abbr title="The U.S. Web Design System">USWDS</abbr>. Guidance to inform additional scenarios can be found on the <abbr title="The U.S. Web Design System">USWDS</abbr> site.
 
 #### Validation and Accessibility
 
@@ -24,4 +24,4 @@ The General Question collects text-based information such as numbers, emails, ph
 
 ---
 
-The `label` element should be used for the question and tied to the input using its `id` attribute. Further guidance can be found on the <a href="https://designsystem.digital.gov/components/text-input/" target="_blank" rel="noopener nofollow">USWDS site</a>.
+The `label` element should be used for the question and tied to the input using its `id` attribute. Further guidance can be found on the <a href="https://designsystem.digital.gov/components/text-input/" target="_blank" rel="noopener nofollow"><abbr title="The U.S. Web Design System">USWDS</abbr> site</a>.

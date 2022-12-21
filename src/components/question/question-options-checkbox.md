@@ -6,4 +6,4 @@ Option Questions use the `fieldset` and `legend` element combination to group th
 
 ---
 
-Further guidance can be found on the <a href="https://designsystem.digital.gov/components/checkbox/" target="_blank" rel="noopener nofollow">USWDS site</a>.
+Further guidance can be found on the <a href="https://designsystem.digital.gov/components/checkbox/" target="_blank" rel="noopener nofollow"><abbr title="The U.S. Web Design System">USWDS</abbr> site</a>.

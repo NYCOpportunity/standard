@@ -1,0 +1,26 @@
+- this.title = 'Spinner'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/spinner/spinner', {title: false, pkg: '@nycopportunity/pattern-elements'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/spinner/readme', {title: 'Usage', demo: false, markup: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Icons', href: 'icons'}, next: {label: 'Tables', href: 'tables'}})

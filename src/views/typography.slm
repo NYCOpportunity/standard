@@ -1,0 +1,34 @@
+- this.title = 'Typography'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/typography/typography', {title: false, demo: false, markup: false, pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/fonts/fonts', {title: 'Font Families', pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/fonts/font-sizing', {title: 'Font Sizing', markup: false, pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/typography/typography-headings', {title: 'Headings', pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/typography/typography-blockquote', {title: 'Blockquotes', pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-typography/src/elements/typography/typography-small', {title: 'Small', pkg: '@nycopportunity/pattern-typography'})
+
+  = mixin('pagination', {related: {label: 'Tailwindcss', href: 'tailwindcss'}, next: {label: 'Accordion', href: 'accordion'}})

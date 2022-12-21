@@ -23,6 +23,8 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss', {title: 'Tailwindcss', markup: false, demo: false, src: false});
 
+  = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-logical', {title: 'Logical Utilities', markup: false, demo: false, src: false});
+
   = mixin('section', '/../node_modules/@nycopportunity/pttrn-docs/tailwindcss/tailwindcss-ui', {title: 'Tailwind UI', markup: false, demo: false, src: false});
 
-  = mixin('pagination', {related: {label: 'Installation', href: 'installation'}})
+  = mixin('pagination', {related: {label: 'Installation, Tailwindcss', href: 'installation#tailwindcss'}, next: {label: 'Misc. Utilities', href: 'misc'}})

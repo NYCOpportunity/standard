@@ -1,48 +1,13 @@
 {
-  "name": "@nycopportunity/standard",
-  "nice": "Opportunity Standard",
-  "version": "0.0.0-3",
-  "description": "This project was scaffolded using the NYCO Patterns CLI",
-  "homepage": "https://github.com/nycopportunity/standard",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nycopportunity/standard.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nycopportunity/standard/issues"
-  },
-  "cdn": {
-    "url": "https://cdn.jsdelivr.net/gh/nycopportunity/standard",
-    "source": "https://github.com/nycopportunity/standard",
-    "archive": "https://github.com/nycopportunity/standard/archive",
-    "release": "https://github.com/nycopportunity/standard/tree/v",
-    "npm": "https://www.npmjs.com/package/@nycopportunity/standard",
-    "figma": "https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard"
-  },
-  "scripts": {
-    "start": "cross-env NODE_ENV=development concurrently \"pttrn -w -np\" \"pttrn serve -w\" -p \"none\"",
-    "build": "cross-env NODE_ENV=development pttrn",
-    "version": "npm run default && git add .",
-    "prepublishOnly": "git push && git push --tags",
-    "publish": "cross-env NODE_ENV=production pttrn publish",
-    "default": "cross-env NODE_ENV=production pttrn -np"
-  },
-  "devDependencies": {
-    "@nycopportunity/pttrn": "latest",
-    "@nycopportunity/pttrn-plugin-properties": "^1.1.1",
-    "tailwindcss": "^3.1.8",
-    "tailwindcss-logical": "^3.0.0"
-  },
   "dependencies": {
     "@nycopportunity/pattern-application-header": "file:../pattern-application-header",
     "@nycopportunity/pattern-attribution": "file:../pattern-attribution",
     "@nycopportunity/pattern-elements": "file:../pattern-elements",
     "@nycopportunity/pattern-menu": "file:../pattern-menu",
+    "@nycopportunity/pattern-modal": "file:../pattern-modal",
     "@nycopportunity/pattern-navigation": "file:../pattern-navigation",
     "@nycopportunity/pattern-typography": "file:../pattern-typography",
     "@nycopportunity/pttrn-docs": "file:../../cityofnewyork/patterns-docs",
-    "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts",
-    "feather-icons": "^4.29.0",
-    "for-cerial": "^1.1.0"
+    "@nycopportunity/pttrn-scripts": "file:../../cityofnewyork/patterns-scripts"
   }
 }

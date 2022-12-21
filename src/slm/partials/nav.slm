@@ -76,7 +76,9 @@ nav role='navigation' aria-labelledby='aria-lb-elements-${this.nav.id}' class='$
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='navs' Navs
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='options' Options
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='selects' Selects
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='spinner' Spinner
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tables' Tables
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='typography' Fonts and Typography
 
 nav role='navigation' aria-labelledby='aria-lb-components-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-components-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Components
@@ -114,18 +116,10 @@ nav role='navigation' aria-labelledby='aria-lb-objects-${this.nav.id}' class='${
 nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.main} desktop:ps-4'
   span id='aria-lb-utilities-${this.nav.id}' class='${this.nav.class.heading} ${this.nav.class.divider}' Utilities
 
-  / Animate
-  / Cell
-  / Clearfix
-  / Color
-  / Fonts
-  / Print
-  / Scroll
-  / Status
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='misc' Miscellaneous
   / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='toggle' Toggle
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' xhref='typography' Typography
+  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='toggle' Toggle
 
 - delete nav
 - delete this.nav

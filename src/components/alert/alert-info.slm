@@ -1,0 +1,2 @@
+- alert = {type: 'primary', class: 'c-alert-status-primary', body: '<p data-js-alert=\'text\'>An informational message or callout.</p>'}
+= partial('alert.slm')

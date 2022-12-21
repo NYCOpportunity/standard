@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 1.0.2,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.2/dist/",
+  version: 1.0.3,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.3/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -250,6 +250,7 @@ $tokens:(
         )
       ),
       button: (
+        border-color: var(--nyco-scale-3),
         primary: (
           text: var(--nyco-color-blue-l-2),
           text-hover: var(--nyco-color-blue-l-3),
@@ -402,6 +403,7 @@ $tokens:(
         )
       ),
       button: (
+        border-color: currentColor,
         primary: (
           text: var(--nyco-scale-0),
           text-hover: var(--nyco-scale-0),

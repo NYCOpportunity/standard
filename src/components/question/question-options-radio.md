@@ -8,4 +8,4 @@ If the list of options is long and can't be truncated visually, the [Select Ques
 
 Option Questions use the `fieldset` and `legend` element combination to group the available options; the question is wrapped in a `fieldset` element, while the question label uses the `legend` element.
 
-Further guidance can be found on the <a href="https://designsystem.digital.gov/components/radio-buttons/" target="_blank" rel="noopener nofollow">USWDS site</a>.
+Further guidance can be found on the <a href="https://designsystem.digital.gov/components/radio-buttons/" target="_blank" rel="noopener nofollow"><abbr title="The U.S. Web Design System">USWDS</abbr> site</a>.

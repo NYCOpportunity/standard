@@ -4,18 +4,21 @@
 - this.alert.id = this.createId()
 - this.alert.icon = 'info'
 - this.alert.type = 'info'
-- this.alert.body = '<p data-js-alert=\'text\'>An alert message.</p>';
+- this.alert.body = '<p data-js-alert="text">An alert message.</p>';
 - this.alert.ariaHidden = false
 - this.alert.role = 'region'
-- this.alert.ariaDescribedBy = 'region'
+- this.alert.ariaDescribedBy = false
 
 / Inherit overrides
 - if (typeof alert !== 'undefined')
   - this.alert = Object.assign(this.alert, alert);
   - this.alert.type = (this.alert.type) ? `-${this.alert.type}` : '';
+  - this.alert.ariaDescribedBy = (this.alert.role == 'region') ? `aria-db-alert-${this.alert.id}` : false
 
-/! { @data-js  This selector is recommended for JavaScript enhanced alerts but not necessary }
-article class='c-alert ${this.alert.class}' data-js='alert${this.alert.type}' aria-hidden=this.alert.ariaHidden role=this.alert.role aria-describedby=((this.alert.role == 'region') ? `aria-db-alert-${this.alert.id}` : false)
+/! { @data-js           This selector is recommended for JavaScript enhanced alerts but not necessary }
+/! { @role              Alert roles may either be "region," "status," or "alert" require different roles }
+/! { @aria-describedby  Alert roles of "region" require an @aria-labeledby or description label targeting the alert body }
+article class='c-alert ${this.alert.class}' data-js='alert${this.alert.type}' aria-hidden=this.alert.ariaHidden role=this.alert.role aria-describedby=this.alert.ariaDescribedBy
   div class='c-alert__graphic'
     svg class='icon-ui' aria-hidden='true'
       use href='#lucide-${this.alert.icon}'

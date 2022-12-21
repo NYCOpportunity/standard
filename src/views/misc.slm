@@ -1,4 +1,4 @@
-- this.title = 'Utilities'
+- this.title = 'Misc. Utilities'
 
 / Layout
 = extend('/slm/layouts/default')
@@ -19,4 +19,6 @@
 = content('content')
   = mixin('content-header')
 
-  = mixin('section', '/utilities/utilities/utilities', {src: false, demo: false, markup: false})
+  = mixin('section', '/utilities/misc/misc', {src: false, demo: false, markup: false})
+
+  = mixin('pagination', {related: {label: 'Tailwindcss', href: 'tailwindcss'}, next: {label: 'Themes', href: 'themes'}})

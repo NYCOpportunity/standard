@@ -12,4 +12,4 @@ The navigation includes a "Jump to top" link that will link to the page heading.
 
 ---
 
-The `aria-label` for the `nav` element is "Jump Navigation" in this example. Other recommendations from the USWDS include "On this page," "In this article," or "Table of contents."
+The `aria-label` for the `nav` element is "Jump Navigation" in this example. Other recommendations from the <abbr title="The U.S. Web Design System">USWDS</abbr> include "On this page," "In this article," or "Table of contents."

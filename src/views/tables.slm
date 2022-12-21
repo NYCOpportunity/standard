@@ -27,4 +27,4 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/tables/tables-headers-sticky', {title: 'Sticky Headers', pkg: '@nycopportunity/pattern-elements'})
 
-  = mixin('pagination', {related: {label: 'Description Lists', href: 'description-lists'}, next: {label: 'Accordion', href: 'accordion'}})
+  = mixin('pagination', {related: {label: 'Description Lists', href: 'description-lists'}, next: {label: 'Typography', href: 'typography'}})

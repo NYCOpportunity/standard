@@ -9,25 +9,9 @@
   = mixin('head')
 
 = content('content')
-  / header class='p-6'
-  /   div class='layout-wrap layout-content mx-auto py-6'
-  /     div class='mx-auto py-6'
-  /       div class='flex justify-center items-center mb-6'
-  /         h1
-  /           = 'Welcome to the'
-  /           br
-  /           = `${this.package.nice}`
-
-  /       p = `${this.package.description}.`
-
-  /       p class='text-center py-2'
-  /         a class='btn btn-large btn-primary inline-block' href='#browse-the-patterns' Browse the Patterns
-
-  /       p class='text-center' = `v${this.package.version}`
-
-  div class='py-3 wrap'
-    - alert = {class: 'c-alert-status-primary', body: `<p>The ${this.package.nice} is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>`}
-    == this.include('/components/alert/alert');
+  / div class='py-3 wrap'
+  /   - alert = {class: 'c-alert-status-primary', body: `<p>The ${this.package.nice} is currently a work-in-progress. Please reach out to products@nycopportunity.nyc.gov with any questions.</p>`}
+  /   == this.include('/components/alert/alert');
 
   header class='py-8'
     div class='layout-content mx-auto py-8'
@@ -77,7 +61,7 @@
 
               span Copy
 
-          p Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concantenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprites will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.
+          p Source; ES (JavaScript), Sass (stylesheet), and uncompressed SVGs will be in the <b>src/</b> directory. Distribution; concatenated JavaScript, CSS stylesheets, and optimized SVGs and SVG sprites will be in the <b>dist/</b> directory. Further integration details can be found in the installation guide.
 
           p class='text-center'
             a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide

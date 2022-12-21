@@ -110,7 +110,7 @@ Including each sprite can also be done manually by copying and pasting each spri
 
 #### Tailwindcss
 
-When compiling stylesheets, you may use the PostCSS configuration to generate stylesheets the same way this library does to ensure the correct Tailwindcss utilities are generated. You can require the PostCSS and Tailwindcss configuration files and modify them to meet your needs. The main attributes that need to be configured are `content` and `safelist`. Below is an example PostCSS configuration file.
+When compiling stylesheets, you may use the PostCSS configuration to generate stylesheets the same way this library does to ensure the correct Tailwindcss utilities are generated. You can require the <a target="_blank" rel="noopener" href="{{ this.package.cdn.source }}/blob/main/config/postcss.js">PostCSS</a> and <a target="_blank" rel="noopener" href="{{ this.package.cdn.source }}/blob/main/config/tailwindcss.js">Tailwindcss</a> configuration files and extend them to meet your needs. The main attributes that need to be configured are `content` and `safelist`. Below is an example PostCSS configuration file that extends the {{ this.package.nice }} configuration.
 
 ```JavaScript
 let postCssConfig = require('{{ this.package.name }}/config/postcss');
@@ -308,3 +308,37 @@ You can add SVG icons with the following snippet when the global script source i
   Standard.icons('{{ this.package.cdn.url }}@v{{ this.package.version }}/dist/svg/lucide.svg');
 </script>
 ```
+
+<!-- ---
+
+#### Using the Patterns CLI
+
+The {{ this.package.nice }} and documentation site are generated using the <a target="_blank" rel="noopener" href="https://github.com/CityOfNewYork/patterns-cli">Patterns CLI</a>, which can be used as a static generator to create the same assets for production environments.
+
+```
+- assets/
+  - js/
+  - styles/
+  - svg/
+- bin/
+  - clean.js
+  - rename.js
+  - styles.js
+- config/
+  - default.js
+  - postcss.js
+  - rename.js
+  - rollup.js
+  - sass.js
+  - svgs.js
+- src/
+    - js/
+      - global.js
+    - scss/
+      - _imports.scss
+      - _tokens.scss
+      - site-default.scss
+    - svgs/
+- package.json
+- .npmrc
+``` -->

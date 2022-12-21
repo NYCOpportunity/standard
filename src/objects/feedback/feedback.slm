@@ -18,4 +18,56 @@ section class='o-navigation-spacing-bottom' data-js='feedback'
 
         div class='c-alert__body py-2 pie-2'
           p data-js-alert='text'
-            | How can we improve this website? Let us know by <a class='link-icon' href='#' target='_blank'><span>sending us feedback</span> <svg aria-hidden='true' class='icon-ui rtl:flip'><use href='#lucide-external-link'></use></svg></a>
+            | How can we improve this website? Let us know by <button data-js='dialog' aria-controls='aria-c-modal' aria-expanded='false' data-dialog-lock='true' data-dialog='open'>sending us feedback</button>.
+
+/! { @data-js           "dialog" designates this element as a toggling element for the modal }
+/! { @aria-controls     Targets the element that will be shown and hidden by the toggle }
+/! { @aria-expanded     Indicates if the modal is open or not }
+/! { @data-dialog       "open" designates this element as the primary opening toggle for the modal. It will be focused on when the modal is closed. Only one open toggle associated with this aria-controls value can exist on the page }
+/! { @data-dialog-lock  "true" traps focus within the modal element }
+button data-js='dialog' aria-controls='aria-c-modal' aria-expanded='false' data-dialog-lock='true' data-dialog='open'
+  | Show Modal
+
+/! { @id                Identifies this element as the target of the modal toggle }
+/! { @class             The "active" class will be toggled on the modal when it is open }
+/! { @aria-hidden       Indicates this area is hidden from screen readers }
+/! { @role              "dialog" indicates the modal is a dialog element }
+/! { @aria-modal        "true" indicates the element is a modal element }
+/! { @aria-labelledby   Identifies the modal heading as the label for the modal }
+/! { @aria-describedby  Identifies the modal body as the description for the modal }
+div id='aria-c-modal' class='o-modal hidden' aria-hidden='true' role='dialog' aria-modal='true' aria-labelledby='aria-lb-modal-header' aria-describedby='aria-db-modal-body'
+  div class='o-modal__layout'
+    div class='o-modal__body animated fadeInUp'
+      div class='o-modal__close'
+        /! { @data-js        "dialog" designates this element as a toggling element for the modal }
+        /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+        /! { @aria-expanded  Indicates if the modal is open or not }
+        /! { @data-dialog    "close" designates this element as the primary close toggle for the modal. It will be focused on when the modal is opened. Only one close toggle associated with this aria-controls value can exist on the page }
+        /! { @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        button class='o-modal__dismiss link-icon' data-js='dialog' aria-controls='aria-c-modal' data-dialog='close' aria-expanded='false' tabindex='-1'
+          /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+          svg class='icon-ui' tabindex='-1'
+            use href='#lucide-x'
+
+          span Dismiss
+
+      /! { @id  Matches the @aria-labelledby attribute of the modal parent }
+      h2 class='o-modal__heading' id='aria-lb-modal-header' = this.modal.header
+
+      /! { @id  Matches the @aria-describedby attribute of the modal parent }
+      p id='aria-db-modal-body' = this.modal.body
+
+      /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      button class='btn-primary' tabindex='-1'
+        span Dialog action
+
+        /! { @tabindex  Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+        svg class='icon-ui rtl:flip' tabindex='-1' aria-hidden='true'
+          use href='#lucide-arrow-right'
+
+      /! { @data-js        "dialog" designates this element as a toggling element for the modal }
+      /! { @aria-controls  Targets the element that will be shown and hidden by the toggle }
+      /! { @aria-expanded  Indicates if the modal is open or not }
+      /! { @tabindex       Set the tabindex to '-1' on focusable elements if this area is hidden when the page is rendered }
+      button class='btn' data-js='dialog' aria-controls='aria-c-modal' aria-expanded='false' tabindex='-1'
+        span Cancel
