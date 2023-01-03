@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+          <h1 class="font-nyc text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.4" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.4</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#lucide-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-b8b2435701573" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-b8b2435701573">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.4" rel="noopener nofollow" target="_blank" title="v0.0.4">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-b8b2435701573" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-b8b2435701573">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="spinner">Spinner</a>
+          <a class="flex p-1" href="tables">Tables</a>
+          <a class="flex p-1" href="typography">Fonts and Typography</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-b8b2435701573" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-b8b2435701573">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="household">Household</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="popover">Popover</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-b8b2435701573" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-b8b2435701573">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header (NYC.ID)</a>
+          <a class="flex p-1" href="attribution">Attribution (Footer)</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="find-help">Find Help</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="modal">Modal</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-b8b2435701573" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-b8b2435701573">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+          <a class="flex p-1" href="misc">Miscellaneous</a>
+          <a class="flex p-1" href="themes">Themes</a>
+          <a class="flex p-1" href="toggle">Toggle</a>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3 id="page-heading">Toggle</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="toggle">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/utilities/toggle" target="_blank">@nycopportunity/pattern-elements/src/utilities/toggle</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="toggle-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap grid gap-3">
+                <button aria-controls="toggle-target" aria-expanded="true" class="btn" data-js="toggle" type="button">Click to toggle the target element</button>
+                <div aria-hidden="false" class="bg-scale-2 p-4 text-center active" id="toggle-target">
+                  <p>This region is the target element.&nbsp;<a href="#">This link is a potentially focusable element</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="toggle-markup">Code</h5>
+            <button aria-controls="toggle-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="toggle-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap grid gap-3&quot;&gt;
+    &lt;button aria-controls=&quot;toggle-target&quot; aria-expanded=&quot;true&quot; class=&quot;btn&quot; data-js=&quot;toggle&quot; type=&quot;button&quot;&gt;Click to toggle the target element&lt;/button&gt;
+    &lt;div aria-hidden=&quot;false&quot; class=&quot;bg-scale-2 p-4 text-center active&quot; id=&quot;toggle-target&quot;&gt;
+      &lt;p&gt;This region is the target element.&amp;nbsp;&lt;a href=&quot;#&quot;&gt;This link is a potentially focusable element&lt;/a&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The <strong>Toggle</strong> utility shows or hides targeted regions based on user interaction. Dynamic ARIA attributes and classes on both the toggling element and target of the toggle are used to provide screen reader support.</p>
+            <hr>
+            <p>For <code>button</code> toggling elements, the <code>aria-controls</code> attribute is used to find the target region by its ID. For <code>a</code> elements, the <code>href</code> attribute is used to find the target region by its ID.</p>
+            <hr>
+            <p>The class <code>hidden</code> will be added to the target region when it is hidden. The class <code>active</code> will be added to both the toggling element and target region when the element is visible.</p>
+            <hr>
+            <p>Potentially focusable elements in the target region will have their <code>tabindex</code> toggled to allow or prevent them from receiving focus. If the target region is hidden before the page loads, the <code>tabindex</code> for these elements need to be set to <code>-1</code>. Elements that can be selected by the following strings will have their <code>tabindex</code> toggled.</p>
+            <div class="code-block">
+              <pre>&#39;a&#39;, &#39;button&#39;, &#39;input&#39;, &#39;select&#39;, &#39;textarea&#39;, &#39;object&#39;, &#39;embed&#39;, &#39;form&#39;, &#39;fieldset&#39;, &#39;legend&#39;, &#39;label&#39;, &#39;area&#39;, &#39;audio&#39;, &#39;video&#39;, &#39;iframe&#39;, &#39;svg&#39;, &#39;details&#39;, &#39;table&#39;, &#39;[tabindex]&#39;, &#39;[contenteditable]&#39;, &#39;[usemap]&#39;</pre>
+            </div>
+            <hr>
+            <p>The use of the <code>aria-expanded</code> attribute on the toggling element is recommended to announce the visibility of the target region. Optionally, the attribute <code>aria-pressed</code> can be used instead to announce that the toggle button is “pressed” or “not pressed.” These attributes provide different feedback to screenreaders and are appropriate for different component types. <code>aria-expanded</code> would be used for patterns such as <a href="https://inclusive-components.design/collapsible-sections/" target="_blank" rel="nofollow noindex">collapsible sections</a> and <code>aria-pressed</code> would be used for <a href="https://inclusive-components.design/toggle-button/" target="_blank" rel="nofollow noindex">toggle buttons</a> or <strong>switches</strong>.</p>
+            <hr>
+            <p>Placement of the target should follow the toggling element so that it appears next in order on the page for screen readers. For targets that are far apart or appear in a different section of the page, the <a href="#anchor-toggle">Anchor Toggle</a> may be more appropriate.</p>
+            <hr>
+            <p>The <strong>Toggle</strong> utility supports having more than one toggle element per toggle target.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="anchor-toggle">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#anchor-toggle">
+                <svg class="icon-ui" role="img">
+                  <title>Anchor Toggle Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Anchor Toggle
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/utilities/toggle" target="_blank">@nycopportunity/pattern-elements/src/utilities/toggle</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="anchor-toggle-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap grid gap-3">
+                <a data-js="toggle" href="#anchor-target">Toggle and jump to target.</a>
+                <p aria-hidden="true" class="hidden" id="anchor-target">This element is the anchor target.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="anchor-toggle-markup">Code</h5>
+            <button aria-controls="anchor-toggle-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="anchor-toggle-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap grid gap-3&quot;&gt;
+    &lt;a data-js=&quot;toggle&quot; href=&quot;#anchor-target&quot;&gt;Toggle and jump to target.&lt;/a&gt;
+    &lt;p aria-hidden=&quot;true&quot; class=&quot;hidden&quot; id=&quot;anchor-target&quot;&gt;This element is the anchor target.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The anchor toggle uses an anchor in the <code>href</code> to jump to the target element. While anchor toggles are an appropriate use case for target elements that are further away from the toggling element, it should be used sparingly as anchor links can make the navigation of content more difficult. Always use descriptive text in the link such as “Jump to” to describe what the behavior of the link will be.</p>
+            <hr>
+            <p>Anchor target regions will have their <code>tabindex</code> attribute set to <code>-1</code> to shift focus from the toggle element to the target element.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="toggle-fade-in-up">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#toggle-fade-in-up">
+                <svg class="icon-ui" role="img">
+                  <title>Toggle Fade In Up Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Toggle Fade In Up
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/utilities/toggle" target="_blank">@nycopportunity/pattern-elements/src/utilities/toggle</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="toggle-fade-in-up-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap grid gap-3">
+                <button aria-controls="toggle-target-fade-in-up" aria-expanded="false" class="btn" data-js="toggle" type="button">Click to toggle the target element</button>
+                <div aria-hidden="true" class="bg-scale-2 p-4 text-center hidden hidden:fadeInUp animated" id="toggle-target-fade-in-up">This region is the target element.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="toggle-fade-in-up-markup">Code</h5>
+            <button aria-controls="toggle-fade-in-up-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="toggle-fade-in-up-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap grid gap-3&quot;&gt;
+    &lt;button aria-controls=&quot;toggle-target-fade-in-up&quot; aria-expanded=&quot;false&quot; class=&quot;btn&quot; data-js=&quot;toggle&quot; type=&quot;button&quot;&gt;Click to toggle the target element&lt;/button&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;bg-scale-2 p-4 text-center hidden hidden:fadeInUp animated&quot; id=&quot;toggle-target-fade-in-up&quot;&gt;This region is the target element.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Adding the class <code>hidden:fadeInUp animated</code> to the target element will animate the opacity and position target element.</p>
+            <hr>
+            <p>The animation will be disabled by devices using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank" rel="noopener nofollow">prefers-reduced-motion</a>
+              <code>@media</code> query.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="toggle-overflow">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#toggle-overflow">
+                <svg class="icon-ui" role="img">
+                  <title>Toggle Overflow Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Toggle Overflow
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/utilities/toggle" target="_blank">@nycopportunity/pattern-elements/src/utilities/toggle</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="toggle-overflow-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap grid gap-3">
+                <button aria-controls="toggle-target-overflow" aria-expanded="false" class="btn" data-js="toggle" type="button">Click to toggle the target element</button>
+                <div aria-hidden="true" class="bg-scale-2 text-center hidden hidden:overflow animated" id="toggle-target-overflow">
+                  <div class="p-4">This region is the target element.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="toggle-overflow-markup">Code</h5>
+            <button aria-controls="toggle-overflow-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="toggle-overflow-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap grid gap-3&quot;&gt;
+    &lt;button aria-controls=&quot;toggle-target-overflow&quot; aria-expanded=&quot;false&quot; class=&quot;btn&quot; data-js=&quot;toggle&quot; type=&quot;button&quot;&gt;Click to toggle the target element&lt;/button&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;bg-scale-2 text-center hidden hidden:overflow animated&quot; id=&quot;toggle-target-overflow&quot;&gt;
+      &lt;div class=&quot;p-4&quot;&gt;This region is the target element.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>Adding the class <code>hidden:overflow animated</code> to the target element will animate the max-height property of the target element.</p>
+            <hr>
+            <p>The animation will be disabled by devices using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank" rel="noopener nofollow">prefers-reduced-motion</a>
+              <code>@media</code> query.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="toggle-overflow-fade-in-up">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#toggle-overflow-fade-in-up">
+                <svg class="icon-ui" role="img">
+                  <title>Toggle Overflow Fade In Up Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Toggle Overflow Fade In Up
+            </h4>
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/pattern-elements/tree/main/src/utilities/toggle" target="_blank">@nycopportunity/pattern-elements/src/utilities/toggle</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="toggle-overflow-fade-in-up-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-content">
+              <div class="wrap grid gap-3">
+                <button aria-controls="toggle-target-overflow-fade-in-up" aria-expanded="false" class="btn" data-js="toggle" type="button">Click to toggle the target element</button>
+                <div aria-hidden="true" class="bg-scale-2 text-center hidden hidden:overflowFadeInUp animated" id="toggle-target-overflow-fade-in-up">
+                  <div class="p-4 animated">Click to toggle the target element</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="toggle-overflow-fade-in-up-markup">Code</h5>
+            <button aria-controls="toggle-overflow-fade-in-up-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="toggle-overflow-fade-in-up-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-content&quot;&gt;
+  &lt;div class=&quot;wrap grid gap-3&quot;&gt;
+    &lt;button aria-controls=&quot;toggle-target-overflow-fade-in-up&quot; aria-expanded=&quot;false&quot; class=&quot;btn&quot; data-js=&quot;toggle&quot; type=&quot;button&quot;&gt;Click to toggle the target element&lt;/button&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;bg-scale-2 text-center hidden hidden:overflowFadeInUp animated&quot; id=&quot;toggle-target-overflow-fade-in-up&quot;&gt;
+      &lt;div class=&quot;p-4 animated&quot;&gt;Click to toggle the target element&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>This is a combination of the “overflow” and “fade in up” animations. Adding the class <code>hidden:overflowFadeInUp</code> will animate the <code>max-height</code> property of the parent element. Adding <code>animated</code> to any immediate (<code>.parent &gt; .child</code>) children of the parent will animate the opacity property fo the child.</p>
+            <hr>
+            <p>The animation will be disabled by devices using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank" rel="noopener nofollow">prefers-reduced-motion</a>
+              <code>@media</code> query.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="toggle-usage">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#toggle-usage">
+                <svg class="icon-ui" role="img">
+                  <title>Toggle Usage Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Toggle Usage
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <!-- Headers start with h5 ##### -->
+            <h5 id="global-script">Global Script</h5>
+            <p>The <strong>Toggle</strong> toggle requires JavaScript for functionality. It uses the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle" target="_blank" rel="noopener nofollow">Patterns Scripts, Toggle Utility</a> to properly set ARIA and Class attributes on the toggle and target elements. To use the <strong>Toggle</strong> through the global script use the following code:</p>
+            <div class="code-block">
+              <pre>&lt;script src=&quot;@nycopportunity/standard/dist/js/default.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  var Standard = new Default();
+
+  Standard.toggle();
+&lt;/script&gt;</pre>
+            </div>
+            <p>This will instantiate the <strong>Theme</strong> toggling element and attach event listeners to the body. It optionally accepts an object with settings for the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle" target="_blank" rel="noopener nofollow">Patterns Scripts, Toggle Utility</a>, described below.</p>
+            <h5 id="module-import">Module Import</h5>
+            <p>The Toggle Utility source exists in the <a href="https://github.com/CityOfNewYork/patterns-scripts/" target="_blank" rel="noopener nofollow">Patterns Scripts</a> utility library, which is a dependency of this library. This method allows the specification of each theme object and a callback function that will be triggered after the theme is toggled.</p>
+            <div class="code-block">
+              <pre>import Toggle from &#39;@nycopportunity/pttrn-scripts/src/toggle/toggle&#39;;
+
+new Toggle();</pre>
+            </div>
+            <p>The <code>Toggle</code> instance optionally accepts an object with settings described below and in the <a href="https://github.com/CityOfNewYork/patterns-scripts/tree/main/src/toggle" target="_blank" rel="noopener nofollow">Patterns Scripts, Toggle Utility</a> documentation.</p>
+            <h5 id="attributes">Attributes</h5>
+            <p>Attributes such as <code>aria-controls</code>, <code>aria-expanded</code>, and <code>type</code> will help assistive technologies understand the relationship between the toggle element and the toggle target. These three attributes should be considered the bare minimum but they may be interchanged with others based on the use case. Below is an explanation of other possible attributes that can be used with the toggle utility. <em>Static</em> attributes will not change. <em>Dynamic</em> attributes will change when the toggle event is fired.</p>
+            <p>
+              <strong>Toggling Element Attributes</strong>
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>State</th>
+                  <th>Importance</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>aria-controls</code>
+                  </td>
+                  <td>
+                    <em>static</em>
+                  </td>
+                  <td>required</td>
+                  <td>ID of the target element. Used by the toggle to select the target element.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>aria-expanded</code>
+                  </td>
+                  <td>
+                    <em>dynamic</em>
+                  </td>
+                  <td>recommended</td>
+                  <td>Boolean that announces that target content is “expanded” or “collapsed” when the toggling element is clicked.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>type</code>
+                  </td>
+                  <td>
+                    <em>static</em>
+                  </td>
+                  <td>recommended</td>
+                  <td>Setting a <code>&lt;button&gt;</code> element type to “button” will distinguish it from other button types, such as “submit” and “reset,” but only within <code>&lt;form&gt;</code> elements. By default, a <code>&lt;button&gt;</code> is the type “submit” within a form.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>aria-pressed</code>
+                  </td>
+                  <td>
+                    <em>dynamic</em>
+                  </td>
+                  <td>optional</td>
+                  <td>Boolean that announces that the toggling element is toggled. Not recommended for use with <code>aria-expanded</code>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>role</code>
+                  </td>
+                  <td>
+                    <em>static</em>
+                  </td>
+                  <td>optional</td>
+                  <td>If the toggling element is not a <code>&lt;button&gt;</code> element, but looks and behaves like a button (see documentation for the <a href="buttons">Button Element</a>), then setting the <code>role</code> attribute to “button” is recommended. See <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role">MDN documentation for the “button” role</a> for more information</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <strong>Target Region Attributes</strong>
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>State</th>
+                  <th>Importance</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>aria-hidden</code>
+                  </td>
+                  <td>
+                    <em>dynamic</em>
+                  </td>
+                  <td>recommended</td>
+                  <td>Boolean that hides the content of the target element when “collapsed.”</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>role</code>
+                  </td>
+                  <td>
+                    <em>static</em>
+                  </td>
+                  <td>optional</td>
+                  <td>Setting the target element’s <code>role</code> to “region” identifies the target as a significant area. See <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Region_role">MDN documentation for the “region” role</a> for more information.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>aria-labelledby</code>
+                  </td>
+                  <td>
+                    <em>static</em>
+                  </td>
+                  <td>optional</td>
+                  <td>This is used along with the <code>role</code> attribute to label the content of a “region.” This can be set to the toggling elements <code>id</code> but can also be set to a different elements <code>id</code>.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 id="configuration">Configuration</h5>
+            <p>The Toggle Utility accepts an object <code>{}</code> with the following properties:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Type</th>
+                  <th>Importance</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>selector</code>
+                  </td>
+                  <td>
+                    <em>string</em>
+                  </td>
+                  <td>optional</td>
+                  <td>Full selector string of the toggle element (this is passed to the <code>.matches()</code> method).</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>inactiveClass</code>
+                  </td>
+                  <td>
+                    <em>string/boolean</em>
+                  </td>
+                  <td>optional</td>
+                  <td>Single class name that will be toggled on the toggle and target element when the element is inactive or “collapsed.” Pass “false” to skip toggling an inactive class (there is no inactive class for the toggle element).</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>activeClass</code>
+                  </td>
+                  <td>
+                    <em>string/boolean</em>
+                  </td>
+                  <td>optional</td>
+                  <td>Single class name that will be toggled on the target element when the element is active or “expanded.” Pass “false” to skip toggling an active class.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>before</code>
+                  </td>
+                  <td>
+                    <em>function</em>
+                  </td>
+                  <td>optional</td>
+                  <td>A function that will be executed before the toggling element and target classes and attributes are toggled. The function is passed the instance of the toggle class.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <code>after</code>
+                  </td>
+                  <td>
+                    <em>function</em>
+                  </td>
+                  <td>optional</td>
+                  <td>A function that will be executed after the toggling element and target classes and attributes are toggled. The function is passed the instance of the toggle class.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <div class="layout-content page-max">
+        <div class="wrap mb-4">
+          <nav class="grid tablet:grid-cols-2 gap-3">
+            <a class="btn" href="https://nycopportunity.github.io/standard/buttons#toggle-button">
+              <span>See related, "Buttons, Toggle"</span>
+            </a>
+            <a class="btn-secondary" href="https://nycopportunity.github.io/standard/installation">
+              <span>Next, "Installation"</span>
+              <svg aria-hidden="true" class="icon-ui rtl:flip">
+                <use href="#lucide-arrow-right"></use>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2023 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-69a1eff408f73" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-69a1eff408f73">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.4" rel="noopener nofollow" target="_blank" title="v0.0.4">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-69a1eff408f73" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-69a1eff408f73">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="spinner">Spinner</a>
+          <a class="flex p-1" href="tables">Tables</a>
+          <a class="flex p-1" href="typography">Fonts and Typography</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-69a1eff408f73" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-69a1eff408f73">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="household">Household</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="popover">Popover</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-69a1eff408f73" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-69a1eff408f73">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header (NYC.ID)</a>
+          <a class="flex p-1" href="attribution">Attribution (Footer)</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="find-help">Find Help</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="modal">Modal</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-69a1eff408f73" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-69a1eff408f73">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+          <a class="flex p-1" href="misc">Miscellaneous</a>
+          <a class="flex p-1" href="themes">Themes</a>
+          <a class="flex p-1" href="toggle">Toggle</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.toggle(); // The Toggle Utility must be instantiated first
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.attribution();
+    Standard.codeHighlight();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    Standard.disclaimer();
+    Standard.masks();
+    Standard.menu();
+    Standard.modal();
+    Standard.nearbyStops();
+    Standard.popover();
+    Standard.search();
+    Standard.shareForm();
+    Standard.stepByStep();
+    Standard.newsletter();
+    Standard.newsletterForm();
+    Standard.setHeightProperties();
+    Standard.themes();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+</body>
+
+</html>
