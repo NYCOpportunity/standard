@@ -66,17 +66,7 @@
           p class='text-center'
             a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide
 
-          / p class='text-center'
-            / | Alternatively, view the <a href="quick-start">quick start documentation</a> to use the CDN method of installation.
 
-    / div class='layout-wrap layout-content mx-auto py-6'
-    /   div class='mx-auto py-6'
-    /     section class='bc-white p-4'
-    /       h2 Installation
-
-    /       div class='code-block'
-    /         pre
-    /           | $ npm install @nycopportunity/standard
 
     section class='py-6'
       div class='layout-content mx-auto py-6'

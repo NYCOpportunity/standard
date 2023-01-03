@@ -25,6 +25,6 @@ import Popover from '{{ this.package.name }}/{{ this.global.src }}/components/po
 let elements = document.querySelectorAll(Popover.selector);
 
 elements.forEach(element => {
-  new Tooltips(element);
+  new Popover(element);
 });
 ```
