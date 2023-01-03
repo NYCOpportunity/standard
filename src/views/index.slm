@@ -66,7 +66,12 @@
           p class='text-center'
             a class='btn btn-large btn-primary inline-block' href='installation' Read the installation guide
 
+    section class='py-6'
+      div class='layout-content mx-auto py-6'
+        div class='wrap'
+          h2 class='text-center mt-0' About
 
+          p The v{this.package.nice} was created by leveraging learnings from creating and maintaining pattern libraries for the NYC Opportunity portfolio of <a href="https://www.nyc.gov/site/opportunity/portfolio/products.page" target="_blank" rel="noopener nofollow">digital products</a>. It uses a custom build User Interface (UI) library combined with guidance from the U.S. Web Design System to create a tailored experience for people looking to access public services.
 
     section class='py-6'
       div class='layout-content mx-auto py-6'

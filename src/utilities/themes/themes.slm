@@ -1,0 +1,7 @@
+button class='btn' data-js='themes'
+  svg class='icon-ui'
+    use data-js-themes='icon' href='#lucide-moon'
+
+  span Switch to the&nbsp;
+
+  span data-js-themes='label' Theme

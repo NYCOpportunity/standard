@@ -1,0 +1,26 @@
+- this.title = 'Themes'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/utilities/themes/themes')
+
+  = mixin('section', '/utilities/themes/readme', {title: 'Usage', src: false, demo: false, markup: false})
+
+  = mixin('pagination', {related: {label: 'Color', href: 'color'}, next: {label: 'Toggle', href: 'toggle'}})

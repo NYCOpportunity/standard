@@ -1,0 +1,34 @@
+- this.title = 'Toggle'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/toggle', {pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/toggle-anchor', {title: 'Anchor Toggle', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/toggle-fade-in-up', {title: 'Toggle Fade In Up', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/toggle-overflow', {title: 'Toggle Overflow', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/toggle-overflow-fade-in-up', {title: 'Toggle Overflow Fade In Up', pkg: '@nycopportunity/pattern-elements'});
+
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/utilities/toggle/readme', {title: 'Toggle Usage', src: false, markup: false, demo: false});
+
+  = mixin('pagination', {related: {label: 'Buttons, Toggle', href: 'buttons#toggle-button'}, next: {label: 'Installation', href: 'installation'}})

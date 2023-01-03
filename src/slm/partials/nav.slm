@@ -119,8 +119,8 @@ nav role='navigation' aria-labelledby='aria-lb-utilities-${this.nav.id}' class='
 
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='tailwindcss' Tailwindcss
   a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='misc' Miscellaneous
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
-  / a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='toggle' Toggle
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='themes' Themes
+  a tabindex=(this.nav.tabindex ? '-1' : false) class='${this.nav.class.item}' href='toggle' Toggle
 
 - delete nav
 - delete this.nav
