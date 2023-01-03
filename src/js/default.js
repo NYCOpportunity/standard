@@ -6,6 +6,8 @@ import Direction from '@nycopportunity/pttrn-scripts/src/direction/direction';
 import Copy from '@nycopportunity/pttrn-scripts/src/copy/copy';
 import Forms from '@nycopportunity/pttrn-scripts/src/forms/forms';
 import Icons from '@nycopportunity/pttrn-scripts/src/icons/icons';
+import MaskDollars from '../utilities/mask/mask-dollars.js';
+import MaskPhone from '../utilities/mask/mask-phone.js';
 import Newsletter from '@nycopportunity/pttrn-scripts/src/newsletter/newsletter';
 import SetHeightProperties from '@nycopportunity/pttrn-scripts/src/set-height-properties/set-height-properties';
 import Themes from '@nycopportunity/pttrn-scripts/src/themes/themes';
@@ -134,6 +136,14 @@ class Main {
    */
   icons(path = 'svg/svgs.svg') {
     return new Icons(path);
+  }
+
+  /**
+   * An API for Input Masks
+   */
+  masks() {
+    new MaskDollars();
+    new MaskPhone();
   }
 
   /**
@@ -350,17 +360,17 @@ class Main {
    * @param  {Function}  submit    A custom event handler for a form
    */
   validate(selector = '[data-js="validate"]', submit = (event) => {event.target.submit()}) {
-    let validate = document.querySelector(selector);
+    (elements => {
+      elements.forEach(element => {
+        let form = new Forms(element);
 
-    if (validate) {
-      let form = new Forms(validate);
+        form.submit = submit;
 
-      form.submit = submit;
+        form.selectors.ERROR_MESSAGE_PARENT = '.c-question__container';
 
-      form.selectors.ERROR_MESSAGE_PARENT = '.c-question__container';
-
-      form.watch();
-    }
+        form.watch();
+      });
+    })(document.querySelectorAll(selector));
   }
 
   /**

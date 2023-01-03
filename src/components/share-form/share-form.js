@@ -4,10 +4,6 @@
 import Forms from '@nycopportunity/pttrn-scripts/src/forms/forms';
 import Toggle from '@nycopportunity/pttrn-scripts/src/toggle/toggle';
 
-// Input masking
-import Cleave from 'cleave.js';
-import 'cleave.js/src/addons/phone-type-formatter.us';
-
 import serialize from 'for-cerial';
 
 /**
@@ -38,8 +34,6 @@ class ShareForm {
 
     this.strings = ShareForm.strings;
 
-    this.patterns = ShareForm.patterns;
-
     this.sent = ShareForm.sent;
 
     /**
@@ -48,14 +42,6 @@ class ShareForm {
     this.phone = this.element.querySelector(this.selectors.PHONE);
 
     if (this.phone) {
-      this.cleave = new Cleave(this.phone, {
-        phone: true,
-        phoneRegionCode: 'us',
-        delimiter: '-'
-      });
-
-      this.phone.setAttribute('pattern', this.patterns.PHONE);
-
       this.type = 'text';
     } else
       this.type = 'email';
@@ -114,8 +100,9 @@ class ShareForm {
     this._data = serialize(this.form.FORM, {hash: true});
 
     // Sanitize the phone number (if there is a phone number)
-    if (this.phone && this._data.to)
-      this._data.to = this._data.to.replace(/[-]/g, '');
+    if (this.phone && this._data.to) {
+      this._data.to = this._data.to.match(/\d/g, 10).join('');
+    }
 
     return this;
   }
@@ -318,11 +305,6 @@ ShareForm.strings = {
   VALID_REQUIRED: 'This is required',
   VALID_EMAIL_INVALID: 'Please enter a valid email.',
   VALID_TEL_INVALID: 'Please provide 10-digit number with area code.'
-};
-
-/** Input patterns for form input elements */
-ShareForm.patterns = {
-  PHONE: '[0-9]{3}-[0-9]{3}-[0-9]{4}'
 };
 
 ShareForm.sent = false;

@@ -19,10 +19,13 @@
 = content('content')
   = mixin('content-header')
 
+  - input = {}
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs', {title: false, pkg: '@nycopportunity/pattern-elements'})
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-prefix-suffix', {title: 'Input with Prefix or Suffix', pkg: '@nycopportunity/pattern-elements'})
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs-mask', {title: 'Input Mask', demo: false, markup: false, src: false})
+
+  = mixin('section', '/utilities/mask/readme', {title: 'Mask Utilities', markup: false, demo: false, src: false})
 
   = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Labels', href: 'labels'}})

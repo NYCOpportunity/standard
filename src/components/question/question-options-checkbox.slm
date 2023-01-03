@@ -1,7 +1,3 @@
 / Question Checkbox Options
 
-- question = {label: 'Which of the following options applies best to you?', description: 'Feel free to choose as many as you like.'}
-- question.id = this.createId()
-- question.options = [{label: 'Option 1', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 2', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 3', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 4', type: 'checkbox', name: `option['${question.id}']`}]
-
 = partial('question-options.slm');

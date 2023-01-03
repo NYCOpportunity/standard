@@ -21,6 +21,6 @@
 
   = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/forms', {title: false, pkg: '@nycopportunity/pattern-elements'})
 
-  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/readme', {title: 'Usage', src: false, markup: false, demo: false})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/readme', {title: 'Validation', markup: false, demo: false, src: false})
 
   = mixin('pagination', {related: {label: 'Question', href: 'question'}, next: {label: 'Icons', href: 'icons'}})

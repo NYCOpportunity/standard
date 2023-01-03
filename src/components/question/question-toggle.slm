@@ -1,8 +1,3 @@
 / Toggle Question
 
-- question = {label: 'Do you have an income?', description: 'This includes money from jobs, alimony, investments, or gifts.'}
-- question.id = this.createId()
-- question.options = [{label: 'Yes', type: 'radio', name: `option['${question.id}']`}, {label: 'No', type: 'radio', name: `option['${question.id}']`}]
-- question.optionColumns = false
-
 = partial('question-options.slm');

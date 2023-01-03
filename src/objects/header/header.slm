@@ -23,12 +23,12 @@
 header class='o-header'
   div
     nav class='breadcrumbs' aria-label='Breadcrumb'
-      a href='${this.baseUrl}/demos/index' Home
+      a href='${this.baseUrl}/#' Home
 
       svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
         use href='#lucide-chevron-right'
 
-      a href='${this.baseUrl}/demos/programs/index' Programs
+      a href='${this.baseUrl}/#' Programs
 
       svg class='breadcrumbs__chevron icon-ui rtl:flip' aria-hidden='true'
         use href='#lucide-chevron-right'

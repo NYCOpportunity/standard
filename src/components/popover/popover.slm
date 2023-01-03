@@ -1,12 +1,21 @@
+- this.popover = {}
+- this.popover.id = this.createId()
+- this.popover.label = 'Here\'s why we are asking'
+- this.popover.description = 'Many benefit programs are meant for people of a specific age group. Sharing your age will help us choose the programs that will be most helpful to you right now. The information you share for the purposes of public benefits screening will be anonymous.'
+- this.popover.class = 'link-icon'
+
+- if (typeof popover !== 'undefined')
+  - this.popover = Object.assign(this.popover, popover);
+
 /! { @data-js           "popover" instantiates this element as the popover toggle }
 /! { @type              "button" defines this as a standard button if it appears in a form or question }
 /! { @aria-describedby  Matches the ID of the popover element }
-button type='button' class='c-question__info' data-js='popover' aria-describedby='aria-db-popover'
+button type='button' class=this.popover.class data-js='popover' aria-describedby='aria-db-popover-${this.popover.id}'
   svg class='icon-ui' aria-hidden='true'
     use href='#lucide-info'
 
-  span Here's why we are asking.
+  span == this.popover.label
 
 /! { @id  Matches the @aria-describedby attribute of the toggling element }
-div id='aria-db-popover' class='c-popover animated fadeInUp'
-  p Many benefit programs are meant for people of a specific age group. Sharing your age will help us choose the programs that will be most helpful to you right now. The information you share for the purposes of public benefits screening will be anonymous.
+div id='aria-db-popover-${this.popover.id}' class='c-popover animated fadeInUp'
+  p == this.popover.description

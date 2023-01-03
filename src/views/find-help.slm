@@ -1,0 +1,54 @@
+- this.title = 'Find Help'
+
+/ Layout
+= extend('/slm/layouts/default')
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm')
+= partial('/slm/partials/content-header.mixin.slm')
+= partial('/slm/partials/pagination.mixin.slm')
+= partial('/slm/section/section.mixin.slm')
+
+/ Content blocks
+= content('head')
+  = mixin('head')
+
+= content('header')
+  = mixin('header')
+
+= content('content')
+  = mixin('content-header')
+
+  = mixin('section', '/objects/find-help/find-help')
+
+  = mixin('section', '/objects/find-help/readme', {title: 'Usage', markup: false, demo: false, src: false})
+
+  = mixin('pagination', {related: {label: 'Layouts, Map', href: 'layouts#map-layout'}, next: {label: 'Header', href: 'header'}})
+
+= content('script')
+  javascript:
+    let classActive = 'bg-scale-3';
+    let classDefault = 'bg-scale-1';
+    let map = document.querySelector('[data-find-help="map"]');
+
+    document.querySelector('body').addEventListener('click', event => {
+      if (!event.target.matches('[data-find-help-embed]'))
+        return;
+
+      event.preventDefault();
+
+      if (event.target.dataset['findHelpEmbed']) {
+        document.querySelectorAll('[data-find-help="location"]').forEach(loc => {
+          loc.classList.remove(classActive);
+          loc.classList.add(classDefault);
+        });
+
+        map.setAttribute('src', event.target.dataset['findHelpEmbed']);
+        event.target.scrollIntoView();
+
+        map.scrollIntoView({behavior: 'smooth'});
+
+        event.target.parentNode.classList.remove(classDefault);
+        event.target.parentNode.classList.add(classActive);
+      }
+    });

@@ -2,7 +2,7 @@
 
 ##### Global Script
 
-The **Share Form** requires JavaScript for showing and hiding the form input and disclaimer, for form validation, and submitting the form to an endpoint backend processing. To initialize the **Share Form** and Disclaimer instances from the global script use the following code:
+The **Share Form** requires JavaScript for showing and hiding the form input and disclaimer, for form validation, input masking, and submitting the form to an endpoint backend processing. To initialize the **Share Form** and Disclaimer instances from the global script use the following code:
 
 ```html
 <!-- Global Script -->
@@ -13,6 +13,7 @@ The **Share Form** requires JavaScript for showing and hiding the form input and
 
   Standard.disclaimer();
   Standard.shareForm();
+  Standard.masks();
 </script>
 ```
 
@@ -20,12 +21,14 @@ This will attach event listeners for toggling the form and disclaimer open and f
 
 ##### Module Import
 
-For module imports, import the Disclaimer and **Share Form** modules from the source. You must pass a DOM selection of each **Share Form** to a new instance of the class. A selector reference is stored in the class.
+For module imports, import the mask utility, Disclaimer and **Share Form** modules from the source. You must pass a DOM selection of each **Share Form** to a new instance of the class. A selector reference is stored in the class.
 
 ```javascript
+import MaskPhone from '{{ this.package.name }}/{{ this.global.src }}/utilities/mask/mask-phone.js';
 import Disclaimer from '{{ this.package.name }}/{{ this.global.src }}/components/disclaimer/disclaimer';
 import ShareForm from '{{ this.package.name }}/{{ this.global.src }}/components/share-form/share-form';
 
+new MaskPhone();
 new Disclaimer();
 
 let elements = document.querySelectorAll(ShareForm.selector);

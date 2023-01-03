@@ -44,6 +44,15 @@
   }
 }
 
+.c-question__container-cols-3 {
+  display: grid;
+  gap: calc(var(--nyco-grid) * 2);
+
+  @include media.screen-and-min-width('tablet') {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .c-question__label {
   @include labels.base;
 }

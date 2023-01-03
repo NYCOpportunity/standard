@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/devonhirth/OneDrive - NYC DoITT/envs/nycopportunity/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 1.0.3,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.3/dist/",
+  version: 1.0.4,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.4/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -597,7 +597,7 @@ $tokens:(
     width: 4px
   ),
   button: (
-    inner-size: 1rem,
+    inner-size: 1.1rem,
     radius: 5px,
     radius-tag: 50px,
     border-style: solid,
@@ -605,7 +605,7 @@ $tokens:(
     variants: (primary, secondary, tertiary)
   ),
   input: (
-    inner-size: 1rem,
+    inner-size: 1.1rem,
     radius: 0px,
     border-style: solid,
     border-width: 2px,
@@ -615,7 +615,7 @@ $tokens:(
     search-icon: (calc(var(--nyco-grid) * 3), calc(var(--nyco-grid) * 3))
   ),
   select: (
-    inner-size: 1rem,
+    inner-size: 1.1rem,
     radius: 5px,
     border-style: solid,
     border-width: 2px,
@@ -623,7 +623,7 @@ $tokens:(
     stroke-line: round
   ),
   option: (
-    inner-size: 1rem,
+    inner-size: 1.1rem,
     radius: 5px,
     border-style: solid,
     border-width: 2px,

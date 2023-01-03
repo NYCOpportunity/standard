@@ -11,7 +11,7 @@ div class='c-share-form' data-js='share-form'
 
   /! { @action       The endpoint for the share form to post data to }
   /! { @aria-hidden  Hides the form from view until the toggle element is clicked }
-  form id='aria-c-share-${this.shareFormEmail.id}' class='c-share-form__form hidden' aria-hidden='true' action='{{ MY_ACTION }}' method='post'
+  form id='aria-c-share-${this.shareFormEmail.id}' class='c-share-form__form hidden' action='{{ MY_ACTION }}' method='post'
     /! { Share form data }
     input type='hidden' name='action' value='email_send'
     input type='hidden' name='url' value='{{ MY_URL }}' readonly=true
@@ -19,7 +19,7 @@ div class='c-share-form' data-js='share-form'
     input type='hidden' name='GUID' value='{{ MY_GUID }}' maxlength='13' readonly=true
 
     div class='c-share-form__fieldset'
-      div class='c-share-form__input'
+      div class='input c-share-form__input'
         /! { @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }
         label class='sr-only' for='share-form-input-${this.shareFormEmail.id}' tabindex='-1' Enter your email address
 

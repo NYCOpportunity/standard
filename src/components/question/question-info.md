@@ -1,0 +1,1 @@
+While a visible inline description is preferred, the [Popover](popover) can be used to provide additional information or context about the question without a fully visible paragraph description after the label.

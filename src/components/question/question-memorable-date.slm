@@ -1,0 +1,81 @@
+/ Question
+
+/ Defaults
+- this.question = {}
+- this.question.id = this.createId()
+- this.question.label = 'Will you please fill out this required question?'
+- this.question.description = 'Please answer to the best of your ability.'
+- this.question.for = `question-${this.question.id}`
+- this.question.required = false
+- this.question.tabindex = false
+- this.question.button = false
+
+- this.question.input = {}
+- this.question.input.type = 'text'
+- this.question.input.name = `question['${this.question.id}']`
+- this.question.input.pattern = false
+- this.question.input.ariaHidden = false
+
+/ Inherit overrides
+- if (typeof question !== 'undefined')
+  - this.question = Object.assign(this.question, question);
+  - this.question.value = (question.value) ? question.value : this.createSlug(this.question.label)
+
+div class='layout-content'
+  div class='wrap'
+    div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
+      /! { @for       Should match the id of the input }
+      /! { @tabindex  Add "-1" to insure focusable elements are not visible when parent's aria-hidden attribute is "true" }
+      label class='c-question__label' tabindex=this.question.tabindex
+        == this.question.label
+
+        - if this.question.required
+          span class='text-error'
+            | &nbsp;*
+
+      - if (this.question.description)
+        p == this.question.description
+
+      - input = {}
+      - input = Object.assign(input, this.question.input)
+      - input.required = this.question.required
+      - input.tabindex = this.question.tabindex
+      div class='c-question__container c-question__container-cols-3'
+        div
+          - select.id = this.createId()
+          - select.options = []
+          - select.options.push({label: '01 - January', value: '1'})
+          - select.options.push({label: '02 - February', value: '2'})
+          - select.options.push({label: '03 - March', value: '3'})
+          - select.options.push({label: '04 - April', value: '4'})
+          - select.options.push({label: '05 - May', value: '5'})
+          - select.options.push({label: '06 - June', value: '6'})
+          - select.options.push({label: '07 - July', value: '7'})
+          - select.options.push({label: '08 - August', value: '8'})
+          - select.options.push({label: '09 - September', value: '9'})
+          - select.options.push({label: '10 - October', value: '10'})
+          - select.options.push({label: '11 - November', value: '11'})
+          - select.options.push({label: '12 - December', value: '12'})
+          / - this.question.for = `question-${this.question.id}`
+          label class='label' for='${select.id}' Month
+          = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects.slm');
+
+        div
+          - input.id = this.createId()
+          - input.maxlength = 2
+          - input.pattern = '[0-9]*'
+          - input.mode = 'numeric'
+          - input.type = 'text'
+          / - this.question.for = `question-${this.question.id}`
+          label class='label' for='${input.id}' Day
+          = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs.slm');
+
+        div
+          - input.id = this.createId()
+          - input.maxlength = 4
+          - input.pattern = '[0-9]*'
+          - input.mode = 'numeric'
+          - input.type = 'text'
+          / - this.question.for = `question-${this.question.id}`
+          label class='label' for='${input.id}' Year
+          = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/inputs/inputs.slm');

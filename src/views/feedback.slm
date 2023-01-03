@@ -23,4 +23,4 @@
 
   = mixin('section', '/objects/feedback/feedback-form', {title: 'Feedback Form'})
 
-  = mixin('pagination', {related: {label: 'Modal', href: 'modal'}, next: {label: 'Languages', href: 'languages'}})
+  = mixin('pagination', {related: {label: 'Modal', href: 'modal'}, next: {label: 'Find Help', href: 'find-help'}})

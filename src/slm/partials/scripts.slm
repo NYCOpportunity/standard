@@ -15,6 +15,7 @@ javascript:
   Standard.dialog();
   Standard.direction();
   Standard.disclaimer();
+  Standard.masks();
   Standard.menu();
   Standard.modal();
   Standard.nearbyStops();

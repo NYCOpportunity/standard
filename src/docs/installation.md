@@ -61,6 +61,7 @@ Main.copy();
 Main.dialog();
 Main.direction();
 Main.disclaimer();
+Main.masks();
 Main.menu();
 Main.modal();
 Main.nearbyStops();
@@ -281,6 +282,7 @@ The following global script source can be copied and pasted before your HTML doc
   Standard.dialog();
   Standard.direction();
   Standard.disclaimer();
+  Standard.masks();
   Standard.menu();
   Standard.modal();
   Standard.nearbyStops();

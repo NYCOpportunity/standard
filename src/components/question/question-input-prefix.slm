@@ -1,0 +1,7 @@
+
+div class='grid gap-3'
+  - question = {label: 'What is your phone number?', description: 'Enter a 10-digit, U.S. only phone number and we can send you a link to this page to help you get back to it when you\’re ready.', input: {prefix: '+1', type: 'tel', js: 'tel', mode: 'tel', pattern: '([0-9]{3}) [0-9]{3}-[0-9]{4}'}}
+  = partial('question.slm');
+
+  - question = {label: 'What is your case number?', description: 'Please include your case number which appears in the format CL-###### in your application documents. Enter the number<br>without the CL prefix.', input: {prefix: 'CL-'}}
+  = partial('question.slm');

@@ -60,7 +60,8 @@ form class=feedbackForm.class tabindex=feedbackForm.tabindex
   div class='c-question' id='${question.id}' tabindex=feedbackForm.tabindex
     label class='c-question__label' for='question-${question.id}' tabindex=feedbackForm.tabindex What is one thing we could do to make the website better for you?<span class='text-error'>&nbsp;*</span>
 
-    p Please describe in as much detail as possible.
+    p
+      small Please describe in as much detail as possible.
 
     div class='c-question__container'
       div class='input'

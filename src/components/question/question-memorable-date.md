@@ -1,0 +1,1 @@
+Guidance on memorable date pickers can be found on the <a href="https://designsystem.digital.gov/components/memorable-date/" target="_blank" rel="noopener nofollow"><abbr title="The U.S. Web Design System">USWDS</abbr> site</a>.

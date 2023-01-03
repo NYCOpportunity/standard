@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/standard/svg/favicon.svg" rel="icon" type="image/x-icon" />
+  <title>Opportunity Standard</title>
+  <link href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/standard/css/documentation.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function load() {
+      document.body.style.visibility = 'visible'
+    };
+  </script>
+</head>
+
+<body class="bg" onload="load()" style="visibility: hidden;">
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+  <header class="bg-scale-2" role="banner">
+    <div class="flex items-center justify-between py-2 wrap">
+      <div>
+        <a class="text-brand no-underline" href="https://nycopportunity.github.io/standard/">
+          <h1 class="font-nyc text-body">Opportunity Standard</h1>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav aria-label="Primary Navigation" class="nav-inline flex items-center mis-2">
+          <a class="btn-tag hidden tablet:block" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.2" rel="noopener nofollow" target="_blank" title="Latest Release">v0.0.2</a>
+          <button class="hidden tablet:flex link-icon" data-js="themes">
+            <svg aria-hidden="true" class="icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <button aria-controls="main-menu" aria-expanded="false" class="link-icon" data-js="toggle" id="main-menu-control">
+            <svg aria-hidden="true" class="icon-ui">
+              <use href="#lucide-menu"></use>
+            </svg>
+            <span>Menu</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <aside aria-hidden="true" aria-labelledby="main-menu-control" class="bg-scale-2 text-small hidden hidden:overflowFadeInUp animated" id="main-menu">
+    <div class="page-max py-4 animated">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-b44f128e7e049" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-b44f128e7e049">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.2" rel="noopener nofollow" target="_blank" title="v0.0.2">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-b44f128e7e049" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-b44f128e7e049">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="spinner">Spinner</a>
+          <a class="flex p-1" href="tables">Tables</a>
+          <a class="flex p-1" href="typography">Fonts and Typography</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-b44f128e7e049" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-b44f128e7e049">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="household">Household</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="popover">Popover</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-b44f128e7e049" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-b44f128e7e049">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header (NYC.ID)</a>
+          <a class="flex p-1" href="attribution">Attribution (Footer)</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="find-help">Find Help</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="modal">Modal</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-b44f128e7e049" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-b44f128e7e049">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+          <a class="flex p-1" href="misc">Miscellaneous</a>
+        </nav>
+      </div>
+      <div class="text-center">
+        <button aria-controls="main-menu" aria-expanded="false" class="btn btn-small" data-js="toggle" data-pa11y="disable" tabindex="-1">Close Menu</button>
+      </div>
+    </div>
+  </aside>
+  <main class="py-4" id="main-content" role="main">
+    <article class="py-4 clearfix">
+      <header class="page-max layout-content">
+        <div class="wrap">
+          <h3 id="page-heading">Find Help</h3>
+        </div>
+      </header>
+      <section class="pb-4 mb-4" id="find-help">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <p class="flex items-center">
+              <svg class="icon-ui mie-1" role="img">
+                <title>GitHub Source Link</title>
+                <use href="#lucide-github"></use>
+              </svg>
+              <a href="https://github.com/nycopportunity/standard/tree/main/src/objects/find-help" target="_blank">@nycopportunity/standard/src/objects/find-help</a>
+            </p>
+          </div>
+        </header>
+        <div class="page-max layout-content pb-4">
+          <h5 class="wrap flex items-center" id="find-help-example">Demonstration</h5>
+        </div>
+        <div class="bg-scale-0 border-t border-b border-scale-4 py-6 mb-6">
+          <div class="page-max flex justify-center py-8 wrap">
+            <div class="layout-map desktop:layout-sidebar bg-scale-2" id="find-help">
+              <div class="layout-map__sidebar p-2">
+                <div class="c-question mb-3" id="09804884e404b">
+                  <label class="c-question__label" for="question-09804884e404b">Enter an address or zip code</label>
+                  <div class="c-question__container">
+                    <div class="input">
+                      <input class="input" id="question-09804884e404b" name="question[&quot;09804884e404b" ]" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button aria-controls="ac-type-of-help" aria-expanded="false" class="btn-primary btn-toggle w-full mb-3" data-js="toggle">
+                    <span>Select a type of help</span>
+                    <svg aria-hidden="true" class="icon-ui">
+                      <use href="#lucide-chevron-down"></use>
+                    </svg>
+                  </button>
+                  <div aria-hidden="true" class="hidden" id="ac-type-of-help">
+                    <fieldset aria-hidden="true" class="c-question" id="9e69e12ca08cd" tabindex="-1">
+                      <legend class="sr-only" tabindex="-1">Select a type of help</legend>
+                      <div class="c-question__container c-question__container-rows m-0">
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="c79e44a0ef4db" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="c79e44a0ef4db" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="career-services" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Career Services</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="2407f0fbe0f37" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="2407f0fbe0f37" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="cash-expenses" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Cash &amp; Expenses</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="4de6435cff0d8" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="4de6435cff0d8" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="certification" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Certification</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="d50ae179d6cc7" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="d50ae179d6cc7" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="child-care" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Child Care</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="00468b3154caa" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="00468b3154caa" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="education" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Education</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="7677294676535" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="7677294676535" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="english-math" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">English &amp; Math</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="6ac4ec39eaea9" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="6ac4ec39eaea9" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="enrichment" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Enrichment</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="a9f4856a8e9ca" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="a9f4856a8e9ca" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="family-services" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Family Services</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="485d5b16daa7e" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="485d5b16daa7e" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="food" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Food</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="8fc8b6dcc230c" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="8fc8b6dcc230c" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="health" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Health</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="16b2dba24eab" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="16b2dba24eab" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="housing" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Housing</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="f5c5c6d97fce3" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="f5c5c6d97fce3" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="identification" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Identification</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="01c0d9c56f6a7" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="01c0d9c56f6a7" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="people-with-disabilities" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">People with Disabilities</span>
+                          </span>
+                        </label>
+                        <!--{ @for       Should match the id of the input }-->
+                        <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                        <label class="option " for="2e922bb52e9d5" tabindex="-1">
+                          <!--{ @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }-->
+                          <input id="2e922bb52e9d5" name="option['9e69e12ca08cd']" required="" tabindex="-1" type="checkbox" value="work" />
+                          <span class="option__base">
+                            <svg aria-hidden="true" class="option__graphic" tabindex="-1">
+                              <use href="#option-nyco-checkbox"></use>
+                            </svg>
+                            <span class="option__label">Work</span>
+                          </span>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <ul class="list-none p-0 m-0">
+                  <li>
+                    <article class="c-card c-card-transparent p-3 desktop:p-2 bg-scale-1" data-find-help="location">
+                      <button aria-label="Queens SNAP Center / Job Center" class="w-full h-full top-0 left-0 absolute" data-find-help-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.467058977991!2d-73.93554700789765!3d40.75175102308316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f2bec1d95b1%3A0xe105bab7def501b3!2sQueens%20SNAP%20Center!5e0!3m2!1sen!2sus!4v1671829100780!5m2!1sen!2sus"></button>
+                      <header class="c-card__header pb-2">
+                        <span>
+                          <h3 class="c-card__title text-h5">Queens SNAP Center / Job Center</h3>
+                        </span>
+                      </header>
+                      <div class="c-card__body pt-2">
+                        <ul class="c-card__features">
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Get help with</title>
+                              <use href="#lucide-heart-handshake"></use>
+                            </svg>Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+                          </li>
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Address</title>
+                              <use href="#lucide-map-pin"></use>
+                            </svg>32-20 Northern Blvd., Long Island City, 6th / 2nd Floor, Queens, NY 11101
+                          </li>
+                        </ul>
+                        <a class="btn-small btn-secondary relative z-10" href="#find-help">
+                          <span>Learn more<span class="sr-only">&nbsp;more about Queens SNAP Center / Job Center</span>
+                          </span>
+                          <svg aria-hidden="true" class="icon-ui rtl:flip">
+                            <use href="#lucide-external-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="c-card c-card-transparent p-3 desktop:p-2 bg-scale-1" data-find-help="location">
+                      <button aria-label="Richmond SNAP Center / Job Center" class="w-full h-full top-0 left-0 absolute" data-find-help-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.654275073265!2d-74.07808694850792!3d40.63750577923879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fcd27238975%3A0x63787db0e1e6b1c7!2sStaten%20Island%20Food%20Stamp%20Center!5e0!3m2!1sen!2sus!4v1671828956081!5m2!1sen!2sus"></button>
+                      <header class="c-card__header pb-2">
+                        <span>
+                          <h3 class="c-card__title text-h5">Richmond SNAP Center / Job Center</h3>
+                        </span>
+                      </header>
+                      <div class="c-card__body pt-2">
+                        <ul class="c-card__features">
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Get help with</title>
+                              <use href="#lucide-heart-handshake"></use>
+                            </svg>Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+                          </li>
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Address</title>
+                              <use href="#lucide-map-pin"></use>
+                            </svg>201 Bay Street, 1st and 2nd Floor, Staten Island, NY 10301
+                          </li>
+                        </ul>
+                        <a class="btn-small btn-secondary relative z-10" href="#find-help">
+                          <span>Learn more<span class="sr-only">&nbsp;more about Richmond SNAP Center / Job Center</span>
+                          </span>
+                          <svg aria-hidden="true" class="icon-ui rtl:flip">
+                            <use href="#lucide-external-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="c-card c-card-transparent p-3 desktop:p-2 bg-scale-1" data-find-help="location">
+                      <button aria-label="Crotona SNAP Center / Job Center" class="w-full h-full top-0 left-0 absolute" data-find-help-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.1327852153972!2d-73.89714054850306!3d40.84700837921609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f46408bd568b%3A0x77f018191ab910c7!2sCrotona%20Job%20Center!5e0!3m2!1sen!2sus!4v1671829218325!5m2!1sen!2sus"></button>
+                      <header class="c-card__header pb-2">
+                        <span>
+                          <h3 class="c-card__title text-h5">Crotona SNAP Center / Job Center</h3>
+                        </span>
+                      </header>
+                      <div class="c-card__body pt-2">
+                        <ul class="c-card__features">
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Get help with</title>
+                              <use href="#lucide-heart-handshake"></use>
+                            </svg>Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+                          </li>
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Address</title>
+                              <use href="#lucide-map-pin"></use>
+                            </svg>1910 Monterey Avenue, 5th / 2nd Floor, Bronx, NY 10457
+                          </li>
+                        </ul>
+                        <a class="btn-small btn-secondary relative z-10" href="#find-help">
+                          <span>Learn more<span class="sr-only">&nbsp;more about Crotona SNAP Center / Job Center</span>
+                          </span>
+                          <svg aria-hidden="true" class="icon-ui rtl:flip">
+                            <use href="#lucide-external-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="c-card c-card-transparent p-3 desktop:p-2 bg-scale-1" data-find-help="location">
+                      <button aria-label="Waverly SNAP Center / Job Center" class="w-full h-full top-0 left-0 absolute" data-find-help-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1768754527793!2d-73.99661294850564!3d40.73613337922783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259981b6255e3%3A0x85674a83b4b8bb4f!2sNew%20York%20City%20Human%20Resources!5e0!3m2!1sen!2sus!4v1671829302518!5m2!1sen!2sus"></button>
+                      <header class="c-card__header pb-2">
+                        <span>
+                          <h3 class="c-card__title text-h5">Waverly SNAP Center / Job Center</h3>
+                        </span>
+                      </header>
+                      <div class="c-card__body pt-2">
+                        <ul class="c-card__features">
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Get help with</title>
+                              <use href="#lucide-heart-handshake"></use>
+                            </svg>Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+                          </li>
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Address</title>
+                              <use href="#lucide-map-pin"></use>
+                            </svg>32-20 Northern Blvd., Long Island City, 6th / 2nd Floor, Queens, NY 11101
+                          </li>
+                        </ul>
+                        <a class="btn-small btn-secondary relative z-10" href="#find-help">
+                          <span>Learn more<span class="sr-only">&nbsp;more about Waverly SNAP Center / Job Center</span>
+                          </span>
+                          <svg aria-hidden="true" class="icon-ui rtl:flip">
+                            <use href="#lucide-external-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="c-card c-card-transparent p-3 desktop:p-2 bg-scale-1" data-find-help="location">
+                      <button aria-label="Clinton Hill SNAP Center / Job Center" class="w-full h-full top-0 left-0 absolute" data-find-help-embed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.600714223972!2d-73.97079904850682!3d40.68276587923367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba520bf8555%3A0xa07e6b91f20b035b!2sNYC%20Human%20Resources%20Administration%20Job%20Centers!5e0!3m2!1sen!2sus!4v1671829366834!5m2!1sen!2sus"></button>
+                      <header class="c-card__header pb-2">
+                        <span>
+                          <h3 class="c-card__title text-h5">Clinton Hill SNAP Center / Job Center</h3>
+                        </span>
+                      </header>
+                      <div class="c-card__body pt-2">
+                        <ul class="c-card__features">
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Get help with</title>
+                              <use href="#lucide-heart-handshake"></use>
+                            </svg>Supplemental Nutrition Assistance Program (SNAP)
+                          </li>
+                          <li>
+                            <svg class="icon-ui c-card__feature-icon" role="img">
+                              <title>Address</title>
+                              <use href="#lucide-map-pin"></use>
+                            </svg>495 Clermont Avenue, Brooklyn, NY 11238
+                          </li>
+                        </ul>
+                        <a class="btn-small btn-secondary relative z-10" href="#find-help">
+                          <span>Learn more<span class="sr-only">&nbsp;more about Clinton Hill SNAP Center / Job Center</span>
+                          </span>
+                          <svg aria-hidden="true" class="icon-ui rtl:flip">
+                            <use href="#lucide-external-link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <iframe allowfullscreen="" class="layout-map__map" data-find-help="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476937002!2d-74.11976287675961!3d40.69740344255568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1671829451108!5m2!1sen!2sus" style="border: 0;"></iframe>
+            </div>
+          </div>
+        </div>
+        <!--Section Markup-->
+        <div class="page-max layout-content pb-1">
+          <div class="wrap flex items-center">
+            <h5 class="sr-only" id="find-help-markup">Code</h5>
+            <button aria-controls="find-help-markup-block" aria-expanded="false" class="btn-primary btn-toggle w-full" data-js="toggle">
+              <span>Inspect code</span>
+              <svg aria-hidden="true" class="icon-ui">
+                <use href="#lucide-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="page-max layout-content pb-6 mb-6">
+          <div aria-hidden="true" class="wrap hidden hidden:overflow animated" id="find-help-markup-block">
+            <div class="py-1">
+              <div class="code-block">
+                <pre data-toggle-tabindex="0" tabindex="-1">&lt;div class=&quot;layout-map desktop:layout-sidebar bg-scale-2&quot; id=&quot;find-help&quot;&gt;
+  &lt;div class=&quot;layout-map__sidebar p-2&quot;&gt;
+    &lt;div class=&quot;c-question mb-3&quot; id=&quot;e60baf92b2948&quot;&gt;
+      &lt;label class=&quot;c-question__label&quot; for=&quot;question-e60baf92b2948&quot;&gt;Enter an address or zip code&lt;/label&gt;
+      &lt;div class=&quot;c-question__container&quot;&gt;
+        &lt;div class=&quot;input&quot;&gt;
+          &lt;input class=&quot;input&quot; id=&quot;question-e60baf92b2948&quot; name=&quot;question[&amp;quot;e60baf92b2948&quot; ]&quot; type=&quot;text&quot; /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mb-3&quot;&gt;
+      &lt;button aria-controls=&quot;ac-type-of-help&quot; aria-expanded=&quot;false&quot; class=&quot;btn-primary btn-toggle w-full mb-3&quot; data-js=&quot;toggle&quot;&gt;
+        &lt;span&gt;Select a type of help&lt;/span&gt;
+        &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui&quot;&gt;
+          &lt;use href=&quot;#lucide-chevron-down&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+      &lt;div aria-hidden=&quot;true&quot; class=&quot;hidden&quot; id=&quot;ac-type-of-help&quot;&gt;
+        &lt;fieldset aria-hidden=&quot;true&quot; class=&quot;c-question&quot; id=&quot;30f005f0d3cb4&quot; tabindex=&quot;-1&quot;&gt;
+          &lt;legend class=&quot;sr-only&quot; tabindex=&quot;-1&quot;&gt;Select a type of help&lt;/legend&gt;
+          &lt;div class=&quot;c-question__container c-question__container-rows m-0&quot;&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;869eeaa0ca576&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;869eeaa0ca576&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;career-services&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Career Services&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;eb35f6bab685f&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;eb35f6bab685f&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;cash-expenses&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Cash &amp;amp; Expenses&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;7f9a00246255a&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;7f9a00246255a&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;certification&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Certification&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;3692e1447abb2&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;3692e1447abb2&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;child-care&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Child Care&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;339c54f529223&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;339c54f529223&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;education&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Education&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;cdf93f91ef115&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;cdf93f91ef115&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;english-math&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;English &amp;amp; Math&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;4850f36c6bce1&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;4850f36c6bce1&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;enrichment&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Enrichment&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;1517f1217cfe3&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;1517f1217cfe3&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;family-services&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Family Services&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;4b9cf02db7b98&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;4b9cf02db7b98&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;food&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Food&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;e8cb056c80566&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;e8cb056c80566&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;health&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Health&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;7fb8c7b9dec6d&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;7fb8c7b9dec6d&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;housing&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Housing&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;14ce05077b18e&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;14ce05077b18e&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;identification&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Identification&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;284f188673df&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;284f188673df&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;people-with-disabilities&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;People with Disabilities&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+            &lt;!--{ @for       Should match the id of the input }--&gt;
+            &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+            &lt;label class=&quot;option &quot; for=&quot;db3f71cf7ce4&quot; tabindex=&quot;-1&quot;&gt;
+              &lt;!--{ @tabindex  Add tabindex=&quot;-1&quot; to insure focusable elements are not visible when parent is hidden }--&gt;
+              &lt;input id=&quot;db3f71cf7ce4&quot; name=&quot;option['30f005f0d3cb4']&quot; required=&quot;&quot; tabindex=&quot;-1&quot; type=&quot;checkbox&quot; value=&quot;work&quot; /&gt;
+              &lt;span class=&quot;option__base&quot;&gt;
+                &lt;svg aria-hidden=&quot;true&quot; class=&quot;option__graphic&quot; tabindex=&quot;-1&quot;&gt;
+                  &lt;use href=&quot;#option-nyco-checkbox&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span class=&quot;option__label&quot;&gt;Work&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;list-none p-0 m-0&quot;&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;c-card c-card-transparent p-3 desktop:p-2 bg-scale-1&quot; data-find-help=&quot;location&quot;&gt;
+          &lt;button aria-label=&quot;Queens SNAP Center / Job Center&quot; class=&quot;w-full h-full top-0 left-0 absolute&quot; data-find-help-embed=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.467058977991!2d-73.93554700789765!3d40.75175102308316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f2bec1d95b1%3A0xe105bab7def501b3!2sQueens%20SNAP%20Center!5e0!3m2!1sen!2sus!4v1671829100780!5m2!1sen!2sus&quot;&gt;&lt;/button&gt;
+          &lt;header class=&quot;c-card__header pb-2&quot;&gt;
+            &lt;span&gt;
+              &lt;h3 class=&quot;c-card__title text-h5&quot;&gt;Queens SNAP Center / Job Center&lt;/h3&gt;
+            &lt;/span&gt;
+          &lt;/header&gt;
+          &lt;div class=&quot;c-card__body pt-2&quot;&gt;
+            &lt;ul class=&quot;c-card__features&quot;&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Get help with&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-heart-handshake&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Address&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-map-pin&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;32-20 Northern Blvd., Long Island City, 6th / 2nd Floor, Queens, NY 11101
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a class=&quot;btn-small btn-secondary relative z-10&quot; href=&quot;#find-help&quot;&gt;
+              &lt;span&gt;Learn more&lt;span class=&quot;sr-only&quot;&gt;&amp;nbsp;more about Queens SNAP Center / Job Center&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+                &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+              &lt;/svg&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;c-card c-card-transparent p-3 desktop:p-2 bg-scale-1&quot; data-find-help=&quot;location&quot;&gt;
+          &lt;button aria-label=&quot;Richmond SNAP Center / Job Center&quot; class=&quot;w-full h-full top-0 left-0 absolute&quot; data-find-help-embed=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.654275073265!2d-74.07808694850792!3d40.63750577923879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fcd27238975%3A0x63787db0e1e6b1c7!2sStaten%20Island%20Food%20Stamp%20Center!5e0!3m2!1sen!2sus!4v1671828956081!5m2!1sen!2sus&quot;&gt;&lt;/button&gt;
+          &lt;header class=&quot;c-card__header pb-2&quot;&gt;
+            &lt;span&gt;
+              &lt;h3 class=&quot;c-card__title text-h5&quot;&gt;Richmond SNAP Center / Job Center&lt;/h3&gt;
+            &lt;/span&gt;
+          &lt;/header&gt;
+          &lt;div class=&quot;c-card__body pt-2&quot;&gt;
+            &lt;ul class=&quot;c-card__features&quot;&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Get help with&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-heart-handshake&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Address&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-map-pin&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;201 Bay Street, 1st and 2nd Floor, Staten Island, NY 10301
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a class=&quot;btn-small btn-secondary relative z-10&quot; href=&quot;#find-help&quot;&gt;
+              &lt;span&gt;Learn more&lt;span class=&quot;sr-only&quot;&gt;&amp;nbsp;more about Richmond SNAP Center / Job Center&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+                &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+              &lt;/svg&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;c-card c-card-transparent p-3 desktop:p-2 bg-scale-1&quot; data-find-help=&quot;location&quot;&gt;
+          &lt;button aria-label=&quot;Crotona SNAP Center / Job Center&quot; class=&quot;w-full h-full top-0 left-0 absolute&quot; data-find-help-embed=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.1327852153972!2d-73.89714054850306!3d40.84700837921609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f46408bd568b%3A0x77f018191ab910c7!2sCrotona%20Job%20Center!5e0!3m2!1sen!2sus!4v1671829218325!5m2!1sen!2sus&quot;&gt;&lt;/button&gt;
+          &lt;header class=&quot;c-card__header pb-2&quot;&gt;
+            &lt;span&gt;
+              &lt;h3 class=&quot;c-card__title text-h5&quot;&gt;Crotona SNAP Center / Job Center&lt;/h3&gt;
+            &lt;/span&gt;
+          &lt;/header&gt;
+          &lt;div class=&quot;c-card__body pt-2&quot;&gt;
+            &lt;ul class=&quot;c-card__features&quot;&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Get help with&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-heart-handshake&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Address&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-map-pin&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;1910 Monterey Avenue, 5th / 2nd Floor, Bronx, NY 10457
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a class=&quot;btn-small btn-secondary relative z-10&quot; href=&quot;#find-help&quot;&gt;
+              &lt;span&gt;Learn more&lt;span class=&quot;sr-only&quot;&gt;&amp;nbsp;more about Crotona SNAP Center / Job Center&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+                &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+              &lt;/svg&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;c-card c-card-transparent p-3 desktop:p-2 bg-scale-1&quot; data-find-help=&quot;location&quot;&gt;
+          &lt;button aria-label=&quot;Waverly SNAP Center / Job Center&quot; class=&quot;w-full h-full top-0 left-0 absolute&quot; data-find-help-embed=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1768754527793!2d-73.99661294850564!3d40.73613337922783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259981b6255e3%3A0x85674a83b4b8bb4f!2sNew%20York%20City%20Human%20Resources!5e0!3m2!1sen!2sus!4v1671829302518!5m2!1sen!2sus&quot;&gt;&lt;/button&gt;
+          &lt;header class=&quot;c-card__header pb-2&quot;&gt;
+            &lt;span&gt;
+              &lt;h3 class=&quot;c-card__title text-h5&quot;&gt;Waverly SNAP Center / Job Center&lt;/h3&gt;
+            &lt;/span&gt;
+          &lt;/header&gt;
+          &lt;div class=&quot;c-card__body pt-2&quot;&gt;
+            &lt;ul class=&quot;c-card__features&quot;&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Get help with&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-heart-handshake&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;Home Energy Assistance Program (HEAP), Cooling Assistance Benefit, Supplemental Nutrition Assistance Program (SNAP)
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Address&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-map-pin&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;32-20 Northern Blvd., Long Island City, 6th / 2nd Floor, Queens, NY 11101
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a class=&quot;btn-small btn-secondary relative z-10&quot; href=&quot;#find-help&quot;&gt;
+              &lt;span&gt;Learn more&lt;span class=&quot;sr-only&quot;&gt;&amp;nbsp;more about Waverly SNAP Center / Job Center&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+                &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+              &lt;/svg&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;article class=&quot;c-card c-card-transparent p-3 desktop:p-2 bg-scale-1&quot; data-find-help=&quot;location&quot;&gt;
+          &lt;button aria-label=&quot;Clinton Hill SNAP Center / Job Center&quot; class=&quot;w-full h-full top-0 left-0 absolute&quot; data-find-help-embed=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.600714223972!2d-73.97079904850682!3d40.68276587923367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba520bf8555%3A0xa07e6b91f20b035b!2sNYC%20Human%20Resources%20Administration%20Job%20Centers!5e0!3m2!1sen!2sus!4v1671829366834!5m2!1sen!2sus&quot;&gt;&lt;/button&gt;
+          &lt;header class=&quot;c-card__header pb-2&quot;&gt;
+            &lt;span&gt;
+              &lt;h3 class=&quot;c-card__title text-h5&quot;&gt;Clinton Hill SNAP Center / Job Center&lt;/h3&gt;
+            &lt;/span&gt;
+          &lt;/header&gt;
+          &lt;div class=&quot;c-card__body pt-2&quot;&gt;
+            &lt;ul class=&quot;c-card__features&quot;&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Get help with&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-heart-handshake&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;Supplemental Nutrition Assistance Program (SNAP)
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;svg class=&quot;icon-ui c-card__feature-icon&quot; role=&quot;img&quot;&gt;
+                  &lt;title&gt;Address&lt;/title&gt;
+                  &lt;use href=&quot;#lucide-map-pin&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;495 Clermont Avenue, Brooklyn, NY 11238
+              &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a class=&quot;btn-small btn-secondary relative z-10&quot; href=&quot;#find-help&quot;&gt;
+              &lt;span&gt;Learn more&lt;span class=&quot;sr-only&quot;&gt;&amp;nbsp;more about Clinton Hill SNAP Center / Job Center&lt;/span&gt;
+              &lt;/span&gt;
+              &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon-ui rtl:flip&quot;&gt;
+                &lt;use href=&quot;#lucide-external-link&quot;&gt;&lt;/use&gt;
+              &lt;/svg&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/article&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;iframe allowfullscreen=&quot;&quot; class=&quot;layout-map__map&quot; data-find-help=&quot;map&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot; src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476937002!2d-74.11976287675961!3d40.69740344255568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1671829451108!5m2!1sen!2sus&quot; style=&quot;border: 0;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>The <strong>Find Help</strong> map presents a list of locations or offices for assisting users with in-person help. The list of offices can be filtered using <strong>location based search</strong> and <strong>categorical service filtering</strong>. It uses the <a href="layouts#map-layout">Map Layout</a> to present the list of locations in the sidebar region and a map in the content region. The map updates location information as the user narrows their search through filtering or clicks on individual office locations.</p>
+            <hr>
+            <p>The “Learn More” button for each location should open a new tab to ensure that the user is able to easily navigate back to the map after viewing location details.</p>
+          </div>
+        </div>
+      </section>
+      <section class="pb-4 mb-4" id="usage">
+        <header class="page-max layout-content py-4">
+          <div class="wrap">
+            <h4 class="flex items-center">
+              <a class="mie-1 flex items-center" href="#usage">
+                <svg class="icon-ui" role="img">
+                  <title>Usage Anchor Link</title>
+                  <use href="#lucide-anchor"></use>
+                </svg>
+              </a>Usage
+            </h4>
+          </div>
+        </header>
+        <!--Section Text-->
+        <div class="page-max layout-content pb-6">
+          <div class="wrap">
+            <p>This example is for demonstration purposes only. In a live example, the <a target="_blank" rel="noopener nofollow" href="https://developers.google.com/maps/documentation/javascript">Google Maps Platform, JavaScript API</a> would be used to provide location based search and show multiple location markers on the map.</p>
+            <p>The <a href="https://github.com/CityOfNewYork/ACCESS-NYC/" target="_blank" rel="noopener">ACCESS NYC GitHub repository</a> contains a working example of the <strong>Find Help</strong> map retrieving office location data from a local endpoint and utilizing the Google Maps Platform to display locations on the map for users. The following modules are core scripts that provide this functionality.</p>
+            <ul>
+              <li>
+                <a href="https://github.com/CityOfNewYork/ACCESS-NYC/blob/main/wp-content/themes/access/src/js/modules/office-map.js" target="_blank" rel="noopener">Office Map (office-map.js)</a>
+              </li>
+              <li>
+                <a href="https://github.com/CityOfNewYork/ACCESS-NYC/blob/main/wp-content/themes/access/src/js/modules/office-filter.js" target="_blank" rel="noopener">Office Filter (office-filter.js)</a>
+              </li>
+              <li>
+                <a href="https://github.com/CityOfNewYork/ACCESS-NYC/blob/main/wp-content/themes/access/src/js/modules/office-location.js" target="_blank" rel="noopener">Office Location (office-location.js)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="layout-content page-max">
+        <div class="wrap mb-4">
+          <nav class="grid tablet:grid-cols-2 gap-3">
+            <a class="btn" href="https://nycopportunity.github.io/standard/layouts#map-layout">
+              <span>See related, "Layouts, Map"</span>
+            </a>
+            <a class="btn-secondary" href="https://nycopportunity.github.io/standard/header">
+              <span>Next, "Header"</span>
+              <svg aria-hidden="true" class="icon-ui rtl:flip">
+                <use href="#lucide-arrow-right"></use>
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="text-small py-4 z-20 relative" role="contentinfo">
+    <div class="layout-content page-max">
+      <div class="wrap mb-4">
+        <hr class="divider" />
+        <div class="py-4">
+          <p>Maintained by <a href="http://nyc.gov/opportunity" target="_blank" rel="noopener nofollow">The Mayor's Office for Economic Opportunity</a>. We are committed to sharing <a href="https://nycopportunity.github.io/loves-open-source" target="_blank" rel="noopener nofollow">open source software</a> that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;</p>
+          <div class="mb-4">
+            <nav class="nav-inline">
+              <a href="https://github.com/nycopportunity" rel="noopener nofollow" target="_blank">GitHub</a>
+              <a href="https://twitter.com/nycopportunity" rel="noopener nofollow" target="_blank">Twitter</a>
+              <a href="https://www.linkedin.com/company/mayor'sofficeforeconomicopportunity/" rel="noopener nofollow" target="_blank">LinkedIn</a>
+              <a href="https://www.facebook.com/nycopportunity" rel="noopener nofollow" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com/nycopportunity" rel="noopener nofollow" target="_blank">Instagram</a>
+            </nav>
+          </div>
+          <small>© City of New York, 2023 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        </div>
+      </div>
+    </div>
+    <div class="page-max pt-2">
+      <div class="wrap tablet:grid grid-cols-5 gap-1 tablet:gap-2">
+        <nav aria-labelledby="navigation-main-8c4bb3c677ce2" class="tablet:flex-1 mb-1" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="navigation-main-8c4bb3c677ce2">Main</span>
+          <a class="flex p-1" href="index">Home</a>
+          <a class="flex p-1" href="https://github.com/nycopportunity/standard/releases/tag/v0.0.2" rel="noopener nofollow" target="_blank" title="v0.0.2">Latest Release</a>
+          <button class="link-icon flex p-1" data-js="themes">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use data-js-themes="icon" href="#lucide-moon"></use>
+            </svg>
+            <span class="sr-only">Toggle&nbsp;</span>
+            <span data-js-themes="label">Theme</span>
+          </button>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Guides</span>
+          <a class="flex p-1" href="installation">Installation</a>
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1">Links</span>
+          <a class="link-icon flex p-1" href="https://www.figma.com/file/CH7ZOCW55SgsDnsTj3UrTi/Opportunity-Standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-figma"></use>
+            </svg>
+            <span>Figma</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://github.com/nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-github"></use>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://www.npmjs.com/package/@nycopportunity/standard" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-package"></use>
+            </svg>
+            <span>NPM Package</span>
+          </a>
+          <a class="link-icon flex p-1" href="https://nycopportunity.github.io/patterns-framework" rel="noopener nofollow" target="_blank">
+            <svg aria-hidden="true" class="icon icon-ui">
+              <use href="#lucide-frame"></use>
+            </svg>
+            <span>UI Patterns Framework</span>
+          </a>
+        </nav>
+        <nav aria-labelledby="aria-lb-elements-8c4bb3c677ce2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-elements-8c4bb3c677ce2">Elements</span>
+          <a class="flex p-1" href="badge">Badge</a>
+          <a class="flex p-1" href="breadcrumbs">Breadcrumbs</a>
+          <a class="flex p-1" href="buttons">Buttons</a>
+          <a class="flex p-1" href="code">Code</a>
+          <a class="flex p-1" href="color">Color</a>
+          <a class="flex p-1" href="description-lists">Description Lists</a>
+          <a class="flex p-1" href="dividers">Dividers</a>
+          <a class="flex p-1" href="forms">Forms</a>
+          <a class="flex p-1" href="icons">Icons</a>
+          <a class="flex p-1" href="inputs">Inputs</a>
+          <a class="flex p-1" href="labels">Labels</a>
+          <a class="flex p-1" href="layouts">Layouts</a>
+          <a class="flex p-1" href="links">Links</a>
+          <a class="flex p-1" href="navs">Navs</a>
+          <a class="flex p-1" href="options">Options</a>
+          <a class="flex p-1" href="selects">Selects</a>
+          <a class="flex p-1" href="spinner">Spinner</a>
+          <a class="flex p-1" href="tables">Tables</a>
+          <a class="flex p-1" href="typography">Fonts and Typography</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-components-8c4bb3c677ce2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-components-8c4bb3c677ce2">Components</span>
+          <a class="flex p-1" href="accordion">Accordion</a>
+          <a class="flex p-1" href="active-navigation">Active Navigation</a>
+          <a class="flex p-1" href="alert">Alert</a>
+          <a class="flex p-1" href="card">Card</a>
+          <a class="flex p-1" href="disclaimer">Disclaimer</a>
+          <a class="flex p-1" href="dropdown">Dropdown</a>
+          <a class="flex p-1" href="household">Household</a>
+          <a class="flex p-1" href="nearby-stops">Nearby Stops</a>
+          <a class="flex p-1" href="popover">Popover</a>
+          <a class="flex p-1" href="question">Question</a>
+          <a class="flex p-1" href="share-form">Share Form</a>
+          <a class="flex p-1" href="side-navigation">Side Navigation</a>
+          <a class="flex p-1" href="utility">Utility</a>
+          <a class="flex p-1" href="web-share">Web Share</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-objects-8c4bb3c677ce2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-objects-8c4bb3c677ce2">Objects</span>
+          <a class="flex p-1" href="application-header">Application Header (NYC.ID)</a>
+          <a class="flex p-1" href="attribution">Attribution (Footer)</a>
+          <a class="flex p-1" href="banner">Banner</a>
+          <a class="flex p-1" href="feedback">Feedback</a>
+          <a class="flex p-1" href="find-help">Find Help</a>
+          <a class="flex p-1" href="header">Header</a>
+          <a class="flex p-1" href="languages">Languages</a>
+          <a class="flex p-1" href="menu">Menu</a>
+          <a class="flex p-1" href="modal">Modal</a>
+          <a class="flex p-1" href="navigation">Navigation</a>
+          <a class="flex p-1" href="newsletter">Newsletter</a>
+          <a class="flex p-1" href="search">Search</a>
+          <a class="flex p-1" href="step-by-step">Step by Step</a>
+        </nav>
+        <nav aria-labelledby="aria-lb-utilities-8c4bb3c677ce2" class="tablet:flex-1 mb-1 desktop:ps-4" role="navigation">
+          <span class="p-1 block border-b border-scale-3 mb-1 mt-1" id="aria-lb-utilities-8c4bb3c677ce2">Utilities</span>
+          <a class="flex p-1" href="tailwindcss">Tailwindcss</a>
+          <a class="flex p-1" href="misc">Miscellaneous</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/default.js"></script>
+  <script type="text/javascript">
+    var Standard = new Default();
+    Standard.icons('https://nycopportunity.github.io/standard/svg/svgs.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/pattern-elements.svg');
+    Standard.icons('https://nycopportunity.github.io/standard/svg/lucide.svg');
+    Standard.toggle(); // The Toggle Utility must be instantiated first
+    Standard.accordion();
+    Standard.activeNavigation();
+    Standard.attribution();
+    Standard.codeHighlight();
+    Standard.copy();
+    Standard.dialog();
+    Standard.direction();
+    Standard.disclaimer();
+    Standard.masks();
+    Standard.menu();
+    Standard.modal();
+    Standard.nearbyStops();
+    Standard.popover();
+    Standard.search();
+    Standard.shareForm();
+    Standard.stepByStep();
+    Standard.newsletter();
+    Standard.newsletterForm();
+    Standard.setHeightProperties();
+    Standard.themes();
+    Standard.webShare();
+    Standard.validate();
+  </script>
+  <script type="text/javascript">
+    let classActive = 'bg-scale-3';
+    let classDefault = 'bg-scale-1';
+    let map = document.querySelector('[data-find-help="map"]');
+    document.querySelector('body').addEventListener('click', event => {
+      if (!event.target.matches('[data-find-help-embed]')) return;
+      event.preventDefault();
+      if (event.target.dataset['findHelpEmbed']) {
+        document.querySelectorAll('[data-find-help="location"]').forEach(loc => {
+          loc.classList.remove(classActive);
+          loc.classList.add(classDefault);
+        });
+        map.setAttribute('src', event.target.dataset['findHelpEmbed']);
+        event.target.scrollIntoView();
+        map.scrollIntoView({
+          behavior: 'smooth'
+        });
+        event.target.parentNode.classList.remove(classDefault);
+        event.target.parentNode.classList.add(classActive);
+      }
+    });
+  </script>
+</body>
+
+</html>

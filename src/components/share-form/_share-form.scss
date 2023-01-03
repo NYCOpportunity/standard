@@ -53,7 +53,7 @@
 .c-share-form__fieldset {
   align-items: center;
   display: flex;
-  // background: $color-white;
+  background-color: var(--nyco-input-background);
   border: var(--nyco-input-border-width) var(--nyco-input-border-style);
 
   padding-inline-end: 5px;

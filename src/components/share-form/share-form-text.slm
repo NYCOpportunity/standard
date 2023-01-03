@@ -19,13 +19,13 @@ div class='c-share-form w-full' data-js='share-form'
     input type='hidden' name='GUID' value='{{ MY_GUID }}' maxlength='13' readonly=true
 
     div class='c-share-form__fieldset'
-      div class='input-prefix c-share-form__input'
+      div class='input input-prefix c-share-form__input'
         /! { @tabindex  "-1" hides this potentially focusable element from screen readers while the form is hidden }
         label class='sr-only' for='share-form-input-${this.shareFormText.id}' tabindex='-1' Enter your phone number
 
         /! { @data-share-form  "input" designates this element as the main share form input }
         /! { @tabindex         "-1" hides this potentially focusable element from screen readers while the form is hidden }
-        input id='share-form-input-${this.shareFormText.id}' name='to' type='tel' placeholder='Phone number' required='true' data-share-form='input' tabindex='-1'
+        input id='share-form-input-${this.shareFormText.id}' name='to' type='tel' placeholder='Phone number' inputmode='numeric' required='true' pattern='([0-9]{3}) [0-9]{3}-[0-9]{4}' data-share-form='input' data-js='tel' tabindex='-1'
 
         span class='input__prefix' aria-hidden='true' +1
 

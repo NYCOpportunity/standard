@@ -27,7 +27,7 @@ section class='o-navigation-spacing-bottom' data-js='feedback'
 /! { @aria-modal        "true" indicates the element is a modal element }
 /! { @aria-labelledby   Identifies the modal heading as the label for the modal }
 /! { @aria-describedby  Identifies the modal body as the description for the modal }
-div id='aria-c-modal' class='o-modal hidden' aria-hidden='true' role='dialog' aria-modal='true' aria-labelledby='aria-lb-modal-header' aria-describedby='aria-db-modal-body'
+div id='aria-c-modal' class='o-modal hidden' aria-hidden='true' role='dialog' aria-modal='true' aria-describedby='aria-db-modal-body'
   div class='o-modal__layout'
     div class='o-modal__body'
       div class='o-modal__close'
@@ -44,10 +44,10 @@ div id='aria-c-modal' class='o-modal hidden' aria-hidden='true' role='dialog' ar
           span Dismiss
 
       /! { @id  Matches the @aria-labelledby attribute of the modal parent }
-      h2 class='o-modal__heading' id='aria-lb-modal-header' Share your feedback
+      / h2 class='o-modal__heading' id='aria-lb-modal-header' Share your feedback
 
       /! { @id  Matches the @aria-describedby attribute of the modal parent }
-      p id='aria-db-modal-body' How can we improve this website? Let us know by answering a few questions to share your thoughts.
+      p id='aria-db-modal-body' How can we improve this website? Let us know by answering a few questions. Your response will be used to help us improve the experience for others.
 
       - feedbackForm = {}
       - feedbackForm.tabindex = '-1'

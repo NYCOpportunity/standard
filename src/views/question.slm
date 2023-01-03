@@ -19,42 +19,73 @@
 = content('content')
   = mixin('content-header')
 
-  form id='question-demo'
-    - question = {type: 'email', label: 'What is your email?', description: 'We can send you a link to this page to help you get back to it when you\'re ready.'}
+  form data-js='validate'
+    - question = {label: 'What is your email?', description: 'Enter your email address and we can send you a link to this page to help you get back to it when you\’re ready.', required: 'true', input: {type: 'email', mode: 'email'}}
     = mixin('section', '/components/question/question')
 
+    - question = {label: 'Which of the following options applies best to you?', description: 'Please choose one of the options below.'}
+    - question.id = this.createId()
+    - question.options = [{label: 'Option 1', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 2', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 3', type: 'radio', name: `option['${question.id}']`}, {label: 'Option 4', type: 'radio', name: `option['${question.id}']`}]
     = mixin('section', '/components/question/question-options-radio', {title: 'Option Question, Radio'})
 
+    - question = {label: 'Which of the following options applies best to you?', description: 'Feel free to choose as many as you like.'}
+    - question.id = this.createId()
+    - question.options = [{label: 'Option 1', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 2', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 3', type: 'checkbox', name: `option['${question.id}']`}, {label: 'Option 4', type: 'checkbox', name: `option['${question.id}']`}]
     = mixin('section', '/components/question/question-options-checkbox', {title: 'Option Question, Checkbox'})
 
+    / Use the same question but rows
+    - question.id = this.createId()
+    - question.container = 'c-question__container-rows'
+    = mixin('section', '/components/question/question-options-rows', {title: 'Option Question, Rows (Checkbox)'})
+
+    - question = {label: 'Do you have an income?', description: 'This includes money from jobs, alimony, investments, or gifts.'}
+    - question.id = this.createId()
+    - question.options = [{label: 'Yes', type: 'radio', name: `option['${question.id}']`}, {label: 'No', type: 'radio', name: `option['${question.id}']`}]
+    - question.optionColumns = false
     = mixin('section', '/components/question/question-toggle', {title: 'Toggle Question'})
 
-    - question = {label: 'What type of income have you had most recently?', description: 'Answer the best you can. You will be able to include additional types of income.<br>The more you include, the more accurate your results will be.'}
+    - question = {label: 'What type of income have you had most recently?', description: 'Answer the best you can. You will be able to include additional types of income. The more you include, the more accurate your results will be.'}
     - question.options = [{value: '', selected: true, label: 'Click to add an income type'}, {value: 'Wages', label: 'wages, salaries, tips'}, {value: 'SelfEmployment', label: 'self-employment income'}, {value: 'Unemployment', label: 'unemployment benefits'}, {value: 'CashAssistance', label: 'Cash Assistance grant'}, {value: 'ChildSupport', label: 'child support (received)'}, {value: 'DisabilityMedicaid', label: 'disability-related Medicaid'}, {value: 'SSI', label: 'Supplemental Security Income (SSI)'}, {value: 'SSDependent', label: 'Social Security Dependent Benefits'}, {value: 'SSDisability', label: 'Social Security Disability Benefits'}, {value: 'SSSurvivor', label: 'Social Security Survivor’s Benefits'}, {value: 'SSRetirement', label: 'Social Security Retirement Benefits'}, {value: 'NYSDisability', label: 'New York State Disability Benefits'}, {value: 'Veteran', label: 'Veteran’s Pension or Benefits'}, {value: 'Pension', label: 'Government or Private Pension'}, {value: 'DeferredComp', label: 'Withdrawals from Deferred Compensation (IRA, Keogh, etc.)'}, {value: 'WorkersComp', label: 'Worker’s Compensation'}, {value: 'Alimony', label: 'alimony (received)'}, {value: 'Boarder', label: 'boarder or lodger'}, {value: 'Gifts', label: 'gifts/contributions (received)'}, {value: 'Rental', label: 'rental income'}, {value: 'Investment', label: 'investment income (interest, dividends, and profit from selling stocks)'}]
     = mixin('section', '/components/question/question-select', {title: 'Select Question'})
 
+    - popover = {}
+    - popover.label = 'Here\'s why we are asking'
+    - popover.description = 'Many benefit programs are meant for people of a specific age group. Sharing your age will help us choose the programs that will be most helpful to you right now. The information you share for the purposes of public benefits screening will be anonymous.'
+    - question = {label: 'How old are you?', description: false, required: 'true', popover: popover, input: {type: 'text', mode: 'numeric', maxlength: 3, pattern: '[0-9]*', mode: 'numeric'}}
+    = mixin('section', '/components/question/question-info', {title: 'Question with Information'})
+
     / Prefixed Question
+    = mixin('section', '/components/question/question-input-prefix', {title: 'Prefixed Question'})
 
     / Monetary Question
+    - question = {label: 'How much does your current household have in savings?', description: false, input: {prefix: '#lucide-dollar-sign', type: 'text', mode: 'numeric', placeholder: '0.00', align: 'text-end', js: 'dollars', mode: 'decimal'}}
+    = mixin('section', '/components/question/question-monetary', {title: 'Monetary Question'})
 
     / Date Question
+    - question = {label: 'What date works best for you?', description: 'Use the format month, day, year or mm/dd/yyyy.', input: {type: 'date', pattern: '[0-9]{2}/[0-9]{2}/[0-9]{4}', mode: 'numeric'}}
+    = mixin('section', '/components/question/question-date', {title: 'Date Question'})
 
     / Memorable Date Question
+    - question = {label: 'What is your date of birth?', description: 'Select a month and enter the day (dd) and year (yyyy).', input: {type: 'number'}}
+    = mixin('section', '/components/question/question-memorable-date', {title: 'Memorable Date Question'})
 
-    / Search Question
-
-    - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', description: '', placeholder: 'Enter your email', type: 'email', name: 'EMAIL', required: 'true', class: 'c-question-single', button: 'Submit'}
+    / Single Field Question
+    - question = {label: 'Enter your email to sign up for our newsletter and stay up-to-date with careers, training, and events.', description: '', class: 'c-question-single', button: 'Submit', input: {placeholder: 'Enter your email', type: 'email', mode: 'email'}}
     = mixin('section', '/components/question/question', {title: 'Single Field Question', text: false})
 
-  = mixin('section', '/components/question/readme', {title: 'Validation', markup: false, demo: false})
+  = mixin('section', '/../node_modules/@nycopportunity/pattern-elements/src/elements/forms/readme', {title: 'Validation', markup: false, demo: false, src: false})
+
+  = mixin('section', '/utilities/mask/readme', {title: 'Mask Utilities', markup: false, demo: false, src: false})
+
+  = mixin('section', '/components/popover/readme', {title: 'Popover', markup: false, demo: false, src: false})
 
   = mixin('pagination', {related: {label: 'Forms', href: 'forms'}, next: {label: 'Share Form', href: 'share-form'}})
 
-= content('script');
-  / javascript:
-  /   patterns.validate('#question-demo', function(event) {
-  /     event.preventDefault();
+/ = content('script');
+/   javascript:
+/     patterns.validate('#question-demo', function(event) {
+/       event.preventDefault();
 
-  /     return false;
-  /   });
+/       return false;
+/     });
 

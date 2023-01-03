@@ -16,26 +16,25 @@
 - if (typeof question !== 'undefined')
   - this.question = Object.assign(this.question, question);
 
-div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
-  label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
-    == this.question.label
+div class='layout-content'
+  div class='wrap'
+    div id='${this.question.id}' class='c-question ${this.question.class}' aria-hidden=this.question.ariaHidden
+      label class='c-question__label' for='${this.question.for}' tabindex=this.question.tabindex
+        == this.question.label
 
-    - if this.question.required
-      span class='text-error'
-        | &nbsp;*
+        - if this.question.required
+          span class='text-error'
+            | &nbsp;*
 
-  - if (this.question.description)
-    p == this.question.description
+      - if (this.question.description)
+        p == this.question.description
 
-  div class='c-question__container'
-    - select = this.question;
-    - select.name = this.question.name
-    - select.id = this.question.for
-    - select.required = this.question.required
-    - delete select.class;
-    - delete select.ariaHidden;
+      div class='c-question__container'
+        - select = this.question;
+        - select.name = this.question.name
+        - select.id = this.question.for
+        - select.required = this.question.required
+        - delete select.class;
+        - delete select.ariaHidden;
 
-    = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects.slm');
-
-/ - if (typeof question !== 'undefined')
-  / - delete question
+        = partial('/../node_modules/@nycopportunity/pattern-elements/src/elements/selects/selects.slm');

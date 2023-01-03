@@ -35,7 +35,7 @@ div#aria-c-search class='o-search ${this.search.class}' aria-hidden=this.search.
 
     div class='input o-search__input'
       /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
-      input type='text' name='s' value='' placeholder='Search' data-js='search__input' id='${this.search.input.id}' tabindex=this.search.tabindex
+      input type='text' name='s' value='' placeholder='Search' inputmode='search' data-js='search__input' id='${this.search.input.id}' tabindex=this.search.tabindex
 
       /! { @tabindex  Add tabindex="-1" to insure focusable elements are not visible when parent is hidden }
       button class='o-search__submit' type='submit' tabindex=this.search.tabindex
