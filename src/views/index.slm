@@ -71,7 +71,9 @@
         div class='wrap'
           h2 class='text-center mt-0' About
 
-          p The v{this.package.nice} was created by leveraging learnings from creating and maintaining pattern libraries for the NYC Opportunity portfolio of <a href="https://www.nyc.gov/site/opportunity/portfolio/products.page" target="_blank" rel="noopener nofollow">digital products</a>. It uses a custom build User Interface (UI) library combined with guidance from the U.S. Web Design System to create a tailored experience for people looking to access public services.
+          p The ${this.package.nice} was created by leveraging learnings from building and maintaining pattern libraries for the NYC Opportunity's portfolio of <a href="https://www.nyc.gov/site/opportunity/portfolio/products.page" target="_blank" rel="noopener nofollow">digital products</a>. It uses a custom built User Interface (UI) library combined with usability and usage guidance from the <a href="https://designsystem.digital.gov" target="_blank" rel="noopener nofollow">U.S. Web Design System</a> to create a tailored experience for people looking to access public services.
+
+          p The ${this.package.nice} is built using the <a href="https://nycopportunity.github.io/patterns-framework/" target="_blank" rel="noopener nofollow">NYCO Patterns Framework</a>; a front-end framework for creating and maintaining design pattern libraries.
 
     section class='py-6'
       div class='layout-content mx-auto py-6'
