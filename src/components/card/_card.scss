@@ -104,7 +104,7 @@
 }
 
 .c-card__title {
-  @include typography.set('h4');
+  @include typography.set('h5');
 
   margin-top: 0;
   margin-bottom: var(--nyco-grid)
@@ -115,7 +115,7 @@
 }
 
 .c-card__subtitle {
-  @include typography.set('h5');
+  @include typography.set('h6');
 
   font-weight: normal;
   margin-top: 0
@@ -217,7 +217,7 @@
   border-radius: 0px;
 
   .c-card__title {
-    @include typography.font-family('h6');
+    @include typography.font-family('h5');
   }
 
   .c-card__header {
