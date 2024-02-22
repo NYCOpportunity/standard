@@ -1,9 +1,9 @@
 $tokens:(
   output: "/Users/schakraborty/Code/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 1.0.11,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.11/dist/",
-  googleFonts: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  version: 1.0.13,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.13/dist/",
+  googleFonts: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
   fontFace-code: ""JetBrains Mono", monospace",
@@ -40,7 +40,7 @@ $tokens:(
     blockquote: normal,
     h4: bold,
     h5: bold,
-    h6: normal,
+    h6: medium,
     p: normal,
     link: bold,
     small: normal,
@@ -50,7 +50,8 @@ $tokens:(
     bold: 800,
     option: bold,
     question: normal,
-    code: normal
+    code: normal,
+    semibold: 700
   ),
   fontStyle: (
     body: normal,
@@ -171,7 +172,7 @@ $tokens:(
     shuttles: #808183,
     transparent: rgba(255, 255, 255, 0),
     inherit: inherit,
-    text: var(--nyco-text),
+    text: #080707,
     background: var(--nyco-background),
     brand: var(--nyco-brand),
     alt: var(--nyco-alt),
