@@ -42,7 +42,7 @@
   "dependencies": {
     "@nycopportunity/pattern-application-header": "^1.0.1",
     "@nycopportunity/pattern-attribution": "^1.1.1",
-    "@nycopportunity/pattern-elements": "^1.0.11",
+    "@nycopportunity/pattern-elements": "^1.0.12",
     "@nycopportunity/pattern-menu": "^1.1.1",
     "@nycopportunity/pattern-modal": "^1.0.5",
     "@nycopportunity/pattern-navigation": "^1.1.5",
