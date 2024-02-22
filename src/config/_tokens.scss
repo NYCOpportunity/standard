@@ -1,8 +1,8 @@
 $tokens:(
   output: "/Users/schakraborty/Code/standard/src/config/_tokens.scss",
   stringKeys: "stringKeys, fontFace-system, fontFace-nyc, fontFace-primary, fontFace-secondary, fontFace-code",
-  version: 1.0.13,
-  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.13/dist/",
+  version: 1.0.14,
+  cdn: "https://cdn.jsdelivr.net/gh/nycopportunity/pattern-elements@v1.0.14/dist/",
   googleFonts: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
   language: (default, ar, es, kr, ur, tc),
   languageRtl: (ar, ur),
@@ -40,7 +40,7 @@ $tokens:(
     blockquote: normal,
     h4: bold,
     h5: bold,
-    h6: medium,
+    h6: 500,
     p: normal,
     link: bold,
     small: normal,
@@ -51,7 +51,7 @@ $tokens:(
     option: bold,
     question: normal,
     code: normal,
-    semibold: 700
+    semibold: 600
   ),
   fontStyle: (
     body: normal,
@@ -351,7 +351,7 @@ $tokens:(
         3: var(--nyco-color-light-3),
         4: var(--nyco-color-light-4)
       ),
-      text: var(--nyco-color-default-3),
+      text: #080707,
       brand: var(--nyco-color-blue),
       alt: var(--nyco-text),
       em: var(--nyco-color-yellow-d-4),
