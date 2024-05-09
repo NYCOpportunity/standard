@@ -1,7 +1,7 @@
 {
   "name": "@nycopportunity/standard",
   "nice": "Opportunity Standard",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "The Opportunity Standard is the design system for NYC Opportunity's digital products.",
   "author": "products@nycopportunity.nyc.gov",
   "homepage": "https://nycopportunity.github.io/standard",
